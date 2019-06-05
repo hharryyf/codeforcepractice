@@ -1,2 +1,2 @@
 # leetcode_prac
-leetcode practice summary
+leetcode practice summary update everyday
