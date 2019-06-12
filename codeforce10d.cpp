@@ -56,6 +56,7 @@ int main(int argc, char *argv[]) {
 	}
 	
 	cout << ans << endl;
+	if (ans == 0) return 0;
 	vector<int> res = vector<int>();
 	i = n;
 	j = m;
