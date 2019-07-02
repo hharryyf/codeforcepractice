@@ -14,6 +14,10 @@ int main(int argc, char *argv[]) {
 	int i, j, gap, n, m;
 	
 	cin >> n >> gap >> m;
+	if (n > m && gap == 1) {
+		cout << -1 << endl;
+		return 0;
+	}
 	/*
 		dp[i][j] = max(dp[p][j-1] + value[i]) which i >= j and max(j-1, i - gap) <= p < i
 	*/
@@ -31,9 +35,12 @@ int main(int argc, char *argv[]) {
 	// cout << "hello" << endl;
 	for (j = 2; j <= m; j++) {
 		for (i = 0; i < n; i++) {
-			update(i, 0, n - 1, 1, INF, dp[j % 2]);			
-			ll res = query(max(j-2, i - gap), i - 1, 0, n - 1, 1, dp[(j - 1) % 2]);
-			update(i, 0, n - 1, 1, res + beauty[i], dp[j % 2]);
+			if (i >= j - 1) {		
+				ll res = query(max(j-2, i - gap), i - 1, 0, n - 1, 1, dp[(j - 1) % 2]);
+				update(i, 0, n - 1, 1, res + beauty[i], dp[j % 2]);
+			} else {
+				update(i, 0, n - 1, 1, INF, dp[j % 2]);	
+			}
 			// cout << "dp[" << j << "][" << i << "]= " << query(i, i, 0, n - 1, 1, dp[j % 2]) << endl;
 		}
 		
