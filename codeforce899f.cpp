@@ -1,76 +1,46 @@
 #include <bits/stdc++.h>
 #define MAX_LEN 524330
-using namespace std;
-unordered_map<char, set<int> > mymap;
 
-int tree[MAX_LEN];
+using namespace std;
+
+int tree[MAX_LEN][62], lazy[MAX_LEN][62];
+
 char str[MAX_LEN >> 1];
 int n, m;
 
+int value(char ch) {
+	if (ch <= '9') return ch - '0';
+	if (ch >= 'A' && ch <= 'Z') return ch - 'A' + 10;
+	return ch - 'a' + 36;
+}
+
+char finalans(int i) {
+	if (i < 10) return i + '0';
+	if (i >= 10 && i <= 35) return i - 10 + 'A';
+	return i - 36 + 'a';
+}
+
 void build(int l, int r, int index);
-// query would return the minimum index such that the prefixsum
-// of the 0 to index is equal to target
+void update(int start, int end, int l, int r, int index, char ch);
 int query(int l, int r, int index, int target);
-void eliminate(int pos, int l, int r, int index);
+void getans(int l, int r, int index);
 
 int main(int argc, char *argv[]) {
-	mymap = unordered_map<char, set<int> >();
 	scanf("%d%d", &n, &m);
-	scanf("%s", str);
 	int i;
-	for (i = 0 ; i < (int) strlen(str); i++) {
-		mymap[str[i]].insert(i);
-	}
-	
-	build(0, n - 1, 1);
-	unordered_map<char, set<int> > :: iterator it;
+	scanf("%s", str);
+	build(0, n - 1, 1);	
 	for (i = 0 ; i < m; i++) {
-		// cout << "round " << i << endl;
 		int l, r;
-		char ch;
-		scanf("%d%d %c", &l, &r, &ch);
-		
+		char qr[2];
+		scanf("%d%d%s", &l, &r, qr);
 		int leftmost = query(0, n - 1, 1, l);
 		int rightmost = query(0, n - 1, 1, r);
-		set<int> :: iterator iter = mymap[ch].lower_bound(leftmost);
-		// cout << "wipe out " << ch;
-		// cout << "l = " << l << " r = " << r << " "<< leftmost << " " << rightmost << endl;
-		vector<int> current = vector<int>();
-		it = mymap.find(ch);
-		if (it == mymap.end()) continue;
-		while (iter != it->second.end()) {
-			if (*iter > rightmost) break;
-			if (*iter >= leftmost && *iter <= rightmost) {
-				current.push_back(*iter);
-				it->second.erase(iter++);
-				
-			} else {
-				break;
-			}
-		}
-		// cout << "error is after" << endl;
-		for (auto v : current) {
-			// cout << v << endl;
-			eliminate(v, 0, n - 1, 1);
-		}
-		
+		// cout << l << " " << r << " " << leftmost << " " << rightmost << endl;
+		update(leftmost, rightmost, 0, n - 1, 1, qr[0]);
 	}
 	
-	vector<pair<int, char> > ans = vector<pair<int, char> >();
-	it = mymap.begin();
-	while (it != mymap.end()) {
-		for (auto num : it->second) {
-			ans.push_back(pair<int, char>(num, it->first));
-		}
-		it++;
-	}
-	
-	sort(ans.begin(), ans.end());
-	
-	for (i = 0 ; i < (int) ans.size(); i++) {
-		printf("%c", ans[i].second);
-	}
-	
+	getans(0, n - 1, 1);
 	printf("\n");
 	return 0;
 }
@@ -78,50 +48,101 @@ int main(int argc, char *argv[]) {
 void build(int l, int r, int index) {
 	if (l > r) return;
 	if (l == r) {
-		tree[index] = 1;
+		tree[index][value(str[l])] = 1;
 		return;
 	}
 	
 	int mid = l + (r - l) / 2;
-	build(l, mid, index * 2);
-	build(mid + 1, r, index * 2 + 1);
-	tree[index] = tree[index * 2] + tree[index * 2 + 1];
+	build(l, mid, index << 1);
+	build(mid + 1, r, (index << 1) | 1);
+	for (int i = 0 ; i < 62; i++) {
+		tree[index][i] = tree[index * 2][i] + tree[index * 2 + 1][i];
+	}
 }
 
-void eliminate(int pos, int l, int r, int index) {
+void getans(int l, int r, int index) {
 	if (l > r) return;
-	if (pos == l && pos == r) {
-		tree[index] = 0;
+	int i;
+	if (l == r) {
+		for (i = 0 ; i < 62; i++) {
+			if (tree[index][i] != 0) {
+				printf("%c", finalans(i));
+			}
+		}
+		return;
+	}
+	
+	for (i = 0 ; i < 62; i++) {
+		if (lazy[index][i] != 0) {
+			if (l != r) {
+				lazy[index * 2][i] = 1;
+				lazy[index * 2 + 1][i] = 1;
+				tree[index * 2][i] = 0;
+				tree[index * 2 + 1][i] = 0;
+			}
+			lazy[index][i] = 0;
+		}
+	}
+	
+	int mid = l + (r - l) / 2;
+	getans(l, mid, index * 2);
+	getans(mid + 1, r, index * 2 + 1);
+}
+
+void update(int start, int end, int l, int r, int index, char ch) {
+	if (start > end || l > r) return;
+	
+	int i;
+	for (i = 0 ; i < 62; i++) {
+		if (lazy[index][i] != 0) {
+			if (l != r) {
+				lazy[index * 2][i] = 1;
+				lazy[index * 2 + 1][i] = 1;
+				tree[index * 2][i] = 0;
+				tree[index * 2 + 1][i] = 0;
+			}
+			lazy[index][i] = 0;
+		}
+	}
+	
+	if (start > r || l > end) return;
+	
+	if (start <= l && r <= end) {
+		tree[index][value(ch)] = 0;
+		lazy[index][value(ch)] = 1;
 		return;
 	}
 	
 	int mid = l + (r - l) / 2;
-	if (pos <= mid) {
-		eliminate(pos, l, mid, index * 2);
-	} else {
-		eliminate(pos, mid + 1, r, index * 2 + 1);
+	update(start, end, l, mid, index * 2, ch);
+	update(start, end, mid + 1, r, index * 2 + 1, ch);
+	
+	for (i = 0 ; i < 62; i++) {
+		tree[index][i] = tree[index * 2 + 1][i] + tree[index * 2][i];	
 	}
-	tree[index] = tree[index * 2] + tree[index * 2 + 1];
 }
 
-// query would return the minimum index such that the prefixsum
-// of the 0 to index is equal to target
 int query(int l, int r, int index, int target) {
-	if (l > r || tree[index] < target || target == 0) {
-		return -1;
-	}
-	
-	if (l == r) {
-		if (tree[index] == target) {
-			return l;
+	if (l == r) return l;
+	int lsum = 0, i;
+	for (i = 0 ; i < 62; i++) {
+		if (lazy[index][i] != 0) {
+			if (l != r) {
+				lazy[index * 2][i] = 1;
+				lazy[index * 2 + 1][i] = 1;
+				tree[index * 2][i] = 0;
+				tree[index * 2 + 1][i] = 0;
+			}
+			lazy[index][i] = 0;
 		}
-		return -1;
+		
+		lsum += tree[index * 2][i];
 	}
 	
 	int mid = l + (r - l) / 2;
-	if (tree[index * 2] >= target) {
+	if (lsum >= target) {
 		return query(l, mid, index * 2, target);
 	}
 	
-	return query(mid + 1, r, index * 2 + 1, target - tree[index * 2]);
+	return query(mid + 1, r, index * 2 + 1, target - lsum);
 }
