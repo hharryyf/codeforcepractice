@@ -15,7 +15,7 @@ using namespace std;
 typedef struct segt {
 	// the queried answer: colorness
 	Long colorness;
-	// the color of the segment, -1 means different, otherwise means unique
+	// the color of the segment, 0 means different, otherwise means unique
 	Long color;
 	// the increment tag, 0 for unchanged
 	Long lazyinc;
