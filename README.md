@@ -1,2 +1,3 @@
-# leetcode_prac
-leetcode practice summary update everyday
+# codeforce practice
+codeforce practice summary update everyday
+
