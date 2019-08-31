@@ -1,19 +1,22 @@
  
 Aug 30 to Sep8:
 
-Segment tree and line sweep: 
+Complete:
+
 1. Rooks and Rectangles (div1, diff=2400)
 http://codeforces.com/problemset/problem/524/E
 
 2. Cannon (div2, diff=2100)
 http://codeforces.com/problemset/problem/47/E
 
-Segment tree and divide and conquer:
-3. Summer Homework (diff=2400)
-http://codeforces.com/problemset/problem/316/E2
-
-4. Buses and People (div2, diff=2400)
+3. Buses and People (div2, diff=2400)
 https://codeforces.com/contest/160/problem/E
+
+TODO:
+
+4. Summer Homework (diff=2500)
+http://codeforces.com/problemset/problem/316/E3
+
 
 Fenwick tree:
 5. Scalar Queries (div2, diff=2300)
