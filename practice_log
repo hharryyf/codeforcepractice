@@ -18,6 +18,14 @@ http://codeforces.com/problemset/problem/316/E3
 5. Sum of Medians (diff=2200)
 https://codeforces.com/problemset/problem/85/D
 
+6. Fire (div2, diff=2000)
+http://codeforces.com/problemset/problem/864/E
+
+7. Package Delivery (div1/2, diff=2300)
+https://codeforces.com/problemset/problem/627/C
+
+8. Let Them Slide (div1/2, diff=2200)
+http://codeforces.com/problemset/problem/1208/E
 
 TODO:
 
@@ -26,11 +34,14 @@ Fenwick tree:
 http://codeforces.com/problemset/problem/1167/F
 
 Dynamic programming:
-6. Fire (div2, diff=2000)
-http://codeforces.com/problemset/problem/864/E
 
 7. Presents in Bankopolis
 http://codeforces.com/problemset/problem/793/D
 
 8. The Values You Can Make
 http://codeforces.com/problemset/problem/687/C
+
+
+
+10. Developing Game
+https://codeforces.com/problemset/problem/377/D
