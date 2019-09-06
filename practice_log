@@ -3,41 +3,45 @@ Aug 30 to Sep8:
 
 Complete:
 
-1. Rooks and Rectangles (div1, diff=2400)
+1. Rooks and Rectangles (div1, diff=2400, segmenttree and line sweep)
 http://codeforces.com/problemset/problem/524/E
 
-2. Cannon (div2, diff=2100)
+2. Cannon (div2, diff=2100, two pointers)
 http://codeforces.com/problemset/problem/47/E
 
-3. Buses and People (div2, diff=2400)
+3. Buses and People (div2, diff=2400, segmenttree and line sweep)
 https://codeforces.com/contest/160/problem/E
 
-4. Summer Homework (diff=2500)
+4. Summer Homework (diff=2500, segmenttree and math)
 http://codeforces.com/problemset/problem/316/E3
 
-5. Sum of Medians (diff=2200)
+5. Sum of Medians (diff=2200, segmenttree and divide and conquer)
 https://codeforces.com/problemset/problem/85/D
 
-6. Fire (div2, diff=2000)
+6. Fire (div2, diff=2000, dynamic programming)
 http://codeforces.com/problemset/problem/864/E
 
-7. Package Delivery (div1/2, diff=2300)
+7. Package Delivery (div1/2, diff=2300, greedy)
 https://codeforces.com/problemset/problem/627/C
 
-8. Let Them Slide (div1/2, diff=2200)
+8. Let Them Slide (div1/2, diff=2200, segmenttree and lazypropagation)
 http://codeforces.com/problemset/problem/1208/E
 
-9. Stripe 2 (codeforces round #21, diff=2300)
+9. Stripe 2 (codeforces round #21, diff=2300, dynamic programming)
 http://codeforces.com/problemset/problem/21/C
 
-10. Bulmart (2016-2017 ACM-ICPC, NEERC, Southern Subregional Contest, diff=2200)
+10. Bulmart (2016-2017 ACM-ICPC, NEERC, Southern Subregional Contest, diff=2200, greedy and binary search)
 http://codeforces.com/problemset/problem/730/C
 
-11. Preparing for the Contest (div1, diff=2100)
+11. Preparing for the Contest (div1, diff=2100, greedy and binary search)
 http://codeforces.com/problemset/problem/377/B
 
-12. GukiZ hates Boxes
+12. GukiZ hates Boxes (div2, diff=2200, greedy and binary search)
 https://codeforces.com/problemset/problem/551/C
+
+13. Stressful Training (div2, diff=2300, greedy and binary search)
+http://codeforces.com/problemset/problem/1132/D
+
 
 TODO:
 
