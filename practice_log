@@ -1,8 +1,6 @@
  
 Aug 30 to Sep8:
 
-Complete:
-
 1. Rooks and Rectangles (div1, diff=2400, segmenttree and line sweep)
 http://codeforces.com/problemset/problem/524/E
 
@@ -45,13 +43,18 @@ http://codeforces.com/problemset/problem/1132/D
 14. On Changing Tree (div1, diff=2400, segmenttree and dfs)
 http://codeforces.com/contest/396/problem/C
 
+Sep 9 to Sep 16:
+
 15. Frogs and mosquitoes (div2, diff=2500, segmenttree, greedy and set)
 http://codeforces.com/contest/609/problem/F
 
+16. Noise Level (div2, diff=2000, graph, bfs)
+http://codeforces.com/contest/847/problem/I
 
-Sep 9 to Sep 16:
+17. Reachability from the Capital (div3, diff=1900, strongly connected component)
+http://codeforces.com/contest/999/problem/E
 
- 
+
 
 TODO:
 
