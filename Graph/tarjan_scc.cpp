@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 
 void dfs(vector<vector<int> > &graph, int v, stack<int> &s, vector<int> &visited, 
 		 vector<int> &instack, vector<int> &low) {
-	low[v] = visited[v] = ++timestamp;
+ 	low[v] = visited[v] = ++timestamp;
 	s.push(v);
 	instack[v] = 1;
 	for (auto nextv : graph[v]) {
