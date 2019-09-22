@@ -64,16 +64,13 @@ int main(int argc, char *argv[]) {
 	for (i = 0 ; i < m; i++) {
 		if (oper[i][0] == 1) {
 			val = lower_bound(discrete.begin(), discrete.end(), oper[i][1]) - discrete.begin();
-			//cout << "update index " << val << " value: " << oper[i][1] << endl;
 			update(val, 0, n - 1, 1, oper[i][1]);
 		} else if (oper[i][0] == 2) {
 			val = lower_bound(discrete.begin(), discrete.end(), oper[i][1]) - discrete.begin();
 			update(val, 0, n - 1, 1, 0);
-			// cout << "update index " << val << " value: " << 0 << endl;
 		} else {
 			printf("%lld\n", tree[1].p[2]);
 		}
-		// printf("%lld %lld %d\n", tree[1].p[0], tree[1].p[1], tree[1].len);
 	}
 	
 	return 0;
@@ -111,7 +108,6 @@ void update(int pos, int l, int r, int index, Long value) {
 	}
 	
 	tree[index] = merge_interval(tree[index * 2], tree[index * 2 + 1]);
-	// cout << tree[index].p[0] << endl;
 }
 
 
