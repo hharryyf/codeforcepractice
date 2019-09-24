@@ -9,7 +9,7 @@ using namespace std;
 int low[MAX_SIZE];
 int visited[MAX_SIZE];
 vector<int> graph[MAX_SIZE];
-set<pair<int, int> > ans;
+vector<pair<int, int> > ans;
 bool isvalid;
 int k = 1;
 
@@ -19,16 +19,20 @@ void dfs(int v, int prev) {
 	for (auto nextv : graph[v]) {
 		if (nextv != prev) {
 			if (!visited[nextv]) {
-				ans.insert(make_pair(v, nextv));
+				ans.push_back(make_pair(v, nextv));
 				dfs(nextv, v);
 				low[v] = min(low[v], low[nextv]);
 				if (low[nextv] > visited[v]) {
 					isvalid = false;
 				}
-			} else {
+			} else {/*
 				if (ans.find(make_pair(v, nextv)) == ans.end() 
 					&& ans.find(make_pair(nextv, v)) == ans.end()) {
 					ans.insert(make_pair(v, nextv));
+				}*/
+				
+				if (visited[nextv] < visited[v]) {
+					ans.push_back(make_pair(v, nextv));
 				}
 				low[v] = min(low[v], visited[nextv]);
 			}
