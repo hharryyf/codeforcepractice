@@ -186,7 +186,8 @@ void checkinsertion() {
 		st = set<int>();
 		vec = vector<int>();
 		isvalid = 1;
-		for (i = 0 ; i < 100000; i++) {
+		int n = rand() % 150000 + 20;
+		for (i = 0 ; i < n; i++) {
 			int v;
 			if (T < 18) {
 				v = rand() % 50000;
@@ -207,7 +208,7 @@ void checkinsertion() {
 		}
 		
 		if (isvalid && (int) st.size() == size(root) && st.size() == vec.size()) {
-			cout << "test case " << T << " OK" << endl;
+			cout << "test case " << T << " OK" << " n= " << n << endl;
 		} else {
 			cout << "test case " << T << " invalid insertion!" << " expected size " << st.size() << " found " << vec.size() << endl;
 		}
@@ -225,7 +226,8 @@ void checkdeletion() {
 		st = set<int>();
 		vec = vector<int>();
 		isvalid = 1;
-		for (i = 0 ; i < 100000; i++) {
+		int n = 20 + rand() % 150000;
+		for (i = 0 ; i < n; i++) {
 			int v;
 			if (T < 18) {
 				v = rand() % 100000;
@@ -238,7 +240,7 @@ void checkdeletion() {
 			st.insert(v);
 		}
 		
-		for (i = 0 ; i < 100000; i++) {
+		for (i = 0 ; i < n; i++) {
 			int v = rand() % 100000;
 			st.erase(v);
 			root = deletion(root, v);
@@ -252,7 +254,7 @@ void checkdeletion() {
 		}
 		
 		if (isvalid && (int) st.size() == size(root) && st.size() == vec.size()) {
-			cout << "test case " << T << " OK" << endl;
+			cout << "test case " << T << " OK" << " n= " << n << endl;
 		} else {
 			cout << "test case " << T << " invalid deletion!" << " expected size " << st.size() << " found " << vec.size() << endl;
 		}
@@ -269,10 +271,11 @@ void checkkth() {
 		root = NULL;
 		st = set<int>();
 		isvalid = 1;
-		for (i = 0 ; i < 100000; i++) {
+		int n = 20 + rand() % 150000;
+		for (i = 0 ; i < n; i++) {
 			int v;
 			if (T < 18) {
-				v = rand() % 100000;
+				v = -5000 + rand() % 100000;
 			} else if (T == 19) {
 				v = 100000 - i;
 			} else {
@@ -300,7 +303,7 @@ void checkkth() {
 		}
 		
 		if (isvalid) {
-			cout << "test case " << T << " OK" << endl; 
+			cout << "test case " << T << " OK" << " n= " << n << endl;
 		}
 		drop(root);
 		T++;
