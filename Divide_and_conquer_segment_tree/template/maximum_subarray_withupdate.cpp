@@ -89,7 +89,7 @@ int main(int argc, char *argv[]) {
 	assert(argc == 2);
 	int T = atoi(argv[1]);
 	int j = 1;
-	int i;
+	int i, k = 1;
 	srand(time(NULL));
 	for (j = 1; j <= T; j++) {
 		n = rand() % 5500 + 200;
@@ -99,6 +99,7 @@ int main(int argc, char *argv[]) {
 		build(1, n, 1);
 		int q;
 		q = rand() % 5500 + 200;
+		k = q;
 		bool fail = false;
 		while (q > 0) {
 			int t, l, r;
@@ -127,7 +128,7 @@ int main(int argc, char *argv[]) {
 		}
 		
 		if (!fail) {
-			cout << "pass test case " << j << endl;
+			cout << "pass test case " << j << " ( n = " << n << " q= " << k << " )"<< endl;
 		}
 	}
 	return 0;
