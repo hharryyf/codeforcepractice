@@ -1,6 +1,9 @@
 #include <bits/stdc++.h>
 #define MAX_SIZE 2097292
 #define INF 4194304
+/*
+	https://codeforces.com/contest/1132/problem/G
+*/
 
 using namespace std;
 

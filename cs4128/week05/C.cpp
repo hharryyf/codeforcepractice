@@ -7,7 +7,9 @@ typedef long long ll;
 
 using namespace std;
 
-/* the problem is equivalent to given m segments each could cover [l, r] with weight w
+/* 
+	https://codeforces.com/contest/1216/problem/F
+	the problem is equivalent to given m segments each could cover [l, r] with weight w
 	what is the minimum cost to cover [1, n]
 	
    solution:
