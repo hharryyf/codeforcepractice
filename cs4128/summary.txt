@@ -1,0 +1,93 @@
+Week 1: Observations, all of the problems are very simple and solvable within 20 minutes
+
+A. Herd Sums (math, very easy) 
+http://poj.org/problem?id=2140
+
+B. All in All (two pointers, very easy) 
+https://uva.onlinejudge.org/external/103/10340.pdf
+
+C. CD (dfs, very easy)
+https://onlinejudge.org/external/6/624.pdf
+
+D. Back to the 8-Queens (backtracking, very easy) 
+https://onlinejudge.org/external/110/11085.pdf
+
+E. Ferry Loading II (dp/greedy, easy) 
+https://onlinejudge.org/external/104/10440.pdf 
+
+F. Coin Collector (dp/greedy, easy) 
+https://onlinejudge.org/external/112/11264.pdf
+
+G. The Fair Nut and Strings (greedy, math, diff=2100)
+https://codeforces.com/problemset/problem/1084/E
+
+week 2: Data structure 1, all of the problems are quite straight forward except G
+
+A. Xenia and Bit Operations (segment tree, diff=1700)
+https://codeforces.com/problemset/problem/339/D
+
+B. Ultra-QuickSort (divide and conquer, very easy) 
+https://onlinejudge.org/external/108/10810.pdf
+
+C. Pillars (dp and segment tree, diff=2200) 
+https://codeforces.com/problemset/problem/474/E
+
+D. Ancient Berland Roads (union find and set, medium) 
+https://www.codechef.com/problems/ABROADS
+
+E. classroom (greedy and segment tree/line sweep and set, easy) 
+open.kattis.com/problems/classrooms
+
+F. Troynacci Query (segment tree and math, quite tricky) 
+https://codeforces.com/gym/100571/problem/B
+
+G. Jewel heist (line sweep and fenwicktree, quite tricky)
+https://icpcarchive.ecs.baylor.edu/external/62/6261.pdf
+
+week 3: Graph, all the problems are solvable within 1 hour except G
+
+A. Number Maze (Dijkstra, very easy) 
+https://uva.onlinejudge.org/external/9/929.pdf
+
+B. XYZZY (dfs, quite tricky)
+https://uva.onlinejudge.org/external/105/10557.pdf
+
+C. Arctic Network (Kruskal, very easy) 
+https://uva.onlinejudge.org/external/103/10369.pdf
+
+D. Greg and Graph (Floyd, diff=1900)
+https://codeforces.com/problemset/problem/295/B
+
+E. Minimum spanning tree for each edge (Kruskal and binary lifting, diff=2100) 
+https://codeforces.com/problemset/problem/609/E
+
+F. Legacy (segment tree and dijkstra, diff=2600, not as hard as the rating shows)
+https://codeforces.com/problemset/problem/786/B
+
+G. Segments (system of different constraints and SPFA, very hard)
+https://www.spoj.com/problems/SEGMENTS/en/
+
+week 4: Data structrue 2, solved all the problems within 2 hours
+A. Multiples of 3 (segment tree, very easy)
+https://www.codechef.com/problems/MULTQ3
+
+B. Ada and Mulberry (segment tree and dfs and AVL, easy)
+https://www.spoj.com/problems/ADABERRY/
+
+C. On Changing Tree (segment tree and dfs, diff=2100)
+https://codeforces.com/contest/396/problem/C
+
+D. Swag Subsets (segment tree and math, medium)
+https://www.codechef.com/problems/SOSTD
+
+E. Can of Worms (tarjan and segment tree, quite interesting not that hard)
+https://www.e-olymp.com/en/problems/5926
+
+F. The Problem Set (segment tree and divide and conquer, very easy)
+https://www.codechef.com/problems/ACM14KN4
+
+G. Points (segment tree, diff=2800, not as hard as the rating shows)
+https://codeforces.com/problemset/problem/19/D
+
+
+
