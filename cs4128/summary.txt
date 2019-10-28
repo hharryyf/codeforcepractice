@@ -67,7 +67,7 @@ https://codeforces.com/problemset/problem/786/B
 G. Segments (system of different constraints and SPFA, very hard)
 https://www.spoj.com/problems/SEGMENTS/en/
 
-week 4: Data structrue 2, solved all the problems within 2 hours
+week 4: Data structrue 2, all of the problems are solvable within 1 hour
 A. Multiples of 3 (segment tree, very easy)
 https://www.codechef.com/problems/MULTQ3
 
@@ -89,5 +89,25 @@ https://www.codechef.com/problems/ACM14KN4
 G. Points (segment tree, diff=2800, not as hard as the rating shows)
 https://codeforces.com/problemset/problem/19/D
 
+week 5: Dynamic programming 1, problems are quite hard for me, E and G are very hard
+A. Tri Tiling (DP, easy) 
+https://uva.onlinejudge.org/external/109/10918.pdf
 
+B. Coloring Trees (DP, diff=1700)
+https://codeforces.com/problemset/problem/771/C
+
+C. Wi-Fi (DP and segment tree, diff=2300)
+https://codeforces.com/problemset/problem/1216/F
+
+D. Appleman and Tree (tree DP, diff=2200, very likely to ignore cases)
+https://codeforces.com/problemset/problem/461/B
+
+E. Keyboard Purchase (exponential DP, diff=2200, very hard for me)
+https://codeforces.com/problemset/problem/1238/E
+
+F. Greedy Subsequences (segment tree and dfs and dp, diff=2600, solvable within 1 hour)
+https://codeforces.com/problemset/problem/1132/G
+
+G. Group Projects (dp, diff=2400, very very difficult)
+https://codeforces.com/problemset/problem/626/F
 
