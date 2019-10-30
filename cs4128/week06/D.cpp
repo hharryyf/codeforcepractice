@@ -100,7 +100,7 @@ void reachs(int src) {
 void couldt(int src) {
 	visited[src] = 1;
 	nd.insert(src);
-	// cout << src << endl;
+	
 	for (int i = 0; i < (int) g[src].size(); i++) {
 		edge e = edg[g[src][i]];
 		if (!visited[e.to] && edg[g[src][i]^1].flow < edg[g[src][i]^1].capacity) {
@@ -126,11 +126,7 @@ int main() {
 	}
 	
 	Dinic();
-	/*
-		for (auto e : edg) {
-			cout << e.from << " " << e.to << " " << e.flow << " " << e.capacity << endl;
-		}
-	*/
+	
 	
 	memset(visited,0,sizeof(visited));
 	reachs(s);
