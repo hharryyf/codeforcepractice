@@ -111,3 +111,5 @@ https://codeforces.com/problemset/problem/1132/G
 G. Group Projects (dp, diff=2400, very very difficult)
 https://codeforces.com/problemset/problem/626/F
 
+week6: Maxflow and binary search and line sweep, Problem F is unsolvable!
+
