@@ -17,7 +17,7 @@ int main() {
 	cout << n << " " << q << endl;
 	int t = n;
 	while (t > 0) {
-		cout << -50 + rand() % 250 << endl;
+		cout << -50 + rand() % 50 << endl;
 		t--;
 	}
 	
