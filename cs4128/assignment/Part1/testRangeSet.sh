@@ -22,4 +22,4 @@ do
 	sleep 0.1
 done
 echo "pass $cpass, fail  $cfail"
-rm input out1 out2
+rm input out1 out2 gen jury1 RangeSetQuery
