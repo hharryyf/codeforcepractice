@@ -4,7 +4,7 @@ g++ -Wall -o jury1 jury1.cpp
 g++ -Wall -o gen genRangeSet.cpp
 cpass=0
 cfail=0
-for i in {1..100}
+for i in {1..1000}
 do	
 	./gen > input
 	./RangeSetQuery < input > out1
