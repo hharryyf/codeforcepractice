@@ -1,5 +1,5 @@
 #!/bin/bash
-g++ -Wall -o RangeSetQuery RangeSetQuery.cpp 
+g++ -Wall -o RangeSetQuery RangeSetQuery_smarter.cpp 
 g++ -Wall -o jury1 jury1.cpp
 g++ -Wall -o gen genRangeSet.cpp
 cpass=0
