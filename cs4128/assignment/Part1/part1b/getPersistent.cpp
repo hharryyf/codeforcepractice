@@ -6,7 +6,7 @@ int main() {
 	srand(time(NULL));
 	int n, q;
 	int vs = 1;
-	n = 12 + rand() % 1000;
+	n = 1000 + rand() % 1000;
 	q = n + rand() % n;
 	cout << n << " " << q << endl;
 	while (q > 0) {

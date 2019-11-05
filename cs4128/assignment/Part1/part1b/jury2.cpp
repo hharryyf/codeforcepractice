@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 typedef long long ll;
 
-#define MAX_SIZE 1024
+#define MAX_SIZE 2048
 
 ll arr[MAX_SIZE][MAX_SIZE];
 
