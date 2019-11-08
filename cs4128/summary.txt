@@ -112,4 +112,47 @@ G. Group Projects (dp, diff=2400, very very difficult)
 https://codeforces.com/problemset/problem/626/F
 
 week6: Maxflow and binary search and line sweep, Problem F is unsolvable!
+A. Magic Potion (maxflow, quite stright forward) 
+https://codeforces.com/gym/101981/attachments/download/7891/20182019-acmicpc-asia-nanjing-regional-contest-en.pdf
+
+B. Magic Ship (binary search for final answer, diff=1800)
+https://codeforces.com/contest/1117/problem/C
+
+C. Delivery Bears (binary search for final answer and maxflow, diff=2100)
+https://codeforces.com/problemset/problem/653/D
+
+D. Unique Attack (mincut property, quite stright forward) 
+https://codeforces.com/gym/100200/attachments/download/1687/20032004-winter-petrozavodsk-camp-andrew-stankevich-contest-4-en.pdf
+
+E. Hard Life (fraction programming, very difficult)
+https://icpcarchive.ecs.baylor.edu/external/37/3709.pdf
+
+F. Balloon (sweeping, very very difficult)
+https://onlinejudge.org/external/126/12647.pdf
+
+G. Power Transmission (maxflow with vertex capacity, very easy)
+https://onlinejudge.org/external/103/10330.pdf
+
+week7: Maxflow and convex hull dp, G is soooooo hard!
+A. MobiZone vs VinaGone (maxflow INF^2 edges trick, quite important)
+https://www.spoj.com/problems/MOBIVINA/
+
+B. Oil Skimming (bipartite matching, 2011 Regional final, quite stright forward)
+https://icpcarchive.ecs.baylor.edu/external/56/5691.pdf
+
+C. Kalila and Dimna in the Logging Industry (dp and convex hull, diff=2400)
+https://codeforces.com/problemset/problem/319/C
+
+D. Bilingual (maxflow INF^2 edges trick, 2015 Google Code Jam Round 2)
+https://codeforces.com/problemset/gymProblem/100692/C
+
+E. The Fair Nut and Rectangles (dp and convex hull, diff=2400)
+https://codeforces.com/problemset/problem/1083/E
+
+F. Land Acquisition (stack and dp convexhull, quite interesting but not hard)
+https://www.spoj.com/problems/ACQUIRE/
+
+G. DayAndNight
+https://vjudge.net/contest/341068#problem/G
+
 
