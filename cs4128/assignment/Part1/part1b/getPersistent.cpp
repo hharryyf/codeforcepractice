@@ -13,6 +13,9 @@ int main() {
 		int t = rand() % 2;
 		int l = 1 + rand() % n, r = 1 + rand() % n;
 		if (l > r) swap(l, r);
+		if (l == r) {
+			r++;
+		}
 		if (t == 1) {
 			int val = -500 + rand() % 10007;
 			cout << 'U' << " " << l << " " << r << " " << val << endl;

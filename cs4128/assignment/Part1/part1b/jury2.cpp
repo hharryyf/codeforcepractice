@@ -21,7 +21,7 @@ int main() {
 			for (int i = 1; i <= n; i++) {
 				arr[vs+1][i] = arr[vs][i];
 			}
-			for (int i = l; i <= r; i++) {
+			for (int i = l; i <= r-1; i++) {
 				arr[vs+1][i] = val;
 			}
 			vs++;
@@ -29,7 +29,7 @@ int main() {
 			int v, l, r;
 			scanf("%d%d%d", &v, &l, &r);
 			ll ret = 0;
-			for (int i = l; i <= r; i++) {
+			for (int i = l; i <= r-1; i++) {
 				ret = ret + arr[v][i];
 			}
 			printf("%lld\n", ret);

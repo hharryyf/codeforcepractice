@@ -118,7 +118,7 @@ void debug(segt *t, int dpt) {
 		debug(t->left, dpt + 1);
 	}
 }
-
+/* note that query is [l,r)*/
 int main() {
 	int vs = 0;
 	scanf("%d", &n);
@@ -130,12 +130,12 @@ int main() {
 			int l, r;
 			ll val;
 			scanf("%d%d%lld", &l, &r, &val);
-			version[vs] = update(l, r, version[vs-1], val);
+			version[vs] = update(l, r-1, version[vs-1], val);
 			vs++;
 		} else {
 			int v, l, r;
 			scanf("%d%d%d", &v, &l, &r);
-			printf("%lld\n", queryversion(l, r, v));
+			printf("%lld\n", queryversion(l, r-1, v));
 		}
 		q--;
 	}
