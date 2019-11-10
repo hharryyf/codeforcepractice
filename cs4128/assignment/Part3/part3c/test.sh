@@ -1,5 +1,5 @@
 #!/bin/bash
-g++ -Wall -o c1 werewolf.cpp 
+g++ -Wall -o c1 t2.cpp 
 g++ -Wall -o c2 jury.cpp
 g++ -Wall -o gen gen.cpp
 cpass=0

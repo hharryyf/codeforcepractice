@@ -65,7 +65,7 @@ int ans[MAX_SIZE >> 1];
 
 // solve all the points and queries, invariant, this function is only called when
 // the points and queries are added and pt.size = n, qr.size = q
-void solve() {
+void solve(vector<int> &ret) {
 	sort(qr.begin(), qr.end(), cmp_1);
 	sort(pt.begin(), pt.end(), cmp_2);
 	int i = 0, j = 0;
@@ -79,25 +79,135 @@ void solve() {
 	}	
 	
 	for (i = 1; i <= q; i++) {
-		cout << ans[i] << endl;
+		ret.push_back(ans[i]);
 	}
 }
 
-int main() {
-	scanf("%d%d", &n, &q);
+vector<int> g[MAX_SIZE >> 1];
+
+struct Construction {
+	int tp;
+	int k = 1;
+	int f[MAX_SIZE];
+	int parent[MAX_SIZE][19];
+	vector<int> rt[MAX_SIZE >> 1];
+	int dfsord[MAX_SIZE >> 1];
+	int subsz[MAX_SIZE >> 1];
+	Construction(int a) {
+		this->tp = a;
+	}
+	
+	
+	int find(int x) {
+		if (f[x] == x) return x;
+		return f[x] = find(f[x]);
+	}
+	
+	void dfs(int v) {
+		int i;
+		dfsord[v] = k++;
+		subsz[v] = 1;
+		
+		for (i = 1 ; i < 19; i++) {
+			parent[v][i] = parent[parent[v][i-1]][i-1];
+		}
+		
+		for (auto nv : rt[v]) {
+			dfs(nv);
+			subsz[v] = subsz[v] + subsz[nv];
+		}
+	}
+	
+	void build() {
+		int i;
+		for (int i = 1; i <= n; i++) {
+			f[i] = i;
+		}
+		// the first tree
+		if (tp == 0) {
+			
+			for (i = n; i >= 1; i--) {
+				for (auto v : g[i]) {
+					// only join from low to high
+					if (i < v) {
+						v = find(v);
+						if (v == i) continue;
+						f[v] = i;
+						parent[v][0] = i;
+						rt[i].push_back(v);
+					}
+				}
+			}
+			
+			dfs(1);
+		} else {
+		// the second tree
+			for (i = 1; i <= n; i++) {
+				for (auto v : g[i]) {
+					// only join from low to high
+					if (i > v) {
+						v = find(v);
+						if (v == i) continue;
+						f[v] = i;
+						parent[v][0] = i;
+						rt[i].push_back(v);
+					}
+				}
+			}
+			dfs(n);
+		}
+	}
+	
+	// give a point to start/end and an upper bound/lower bound
+	// return to the uppermost point it can reach in its connected component 
+	int getrange(int x, int l) {
+		int i;
+		for (i = 18; i >= 0; i--) {
+			if (parent[x][i] && ((tp == 0 && parent[x][i] >= l) || (parent[x][i] <= l && tp == 1))) {
+				x = parent[x][i];
+			}
+		}
+		
+		return x;
+	}
+};
+
+Construction t1 = Construction(0);
+Construction t2 = Construction(1);
+
+vector<int> check_validity(int N, vector<int> X, vector<int> Y, vector<int> S, vector<int> E, vector<int> L, vector<int> R) {
+	vector<int> ret;
+	n = N;
+	int m = (int) X.size();
+	q = (int) S.size();
+	
 	int i;
-	for (i = 1; i <= n; i++) {
+	for (i = 1; i <= m; i++) {
 		int x, y;
-		scanf("%d%d", &x, &y);
-		addpoint(x, y);
+		x = X[i-1];
+		y = Y[i-1];
+		x++;
+		y++;
+		g[x].push_back(y);
+		g[y].push_back(x);
+	}
+	
+	t1.build();
+	t2.build();
+	
+	for (i = 1; i <= n; i++) {
+		addpoint(t1.dfsord[i], t2.dfsord[i]);
 	}
 	
 	for (i = 1; i <= q; i++) {
-		int l, r, dn, up;
-		scanf("%d%d%d%d", &l, &r, &dn, &up);
-		addquery(l, r, dn, up, i);
+		int s = S[i-1] + 1, e = E[i-1] + 1, l = L[i-1] + 1, r = R[i-1] + 1;
+		s = t1.getrange(s, l);
+		e = t2.getrange(e, r);
+		addquery(t1.dfsord[s], t1.dfsord[s] + t1.subsz[s] - 1, 
+				 t2.dfsord[e], t2.dfsord[e] + t2.subsz[e] - 1, i);
 	}
 	
-	solve();
-	return 0;
+	
+	solve(ret);
+	return ret;
 }

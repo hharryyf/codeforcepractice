@@ -9,7 +9,7 @@ pair<int, int> pt[MAX_SIZE];
 
 int main() {
 	srand(time(NULL));
-	int n = 12 + rand() % 1000, q = 100 + rand() % 1000;
+	int n = 12 + rand() % 1000, q = max(n, 100 + rand() % 1000);
 	cout << n << " " << q << endl;
 	for (int i = 1; i <= n; i++) {
 		a[i] = b[i] = i;
