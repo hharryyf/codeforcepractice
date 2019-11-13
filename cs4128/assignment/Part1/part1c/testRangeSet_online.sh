@@ -4,11 +4,11 @@ g++ -Wall -o pt RangeSetQuery_online.cpp
 g++ -Wall -o gen genRangeSet_online.cpp
 cpass=0
 cfail=0
-for i in {1..1000}
+for i in {1..100}
 do	
 	./gen > input
-	./RangeSetQuery < input > out1
-	./pt < input > out2
+	time ./RangeSetQuery < input > out1
+	time ./pt < input > out2
 	if diff out1 out2
 	then
 	   echo "pass testcase $i" 

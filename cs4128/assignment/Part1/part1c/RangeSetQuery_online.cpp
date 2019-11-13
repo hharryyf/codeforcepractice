@@ -1,6 +1,6 @@
 #include <bits/stdc++.h>
 #define INF 1000000007
-#define MAX_SIZE 262192
+#define MAX_SIZE 524292
 typedef int ll;
 using namespace std;
 
@@ -108,7 +108,9 @@ int n, q;
 
 int main() {
 	int vs = 0;
+	int lst = 0;
 	scanf("%d", &n);
+	scanf("%d", &q);
 	version[vs++] = build(0, n);
 	unordered_map<int, int> h;
 	for (int i = 1 ; i <= n; i++) {
@@ -130,11 +132,13 @@ int main() {
 	
 	
 	
-	scanf("%d", &q);
+	
 	while (q > 0) {
 		int l, r;
 		scanf("%d%d", &l, &r);
-		printf("%d\n", queryversion(l, r, 3 * r));
+		// l = l ^ lst, r = r ^ lst;
+		lst = queryversion(l, r, 3 * r);
+		printf("%d\n", lst);
 		q--;
 	}
 	

@@ -8,12 +8,13 @@ int a[MAX_SIZE + 1];
 int main() {
 	int n, q;
 	scanf("%d", &n);
+	scanf("%d", &q);
 	int i;
 	for (i = 1; i <= n; i++) {
 		scanf("%d", &a[i]);
 	}
 	
-	scanf("%d", &q);
+	
 	while (q > 0) {
 		int l, r;
 		scanf("%d%d", &l, &r);

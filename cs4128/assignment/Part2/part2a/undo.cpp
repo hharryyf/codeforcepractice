@@ -59,19 +59,20 @@ void preprocess() {
 	}
 }
 
+char op[4];
+
 int main() {
 	scanf("%d", &n);
 	int q, i;
 	scanf("%d", &q);
 	preprocess();
 	for (i = 0 ; i < q; i++) {
-		int op;
-		scanf("%d", &op);
-		if (op == 1) {
+		scanf("%s", op);
+		if (op[0] == 'A') {
 			int a, b;
 			scanf("%d%d", &a, &b);
 			unionset(a, b);
-		} else if (op == 2) {
+		} else if (op[0] == 'D') {
 			disconnect();
 		} else {
 			int a, b;

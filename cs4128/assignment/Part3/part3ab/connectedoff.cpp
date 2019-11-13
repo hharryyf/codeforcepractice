@@ -42,7 +42,9 @@ void preprocess() {
 int ans[MAX_SIZE];
 
 int main() {
+	int q;
 	scanf("%d%d", &n, &m);
+	scanf("%d", &q);
 	preprocess();
 	int i, j;
 	for (i = 0 ; i < m; i++) {
@@ -51,11 +53,10 @@ int main() {
 		builds.push_back(make_pair(ti, make_pair(v1, v2)));
 	}	
 	
-	int q;
-	scanf("%d", &q);
+	
 	for (i = 0 ; i < q; i++) {
 		int ci, ti;
-		scanf("%d%d", &ti, &ci);
+		scanf("%d%d", &ci, &ti);
 		qrs.push_back(make_pair(make_pair(ti, ci), i));
 	}
 	

@@ -8,6 +8,7 @@ int main() {
 	int m = 2 * n + rand() % n;
 	int q = m + rand() % n;
 	cout << n << " " << m << endl;
+	cout << q << endl;
 	while (m > 0) {
 		int v1 = 1 + rand() % n;
 		int v2 = 1 + rand() % n;
@@ -15,7 +16,7 @@ int main() {
 		cout << v1 << " " << v2 << " " << ti << endl;
 		m--;
 	}
-	cout << q << endl;
+	
 	while (q > 0) {
 		int ti = 1 + rand() % (2 * n);
 		int ci = 1 + rand() % n;

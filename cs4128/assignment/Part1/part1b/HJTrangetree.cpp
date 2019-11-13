@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
-#define INF 1000000007
+#define INF 0
 #define MAX_SIZE 262192
-typedef long long ll;
+typedef int ll;
 using namespace std;
 
 struct segt {
@@ -80,10 +80,11 @@ ll query(int start, int end, segt *t) {
 segt *update(int start, int end, segt *t, ll val) {
 	if (start > end || t == NULL) return NULL;
 	segt *ret = new segt(t->l, t->r);
+	pushdown(t);
+	
 	ret->left = t->left, ret->right = t->right;
 	ret->rsum = t->rsum;
 	ret->lz = t->lz;
-	pushdown(ret);
 	
 	if (start > t->r || t->l > end) return ret;
 	
@@ -93,9 +94,19 @@ segt *update(int start, int end, segt *t, ll val) {
 		return ret;
 	}
 	
-	ret->left = update(start, end, ret->left, val);
-	ret->right = update(start, end, ret->right, val);
-	ret->rsum = ret->left->rsum + ret->right->rsum;
+	int mid = t->l + (t->r - t->l) / 2;
+	if (end <= mid) { 
+		ret->left = update(start, end, t->left, val);
+	} else if (start >= mid + 1) {
+		ret->right = update(start, end, t->right, val);
+	} else {
+		ret->left = update(start, end, t->left, val);
+		ret->right = update(start, end, t->right, val);
+	}
+	
+	ll c1 = ret->left == NULL ? 0 : ret->left->rsum;
+	ll c2 = ret->right == NULL ? 0 : ret->right->rsum;
+	ret->rsum = c1 + c2;
 	return ret;
 }
 
@@ -122,23 +133,32 @@ void debug(segt *t, int dpt) {
 int main() {
 	int vs = 0;
 	scanf("%d", &n);
-	version[vs++] = build(1, n);
+	version[vs++] = build(0, n);
 	scanf("%d", &q);
+	ll lst = 0;
 	while (q > 0) {
 		scanf("%s", str);
 		if (str[0] == 'U') {
 			int l, r;
 			ll val;
-			scanf("%d%d%lld", &l, &r, &val);
+			scanf("%d%d%d", &l, &r, &val);
+		    // l = l ^ lst;
+		    // r = r ^ lst;
+		    // val = val ^ lst;
 			version[vs] = update(l, r-1, version[vs-1], val);
 			vs++;
 		} else {
 			int v, l, r;
 			scanf("%d%d%d", &v, &l, &r);
-			printf("%lld\n", queryversion(l, r-1, v));
+			// v = v ^ lst;
+			// l = l ^ lst;
+			// r = r ^ lst;
+			lst = queryversion(l, r-1, v);
+			printf("%d\n", lst);
 		}
 		q--;
 	}
-
+	
+	exit(0);
 	return 0;
 }

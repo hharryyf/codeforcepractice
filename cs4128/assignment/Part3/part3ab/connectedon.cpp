@@ -83,6 +83,8 @@ int getsize(int v, int ti) {
 
 int main() {
 	scanf("%d%d", &n, &m);
+	int q;
+	scanf("%d", &q);
 	int i;
 	for (i = 0 ; i < m; i++) {
 		int v1, v2, ti;
@@ -99,12 +101,15 @@ int main() {
 		int v1 = p.second.first, v2 = p.second.second;
 		unionset(v1, v2, ti);
 	}
-	int q;
-	scanf("%d", &q);
+	
+	int lst = 0;
 	while (q > 0) {
 		int ti, ci;
-		scanf("%d%d", &ti, &ci);
-		printf("%d\n", getsize(ci, ti));
+		scanf("%d%d", &ci, &ti);
+		ci = ci ^ lst;
+		ti = ti ^ lst;
+		lst = getsize(ci, ti);
+		printf("%d\n", lst);
 		q--;
 	}
 	return 0;

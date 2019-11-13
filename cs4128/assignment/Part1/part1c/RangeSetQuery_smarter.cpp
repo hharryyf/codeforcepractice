@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#define MAX_SIZE 131073
+#define MAX_SIZE 262192
 
 using namespace std;
 
@@ -55,6 +55,7 @@ int query(int start, int end, int l, int r, int index) {
 int main() {
 	int i, j;
 	scanf("%d", &n);
+	scanf("%d", &q);
 	unordered_map<int, int> h;
 	for (i = 1 ; i <= n; i++) {
 		scanf("%d", &val[i]);
@@ -68,7 +69,7 @@ int main() {
 		h[val[i]] = i;
 		
 	}	
-	scanf("%d", &q);
+	
 	for (i = 0 ; i < q; i++) {
 		int v1, v2;
 		scanf("%d%d", &v1, &v2);

@@ -175,17 +175,15 @@ struct Construction {
 Construction t1 = Construction(0);
 Construction t2 = Construction(1);
 
-vector<int> check_validity(int N, vector<int> X, vector<int> Y, vector<int> S, vector<int> E, vector<int> L, vector<int> R) {
+void check_validity() {
 	vector<int> ret;
-	n = N;
-	int m = (int) X.size();
-	q = (int) S.size();
+	int m;
+	scanf("%d%d%d", &n, &m, &q);
 	
 	int i;
 	for (i = 1; i <= m; i++) {
 		int x, y;
-		x = X[i-1];
-		y = Y[i-1];
+		scanf("%d%d", &x, &y);
 		x++;
 		y++;
 		g[x].push_back(y);
@@ -200,7 +198,9 @@ vector<int> check_validity(int N, vector<int> X, vector<int> Y, vector<int> S, v
 	}
 	
 	for (i = 1; i <= q; i++) {
-		int s = S[i-1] + 1, e = E[i-1] + 1, l = L[i-1] + 1, r = R[i-1] + 1;
+		int s, e, l, r;
+		scanf("%d%d%d%d", &s, &e, &l, &r);
+		s++, e++, l++, r++;
 		s = t1.getrange(s, l);
 		e = t2.getrange(e, r);
 		addquery(t1.dfsord[s], t1.dfsord[s] + t1.subsz[s] - 1, 
@@ -209,5 +209,13 @@ vector<int> check_validity(int N, vector<int> X, vector<int> Y, vector<int> S, v
 	
 	
 	solve(ret);
-	return ret;
+	
+	for (auto rr : ret) {
+		cout << rr << endl;
+	}
+}
+
+int main() {
+	check_validity();
+	return 0;
 }

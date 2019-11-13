@@ -112,17 +112,19 @@ void insert(int start, int end, int l, int r, int index, pair<int, int> p) {
 	insert(start, end, mid + 1, r, index * 2 + 1, p);
 }
 
+char op[4];
+
 int main() {
 	scanf("%d%d", &n, &q);
 	preprocess();
 	int i;
 	for (i = 1; i <= q; i++) {
-		int op, v1, v2;
-		scanf("%d", &op);
-		if (op == 1) {
+		int v1, v2;
+		scanf("%s", op);
+		if (op[0] == 'A') {
 			scanf("%d%d", &v1, &v2);
 			queries[i] = edge{v1, v2, i, q};
-		} else if (op == 2) {
+		} else if (op[0] == 'D') {
 			int qq;
 			scanf("%d", &qq);
 			queries[qq].end = i;
