@@ -131,18 +131,18 @@ int main() {
 			int l, r;
 			ll val;
 			scanf("%d%d%d", &l, &r, &val);
-		    l = l ^ lst;
-		    r = r ^ lst;
-		    val = val ^ lst;
+		    //l = l ^ lst;
+		    //r = r ^ lst;
+		    //val = val ^ lst;
 			version[vs] = update(l, r-1, 0, n, version[vs-1], val);
 			//cout << "--" << version[vs] << endl; 
 			vs++;
 		} else {
 			int v, l, r;
 			scanf("%d%d%d", &v, &l, &r);
-			v = v ^ lst;
-			l = l ^ lst;
-			r = r ^ lst;
+			//v = v ^ lst;
+			//l = l ^ lst;
+			//r = r ^ lst;
 			lst = queryversion(l, r-1, v);
 			printf("%d\n", lst);
 		}
