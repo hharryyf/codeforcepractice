@@ -176,4 +176,11 @@ https://codeforces.com/contest/149/problem/D
 55. Periodic RMQ Problem (Educational Codeforces Round 20, diff=2500, segment tree and point compression)
 https://codeforces.com/contest/803/problem/G
 
+Nov 17 to Nov 24:
+56. Cow (Poj2481, line sweep and fenwick tree)
+https://vjudge.net/problem/POJ-2481
+
+57. Stars in Your Window (Poj2482, line sweep and segment tree lazy propagation)
+https://vjudge.net/problem/POJ-2482
+
 
