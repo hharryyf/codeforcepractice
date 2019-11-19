@@ -152,7 +152,32 @@ https://codeforces.com/problemset/problem/1083/E
 F. Land Acquisition (stack and dp convexhull, quite interesting but not hard)
 https://www.spoj.com/problems/ACQUIRE/
 
-G. DayAndNight
+G. DayAndNight (this problem is unsolvable!)
 https://vjudge.net/contest/341068#problem/G
 
+week8: dp optimization
+A. Set Difference (math, very easy)
+https://www.codechef.com/problems/SETDIFF
+
+B. Math (number theory, div2, diff=1600)
+https://codeforces.com/problemset/problem/1062/B
+
+C. Guardians of the Lunatics (dp and divide and conquer, very easy)
+https://vjudge.net/contest/342785#problem/C
+
+D. Magic Gems (exponential by squaring and dp, div2, diff=2000)
+https://codeforces.com/problemset/problem/1117/D
+
+E. Kyoya and Colored Balls (dp, div1, diff=1700)
+https://codeforces.com/problemset/problem/553/A
+
+F. Another Filling the Grid (dp, div2, diff=2300)
+https://codeforces.com/problemset/problem/1228/E
+
+G. Yet Another Minimization Problem (dp and divide and conquer, div1, diff=2500)
+https://codeforces.com/problemset/problem/868/F
+
+week9: number theory and counting
+A. Almost Prime Numbers Again (number theory and counting, very simple)
+https://www.spoj.com/problems/KPRIMESB/
 
