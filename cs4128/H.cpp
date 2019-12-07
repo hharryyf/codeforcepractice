@@ -117,12 +117,13 @@ int main() {
 		int mid = low + (high - low) / 2;
 		init();
 		s = 0;
-		t = 2 * n + 1;
+		t = 2 * n + 2;
 		for (int i = 1 ; i <= mid; i++) {
 			if (keys[i].size()) {
-				addedge(s, i, 1);
-				addedge(s, i + n, 1);
+				addedge(s, i, INF);
+				addedge(i, i + n, 1);
 			}
+			
 			
 			for (auto kk : keys[i]) {
 				if (kk <= mid) {		
