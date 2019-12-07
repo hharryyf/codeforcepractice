@@ -111,7 +111,7 @@ int main() {
 			tt--;
 		}
 	}
-	
+	cout << n << endl;
 	int ans = 1;
 	while (low <= high) {
 		int mid = low + (high - low) / 2;
@@ -120,19 +120,23 @@ int main() {
 		t = 2 * n + 2;
 		for (int i = 1 ; i <= mid; i++) {
 			if (keys[i].size()) {
-				addedge(s, i, INF);
-				addedge(i, i + n, 1);
+				addedge(s, i, 1);
+				addedge(s, i + n, 1);
 			}
 			
 			
 			for (auto kk : keys[i]) {
 				if (kk <= mid) {		
 					addedge(i + n, kk, 1);
+					cout << "(" << i+n << " ," << kk << ")" << endl;
 				}
 			}
 			
 			addedge(i, t, 1);
+			cout << "(" << i << " ," << t << ")" << endl;
 		}
+		
+		cout << endl;
 		
 		if (mid == Dinic()) {
 			ans = mid;
