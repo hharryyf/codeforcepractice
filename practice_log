@@ -239,3 +239,6 @@ https://codeforces.com/problemset/problem/1082/G
 
 75. Jeff and Removing Periods (diff=2700, fenwick tree, line sweep)
 https://codeforces.com/contest/351/problem/D
+
+76. Soldier and Traveling (diff=2300, Dinic's algorithm and extracting flow)
+https://codeforces.com/contest/546/problem/E
