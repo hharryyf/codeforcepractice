@@ -242,3 +242,6 @@ https://codeforces.com/contest/351/problem/D
 
 76. Soldier and Traveling (diff=2300, Dinic's algorithm and extracting flow)
 https://codeforces.com/contest/546/problem/E
+
+77. Exploration plan (diff=2400, Dinic's algorithm and Floyd algorithm and binary search for final answer)
+https://codeforces.com/problemset/problem/852/D
