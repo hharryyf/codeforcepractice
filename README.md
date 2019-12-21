@@ -1,3 +1,249 @@
 # codeforce practice
 codeforce practice summary update everyday
 
+Aug 30 to Sep8:
+
+1. Rooks and Rectangles (div1, diff=2400, segmenttree and line sweep)
+http://codeforces.com/problemset/problem/524/E
+
+2. Cannon (div2, diff=2100, two pointers)
+http://codeforces.com/problemset/problem/47/E
+
+3. Buses and People (div2, diff=2400, segmenttree and line sweep)
+https://codeforces.com/contest/160/problem/E
+
+4. Summer Homework (diff=2500, segmenttree and math)
+http://codeforces.com/problemset/problem/316/E3
+
+5. Sum of Medians (diff=2200, segmenttree and divide and conquer)
+https://codeforces.com/problemset/problem/85/D
+
+6. Fire (div2, diff=2000, dynamic programming)
+http://codeforces.com/problemset/problem/864/E
+
+7. Package Delivery (div1/2, diff=2300, greedy)
+https://codeforces.com/problemset/problem/627/C
+
+8. Let Them Slide (div1/2, diff=2200, segmenttree and lazypropagation)
+http://codeforces.com/problemset/problem/1208/E
+
+9. Stripe 2 (codeforces round #21, diff=2300, dynamic programming)
+http://codeforces.com/problemset/problem/21/C
+
+10. Bulmart (2016-2017 ACM-ICPC, NEERC, Southern Subregional Contest, diff=2200, greedy and binary search)
+http://codeforces.com/problemset/problem/730/C
+
+11. Preparing for the Contest (div1, diff=2100, greedy and binary search)
+http://codeforces.com/problemset/problem/377/B
+
+12. GukiZ hates Boxes (div2, diff=2200, greedy and binary search)
+https://codeforces.com/problemset/problem/551/C
+
+13. Stressful Training (div2, diff=2300, greedy and binary search)
+http://codeforces.com/problemset/problem/1132/D
+
+14. On Changing Tree (div1, diff=2400, segmenttree and dfs)
+http://codeforces.com/contest/396/problem/C
+
+Sep 9 to Sep 16:
+
+15. Frogs and mosquitoes (div2, diff=2500, segmenttree, greedy and set)
+http://codeforces.com/contest/609/problem/F
+
+16. Noise Level (div2, diff=2000, graph, bfs)
+http://codeforces.com/contest/847/problem/I
+
+17. Reachability from the Capital (div3, diff=1900, strongly connected component)
+http://codeforces.com/contest/999/problem/E
+
+18. Checkposts (div2, diff=1700, strongly connected component)
+https://codeforces.com/contest/427/problem/C
+
+19. Inna and Binary Logic (div2, diff=2400, segment tree and divide and conquer)
+https://codeforces.com/contest/400/problem/E
+
+20. Online Courses In BSU (VK Cup 2017 - Qualification 2, diff=1900, topological sort)
+https://codeforces.com/contest/770/problem/C
+
+21. The Child and Sequence (div2, diff=2300, segment tree and math)
+https://codeforces.com/contest/438/problem/D
+
+22. Closest Equals (VK Cup 2015 - Qualification Round 1, diff=2200, segment tree and sliding windows)
+https://codeforces.com/contest/522/problem/D
+
+23. One Occurrence (div2, diff=2400, segment tree and two pointers)
+https://codeforces.com/problemset/problem/1000/F
+
+24. Vasya and a Tree (div2, diff=1900, dfs definition and offline segment tree)
+https://codeforces.com/problemset/problem/1076/E
+
+25. Little Elephant and Tree (div1, diff=2400, dfs and offline segment tree)
+https://codeforces.com/problemset/problem/258/E
+
+26. Water Tree (div1, diff=2100, dfs and segment tree)
+https://codeforces.com/contest/343/problem/D
+
+
+Sep 17 to Sep 23:
+27. Buy a Ticket (div2, diff=2000, graph modification and dijkstra)
+https://codeforces.com/contest/938/problem/D
+
+28. 0-1-Tree (div2, diff=2300, tree DP) this problem needs more working on it!
+https://codeforces.com/contest/1156/problem/D
+
+29. Please, another Queries on Array? (div2, diff=2500, segment tree, bitset and math)
+https://codeforces.com/problemset/problem/1114/F
+
+30. Misha, Grisha and Underground (div2, diff=1900, math and lca using rmq)
+https://codeforces.com/contest/832/problem/D
+
+31. Kilani and the Game (div2, diff=1900, bfs) 
+https://codeforces.com/problemset/problem/1105/D
+
+32. Bertown roads (div2, diff=2100, tarjan's bridge finding algorithm)
+https://codeforces.com/problemset/problem/118/E
+
+Sep 24 to Sep 30:
+33. Scheme (div2, diff=2400, tarjan's scc and point compression)
+https://codeforces.com/contest/22/problem/E
+
+34. Roads not only in Berland (div2, diff=1900, Kruskal MST)
+https://codeforces.com/problemset/problem/25/D
+
+Oct 1 to Oct 7:
+35. Legency (div1, diff=2600, segment tree and dijkstra)
+https://codeforces.com/problemset/problem/786/B
+
+36. Paths and Trees (div2, diff=2100, dijkstra)
+https://codeforces.com/problemset/problem/545/E
+
+37. st- spanning tree (div2, diff=2200, kruskal and greedy)
+https://codeforces.com/problemset/problem/723/F
+
+38. Queue (Codeforces Beta Round, diff=2300, AVL tree)
+https://codeforces.com/contest/38/problem/G
+
+Oct 8 to Oct 13:
+39. The Shortest Statement (div2, diff=2300, dijkstra and LCA) 
+https://codeforces.com/problemset/problem/1051/F
+
+40. Strictly Positive Matrix (div2, diff=2200, tarjan scc and math)
+https://codeforces.com/problemset/problem/402/E
+
+41. Analysis of Pathes in Functional Graph (div2, diff=2100, binary lifting) 
+https://codeforces.com/problemset/problem/702/E
+
+42. We Need More Bosses (div2, diff=2100, tarjan and tree dp)
+https://codeforces.com/problemset/problem/1000/E
+
+Oct 14 to Oct 20:
+43. Beautiful numbers (div2, diff=2400, dight dp)
+https://codeforces.com/problemset/problem/55/D
+
+44. Magic Numbers (div2, diff=2200, digit dp)
+https://codeforces.com/problemset/problem/628/D
+
+45. Roman and Numbers (div2, diff=2000, digit dp and bitmask)
+https://codeforces.com/problemset/problem/401/D
+
+46. Segment Sum (div2, diff=2300, digit dp and bitmask)
+https://codeforces.com/problemset/problem/1073/E
+
+Oct 21 to Oct 27:
+47. Ilya and Roads (div2, diff=2100, DP and greedy)
+https://codeforces.com/problemset/problem/313/D
+
+48. Lunar New Year and Red Envelopes (div2, diff=2100, DP and line sweep)
+https://codeforces.com/problemset/problem/1106/E
+
+49. Sequence (Codeforces Beta Round #13, diff=2200, DP)
+https://codeforces.com/contest/13/problem/C
+
+50. Bad Luck Island (div2, diff=2100, DP and probability)
+https://codeforces.com/contest/540/problem/D
+
+51. Linear Kingdom Race (div1, diff=2400, DP and segment tree and line sweep)
+https://codeforces.com/contest/115/problem/E
+
+52. Trains and Statistic (div2, diff=2500, DP and segment tree and greedy) 
+https://codeforces.com/contest/675/problem/E
+
+53. Bear and Tree Jumps (VK Cup 2017 - Round 1, diff=2100, tree DP)
+https://codeforces.com/problemset/problem/771/C
+
+OCt 28 to Nov 3:
+54. Coloring Brackets (div2, diff=2200, interval DP) 
+https://codeforces.com/contest/149/problem/D
+
+55. Periodic RMQ Problem (Educational Codeforces Round 20, diff=2500, segment tree and point compression)
+https://codeforces.com/contest/803/problem/G
+
+Nov 17 to Nov 24:
+56. Cow (Poj2481, line sweep and fenwick tree)
+https://vjudge.net/problem/POJ-2481
+
+57. Stars in Your Window (Poj2482, line sweep and segment tree lazy propagation)
+https://vjudge.net/problem/POJ-2482
+
+58. Camping Groups (Croc Champ 2012 - Round 1, line sweep & fenwick tree & segment tree, diff=2600)
+https://codeforces.com/contest/173/problem/E
+
+Nov 25 to Dec 11:
+59. A and B and Lecture Rooms (div2, diff=2300, LCA and dfs)
+https://codeforces.com/contest/519/problem/E
+
+60. Road Improvement (div1, diff=2300, dp // worst problem I've ever seen)
+https://codeforces.com/problemset/problem/543/D
+
+61. Little Elephant and Inversions (div1, diff=2400, fenwick tree and line sweep) 
+https://codeforces.com/contest/220/problem/E
+
+62. Yaroslav and Divisors (div1, diff=2200, fenwick tree and line sweep) 
+https://codeforces.com/contest/301/problem/D
+
+63. Bear and Bowling 4 (Educational Codeforces Round 11, diff=2500, convex-hull and dp)
+https://codeforces.com/contest/660/problem/F
+
+64. Tree (div1 + div2, diff=2200, binary-lifting and dp) 
+https://codeforces.com/contest/932/problem/D
+
+65. Send the Fool Further! (medium) (Helvetic Coding Contest 2017, diff=2100, tree dp) 
+https://codeforces.com/contest/802/problem/K
+
+66. Tree with Maximum Cost (div3, diff=2100, tree dp)
+https://codeforces.com/contest/1092/problem/F
+
+
+Dec 12 to Feb 18:
+67. Dog Food (div2, diff=2300, greedy)
+https://codeforces.com/contest/847/problem/D
+
+68. Berland University (diff=2100, greedy and binary search)
+https://codeforces.com/contest/1090/problem/L
+
+69. Complete The Graph (diff=2200, dijkstra)
+https://codeforces.com/problemset/problem/715/B
+
+70. Three States (diff=2200, dijkstra)
+https://codeforces.com/problemset/problem/590/C
+
+71. Case of Chocolate (diff=2500, range tree)
+https://codeforces.com/problemset/problem/555/C
+
+72. REQ (diff=2500, range tree and sweeping and number theory)
+https://codeforces.com/problemset/problem/594/D
+
+73. Wires (diff=2200, graph and dfs)
+https://codeforces.com/problemset/problem/1250/N
+
+74. Petya and Graph (diff=2400, Dinic's algorithm and maximum enclosure graph)
+https://codeforces.com/problemset/problem/1082/G
+
+75. Jeff and Removing Periods (diff=2700, fenwick tree, line sweep)
+https://codeforces.com/contest/351/problem/D
+
+76. Soldier and Traveling (diff=2300, Dinic's algorithm and extracting flow)
+https://codeforces.com/contest/546/problem/E
+
+77. Exploration plan (diff=2400, Dinic's algorithm and Floyd algorithm and binary search for final answer)
+https://codeforces.com/problemset/problem/852/D
