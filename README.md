@@ -263,3 +263,7 @@ https://codeforces.com/problemset/problem/852/D
 78. Valera and Queries (diff=2400, fenwick tree, line sweep)
 https://codeforces.com/problemset/problem/369/E
 
+79. Minimal Labels (diff=2400, greedy and topological sort)
+https://codeforces.com/problemset/problem/825/E
+
+
