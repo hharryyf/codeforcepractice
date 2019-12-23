@@ -271,3 +271,6 @@ https://codeforces.com/problemset/problem/838/B
 
 81. Flipping Frustration (extended euclidian algorithm)
 https://vjudge.net/problem/UVA-11312
+
+82. Airport Express (dijkstra, path construction)
+https://vjudge.net/problem/UVA-11374
