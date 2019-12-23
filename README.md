@@ -268,3 +268,6 @@ https://codeforces.com/problemset/problem/825/E
 
 80. Diverging Directions (diff=2100, LCA and range tree and dfs)
 https://codeforces.com/problemset/problem/838/B
+
+81. Flipping Frustration (extended euclidian algorithm)
+https://vjudge.net/problem/UVA-11312
