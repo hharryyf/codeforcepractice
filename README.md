@@ -277,3 +277,6 @@ https://vjudge.net/problem/UVA-11374
 
 83. Drivers Dissatisfaction (diff=2500, Kruskal, greedy, LCA)
 https://codeforces.com/contest/733/problem/F
+
+84. Tourist Reform (diff=2400, tarjan's algorithm, bridge finding and biconnected component)
+https://codeforces.com/contest/732/problem/F
