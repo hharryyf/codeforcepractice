@@ -283,3 +283,6 @@ https://codeforces.com/contest/732/problem/F
 
 85. Robots in a DAG (codechef, Dinic's algorithm, construct flow graph in stages)
 https://www.codechef.com/problems/ROBOTDAG
+
+86. The K-League (uva, Dinic's algorithm, allocation problem)
+https://vjudge.net/problem/UVA-1306
