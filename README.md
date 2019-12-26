@@ -286,3 +286,6 @@ https://www.codechef.com/problems/ROBOTDAG
 
 86. The K-League (uva, Dinic's algorithm, allocation problem)
 https://vjudge.net/problem/UVA-1306
+
+87. Gripping Story (diff=2400, range tree, amortized complexity and searching)
+https://codeforces.com/problemset/problem/198/E
