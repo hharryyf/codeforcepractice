@@ -289,3 +289,6 @@ https://vjudge.net/problem/UVA-1306
 
 87. Gripping Story (diff=2400, range tree, amortized complexity and searching)
 https://codeforces.com/problemset/problem/198/E
+
+88. Radio stations (diff=2400, line sweep and dynamic range tree)
+https://codeforces.com/problemset/problem/762/E
