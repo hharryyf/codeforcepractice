@@ -295,3 +295,6 @@ https://codeforces.com/problemset/problem/762/E
 
 89. Developing Game (diff=2400, line sweep and range tree, solved after reading solutions, problem reduction part is stunning)
 https://codeforces.com/contest/377/problem/D
+
+90. Army Creation (diff=2300, persistent range tree)
+https://codeforces.com/problemset/problem/813/E
