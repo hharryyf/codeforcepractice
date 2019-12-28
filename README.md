@@ -301,3 +301,7 @@ https://codeforces.com/problemset/problem/813/E
 
 91. Board Game (diff=2400, range tree searching, BFS) 
 https://codeforces.com/problemset/problem/605/D
+
+92. DQUERY (spoj, Mo's algorithm (range tree/fenwick tree definitly works but Mo's algorithm is excited))
+https://vjudge.net/problem/SPOJ-DQUERY
+
