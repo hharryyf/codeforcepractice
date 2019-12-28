@@ -298,3 +298,6 @@ https://codeforces.com/contest/377/problem/D
 
 90. Army Creation (diff=2300, persistent range tree)
 https://codeforces.com/problemset/problem/813/E
+
+91. Board Game (diff=2400, range tree searching, BFS) 
+https://codeforces.com/problemset/problem/605/D
