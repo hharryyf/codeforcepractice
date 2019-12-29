@@ -305,3 +305,5 @@ https://codeforces.com/problemset/problem/605/D
 92. DQUERY (spoj, Mo's algorithm (range tree/fenwick tree definitly works but Mo's algorithm is excited))
 https://vjudge.net/problem/SPOJ-DQUERY
 
+93. Tree and Queries (diff=2400, Mo's algorithm)
+https://codeforces.com/contest/375/problem/D
