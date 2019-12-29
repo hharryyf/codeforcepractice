@@ -307,3 +307,6 @@ https://vjudge.net/problem/SPOJ-DQUERY
 
 93. Tree and Queries (diff=2400, Mo's algorithm)
 https://codeforces.com/contest/375/problem/D
+
+94. Tempter of the Bone (hdu, dfs and backtracking and pruning)
+https://vjudge.net/problem/HDU-1010
