@@ -5,6 +5,22 @@
 typedef long long ll;
 using namespace std;
 
+/*
+  This problem was the 10th 2400+ data structure problem solved during the holiday.
+  This problem use exactly the same trick as codeforce817f MEX query, we
+  need to manage 2 tags at the same time.
+  Firstly, we can observe that we just need to answer for all numbers from -1e5 to 1e5
+  at the end of the operation is it sign flipped or not
+  we use 1 to represent non-flip, -1 -> flip
+  Then, the problem simply reduce to the following, for each update, we set [-1e5, -v] to -1
+  invert the bit of [-v + 1, v-1], set [v, 1e5] to 1.
+  Of course, edge cases such as v > 0, v < 0 should be considered.
+  
+  Then the lazy propagation part would be quite straight forward. if we meet a set tag, we cancel the
+  invert tag of the child and change the set tag of the child. if we meet an invert tag, we invert the 
+  child's invert tag.
+*/
+
 const int L = 0, R = 200000, shift = 100000;
 
 struct segt {
