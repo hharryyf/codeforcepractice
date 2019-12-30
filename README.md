@@ -313,3 +313,6 @@ https://vjudge.net/problem/HDU-1010
 
 95. Hot is Cold (diff=2400, range tree and 2-tag lazy propagation, exactly the same technique as codeforce817f MEX query)
 https://codeforces.com/problemset/problem/1146/E
+
+96. K-th Number (poj, persistent range tree, searching)
+https://vjudge.net/problem/POJ-2104
