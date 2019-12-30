@@ -310,3 +310,6 @@ https://codeforces.com/contest/375/problem/D
 
 94. Tempter of the Bone (hdu, dfs and backtracking and pruning)
 https://vjudge.net/problem/HDU-1010
+
+95. Hot is Cold (diff=2400, range tree and 2-tag lazy propagation, exactly the same technique as codeforce817f MEX query)
+https://codeforces.com/problemset/problem/1146/E
