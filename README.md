@@ -316,3 +316,6 @@ https://codeforces.com/problemset/problem/1146/E
 
 96. K-th Number (poj, persistent range tree, searching)
 https://vjudge.net/problem/POJ-2104
+
+97. George and Cards (diff=2500, sparse table and fenwick tree and binary search)
+https://codeforces.com/contest/387/problem/E
