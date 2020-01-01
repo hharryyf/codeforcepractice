@@ -325,3 +325,6 @@ https://codeforces.com/problemset/problem/840/D
 
 99. Startup Funding (diff=2400, binary search and sparse table and probability)
 https://codeforces.com/problemset/problem/633/E
+
+100. Traffic Jams in the Land (diff=2400, range tree, divide and conquer, math observation)
+https://codeforces.com/contest/498/problem/D
