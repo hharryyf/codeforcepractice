@@ -319,3 +319,6 @@ https://vjudge.net/problem/POJ-2104
 
 97. George and Cards (diff=2500, sparse table and fenwick tree and binary search)
 https://codeforces.com/contest/387/problem/E
+
+98. Destiny (diff=2400, persistent range tree finding kth largest number and observation)
+https://codeforces.com/problemset/problem/840/D
