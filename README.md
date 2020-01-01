@@ -322,3 +322,6 @@ https://codeforces.com/contest/387/problem/E
 
 98. Destiny (diff=2400, persistent range tree finding kth largest number and observation)
 https://codeforces.com/problemset/problem/840/D
+
+99. Startup Funding (diff=2400, binary search and sparse table and probability)
+https://codeforces.com/problemset/problem/633/E
