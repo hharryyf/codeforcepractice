@@ -331,3 +331,6 @@ https://codeforces.com/contest/498/problem/D
 
 101. Fire in the City (diff=2500, line sweep and binary search for final answer)
 https://codeforces.com/contest/845/problem/E
+
+102. Yet Another Multiple Problem (2012 chengdu regional contest, BFS on numbers)
+https://vjudge.net/problem/UVA-1653
