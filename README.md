@@ -328,3 +328,6 @@ https://codeforces.com/problemset/problem/633/E
 
 100. Traffic Jams in the Land (diff=2400, range tree, divide and conquer, math observation)
 https://codeforces.com/contest/498/problem/D
+
+101. Fire in the City (diff=2500, line sweep and binary search for final answer)
+https://codeforces.com/contest/845/problem/E
