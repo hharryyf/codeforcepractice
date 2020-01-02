@@ -334,3 +334,6 @@ https://codeforces.com/contest/845/problem/E
 
 102. Yet Another Multiple Problem (2012 chengdu regional contest, BFS on numbers)
 https://vjudge.net/problem/UVA-1653
+
+103. Angry Programmer (uva, a very simple max flow problem on vertex capacity)
+https://vjudge.net/problem/UVA-11506
