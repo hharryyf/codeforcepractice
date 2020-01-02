@@ -337,3 +337,6 @@ https://vjudge.net/problem/UVA-1653
 
 103. Angry Programmer (uva, a very simple max flow problem on vertex capacity)
 https://vjudge.net/problem/UVA-11506
+
+104. Sorting It All Out (poj, uniqueness of top-sort)
+https://vjudge.net/problem/POJ-1094
