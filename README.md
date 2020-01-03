@@ -343,3 +343,6 @@ https://vjudge.net/problem/POJ-1094
 
 105. A Famous Grid (spoj, SIEVE and BFS, create a larger grid to deal with the walk out case!)
 https://vjudge.net/problem/SPOJ-SPIRALGR
+
+106. Mushroom Gnomes - 2 (diff=2500, range tree and probability)
+https://codeforces.com/contest/138/problem/C
