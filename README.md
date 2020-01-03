@@ -340,3 +340,6 @@ https://vjudge.net/problem/UVA-11506
 
 104. Sorting It All Out (poj, uniqueness of top-sort)
 https://vjudge.net/problem/POJ-1094
+
+105. A Famous Grid (spoj, SIEVE and BFS, create a larger grid to deal with the walk out case!)
+https://vjudge.net/problem/SPOJ-SPIRALGR
