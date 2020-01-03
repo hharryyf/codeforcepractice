@@ -346,3 +346,7 @@ https://vjudge.net/problem/SPOJ-SPIRALGR
 
 106. Mushroom Gnomes - 2 (diff=2500, range tree and probability)
 https://codeforces.com/contest/138/problem/C
+
+107. Following Orders (uva, top-sort BFS approach with backtracking, extracting all top-sort order in dictionary order, good template)
+https://vjudge.net/problem/UVA-124
+
