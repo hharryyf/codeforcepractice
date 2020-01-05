@@ -353,3 +353,6 @@ https://vjudge.net/problem/UVA-124
 108. Nastya and King-Shamans (diff=2600, range tree and pruning, learned a valuable lesson in time complexity analysis)
 https://codeforces.com/contest/992/problem/E
 
+109. Functions on the segments (diff-2600, persistent range tree, solved after getting feedback for 9 times! Note that if only single point value is required we don't need lazy tag!)
+https://codeforces.com/contest/837/problem/G
+
