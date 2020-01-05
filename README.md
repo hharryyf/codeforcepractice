@@ -350,3 +350,6 @@ https://codeforces.com/contest/138/problem/C
 107. Following Orders (uva, top-sort BFS approach with backtracking, extracting all top-sort order in dictionary order, good template)
 https://vjudge.net/problem/UVA-124
 
+108. Nastya and King-Shamans (diff=2600, range tree and pruning, learned a valuable lesson in time complexity analysis)
+https://codeforces.com/contest/992/problem/E
+
