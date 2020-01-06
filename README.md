@@ -356,3 +356,5 @@ https://codeforces.com/contest/992/problem/E
 109. Functions on the segments (diff=2600, persistent range tree, solved after getting feedback for 9 times! Note that if only single point value is required we don't need lazy tag!)
 https://codeforces.com/contest/837/problem/G
 
+110. Hanger (diff=2300, set and fenwick tree)
+https://codeforces.com/problemset/problem/74/D
