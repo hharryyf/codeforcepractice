@@ -358,3 +358,8 @@ https://codeforces.com/contest/837/problem/G
 
 110. Hanger (diff=2300, set and fenwick tree)
 https://codeforces.com/problemset/problem/74/D
+
+111. Trip to Saint Petersburg (diff=2300, line sweep and range tree and lazy porpagation, this problem is similar to 115E linear kingdom race)
+https://codeforces.com/problemset/problem/1250/C
+
+
