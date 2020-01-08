@@ -362,4 +362,6 @@ https://codeforces.com/problemset/problem/74/D
 111. Trip to Saint Petersburg (diff=2300, line sweep and range tree and lazy porpagation, this problem is similar to 115E linear kingdom race)
 https://codeforces.com/problemset/problem/1250/C
 
+112. Choose a Square (diff=2500, line sweep and range tree and lazy propagation, another problem similar to 115E linear kingdom race)
+https://codeforces.com/contest/1221/problem/F
 
