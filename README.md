@@ -368,3 +368,5 @@ https://codeforces.com/contest/1221/problem/F
 113. Parking Lot (diff=2500, set and implementation)
 https://codeforces.com/problemset/problem/219/E
 
+114. The doors (uva, simple geometry and bellman-ford algorithm, remember the special case for judging two intervals intersection)
+https://vjudge.net/problem/UVA-393
