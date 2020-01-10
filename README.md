@@ -373,3 +373,6 @@ https://vjudge.net/problem/UVA-393
 
 115. Queue in the Train (diff=2300, line sweep and priority queue optimization, how to order the event is very important)
 https://codeforces.com/contest/1239/problem/C
+
+116. Heidi and the Turing Test (Medium) (diff=2300, line sweep and range tree, change the coordinate system)
+https://codeforces.com/problemset/problem/1184/C2
