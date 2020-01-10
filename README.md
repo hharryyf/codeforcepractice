@@ -370,3 +370,6 @@ https://codeforces.com/problemset/problem/219/E
 
 114. The doors (uva, simple geometry and bellman-ford algorithm, remember the special case for judging two intervals intersection)
 https://vjudge.net/problem/UVA-393
+
+115. Queue in the Train (diff=2300, line sweep and priority queue optimization, how to order the event is very important)
+https://codeforces.com/contest/1239/problem/C
