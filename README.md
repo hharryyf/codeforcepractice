@@ -376,3 +376,7 @@ https://codeforces.com/contest/1239/problem/C
 
 116. Heidi and the Turing Test (Medium) (diff=2300, line sweep and range tree, change the coordinate system)
 https://codeforces.com/problemset/problem/1184/C2
+
+117. Performance Review (diff=2300, range tree and lazy propagation, key observation: the value itself is useless, only >, < matters)
+https://codeforces.com/contest/1252/problem/G
+
