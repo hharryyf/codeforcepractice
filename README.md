@@ -383,3 +383,5 @@ https://codeforces.com/contest/1252/problem/G
 118. King Kog's Reception (diff=2400, range tree and divide and conquer)
 https://codeforces.com/contest/1089/problem/K
 
+119. Cave Raider (bellman-ford algorithm, shortest path with constraints on path entry time)
+https://vjudge.net/problem/POJ-1613
