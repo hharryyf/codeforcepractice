@@ -385,3 +385,6 @@ https://codeforces.com/contest/1089/problem/K
 
 119. Cave Raider (bellman-ford algorithm, shortest path with constraints on path entry time)
 https://vjudge.net/problem/POJ-1613
+
+120. Segment Tree (diff=2100, graph connectivity, union find, range tree, complexity analysis, sweeping)
+https://codeforces.com/contest/1278/problem/D
