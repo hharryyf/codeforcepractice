@@ -388,3 +388,7 @@ https://vjudge.net/problem/POJ-1613
 
 120. Segment Tree (diff=2100, graph connectivity, union find, range tree, complexity analysis, sweeping)
 https://codeforces.com/contest/1278/problem/D
+
+121. Find a Number (diff=2200, BFS on remainder, same trick as "Yet Another Multiple Problem")
+https://codeforces.com/problemset/problem/1070/A
+
