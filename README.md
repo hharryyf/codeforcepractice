@@ -392,3 +392,5 @@ https://codeforces.com/contest/1278/problem/D
 121. Find a Number (diff=2200, BFS on remainder, same trick as "Yet Another Multiple Problem")
 https://codeforces.com/problemset/problem/1070/A
 
+122. More Queries to Array... (diff=2600, range tree and lazy propagation and binomial theorem)
+https://codeforces.com/problemset/problem/266/E
