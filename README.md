@@ -394,3 +394,7 @@ https://codeforces.com/problemset/problem/1070/A
 
 122. More Queries to Array... (diff=2600, range tree and lazy propagation and binomial theorem)
 https://codeforces.com/problemset/problem/266/E
+
+123. Connected Components? (diff=2100, dfs and union-find and range tree to create the graph)
+https://codeforces.com/contest/920/problem/E
+
