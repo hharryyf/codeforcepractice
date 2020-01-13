@@ -401,3 +401,5 @@ https://codeforces.com/contest/920/problem/E
 124.  Bear and Forgotten Tree 2 (diff=2400, dfs and union-find and range tree graph creation, similar to the previous one just with more observation) 
 https://codeforces.com/contest/653/problem/E
 
+125. Shortest Path (diff=2100, shortest path, some trick when doing relaxation)
+https://codeforces.com/contest/59/problem/E
