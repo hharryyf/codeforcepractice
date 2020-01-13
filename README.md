@@ -398,3 +398,6 @@ https://codeforces.com/problemset/problem/266/E
 123. Connected Components? (diff=2100, dfs and union-find and range tree to create the graph)
 https://codeforces.com/contest/920/problem/E
 
+124.  Bear and Forgotten Tree 2 (diff=2400, dfs and union-find and range tree graph creation, similar to the previous one just with more observation) 
+https://codeforces.com/contest/653/problem/E
+
