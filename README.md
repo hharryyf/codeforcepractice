@@ -403,3 +403,7 @@ https://codeforces.com/contest/653/problem/E
 
 125. Shortest Path (diff=2100, shortest path, some trick when doing relaxation)
 https://codeforces.com/contest/59/problem/E
+
+126. Greedy Elevator (diff=2500, fenwick tree and set, good implementation problem)
+https://codeforces.com/contest/257/problem/E
+
