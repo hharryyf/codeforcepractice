@@ -409,3 +409,6 @@ https://codeforces.com/contest/257/problem/E
 
 127. Intervals (uva, system of different constraints)
 https://vjudge.net/problem/UVA-1723
+
+128. Sereja and Straight Lines (diff=2400, binary search for final answer and line sweep, similar to 845E and 1184C2)
+https://codeforces.com/contest/314/problem/D
