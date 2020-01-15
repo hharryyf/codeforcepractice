@@ -412,3 +412,7 @@ https://vjudge.net/problem/UVA-1723
 
 128. Sereja and Straight Lines (diff=2400, binary search for final answer and line sweep, similar to 845E and 1184C2)
 https://codeforces.com/contest/314/problem/D
+
+129. King (central Euro 1997, system of different constraints)
+https://vjudge.net/problem/POJ-1364
+
