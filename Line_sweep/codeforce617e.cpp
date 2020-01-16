@@ -4,7 +4,10 @@
 #define MAX_SIZE 100011
 typedef long long ll;
 using namespace std;
-
+/*
+    when we maintain the prefix sum type [l, r] query, sum(l, r) = prefix[r] - prefix[l-1]
+    hence be really careful on the order of updating f[prefix[x]] and cnt!!!!!!!!!
+*/
 int block = 1;
 
 struct qrs {
@@ -23,12 +26,12 @@ ll ans[MAX_SIZE];
 int num[MAX_SIZE];
 int prefix[MAX_SIZE];
 int l = 1, r = 0;
-
+// the order is very important!
 void add(int idx) {
     cnt += f[prefix[idx] ^ k];
     f[prefix[idx]]++;
 }
-
+// the order is very important!
 void del(int idx) {
     f[prefix[idx]]--;
     cnt -= f[prefix[idx] ^ k];
