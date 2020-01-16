@@ -416,5 +416,5 @@ https://codeforces.com/contest/314/problem/D
 129. King (central Euro 1997, system of different constraints)
 https://vjudge.net/problem/POJ-1364
 
-130. XOR and Favorite Number (diff=2300, Mo's algorithm, need to be very clear on what [l, r] means when maintainng prefix sum)
+130. XOR and Favorite Number (diff=2300, Mo's algorithm, need to be very clear on what [l, r] means when maintaining prefix sum)
 https://codeforces.com/contest/617/problem/E
