@@ -421,3 +421,6 @@ https://codeforces.com/contest/617/problem/E
 
 131. Cutting a Fence (diff=2400, probability and range tree and lazy propagation on arithmetic progression)
 https://codeforces.com/contest/212/problem/D
+
+132. Little Elephant and Shifts (diff=2300, map and math observation)
+https://codeforces.com/problemset/problem/220/C
