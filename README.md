@@ -424,3 +424,6 @@ https://codeforces.com/contest/212/problem/D
 
 132. Little Elephant and Shifts (diff=2300, map and math observation)
 https://codeforces.com/problemset/problem/220/C
+
+133. Powerful Array (diff=2700, Mo's algorithm)
+https://codeforces.com/contest/86/problem/D
