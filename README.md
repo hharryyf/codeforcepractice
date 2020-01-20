@@ -428,10 +428,12 @@ https://codeforces.com/problemset/problem/220/C
 133. Powerful Array (diff=2700, Mo's algorithm)
 https://codeforces.com/contest/86/problem/D
 
-134. Serega and Fun (diff=2600, sqrt decomposition, I'm not familiar with deque STL access method which caused me getting feedback for 4 times)
+134. Serega and Fun (diff=2600, sqrt decomposition, I'm not familiar with deque STL access method which caused me getting WA feedback for 4 times)
 https://codeforces.com/contest/455/problem/D
 
 135. Music in Car (diff=2500, line sweep and sets, I think this problem requires some implementation techniques, for example creating
 two structs instead of using functions to handle the time addition event would make our life a lot easier)
 https://codeforces.com/contest/746/problem/F
+
+136. Play on Words (central Europe, union find and Euler path existence checking, I think the most important observation is using words as "edges" of the graph) https://vjudge.net/problem/UVA-10129
 
