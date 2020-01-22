@@ -437,3 +437,8 @@ https://codeforces.com/contest/746/problem/F
 
 136. Play on Words (central Europe, union find and Euler path existence checking, I think the most important observation is using words as "edges" of the graph) https://vjudge.net/problem/UVA-10129
 
+137. Cardboard Box (diff=2500, greedy and fenwick tree, I was killed by this problem :( )
+This problem requires the following greedy observation, suppose that an optimal solution has the maximum b[k] at index k, then
+we could proof that all [1:k] have been selected at least for level 1. Then the problem is quite routine, using fenwick tree and
+binary search would easily give a solution of O(n*logn*logn).
+https://codeforces.com/contest/436/problem/E
