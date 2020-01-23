@@ -442,3 +442,7 @@ This problem requires the following greedy observation, suppose that an optimal 
 we could proof that all [1:k] have been selected at least for level 1. Then the problem is quite routine, using fenwick tree and
 binary search would easily give a solution of O(n*logn*logn).
 https://codeforces.com/contest/436/problem/E
+
+138. Catenyms (least alphabetical ordered Euler path and Hierholzer's algorithm)
+https://vjudge.net/problem/UVA-10441
+
