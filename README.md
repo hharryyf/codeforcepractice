@@ -446,3 +446,9 @@ https://codeforces.com/contest/436/problem/E
 138. Catenyms (least alphabetical ordered Euler path and Hierholzer's algorithm)
 https://vjudge.net/problem/UVA-10441
 
+139. Bear and Contribution (diff=2500, greedy and priority queue)
+I wasted valuable time because of ignoring the fact that the final T can be a number not in the given array.
+This problem has a very trivial greedy observation which is we need to select k numbers that has the minimum cost to increase
+them to T. However, we need to be aware how to maintain a window of k numbers with minimum cost, using priority queue here is
+definitly the best choice. https://codeforces.com/contest/639/problem/D
+
