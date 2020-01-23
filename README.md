@@ -452,3 +452,8 @@ This problem has a very trivial greedy observation which is we need to select k 
 them to T. However, we need to be aware how to maintain a window of k numbers with minimum cost, using priority queue here is
 definitly the best choice. https://codeforces.com/contest/639/problem/D
 
+140. Working routine (diff=2600, linked list)
+This problem requires some implementation technique, firstly since n = 1000, m = 1000 and q = 10000, we know that O((m+n)q) is
+good enough to pass the tests. Note that swapping two submatrix only require to change the connection links. Hence, linked-list
+is the best data structure for this type of query. https://codeforces.com/contest/706/problem/E
+
