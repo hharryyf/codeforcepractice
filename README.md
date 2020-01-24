@@ -465,5 +465,6 @@ https://codeforces.com/contest/249/problem/D
 
 142. Trips (diff=2100, graph connectivity, working backward and sets)
 This graph problem is very interesting. The key observation is when i increases from 1 to m, the tourist set size can only increase.
-Hence, we can work backward, firstly add in all the edges. https://codeforces.com/problemset/problem/1037/E
+Hence, we can work backward, firstly add in all the edges. Then, we delete all the edges one by one and always see whether there's an
+element with degree less than k, if so eliminate the element. https://codeforces.com/problemset/problem/1037/E
 
