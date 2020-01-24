@@ -457,3 +457,9 @@ This problem requires some implementation technique, firstly since n = 1000, m =
 good enough to pass the tests. Note that swapping two submatrix only require to change the connection links. Hence, linked-list
 is the best data structure for this type of query. https://codeforces.com/contest/706/problem/E
 
+141. Donkey and Stars (diff=2600, line sweep and geometry and range tree)
+This problem taught me some valuable lessons even if I solved it without the support of any solutions. 1. when we are solving
+geometry problems, use "/" as few as possible to eliminate TLE. 2. pair<int, index (int)> would be more efficient than pair<int, object> when making a pair. Beyond that, this problem is still very nice. We firstly changed the problem to a LIS problem by math observation,
+and after that since the > is defined by two conditions, we can use the standard trick of range tree and line sweep to solve it.
+https://codeforces.com/contest/249/problem/D
+
