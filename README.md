@@ -468,3 +468,7 @@ This graph problem is very interesting. The key observation is when i increases 
 Hence, we can work backward, firstly add in all the edges. Then, we delete all the edges one by one and always see whether there's an
 element with degree less than k, if so eliminate the element. https://codeforces.com/problemset/problem/1037/E
 
+143. Bribes (diff=2300, dfs and LCA and prefix sum)
+I got WA for 3 times because of solving a different problem! There's an obvious observation that we only need to know how many times
+each road is used. Hence, we use the prefix sum technique that was used in on changing tree.
+
