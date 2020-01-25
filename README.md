@@ -478,3 +478,9 @@ with maximum dist(1, 2) + dist(3, 4) + dist(2, 3). Hence, we can run a BFS to fi
 that maximum dist(1, 2) and dist(3, 4) might contain duplicate points (e.g. pt(1) == pt(3)) which is invalid, we need to record
 3 points i with maximum distance dist(i, v) / dist(v, i) for each v. https://codeforces.com/contest/666/problem/B
 
+145. Ratings and Reality Shows (diff=2500, range tree and divide and conquer)
+I got WA for 4 times and fixed the code for 1.5 hours because of a long long :( . This problem could be solved by using range tree
+and divide and conquer. The observation is we only need to make sure the following two values are not less than 0: 1) start +
+min_prefix up to t 2) start + prefix up to t + range min sum start from t end at t + len - 1. 
+https://codeforces.com/contest/887/problem/D
+
