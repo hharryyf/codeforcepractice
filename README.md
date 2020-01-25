@@ -472,3 +472,9 @@ element with degree less than k, if so eliminate the element. https://codeforces
 I got WA for 3 times because of solving a different problem! There's an obvious observation that we only need to know how many times
 each road is used. Hence, we use the prefix sum technique that was used in on changing tree.
 
+144. World Tour (diff=2100, BFS and path construction)
+This problem has the following observation. If you fix the 2nd and 3rd point, we only need to find the valid 1st and 4th point,
+with maximum dist(1, 2) + dist(3, 4) + dist(2, 3). Hence, we can run a BFS to find the pair-wise shortest path, then we might realize
+that maximum dist(1, 2) and dist(3, 4) might contain duplicate points (e.g. pt(1) == pt(3)) which is invalid, we need to record
+3 points i with maximum distance dist(i, v) / dist(v, i) for each v. https://codeforces.com/contest/666/problem/B
+
