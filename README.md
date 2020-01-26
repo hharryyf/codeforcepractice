@@ -489,6 +489,6 @@ The observation is since there is a number that must be fixed, we can sort the n
 order, then the problem is reduced to determine whether there exists a connected component which contains no less than k / g[i][j] numbers, then a union-find and dfs would simply do the job. https://codeforces.com/contest/659/problem/F
 
 147. MST Unification (diff=2300, Kruskal and LCA, binary lifting)
-The trick Ray covered in the problem set on MST is a very standard trick. I've already solve more than 3 problems using this trick.
+The trick Ray covered in the problem set on MST is very useful. I've already solved more than 3 problems using this trick.
 https://codeforces.com/contest/1108/problem/F
 
