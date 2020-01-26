@@ -484,3 +484,7 @@ and divide and conquer. The observation is we only need to make sure the followi
 min_prefix up to t 2) start + prefix up to t + range min sum start from t end at t + len - 1. 
 https://codeforces.com/contest/887/problem/D
 
+146. Polycarp and Hay (diff=2100, union-find and dfs)
+The observation is since there is a number that must be fixed, we can sort the numbers in the grid which are factors of k in decreasing
+order, then the problem is reduced to determine whether there exists a connected component which contains no less than k / g[i][j] numbers, then a union-find and dfs would simply do the job. https://codeforces.com/contest/659/problem/F
+
