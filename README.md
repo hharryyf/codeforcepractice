@@ -496,3 +496,8 @@ https://codeforces.com/contest/1108/problem/F
 This problem is similar to codeforce852d, we firstly preprocess all the pair-wise shortest path using Floyd algorithm. Then we binary
 search the final answer and use Dinic's algorithm to validate. https://vjudge.net/problem/POJ-2112
 
+149. Panic Room (min-cut)
+This problem is very easy. It just asks whether some vertices can all be seperated from a given sink. Add a super source and connects
+to all the vertices need to be seperated with INF, connect the forward edges with capacity 1 and backward edges with capacity INF. Then
+just run Dinic's algorithm would find the solution. https://vjudge.net/problem/UVALive-3632
+
