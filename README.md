@@ -492,3 +492,7 @@ order, then the problem is reduced to determine whether there exists a connected
 The trick Ray covered in the problem set on MST is very useful. I've already solved more than 3 problems using this trick.
 https://codeforces.com/contest/1108/problem/F
 
+148. Optimal Milking (binary search for final answer, Dinic's algorithm)
+This problem is similar to codeforce852d, we firstly preprocess all the pair-wise shortest path using Floyd algorithm. Then we binary
+search the final answer and use Dinic's algorithm to validate. https://vjudge.net/problem/POJ-2112
+
