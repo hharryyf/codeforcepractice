@@ -516,3 +516,8 @@ https://vjudge.net/problem/POJ-3422
 152. Going Home (MCMF)
 https://vjudge.net/problem/UVALive-3198
 
+153. Build String (diff=2100, MCMF)
+This problem is quite easy. Just add nodes to represent sentences and connect the source to it with cap=a[i] and cost=0,
+add the sentence to the a-z nodes with the word count and cost=i, then add the a-z nodes to the target with cost=0, cap=target_cnt.
+https://codeforces.com/contest/237/problem/E
+
