@@ -513,3 +513,6 @@ This problem verifies the correctness of the MCMF template. Since all points can
 the profit, we set each vertex with a vertex capacity of 1 and vertex cost of v. Then run the MCMF algorithm would find the solution.
 https://vjudge.net/problem/POJ-3422
 
+152. Going Home (MCMF)
+https://vjudge.net/problem/UVALive-3198
+
