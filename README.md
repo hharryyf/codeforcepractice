@@ -501,3 +501,10 @@ This problem is very easy. It just asks whether some vertices can all be seperat
 to all the vertices need to be seperated with INF, connect the forward edges with capacity 1 and backward edges with capacity INF. Then
 just run Dinic's algorithm would find the solution. https://vjudge.net/problem/UVALive-3632
 
+150. Cup Trick (diff=2500, balanced tree)
+The observation for this problem is there are two cases the task cannot be fulfilled. 1) when you try to move the kth position cup i
+to the front, there's a cup j != i at position k. 2) the ith cup is at some other location. Hence, we need to design a data structure
+that supports the following 1) insert an element 2) delete an element 3) find the kth smallest element. Any type of balanced tree would
+work. However, ordered statistic tree is very slow :(, I wrote an AVL tree and used some fast io techniques to pass the tests.
+https://codeforces.com/contest/420/problem/D
+
