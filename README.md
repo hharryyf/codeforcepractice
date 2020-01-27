@@ -508,3 +508,8 @@ that supports the following 1) insert an element 2) delete an element 3) find th
 work. However, ordered statistic tree is very slow :(, I wrote an AVL tree and used some fast io techniques to pass the tests.
 https://codeforces.com/contest/420/problem/D
 
+151. Kaka's Matrix Travels (MCMF)
+This problem verifies the correctness of the MCMF template. Since all points can be walked trough k times, with 1 time that can achieve 
+the profit, we set each vertex with a vertex capacity of 1 and vertex cost of v. Then run the MCMF algorithm would find the solution.
+https://vjudge.net/problem/POJ-3422
+
