@@ -521,3 +521,11 @@ This problem is quite easy. Just add nodes to represent sentences and connect th
 add the sentence to the a-z nodes with the word count and cost=i, then add the a-z nodes to the target with cost=0, cap=target_cnt.
 https://codeforces.com/contest/237/problem/E
 
+154. Binary Tree on Plane (diff=2400, MCMF)
+This is the kind of problem we think it is impossible to be done without flow. If we think this might be a flow problem, we have 
+the following observation. For a binary tree, each node has at most 2 outlink and at most 1 in link. And for n points if it is a
+tree, it must have n-1 points with 1 in link. Hence, we can create the flow graph as follows, add edges with cap 2 and cost 0,
+from the super source to all the in vertices, add edges with cap 1 and cost equals to the Euclidian distance from the in vertices
+to the out vertices that below them, finally add edges with cap 1 and cost 0 from the out vertices to the super sink. Run MCMF would
+give the correct solution. https://codeforces.com/problemset/problem/277/E
+
