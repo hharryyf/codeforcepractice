@@ -535,3 +535,8 @@ follows. Add a super source connects to all 1-n person with cap 1 cost 0, add al
 similarly to n+2 with cap 1 cost b[i]. Finally connects n+1 to super sink with cap p cost 0 and n+2 to super sink with cap s cost 0.
 Run MCMF and extracting all the full capacity edges in the flow network. https://codeforces.com/contest/730/problem/I
 
+156. Chemistry Experiment (diff=2500, fenwick tree and binary search for final answer)
+We use binary search on final answer to solve this problem. We can ask the following question, is it possible for the maximum height to be less than h. Then we observe that only the tubs with height <= h can contribute to the final answer. Suppose that there are cnt tubes with height <= h and the total amount of mercury in them is vol, then we only need to check whether h * cnt >= v + vol.
+We might run into precision issue since v can be up to 1e15. We just iterate 80 times to get the answer. The overall complexity would be O(nlognlogv).  https://codeforces.com/contest/431/problem/E
+
+
