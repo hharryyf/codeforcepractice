@@ -529,3 +529,9 @@ from the super source to all the in vertices, add edges with cap 1 and cost equa
 to the out vertices that below them, finally add edges with cap 1 and cost 0 from the out vertices to the super sink. Run MCMF would
 give the correct solution. https://codeforces.com/problemset/problem/277/E
 
+155. Olympiad in Programming and Sports (diff=2200, MCMF)
+I don't know how to solve this problem using an O(n^2) dp, hence, I'm using MCMF to solve it. The flow establish process looks as
+follows. Add a super source connects to all 1-n person with cap 1 cost 0, add all 1-n person to the node n+1 with cap 1 cost a[i],
+similarly to n+2 with cap 1 cost b[i]. Finally connects n+1 to super sink with cap p cost 0 and n+2 to super sink with cap s cost 0.
+Run MCMF and extracting all the full capacity edges in the flow network. https://codeforces.com/contest/730/problem/I
+
