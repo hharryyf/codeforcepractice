@@ -539,4 +539,7 @@ Run MCMF and extracting all the full capacity edges in the flow network. https:/
 We use binary search on final answer to solve this problem. We can ask the following question, is it possible for the maximum height to be less than h. Then we observe that only the tubs with height <= h can contribute to the final answer. Suppose that there are cnt tubes with height <= h and the total amount of mercury in them is vol, then we only need to check whether h * cnt >= v + vol.
 We might run into precision issue since v can be up to 1e15. We just iterate 80 times to get the answer. The overall complexity would be O(nlognlogv).  https://codeforces.com/contest/431/problem/E
 
+157. Air Raid (theorem: |V| = bipartite matching + minimum edge cover)
+https://vjudge.net/problem/UVA-1184
+
 
