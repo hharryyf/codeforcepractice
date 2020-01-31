@@ -554,3 +554,6 @@ is changed into whether there is a special vertex or an special edges in two giv
 Nothing special about the problem, just maintain a set of disjoint segments to achieved an armotized O(logn) intertion complexity.
 https://codeforces.com/contest/926/problem/J
 
+160. Dispute (diff=2100, BFS)
+We have the following observation, there's no -1 case, since for every button we only need to press at most once to make the button valid. Hence, we can use BFS by pushing all buttons with value 0 into the queue, and then press the corresponding buttons. 
+https://codeforces.com/problemset/problem/242/D
