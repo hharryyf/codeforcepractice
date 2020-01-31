@@ -550,4 +550,7 @@ algorithm to extract all the biconnected components and do point compression to 
 is changed into whether there is a special vertex or an special edges in two given points in a tree. Validating the path u->LCA(u, v)
 ->v would get the solution. https://codeforces.com/problemset/problem/652/E
 
+159. Segments (diff=2500, sets)
+Nothing special about the problem, just maintain a set of disjoint segments to achieved an armotized O(logn) intertion complexity.
+https://codeforces.com/contest/926/problem/J
 
