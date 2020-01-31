@@ -557,3 +557,13 @@ https://codeforces.com/contest/926/problem/J
 160. Dispute (diff=2100, BFS)
 We have the following observation, there's no -1 case, since for every button we only need to press at most once to make the button valid. Hence, we can use BFS by pushing all buttons with value 0 into the queue, and then press the corresponding buttons. 
 https://codeforces.com/problemset/problem/242/D
+
+161. Students Initiation (diff=2400, Dinic's algorithm and binary search for final answer)
+We can observe that if we define the question as can the final answer be no greater than mid. Then we should easily show that if mid1
+satisfy the problem statement then mid2 >= mid1 can definitly satisfy the statement. Hence, we can binary search for final answer.
+Note that we can solve this problem by applying maxflow algorithms. Suppose that we want to validate mid, we add edges from the super
+source to all n people with edge capacity 1, then suppose that the ith edge has end points v1 and v2, we add edge from v1 to i+n and
+v2 to i+n with capacity 1, and finally add edges from the nodes representing edges to the super sink. We just need to validate whether
+the final flow is m. The flow network is similar to Ray's problem set question Hard life which again proofs Ray's problem set is
+very useful. https://codeforces.com/contest/847/problem/J
+
