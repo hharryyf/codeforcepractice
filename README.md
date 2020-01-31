@@ -542,4 +542,12 @@ We might run into precision issue since v can be up to 1e15. We just iterate 80 
 157. Air Raid (theorem: |V| = bipartite matching + minimum edge cover)
 https://vjudge.net/problem/UVA-1184
 
+158. Pursuit For Artifacts (diff=2300, tarjan's algorithm and dfs)
+By definition of biconnected components, for any two points u, v in the same biconnected components there exists at least 2
+path from u->v. Hence, we have the following observation. If there's some artifects in some biconnected components if we can
+get in to the components, we can definitly get out in any points we want. So the algorithm works as follows. Firstly, run tarjan's
+algorithm to extract all the biconnected components and do point compression to make the graph into a tree. Then the problem
+is changed into whether there is a special vertex or an special edges in two given points in a tree. Validating the path u->LCA(u, v)
+->v would get the solution. https://codeforces.com/problemset/problem/652/E
+
 
