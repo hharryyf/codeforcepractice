@@ -567,3 +567,9 @@ v2 to i+n with capacity 1, and finally add edges from the nodes representing edg
 the final flow is m. The flow network is similar to Ray's problem set question Hard life which again proofs Ray's problem set is
 very useful. https://codeforces.com/contest/847/problem/J
 
+162. Take-off Ramps (diff=2400, point compression and dijkstra's algorithm)
+The hardest part about this problem is dealing with the p[i]. We build the graph in the following way, firstly note that only
+x[i], x[i] + d[i], x[i] - p[i], 0, L are useful points, we connect the adjacent points x1, x2 with weight x2 - x1 bidirectionally. 
+A key observation is if we use the ramp i, it is actually equivalent to running from x[i] - p[i] to x[i] using p[i] time and then fly from x[i] to x[i] + d[i] in t[i]. So we can directly connect x[i] - p[i] to x[i] + d[i] with weight t[i] + p[i]. After that, we simply
+run dijkstra's algorithm and find the solution. https://codeforces.com/contest/141/problem/D
+
