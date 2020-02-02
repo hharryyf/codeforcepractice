@@ -573,3 +573,9 @@ x[i], x[i] + d[i], x[i] - p[i], 0, L are useful points, we connect the adjacent 
 A key observation is if we use the ramp i, it is actually equivalent to running from x[i] - p[i] to x[i] using p[i] time and then fly from x[i] to x[i] + d[i] in t[i]. So we can directly connect x[i] - p[i] to x[i] + d[i] with weight t[i] + p[i]. After that, we simply
 run dijkstra's algorithm and find the solution. https://codeforces.com/contest/141/problem/D
 
+163. Almost Permutation (diff=2300, MCMF)
+Firstly, we can use elimination method to find out for each element at index i, which element can be filled in it. Then, the problem
+is changed to for each index select a matching element, and for each element the cost of selecting it is cnt^2. This is a typical MCMF
+problem setting. We connects the super source to 1-n and then if the ith element can have a value j we connect i to j+n. Finally, 
+we connect 1+n to 2n to the super sink with (cap,cost) of (1, 1), (1,3)...(1, 2n-1). Then run the MCMF to find the solution.
+https://codeforces.com/problemset/problem/863/F
