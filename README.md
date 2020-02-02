@@ -583,3 +583,7 @@ https://codeforces.com/problemset/problem/863/F
 164. Card Game (diff=2500, Dinic's algorithm and binary search for final answer)
 I was coached by this problem :(. This problem requires 3 observations, 2 of them are quite standard. Firstly, we observe that we can use binary search on final answer to solve this problem. Secondly, min cut on a bipartite graph can validate the answer. However, how can we establish the bipartite graph? The key observation is only 2 = 1 + 1 is the only even prime number, so that we can split the numbers into LHS (all odd numbers), and RHS (all even numbers). For 1, we only keep the one which is valid at the moment and has the maximum p value. Then we simply run any maxflow algorithm would find the solution. https://codeforces.com/contest/808/problem/F
 
+165. Eyes Closed (diff=2500, range tree and probability)
+We know that E[l1, r1] = E[l1, r1] * (len1-1) / len1 + E[l2, r2] / len2 and E[l1, r1] = E[l2, r2] * (len2-1) / len2 + E[l1, r1] / len1.
+Hence, the problem is changed into a range update and range query problem, a standard range tree would solve it easily. We only need to be careful about the order of lazy propagation. https://codeforces.com/contest/895/problem/E
+
