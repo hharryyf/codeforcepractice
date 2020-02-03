@@ -596,3 +596,8 @@ https://codeforces.com/contest/558/problem/D
 167. Number Sequence (KMP)
 https://vjudge.net/problem/HDU-1711
 
+168. Oulipo (KMP)
+The hardest part about this problem is overlap counts. Hence, we need to make good use of the next array. Since next is defined as
+the longest match of the suffix and the prefix, by drawing some diagrams we can easily figure out that when there's a match, we
+simply shift j to next[j-1] and i-- would solve the problem. https://vjudge.net/problem/HDU-1686
+
