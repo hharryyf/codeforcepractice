@@ -593,3 +593,6 @@ for all 0 events, we union the invalid ranges. To maintain the 0 events, we main
 After the intersection 1 event range is determined, we do ans = ans - invalid. Note that here, ans and invalid are sets.
 https://codeforces.com/contest/558/problem/D
 
+167. Number Sequence (KMP)
+https://vjudge.net/problem/HDU-1711
+
