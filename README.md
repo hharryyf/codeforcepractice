@@ -605,3 +605,5 @@ simply shift j to next[j-1] and i-- would solve the problem. https://vjudge.net/
 The observation is we only need to work out the shortest period prefix of a string. And the period is equal to len - next[len] after
 we work out next array using KMP. https://vjudge.net/problem/HDU-3746
 
+170. Period (KMP)
+https://vjudge.net/problem/SPOJ-PERIOD
