@@ -587,3 +587,9 @@ I was coached by this problem :(. This problem requires 3 observations, 2 of the
 We know that E[l1, r1] = E[l1, r1] * (len1-1) / len1 + E[l2, r2] / len2 and E[l1, r1] = E[l2, r2] * (len2-1) / len2 + E[l1, r1] / len1.
 Hence, the problem is changed into a range update and range query problem, a standard range tree would solve it easily. We only need to be careful about the order of lazy propagation. https://codeforces.com/contest/895/problem/E
 
+166. Guess Your Way Out! II (diff=2500, sets)
+The observation is we can deal with 1 events and 0 events seperately. For all 1 events, it is like intersection the answer ranges,
+for all 0 events, we union the invalid ranges. To maintain the 0 events, we maintain a set of disjointed pairs which support insertion.
+After the intersection 1 event range is determined, we do ans = ans - invalid. Note that here, ans and invalid are sets.
+https://codeforces.com/contest/558/problem/D
+
