@@ -601,3 +601,7 @@ The hardest part about this problem is overlap counts. Hence, we need to make go
 the longest match of the suffix and the prefix, by drawing some diagrams we can easily figure out that when there's a match, we
 simply shift j to next[j-1] and i-- would solve the problem. https://vjudge.net/problem/HDU-1686
 
+169. Cyclic Nacklace (KMP)
+The observation is we only need to work out the shortest period prefix of a string. And the period is equal to len - next[len] after
+we work out next array using KMP. https://vjudge.net/problem/HDU-3746
+
