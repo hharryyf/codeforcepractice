@@ -621,3 +621,9 @@ https://vjudge.net/problem/UVA-10298
 This problem examines the understanding of the next array of the KMP algorithm. We can find the next array first and backtrack the 
 answer by calling curr = nxt[curr]. https://vjudge.net/problem/POJ-2752
 
+174. Nudist Beach (diff=2300, BFS and binary search for final answer)
+The first observation is if we rephrase the question as is it possible for the final answer to be no less than v (0 <= v <= 1), 
+we immediately notice that v is monotone. Hence, we can binary search for the final answer. However, another difficulty is how
+to create a set of nodes that satisfy the constraints. The most important observation is if we remove the neighbour of a node v,
+its strength can only decrease. Hence, we can use BFS strategy and eliminate all nodes that have strength less than v. The main lesson
+here is if you cannot construct the answer in a forward direction, try to do it backward. https://codeforces.com/contest/553/problem/D
