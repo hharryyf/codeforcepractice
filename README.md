@@ -607,3 +607,10 @@ we work out next array using KMP. https://vjudge.net/problem/HDU-3746
 
 170. Period (KMP)
 https://vjudge.net/problem/SPOJ-PERIOD
+
+171. Kefa and Watch (diff=2700, range tree and hashing)
+A range update should immediately remind us to use range trees. And to answer whether a string of length n has a period of d we know from the KMP algorithm, this is equivalent to checking the substring [1:len-d] is equal to [d+1, len]. To do this is an efficient way,
+we could use hash functions. To strings are called equal if their hash function is equal and in order to get the correct answer with
+very very high probability, we can use two hash functions, then the strings are equal if both functions are equal. After that, the
+problem is changed into a routine range tree and lazy propagation problem. https://codeforces.com/contest/580/problem/E
+
