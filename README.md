@@ -614,3 +614,6 @@ we could use hash functions. Two strings are called equal if their hash function
 very very high probability, we can use two hash functions, then the strings are equal if both functions are equal. After that, the
 problem is changed into a routine range tree and lazy propagation problem. https://codeforces.com/contest/580/problem/E
 
+172. Power Strings (KMP)
+https://vjudge.net/problem/UVA-10298
+
