@@ -617,3 +617,7 @@ problem is changed into a routine range tree and lazy propagation problem. https
 172. Power Strings (KMP)
 https://vjudge.net/problem/UVA-10298
 
+173. Seek the Name, Seek the Fame (KMP)
+This problem examines the understanding of the next array of the KMP algorithm. We can find the next array first and backtrack the 
+answer by calling curr = nxt[curr]. https://vjudge.net/problem/POJ-2752
+
