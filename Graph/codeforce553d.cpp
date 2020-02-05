@@ -7,7 +7,7 @@ using namespace std;
 
 bool frt[MAX_SIZE];
 vector<int> g[MAX_SIZE];
-unordered_set<int> h[MAX_SIZE];
+vector<int> h[MAX_SIZE];
 int n, m, k;
 int deg[MAX_SIZE], adj[MAX_SIZE];
 int cnt, tol = 0;
@@ -32,8 +32,8 @@ bool valid(double mid) {
 	 	 if (!frt[i]) {
 		  	for (auto v : g[i]) {
 				if (!frt[v]) {
-				   h[v].insert(i), h[i].insert(v);
-				   adj[v]++, adj[i]++;
+				   h[i].push_back(v);
+				   adj[i]++;
 				}  
 		    }
          } else {
@@ -42,7 +42,6 @@ bool valid(double mid) {
 	 }
 	 
 	 for (i = 1; i <= n; i++) {
-	     adj[i] = adj[i] / 2;
 	     if (score(i) < mid) {
 	         q.push(i);
 	     }
@@ -62,7 +61,6 @@ bool valid(double mid) {
 	             }
 	         }
 	     }
-	     h[v].clear();
 	 }
 	 
 	 for (i = 1; i <= n; i++) {
@@ -120,4 +118,3 @@ int main(){
 	printf("\n");
 	return 0;
 }
-
