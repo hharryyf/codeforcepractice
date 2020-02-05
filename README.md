@@ -627,3 +627,7 @@ we immediately notice that v is monotone. Hence, we can binary search for the fi
 to create a set of nodes that satisfy the constraints. The most important observation is if we remove the neighbour of a node v,
 its strength can only decrease. Hence, we can use BFS strategy and eliminate all nodes that have strength less than v. The main lesson
 here is if you cannot construct the answer in a forward direction, try to do it backward. https://codeforces.com/contest/553/problem/D
+
+175. Fools and Foolproof Roads (diff=2500, greedy and union find)
+https://codeforces.com/contest/362/problem/D
+
