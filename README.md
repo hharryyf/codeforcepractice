@@ -635,3 +635,8 @@ https://codeforces.com/contest/362/problem/D
 This is a standard problem about using dijkstra on state transition. For every point, we consider 3 states, 0 = no light, 1= the row
 is lit, 2= the column is lit, then just follow the problem statement to do valid state transition. https://codeforces.com/problemset/problem/821/D
 
+177. Teams Formation (diff=2400, deque and observation)
+The key observation is only 4 types of group can be formed. Type 1: groups that are formed by k adjacent unique elements in 1 period, this kind of group should be counted m times for each occurence in the original sequence of length n. Type 2: after groups of type 1 are formed,  groups can be formed by the starting elements of period i+1 and ending elements of period i. And this kind of group should be
+counted m-1 times for each occurence of the original sequence. Type 3: if there's a unique remaining elements, new groups that contains
+only this element can be formed. Type 4: if there's no remaining elements after the first 3 types of group are formed, the total number
+of type 2 should be counted twice (see the last input data). https://codeforces.com/problemset/problem/878/B
