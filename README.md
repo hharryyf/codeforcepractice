@@ -631,3 +631,7 @@ here is if you cannot construct the answer in a forward direction, try to do it 
 175. Fools and Foolproof Roads (diff=2500, greedy and union find)
 https://codeforces.com/contest/362/problem/D
 
+176. Okabe and City (diff=2200, dijkstra)
+This is a standard problem about using dijkstra on state transition. For every point, we consider 3 states, 0 = no light, 1= the row
+is lit, 2= the column is lit, then just follow the problem statement to do valid state transition. https://codeforces.com/problemset/problem/821/D
+
