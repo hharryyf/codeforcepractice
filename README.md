@@ -646,3 +646,10 @@ This is a constructive problem. We firstly join all the points with index greate
 Then, we join 1 with all connected components once. For the remaining degree, we join 1 with all the connected points that weren't joined in the previous step. Finally, we use union find again on the remaining edges to create the final tree.
 https://codeforces.com/contest/1133/problem/F2
 
+179. Mr. Kitayuta's Colorful Graph (diff=2300, union find and observation)
+We can consider each color seperately, u can reach v in an undirected graph means if we apply union find procedure, u and v should
+end up in the same connected component. Hence, we can establish n sets, for the set i, it records all (p, c) pairs which means
+i belongs to the connected component p with color c. Note that to avoid TLE, we only append (p, c) to set i if there's edge(u, i, c)
+or edge(i, u, c). After that for each query, it simply asks the size of the intersection of set(u) and set(v), we iterate the 
+set with a smaller size to answer the queries. https://codeforces.com/contest/506/problem/D
+
