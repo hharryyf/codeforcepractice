@@ -224,7 +224,7 @@ https://codeforces.com/contest/802/problem/K
 66. Tree with Maximum Cost (div3, diff=2100, tree dp)
 https://codeforces.com/contest/1092/problem/F
 
-*Dec 12 to Feb 11 summer holiday training:  data structure + graph + string  
+* Dec 12 to Feb 11 summer holiday training:  data structure + graph + string  
 
 67. Dog Food (div2, diff=2300, greedy)
 https://codeforces.com/contest/847/problem/D
