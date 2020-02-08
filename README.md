@@ -225,7 +225,7 @@ https://codeforces.com/contest/802/problem/K
 https://codeforces.com/contest/1092/problem/F
 
 
-Dec 12 to Feb 18:
+Dec 12 to Feb 11:
 
 67. Dog Food (div2, diff=2300, greedy)
 https://codeforces.com/contest/847/problem/D
@@ -640,3 +640,9 @@ The key observation is only 4 types of group can be formed. Type 1: groups that 
 counted m-1 times for each occurence of the original sequence. Type 3: if there's a unique remaining elements, new groups that contains
 only this element can be formed. Type 4: if there's no remaining elements after the first 3 types of group are formed, the total number
 of type 2 should be counted twice (see the last input data). https://codeforces.com/problemset/problem/878/B
+
+178. Spanning Tree with One Fixed Degree (diff=2200, union find)
+This is a constructive problem. We firstly join all the points with index greater than 1 without edges that have 1 as an endpoint. 
+Then, we join 1 with all connected components once. For the remaining degree, we join 1 with all the connected points that weren't joined in the previous step. Finally, we use union find again on the remaining edges to create the final tree.
+https://codeforces.com/contest/1133/problem/F2
+
