@@ -1,7 +1,7 @@
 # codeforce practice
 codeforce practice summary update everyday
 
-Aug 30 to Sep8:
+* Aug 30 to Sep8:
 
 
 1. Rooks and Rectangles (div1, diff=2400, segmenttree and line sweep)
@@ -46,7 +46,7 @@ http://codeforces.com/problemset/problem/1132/D
 14. On Changing Tree (div1, diff=2400, segmenttree and dfs)
 http://codeforces.com/contest/396/problem/C
 
-Sep 9 to Sep 16:
+* Sep 9 to Sep 16:
 
 
 15. Frogs and mosquitoes (div2, diff=2500, segmenttree, greedy and set)
@@ -86,7 +86,7 @@ https://codeforces.com/problemset/problem/258/E
 https://codeforces.com/contest/343/problem/D
 
 
-Sep 17 to Sep 23:
+* Sep 17 to Sep 23:
 
 27. Buy a Ticket (div2, diff=2000, graph modification and dijkstra)
 https://codeforces.com/contest/938/problem/D
@@ -106,7 +106,7 @@ https://codeforces.com/problemset/problem/1105/D
 32. Bertown roads (div2, diff=2100, tarjan's bridge finding algorithm)
 https://codeforces.com/problemset/problem/118/E
 
-Sep 24 to Sep 30:
+* Sep 24 to Sep 30:
 
 33. Scheme (div2, diff=2400, tarjan's scc and point compression)
 https://codeforces.com/contest/22/problem/E
@@ -114,7 +114,7 @@ https://codeforces.com/contest/22/problem/E
 34. Roads not only in Berland (div2, diff=1900, Kruskal MST)
 https://codeforces.com/problemset/problem/25/D
 
-Oct 1 to Oct 7:
+* Oct 1 to Oct 7:
 
 35. Legency (div1, diff=2600, segment tree and dijkstra)
 https://codeforces.com/problemset/problem/786/B
@@ -128,7 +128,7 @@ https://codeforces.com/problemset/problem/723/F
 38. Queue (Codeforces Beta Round, diff=2300, AVL tree)
 https://codeforces.com/contest/38/problem/G
 
-Oct 8 to Oct 13:
+* Oct 8 to Oct 13:
 
 39. The Shortest Statement (div2, diff=2300, dijkstra and LCA) 
 https://codeforces.com/problemset/problem/1051/F
@@ -142,7 +142,7 @@ https://codeforces.com/problemset/problem/702/E
 42. We Need More Bosses (div2, diff=2100, tarjan and tree dp)
 https://codeforces.com/problemset/problem/1000/E
 
-Oct 14 to Oct 20:
+* Oct 14 to Oct 20:
 
 43. Beautiful numbers (div2, diff=2400, dight dp)
 https://codeforces.com/problemset/problem/55/D
@@ -156,7 +156,7 @@ https://codeforces.com/problemset/problem/401/D
 46. Segment Sum (div2, diff=2300, digit dp and bitmask)
 https://codeforces.com/problemset/problem/1073/E
 
-Oct 21 to Oct 27:
+* Oct 21 to Oct 27:
 
 47. Ilya and Roads (div2, diff=2100, DP and greedy)
 https://codeforces.com/problemset/problem/313/D
@@ -179,7 +179,7 @@ https://codeforces.com/contest/675/problem/E
 53. Bear and Tree Jumps (VK Cup 2017 - Round 1, diff=2100, tree DP)
 https://codeforces.com/problemset/problem/771/C
 
-OCt 28 to Nov 3:
+* OCt 28 to Nov 3:
 
 54. Coloring Brackets (div2, diff=2200, interval DP) 
 https://codeforces.com/contest/149/problem/D
@@ -187,7 +187,7 @@ https://codeforces.com/contest/149/problem/D
 55. Periodic RMQ Problem (Educational Codeforces Round 20, diff=2500, segment tree and point compression)
 https://codeforces.com/contest/803/problem/G
 
-Nov 17 to Nov 24:
+* Nov 17 to Nov 24:
 
 56. Cow (Poj2481, line sweep and fenwick tree)
 https://vjudge.net/problem/POJ-2481
@@ -198,7 +198,7 @@ https://vjudge.net/problem/POJ-2482
 58. Camping Groups (Croc Champ 2012 - Round 1, line sweep & fenwick tree & segment tree, diff=2600)
 https://codeforces.com/contest/173/problem/E
 
-Nov 25 to Dec 11:
+* Nov 25 to Dec 11:
 
 59. A and B and Lecture Rooms (div2, diff=2300, LCA and dfs)
 https://codeforces.com/contest/519/problem/E
@@ -224,7 +224,7 @@ https://codeforces.com/contest/802/problem/K
 66. Tree with Maximum Cost (div3, diff=2100, tree dp)
 https://codeforces.com/contest/1092/problem/F
 
-* Dec 12 to Feb 11 summer holiday training:  data structure + graph + string  
+* Dec 12 to Feb 11 summer holiday training --- data structure + graph + string  
 
 67. Dog Food (div2, diff=2300, greedy)
 https://codeforces.com/contest/847/problem/D
