@@ -652,3 +652,9 @@ i belongs to the connected component p with color c. Note that to avoid TLE, we 
 or edge(i, u, c). After that for each query, it simply asks the size of the intersection of set(u) and set(v), we iterate the 
 set with a smaller size to answer the queries. https://codeforces.com/contest/506/problem/D
 
+180. Desk Disorder (diff=2100, union find)
+There are only 3 types of connected components, tp1: connected components that forms a functional graph, tp2: connected components
+that forms a tree, tp3: connected components with self cycle. For case 1, the ans sould be doubled, case 2, ans could time the number
+of vertices in such connected component. Since every vertex has at most 1 outlink, union find can help to detect cycle and self cycle
+in this situation. https://codeforces.com/problemset/problem/859/E
+
