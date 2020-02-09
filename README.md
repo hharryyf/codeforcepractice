@@ -658,3 +658,8 @@ that forms a tree, tp3: connected components with self cycle. For case 1, the an
 of vertices in such connected component. Since every vertex has at most 1 outlink, union find can help to detect cycle and self cycle
 in this situation. https://codeforces.com/problemset/problem/859/E
 
+181. New Roads (diff=2100, tree and observation)
+The problem asks to construct a tree satisfies the ith level consists a[i] nodes and there are k leaf nodes. The key observation is
+for every level from 0 to t-1, there must be at least 1 non leaf node and if a[i] > a[i+1], level i must have at least a[i] - a[i+1]
+leaf nodes. We can mark the nodes that must be leaf node first and then link the edges. https://codeforces.com/problemset/problem/746/G
+
