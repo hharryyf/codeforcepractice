@@ -663,3 +663,10 @@ The problem asks to construct a tree satisfies the ith level consists a[i] nodes
 for every level from 0 to t-1, there must be at least 1 non leaf node and if a[i] > a[i+1], level i must have at least a[i] - a[i+1]
 leaf nodes. We can mark the nodes that must be leaf node first and then link the edges. https://codeforces.com/problemset/problem/746/G
 
+182. Place Your Ad Here (diff=2500, line sweep, range tree, set)
+The problem asks to compute the largest cost[j] * intersection(interval of type 1, interval of type 2). We can easily classify it as
+a line sweep problem. We should do 3 line sweeps in total. The first sweep, we eliminate all the channels that can be fully overlapped
+by the videos using a set and update the answer. The second line sweep, we sort all the channels and videos by the r value and
+use a range tree to update the answer. Finally, we sort all the channels and videos by the l value and use a range tree to update the
+answer. https://codeforces.com/contest/542/problem/A
+
