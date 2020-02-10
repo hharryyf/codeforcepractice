@@ -670,3 +670,7 @@ by the videos using a set and update the answer. The second line sweep, we sort 
 use a range tree to update the answer. Finally, we sort all the channels and videos by the l value and use a range tree to update the
 answer. https://codeforces.com/contest/542/problem/A
 
+183. Breaking Good (diff=2200, BFS and dijkstra)
+The problem is equivalent to finding the shortest path that has the most amount of 1 edge (i.e. shortest path that has the least amount of 0 edge). We can run 2 BFS first, one from vertex 1, the other from vertex n. Then, we construct a shortest path level graph with k[i] as weights. Finally, we run dijkstra's algorithm to find the shortest weighted path from 1 to n in the level graph we created in the previous step. https://codeforces.com/contest/507/problem/E
+
+
