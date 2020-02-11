@@ -680,3 +680,6 @@ be done efficiently by sorting the queries according to the type-2 event. And th
 point x and point y, for each type-3 event we simply see whether x and y is in the same connected component and y is in the subtree
 of x. https://codeforces.com/contest/466/problem/E
 
+185. Almost Acyclic Graph (diff=2200, dfs)
+This examines the definition of backedge in dfs traversal. https://codeforces.com/contest/915/problem/D
+
