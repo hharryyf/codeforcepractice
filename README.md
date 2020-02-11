@@ -673,4 +673,10 @@ answer. https://codeforces.com/contest/542/problem/A
 183. Breaking Good (diff=2200, BFS and dijkstra)
 The problem is equivalent to finding the shortest path that has the most amount of 1 edge (i.e. shortest path that has the least amount of 0 edge). We can run 2 BFS first, one from vertex 1, the other from vertex n. Then, we construct a shortest path level graph with k[i] as weights. Finally, we run dijkstra's algorithm to find the shortest weighted path from 1 to n in the level graph we created in the previous step. https://codeforces.com/contest/507/problem/E
 
+184. Information Graph (diff=2400, offline union find)
+This problem is very similar to one of Ray's assignment problem. Asking whether x has a type i document is equivalent to asking,
+whether at the time document i is signed whether x is the parent of y (the person that initially signed the document). This can
+be done efficiently by sorting the queries according to the type-2 event. And then we do a line sweep, for each type-1 event, we union
+point x and point y, for each type-3 event we simply see whether x and y is in the same connected component and y is in the subtree
+of x. https://codeforces.com/contest/466/problem/E
 
