@@ -683,3 +683,11 @@ of x. https://codeforces.com/contest/466/problem/E
 185. Almost Acyclic Graph (diff=2200, dfs)
 This examines the definition of backedge in dfs traversal. https://codeforces.com/contest/915/problem/D
 
+186. Andrew and Taxi (diff=2200, binary search for final answer and top-sort)
+The problem is actually asking select the minimum C, such that we only need to select edges with weight less than or equal to C
+and reverse some in order to eliminate all the cycles in the graph. We can binary search on this C. However, how to validate the
+final answer is quite tricky. Something we might ignore is if we do a top sort on an acyalic graph, if we keep adding edges from
+some v1 to v2 which v1 has a top order less than v2, the graph would never contain a cycle. Hence, we can simply find the top
+order of the subgraph formed with edges with weight greater than C, and add the remaining edges from a vertex with less top sort order 
+to a vertex with greater top sort order. https://codeforces.com/problemset/problem/1100/E
+
