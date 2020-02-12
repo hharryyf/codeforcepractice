@@ -697,3 +697,10 @@ to a vertex with greater top sort order. https://codeforces.com/problemset/probl
 If we cannot solve the problem if a smart way, the first thing we need to do is analyze the complexity of brute force. And we can see
 if we just follow the definition of suggested friend we have a solution that is O(m^2) which m <= 5000, hence the brute force solution would run in time. https://codeforces.com/contest/245/problem/G
 
+188. Tourism (diff=2200, tarjan's algorithm and simple tree dp)
+The statement "not use any road twice in a row" should immediately remind us to use tarjan's bridge finding algorithm to compress
+the biconnected components into a tree. However, there's something we have to be careful before run a simple tree dp to find the
+largest weighted path from root to leaf. If a component size has size greater than 1 and one of its child has component size greater
+than 1, one can actually walk down to the child and come back. Hence, in order to reduce the complexity of the dp procedure, 
+if a biconnected component has size greater than 1, we recursively merge it to its parent. https://codeforces.com/problemset/problem/1220/E
+
