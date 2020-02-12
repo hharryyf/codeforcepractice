@@ -692,3 +692,8 @@ order of the subgraph formed with edges with weight greater than C, and add the 
 to a vertex with greater top sort order. https://codeforces.com/problemset/problem/1100/E
 
 * Feb 12 to Mar 11 --- "virus gap term training" focal point: dynamic programming and graph
+
+187. Suggested Friends (diff=2200, graph connectivity and brute force)
+If we cannot solve the problem if a smart way, the first thing we need to do is analyze the complexity of brute force. And we can see
+if we just follow the definition of suggested friend we have a solution that is O(m^2) which m <= 5000, hence the brute force solution would run in time. https://codeforces.com/contest/245/problem/G
+
