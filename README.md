@@ -691,3 +691,4 @@ some v1 to v2 which v1 has a top order less than v2, the graph would never conta
 order of the subgraph formed with edges with weight greater than C, and add the remaining edges from a vertex with less top sort order 
 to a vertex with greater top sort order. https://codeforces.com/problemset/problem/1100/E
 
+* Feb 12 to Mar 11 --- "virus gap term training" focal point: dynamic programming and graph
