@@ -704,3 +704,8 @@ largest weighted path from root to leaf. If a component size has size greater th
 than 1, one can actually walk down to the child and come back. Hence, in order to reduce the complexity of the dp procedure, 
 if a biconnected component has size greater than 1, we recursively merge it to its parent. https://codeforces.com/problemset/problem/1220/E
 
+189. Fishes (diff=2100, priority queue and expected value)
+The answer is actually the sum of the k cells that has the largest total contribution. If we draw some examples we can figure out that
+these k cells should group together, hence we can use a priority queue and a uninformed cost search that starts from (r, r) to 
+find the k largest contributing cells. https://codeforces.com/problemset/problem/912/D
+
