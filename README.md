@@ -709,3 +709,6 @@ The answer is actually the sum of the k cells that has the largest total contrib
 these k cells should group together, hence we can use a priority queue and a uninformed cost search that starts from (r, r) to 
 find the k largest contributing cells. https://codeforces.com/problemset/problem/912/D
 
+190. Roma and Poker (diff=2100, standard dp)
+https://codeforces.com/contest/803/problem/E
+
