@@ -712,3 +712,6 @@ find the k largest contributing cells. https://codeforces.com/problemset/problem
 190. Roma and Poker (diff=2100, standard dp)
 https://codeforces.com/contest/803/problem/E
 
+191. Counter Attack (diff=2300, union find and range tree graph construction)
+Similar to 653E, nothing special. https://codeforces.com/contest/190/problem/E
+
