@@ -715,3 +715,6 @@ https://codeforces.com/contest/803/problem/E
 191. Counter Attack (diff=2300, union find and range tree graph construction)
 Similar to 653E, nothing special. https://codeforces.com/contest/190/problem/E
 
+192. Tree Constructing (diff=2200, graph, construction)
+There's an obvious observation is we can construct one diameter first and then add subtrees to the vertices on that diameter.
+https://codeforces.com/contest/1003/problem/E
