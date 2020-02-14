@@ -718,3 +718,8 @@ Similar to 653E, nothing special. https://codeforces.com/contest/190/problem/E
 192. Tree Constructing (diff=2200, graph, construction)
 There's an obvious observation, we can construct one diameter first and then add subtrees to the vertices on that diameter.
 https://codeforces.com/contest/1003/problem/E
+
+193. Iahub and Xors (diff=2500, 2d-fenwick tree)
+I learned something new on 2d data structure :). https://vjudge.net/problem/CodeForces-341D
+
+
