@@ -722,4 +722,13 @@ https://codeforces.com/contest/1003/problem/E
 193. Iahub and Xors (diff=2500, 2d-fenwick tree)
 I learned something new on 2d data structure :). https://vjudge.net/problem/CodeForces-341D
 
+194. Anti-Palindromize (diff=2500, MCMF)
+It is quite obvious that the problem is not a dp problem, so maxflow or MCMF should be our direction. The problem basically has
+several constrains, for each letter is should be used exactly cnt_i times, for each position should match exactly 1 letter,
+position i and position n-i+1 should have different letters. We can construct the following graph, connect src to nodes representing
+a-z with cap= cnt_i, cost=0, create n/2 extra nodes for each letter (a-z), connect a-z to these extra nodes with cap=1, cost=0,
+connect the extra nodes to i and n-i+1 (for all i) with cap=1, cost=-b[i] or 0 depending on whether the letter match with s[i] or not.
+Finaly connect nodes 1 to n to the sink. Run MCMF would get the correct solution (print the the cost times -1).
+https://vjudge.net/problem/CodeForces-884F
+
 
