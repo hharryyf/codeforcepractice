@@ -731,4 +731,11 @@ connect the extra nodes to i and n-i+1 (for all i) with cap=1, cost=-b[i] or 0 d
 Finaly connect nodes 1 to n to the sink. Run MCMF would get the correct solution (print the the cost times -1).
 https://vjudge.net/problem/CodeForces-884F
 
+195. Evacuation (diff=2500, Dinic's algorithm)
+It is obvious that this problem cannot be solved by greedy or dynamic programming, hence we try to construct a flow network. Let's firstly use BFS to compute the shortest distance from 'Z' to all cells. Then let's construct a level graph with t+2 levels. Connect
+s to nodes in level 1 with capacity shown in the first grid. Connect level t + 2 nodes to t with capacity shown in the second grid.
+Finally for nodes v1 in level i and v2 in level i+1, connect v1 to v2 iff v1 is adjacent to v2 and dist[v1] >= i and dist[v2] >= i.
+Run maxflow would get the solution. The main lesson is for this type of very long problems, every sentence should be read carefully,
+unless you want to get WA feedback. https://vjudge.net/problem/CodeForces-78E
+
 
