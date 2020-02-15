@@ -738,4 +738,9 @@ Finally for nodes v1 in level i and v2 in level i+1, connect v1 to v2 iff v1 is 
 Run maxflow would get the solution. The main lesson is for this type of very long problems, every sentence should be read carefully,
 unless you want to get WA feedback. https://vjudge.net/problem/CodeForces-78E
 
+196. Rectangle Painting 2 (diff=2500, Dinic's algorithm)
+The key observation is we can do point compression on rows and columns seperately and partition the entire shape into several rectangle
+regions. Then the problem is changed into the following, we can change all regions in some row/col with a given cost, what is the
+minimum cost to change required cells black. This is a standard min-cut problem and can be solved by applying Dinic's algorithm.
+https://vjudge.net/problem/CodeForces-1198E
 
