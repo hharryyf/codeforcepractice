@@ -744,3 +744,10 @@ regions. Then the problem is changed into the following, we can change all regio
 minimum cost to change required cells black. This is a standard min-cut problem and can be solved by applying Dinic's algorithm.
 https://vjudge.net/problem/CodeForces-1198E
 
+197. Bipartite Segments (diff=2500, tarjan's algorithm, fenwick tree and line sweep)
+The first observation is there's no nested cycle, so that after we use tarjan's biconnected component algorithm we can represent
+each connected component as an interval [l, r], which l is the smallest vertex in that component and r is the largest index vertex
+in that component. Then we establish 2 BITs to compute for each left end point i, what is the minimum r without a fully covered
+interval. The problem is a quite standard line sweep problem and can be solved in O(nlogn) complexity. 
+https://vjudge.net/problem/CodeForces-901C
+
