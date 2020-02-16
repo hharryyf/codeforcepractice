@@ -751,3 +751,7 @@ in that component. Then we establish 2 BITs to compute for each left end point i
 interval. The problem is a quite standard line sweep problem and can be solved in O(nlogn) complexity. 
 https://vjudge.net/problem/CodeForces-901C
 
+198. Brackets (interval dp)
+We define the sub problem(i, j) as the maximum matching by using brackets in the interval [i, j]. Then we can easily see that
+we only need to consider where to partition the matching point. dp[i][j] = max(2match(i, j) + dp[i+1][j-1], dp[i][k] + dp[k+1][j], k=i..j-1) https://vjudge.net/problem/POJ-2955
+
