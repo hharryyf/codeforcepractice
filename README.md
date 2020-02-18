@@ -768,3 +768,5 @@ https://vjudge.net/problem/CodeForces-1117G
 201. Multiplication Puzzle (interval dp)
 https://vjudge.net/problem/POJ-1651
 
+202. B-number (digit dp)
+https://vjudge.net/problem/HDU-3652
