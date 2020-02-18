@@ -758,3 +758,10 @@ we only need to consider where to partition the matching point. dp[i][j] = max(2
 199. Product Sum (diff=2500, convex-hull trick)
 https://vjudge.net/problem/CodeForces-631E
 
+200. Recursive Queries (diff=2500, line sweep and range tree lazy propagation)
+The key observation is for each number its contribution is actually equal to qr - ql + 1, which qr refers to the right most position
+such that the number is greater than all numbers between itself and qr, similar for ql. Hence, the problem is changed to a line 
+sweep problem, we only need to calculate the total contribution of all numbers within the query range. We use range tree and lazy
+propagation to solve this twice, once in the forward direction while another iteration in the backward direction.
+https://vjudge.net/problem/CodeForces-1117G
+
