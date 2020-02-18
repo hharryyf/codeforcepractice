@@ -765,3 +765,6 @@ sweep problem, we only need to calculate the total contribution of all numbers w
 propagation to solve this twice, once in the forward direction while another iteration in the backward direction.
 https://vjudge.net/problem/CodeForces-1117G
 
+201. Multiplication Puzzle (interval dp)
+https://vjudge.net/problem/POJ-1651
+
