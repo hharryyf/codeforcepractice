@@ -770,3 +770,7 @@ https://vjudge.net/problem/POJ-1651
 
 202. B-number (digit dp)
 https://vjudge.net/problem/HDU-3652
+
+203. Bomb (digit dp)
+https://vjudge.net/problem/HDU-3555
+
