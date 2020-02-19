@@ -780,3 +780,6 @@ the number of nodes that is in the subtree of nv and has dist(nv, u)=p. For the 
 it. And for the counting part, we maintain a sorted vector for the dfs order of nodes of each level of the tree, and use binary search to find the left most and right most nodes that are in the same level of v and is in the subtree of nv. This solution works in
 O(nlogn + mlogn) https://vjudge.net/problem/CodeForces-208E
 
+205. Balanced Number (digit dp)
+https://vjudge.net/problem/HDU-3709
+
