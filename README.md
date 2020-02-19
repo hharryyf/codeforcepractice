@@ -774,3 +774,9 @@ https://vjudge.net/problem/HDU-3652
 203. Bomb (digit dp)
 https://vjudge.net/problem/HDU-3555
 
+204. Blood Cousins (diff=2400, dfs and binary-lifting)
+The obvious observation is this problem is equivalent to the following. Suppose that nv is the pth parent of v, we need to count
+the number of nodes that is in the subtree of nv and has dist(nv, u)=p. For the find pth parent part, we can use binary lifting to do 
+it. And for the counting part, we maintain a sorted vector for the dfs order of nodes of each level of the tree, and use binary search to find the left most and right most nodes that are in the same level of v and is in the subtree of nv. This solution works in
+O(nlogn + mlogn) https://vjudge.net/problem/CodeForces-208E
+
