@@ -783,3 +783,9 @@ O(nlogn + mlogn) https://vjudge.net/problem/CodeForces-208E
 205. Balanced Number (digit dp)
 https://vjudge.net/problem/HDU-3709
 
+206. AI robots (diff=2200, line sweep and dynamic range tree)
+We use two pointers approach, pt1 points to the robot[i].x (in non-decreasing order), pt2 points to robot[i].x + robot[i].r (in
+non-decreasing order). Then, before each time we query the total number of points between [robot[i].x - robot[i].r, x], we
+delete all the points that its robot[j].x + robot[j].r cannot reach robot[i].x anymore. Using dynamic range tree is definitly
+the best for this case, we simply maintain ~10^5 range trees, 1 for each IQ. https://vjudge.net/problem/CodeForces-1045G
+
