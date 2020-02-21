@@ -789,3 +789,7 @@ non-decreasing order). Then, before each time we query the total number of point
 delete all the points that its robot[j].x + robot[j].r cannot reach robot[i].x anymore. Using dynamic range tree is definitly
 the best for this case, we simply maintain ~10^5 range trees, 1 for each IQ. https://vjudge.net/problem/CodeForces-1045G
 
+207. Subtree Minimum Query (diff=2300, persistent range tree)
+The solution is actually very simple, we establish persistent range trees according to the BFS order, and query the corresponding
+tree according to the DFS order. https://vjudge.net/problem/CodeForces-893F
+
