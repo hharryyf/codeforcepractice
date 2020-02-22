@@ -809,3 +809,8 @@ This problem has many solutions, we can either use sqrt decomposition or amortiz
 The problem is actually very simple. let dist(i, j) refers to the shortest path to state i, j, then we use BFS to find the minimum
 distance from state 1, n to state n, 1 without moving to any state (v, v) in the middle. https://vjudge.net/problem/CodeForces-29E
 
+212. Salazar Slytherin's Locket (diff=2200, digit dp)
+The observation is we only need to know how many times each digit occurs after the leading non-zero digit. We can use a bitmask
+to represent the odd/even occurence of each digit 0-9. With memorization, we can easily get a complexity of O(q + 11*2^b*log(r)).
+https://codeforces.com/problemset/problem/855/E
+
