@@ -793,3 +793,7 @@ the best for this case, we simply maintain ~10^5 range trees, 1 for each IQ. htt
 The solution is actually very simple, we establish persistent range trees according to the BFS order, and query the corresponding
 tree according to the DFS order. https://vjudge.net/problem/CodeForces-893F
 
+208. Mike and Feet (diff=2100, dp or binary search and sparse table)
+The only thing I'm amazed with this problem is that I solved a standard dp problem with sparse table and binary search.
+https://vjudge.net/problem/CodeForces-547B
+
