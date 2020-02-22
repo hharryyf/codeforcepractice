@@ -804,3 +804,8 @@ https://vjudge.net/problem/CodeForces-833B
 
 210. Lucky Array (diff=2300, sqrt decomposition)
 This problem has many solutions, we can either use sqrt decomposition or amortized range tree. https://vjudge.net/problem/CodeForces-121E
+
+211. Quarrel (diff=2400, BFS)
+The problem is actually very simple. let dist(i, j) refers to the shortest path to state i, j, then we use BFS to find the minimum
+distance from state 1, n to state n, 1 without moving to any state (v, v) in the middle. https://vjudge.net/problem/CodeForces-29E
+
