@@ -802,3 +802,5 @@ The hardest part is how to calculate the cost(l, r), however, if we are familiar
 the current valid window of cost, the problem is very easy to be solved in an amortized O(nklogn) complexity.
 https://vjudge.net/problem/CodeForces-833B
 
+210. Lucky Array (diff=2300, sqrt decomposition)
+This problem has many solutions, we can either use sqrt decomposition or amortized range tree. https://vjudge.net/problem/CodeForces-121E
