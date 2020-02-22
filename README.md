@@ -797,3 +797,8 @@ tree according to the DFS order. https://vjudge.net/problem/CodeForces-893F
 The only thing I'm amazed with this problem is that I solved a standard dp problem with sparse table and binary search.
 https://vjudge.net/problem/CodeForces-547B
 
+209. The Bakery (diff=2200, dp, divide and conquer optimization)
+The hardest part is how to calculate the cost(l, r), however, if we are familiar with Mo's algorithm i.e. always maintaing
+the current valid window of cost, the problem is very easy to be solved in an amortized O(nklogn) complexity.
+https://vjudge.net/problem/CodeForces-833B
+
