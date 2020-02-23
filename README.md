@@ -824,3 +824,5 @@ bridges, which represents all the bridges that can be selected which length are 
 each gap we select the shortest bridge that is no less than a[i].l - a[i-1].r and remove the bridge from the set.
 https://vjudge.net/problem/CodeForces-555B
 
+215. DZY Loves Modification  (diff=2100, greedy)
+Seperate rows and cols. https://vjudge.net/problem/CodeForces-446B
