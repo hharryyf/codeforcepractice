@@ -817,3 +817,10 @@ https://codeforces.com/problemset/problem/855/E
 213. Two permutations (diff=2200, persistent range tree)
 https://vjudge.net/problem/CodeForces-323C
 
+214. Case of Fugitive (diff=2100, greedy and line sweep)
+The problem can be solved by greedy should be figured out easily, however, how to do it correctly is not that stright forward.
+We firstly sort all the gap according to a[i].r - a[i-1].l, and the bridges according to length. Then, we maintain a set of
+bridges, which represents all the bridges that can be selected which length are no greater than a[i].r - a[i-1].l. Then, for
+each gap we select the shortest bridge that is no less than a[i].l - a[i-1].r and remove the bridge from the set.
+https://vjudge.net/problem/CodeForces-555B
+
