@@ -691,7 +691,7 @@ some v1 to v2 which v1 has a top order less than v2, the graph would never conta
 order of the subgraph formed with edges with weight greater than C, and add the remaining edges from a vertex with less top sort order 
 to a vertex with greater top sort order. https://codeforces.com/problemset/problem/1100/E
 
-* Feb 12 to Mar 11 --- "virus gap term training" focal point: dynamic programming and graph
+* Feb 12 to Mar 11 --- "virus gap term training" focal point: dynamic programming, greedy and graph
 
 187. Suggested Friends (diff=2200, graph connectivity and brute force)
 If we cannot solve the problem if a smart way, the first thing we need to do is analyze the complexity of brute force. And we can see
