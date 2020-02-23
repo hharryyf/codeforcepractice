@@ -814,3 +814,6 @@ The observation is we only need to know how many times each digit occurs after t
 to represent the odd/even occurence of each digit 0-9. With memorization, we can easily get a complexity of O(q + 11*2^b*log(r)).
 https://codeforces.com/problemset/problem/855/E
 
+213. Two permutations (diff=2200, persistent range tree)
+https://vjudge.net/problem/CodeForces-323C
+
