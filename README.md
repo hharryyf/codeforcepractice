@@ -839,3 +839,8 @@ https://vjudge.net/problem/CodeForces-514D
 We process the queries offline, and always make sure for all numbers, we don't update its last occurrence in the BIT.
 https://vjudge.net/problem/CodeForces-703D
 
+219. Messenger Simulator (diff=2100, ordered statistic tree)
+We introduce something called key, initially keys are equal to i. For each operation, we simply find the order of (key[v], v),
+update max[v] and min[v] and then erase (key[v], v) from the ordered set. Finally, at the end of the operation, we add 
+(minkey - 1, v) to the set. https://vjudge.net/problem/CodeForces-1288E
+
