@@ -826,3 +826,9 @@ https://vjudge.net/problem/CodeForces-555B
 
 215. DZY Loves Modification  (diff=2100, greedy)
 Seperate rows and cols. https://vjudge.net/problem/CodeForces-446B
+
+216. Pair of Numbers (diff=2100, math and binary search, sparse table)
+The observation is actually very simple, we can validate if a[j] = gcd(l, r), and since as l decrease and r increase gcd(l, r) is
+non-increasing, we can use binary search to get the optimal(l, r) for each j. Maintaining gcd(l, r) on a static array can be done
+with sparse table. https://codeforces.com/problemset/problem/359/D
+
