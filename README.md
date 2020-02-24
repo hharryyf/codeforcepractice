@@ -832,3 +832,6 @@ The observation is actually very simple, we can validate if a[j] = gcd(l, r), an
 non-increasing, we can use binary search to get the optimal(l, r) for each j. Maintaining gcd(l, r) on a static array can be done
 with sparse table. https://codeforces.com/problemset/problem/359/D
 
+217. R2D2 and Droid Army (diff=2100, binary search and sparse table)
+https://vjudge.net/problem/CodeForces-514D
+
