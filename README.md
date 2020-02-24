@@ -835,3 +835,7 @@ with sparse table. https://codeforces.com/problemset/problem/359/D
 217. R2D2 and Droid Army (diff=2100, binary search and sparse table)
 https://vjudge.net/problem/CodeForces-514D
 
+218. Mishka and Interesting sum (diff=2100, line sweep and fenwick tree)
+We process the queries offline, and always make sure for all numbers, we don't update its last occurrence in the BIT.
+https://vjudge.net/problem/CodeForces-703D
+
