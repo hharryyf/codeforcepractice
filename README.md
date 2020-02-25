@@ -844,3 +844,7 @@ We introduce something called key, initially keys are equal to i. For each opera
 update max[v] and min[v] and then erase (key[v], v) from the ordered set. Finally, at the end of the operation, we add 
 (minkey - 1, v) to the set. https://vjudge.net/problem/CodeForces-1288E
 
+220. Same Sum Blocks (Hard) (diff=2200, data structures and greedy)
+We can use prefix array to transform this porblem to a standard greedy problem. Select the maximum
+amount of non-intersecting intervals from a group of intervals. https://vjudge.net/problem/CodeForces-1141F2
+
