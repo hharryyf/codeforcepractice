@@ -854,3 +854,7 @@ to all points in the clique which j has the largest x coordinate. Then, the rest
 order, then the problem is changed to a LIS problem, which can be solved easily in O(nlogn) time complexity.
 https://vjudge.net/problem/CodeForces-527D
 
+222. Tokitsukaze and Strange Rectangle  (diff=2200, line sweep and combinatory)
+This problem is actually very hard. We need to know how to avoid double count for rectangles with the same y coordinate.
+https://vjudge.net/problem/CodeForces-1190D
+
