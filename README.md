@@ -848,3 +848,9 @@ update max[v] and min[v] and then erase (key[v], v) from the ordered set. Finall
 We can use prefix array to transform this porblem to a standard greedy problem. Select the maximum
 amount of non-intersecting intervals from a group of intervals. https://vjudge.net/problem/CodeForces-1141F2
 
+221. Clique Problem （diff=2100, dp and data structures）
+The observation is, if we sort all the vertices according to x then if xj < xi and xi can connect to xj, then xi can connect
+to all points in the clique which j has the largest x coordinate. Then, the rest of the problem is very simple after we rewrite the equation to xi - wi >= xj + wj. If we maintain a range max segment tree on xi+wi and process the points according to x increasing
+order, then the problem is changed to a LIS problem, which can be solved easily in O(nlogn) time complexity.
+https://vjudge.net/problem/CodeForces-527D
+
