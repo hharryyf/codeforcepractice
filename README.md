@@ -858,3 +858,12 @@ https://vjudge.net/problem/CodeForces-527D
 This problem is actually very hard. We need to know how to avoid double count for rectangles with the same y coordinate.
 https://vjudge.net/problem/CodeForces-1190D
 
+223. Multidimensional Queries (diff=2200, range tree and observation)
+Since k <= 5, we can think how to solve this problem when k=1 or k=2. For k=1, we know that we can use divide and conquer range
+tree to solve this problem, when we merge two intervals the answer is always lans, rans or lmax-rmin or rmax-lmin, we select
+the maximum among those possible answers. Then, we might observe that for absolute values |a-b|, if we brute force all the cases
+a > b or a <= b there are in total 1 << 5 cases which isn't too bad. And we also know the answer is the maximum among those
+32 combinations. So the answer works as follows, we maintain range max, range min of (+-)b[l][1] (+-)b[l][2] (+-)b[l][3] .. (+-)b[l][k]
+and use divide and conquer to merge them. Then final solution would work in O(160n + 32nlogn) which is fast enough.
+https://vjudge.net/problem/CodeForces-1093G
+
