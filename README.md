@@ -867,3 +867,6 @@ a > b or a <= b there are in total 1 << 5 cases which isn't too bad. And we also
 and use divide and conquer to merge them. Then final solution would work in O(160n + 32nlogn) which is fast enough.
 https://vjudge.net/problem/CodeForces-1093G
 
+224. Boredom (diff=2200, persistent range tree and combinatory)
+https://vjudge.net/problem/CodeForces-853C
+
