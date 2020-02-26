@@ -870,3 +870,6 @@ https://vjudge.net/problem/CodeForces-1093G
 224. Boredom (diff=2200, persistent range tree and combinatory)
 https://vjudge.net/problem/CodeForces-853C
 
+225. Arson In Berland Forest  (diff=2200, BFS and binary search on final answer)
+There should be a health warning for this problem, it is absolutely a TLE giver.
+https://vjudge.net/problem/CodeForces-1227E
