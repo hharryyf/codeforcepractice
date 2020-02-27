@@ -877,3 +877,10 @@ https://vjudge.net/problem/CodeForces-1227E
 226. Beard Graph (diff=2200, preparation for HLD)
 https://vjudge.net/problem/CodeForces-165D
 
+227. Drazil and Morning Exercise (diff=2800, persistent range tree, kruskal modification and tree dp)
+We should immediately realize that q is only 50, which means that we can process the queries seperately. Firstly, let's do some 
+precomputations, we preprocess the longest path (cost[i]) from every vertex i to a leaf using 2 dfs. Secondly, we use the kruskal modification algorithm, to produce a tree that satisfy for each node v every nodes u in its subtree has cost[u] >= cost[v].
+Then the problem is changed to the following, we need to find the total number of nodes that's in the subtree of v which has cost
+no greater than cost[v] + L. And we should realize that persistent range tree is perfect for this. 
+https://codeforces.com/contest/516/problem/D
+
