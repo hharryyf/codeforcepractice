@@ -888,3 +888,5 @@ https://codeforces.com/contest/516/problem/D
 The observation is we can extract all the 2, 5 factor of a[1..n], then we define the subproblem as opt(i, j, k) be the maximum
 number of factor 2 when select k numbers from the first i numbers with j fac 5. https://vjudge.net/problem/CodeForces-837D
 
+229. Thwarting Demonstrations (diff=2200, fenwick tree and binary search for final answer)
+This trick is too simple, just don't forget to push in 0 to the disc array when doing point compression. https://vjudge.net/problem/CodeForces-191E
