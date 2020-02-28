@@ -897,3 +897,7 @@ problem with a smart brute force, for each valuable nodes we query the total num
 it. The query can be done in O(logn) if we use persistent range tree. Hence, the overall complexity is O(nlognlogn). 
 https://vjudge.net/problem/CodeForces-538F
 
+231. Duff in the Army (diff=2200, heavy-light decomposition)
+We need to use heavy-light decomposition to decompose the tree in to ranges, and then we establish a range tree on sets to process
+the queries. Overall complexity O(nlognlogn). https://vjudge.net/problem/CodeForces-587C
+
