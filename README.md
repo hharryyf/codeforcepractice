@@ -890,3 +890,10 @@ number of factor 2 when select k numbers from the first i numbers with j fac 5. 
 
 229. Thwarting Demonstrations (diff=2200, fenwick tree and binary search for final answer)
 This trick is too simple, just don't forget to push in 0 to the disc array when doing point compression. https://vjudge.net/problem/CodeForces-191E
+
+230. A Heap of Heaps (diff=2200, persistent range tree and amortized complexity)
+The problem is actually very easy to be solved. We note that only n/1 nodes in the first heap, n/2 nodes in the second heap and n/k valuable nodes in the kth heap which means that in total only O(nlogn) many nodes are useful query nodes. Hence, we can solve the 
+problem with a smart brute force, for each valuable nodes we query the total number of nodes in a given range that has value less than
+it. The query can be done in O(logn) if we use persistent range tree. Hence, the overall complexity is O(nlognlogn). 
+https://vjudge.net/problem/CodeForces-538F
+
