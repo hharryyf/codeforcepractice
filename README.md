@@ -915,3 +915,6 @@ This is a tree observation problem. We can see that the LCA of a group of points
 and maximum dfsorder. Then the problem can be solved easily with the support of range min and range max range trees.
 https://vjudge.net/problem/CodeForces-1062E
 
+235. Happy Tree Party (diff=2300, heavy-light decomposition)
+Almost HLD template problem, just be careful about the product overflow issue. https://vjudge.net/problem/CodeForces-593D
+
