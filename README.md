@@ -910,3 +910,8 @@ construct the shortest path matrices for 1-jump, 2-jump, 4 jump and so on. Then 
 We should realize that the more task we solve, the more time we need. Hence, we can binary search for the final answer k and set d
 to the kth smallest value of array p to validate each k. https://vjudge.net/problem/CodeForces-1070E
 
+234. Company (diff=2300, range tree and LCA)
+This is a tree observation problem. We can see that the LCA of a group of points in a tree is determined by the points with the minimum
+and maximum dfsorder. Then the problem can be solved easily with the support of range min and range max range trees.
+https://vjudge.net/problem/CodeForces-1062E
+
