@@ -906,3 +906,7 @@ The problem is very nice. The first observation is we can binary search for the 
 is less than v holds, any v' >= v would also holds. Hence, in order to compute v efficiently, we use the binary lifting trick. We
 construct the shortest path matrices for 1-jump, 2-jump, 4 jump and so on. Then when we validate v, we can calculate matrix multiplication O(logv) many times. The total time complexity would be O(n^3lognlogn). https://vjudge.net/problem/CodeForces-147B
 
+233. Getting Deals Done (diff=2300, greedy observation and binary search)
+We should realize that the more task we solve, the more time we need. Hence, we can binary search for the final answer k and set d
+to the kth smallest value of array p to validate each k. https://vjudge.net/problem/CodeForces-1070E
+
