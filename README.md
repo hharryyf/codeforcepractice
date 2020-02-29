@@ -901,3 +901,8 @@ https://vjudge.net/problem/CodeForces-538F
 We need to use heavy-light decomposition to decompose the tree in to ranges, and then we establish a range tree on sets to process
 the queries. Overall complexity O(nlognlogn). https://vjudge.net/problem/CodeForces-587C
 
+232. Smile House (diff=2300, binary lifting and matrices)
+The problem is very nice. The first observation is we can binary search for the final answer, if the assumption that the smallest cycle
+is less than v holds, any v' >= v would also holds. Hence, in order to compute v efficiently, we use the binary lifting trick. We
+construct the shortest path matrices for 1-jump, 2-jump, 4 jump and so on. Then when we validate v, we can calculate matrix multiplication O(logv) many times. The total time complexity would be O(n^3lognlogn). https://vjudge.net/problem/CodeForces-147B
+
