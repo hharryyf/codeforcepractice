@@ -918,3 +918,9 @@ https://vjudge.net/problem/CodeForces-1062E
 235. Happy Tree Party (diff=2300, heavy-light decomposition)
 Almost HLD template problem, just be careful about the product overflow issue. https://vjudge.net/problem/CodeForces-593D
 
+236. Cactus (diff=2400, tarjan's algorithm and heavy-light decomposition/LCA)
+We could easily observe that for every simple cycle there are exactly 2 ways of getting from one point on the cycle to another point.
+Hence, the problem is simply asking how many simple cycles are on the path from u to v. We can firstly use tarjan's algorithm
+to extract all the biconnected components, and then for each query it is simply asking count the number of size > 1 components 
+from u to v. It can be solved by LCA or heavy-light decomposition.
+
