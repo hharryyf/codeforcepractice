@@ -925,4 +925,9 @@ to extract all the biconnected components, and then for each query it is simply 
 from u to v. It can be solved by LCA or heavy-light decomposition. https://vjudge.net/problem/CodeForces-231E
 
 
+237. Construct a tree (diff=2300, binary search on final answer and graph construction)
+We can binary search on the branching factor. Suppose we know that there exists an answer for branching_factor <= d, there must
+exists an answer for branching_factor <= d + 1. After that we can greedily construct the tree (i.e. putting as mych nodes as
+possible on the current level). https://vjudge.net/problem/CodeForces-1098C
+
 
