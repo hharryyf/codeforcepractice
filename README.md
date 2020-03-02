@@ -946,5 +946,13 @@ to be the minimum of the resulting array, and apply all the updates that covers 
 the problem can be done efficiently by using line sweep, which I spent too long to do so.
 https://vjudge.net/problem/CodeForces-1108E2
 
+242. Printer (diff=2300, binary search on final answer and line sweep)
+The problem is actually quite easy to come up with a O(n^2) solution. We know that only O(n) many priorities need to be checked.
+A key observation is the lower the priority of task x, the later it would finish. Hence, we can binary search on the final answer!
+After realizing this fact we search the minimum priority that satisfies the finishing time of task x is no later than T. The
+problem would be reduced to a standard line sweep problem which can be solved with a priority queue.
+https://vjudge.net/problem/CodeForces-253E
+
+
 
 
