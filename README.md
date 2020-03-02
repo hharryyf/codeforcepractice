@@ -940,5 +940,11 @@ time. https://vjudge.net/problem/CodeForces-785E
 240. Voting (Hard Version) (diff=2300, greedy)
 The observation is quite similar to "DZY Loves Modification". https://vjudge.net/problem/CodeForces-1251E2
 
+241. Array and Segments (Hard version) (diff=2300, line sweep and range tree)
+This is probably my worst performance problem of the month. Firstly, we can easily observe that we can iterate through all the i
+to be the minimum of the resulting array, and apply all the updates that covers i completely. However, after that we should realize
+the problem can be done efficiently by using line sweep, which I spent too long to do so.
+https://vjudge.net/problem/CodeForces-1108E2
+
 
 
