@@ -930,4 +930,7 @@ We can binary search on the branching factor. Suppose we know that there exists 
 exists an answer for branching_factor <= d + 1. After that we can greedily construct the tree (i.e. putting as mych nodes as
 possible on the current level). https://vjudge.net/problem/CodeForces-1098C
 
+238. Choosing Balls (diff=2200, observation and dp)
+Only the top 2 colors are essential. https://vjudge.net/problem/CodeForces-264C
+
 
