@@ -937,4 +937,8 @@ Only the top 2 colors are essential. https://vjudge.net/problem/CodeForces-264C
 We maintain O(sqrt(n)) many ordered vector for each sqrt range, and perform queries in O(qsqrt(n)logn) time and update in O(qsqrt(n))
 time. https://vjudge.net/problem/CodeForces-785E
 
+240. Voting (Hard Version) (diff=2300, greedy)
+The observation is quite similar to "DZY Loves Modification". https://vjudge.net/problem/CodeForces-1251E2
+
+
 
