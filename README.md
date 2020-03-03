@@ -970,5 +970,14 @@ the parent node and decrease k. We should realize that the first type of operati
 is updated all its ancestors should be updated as well. The second type of operation can be done with brute force in an amortized O(1)
 complexity. Hence this solution works in O(nlogn). https://vjudge.net/problem/CodeForces-980E
 
+246. Delete a Segment (diff=2300, line sweep)
+My first observation was wrong. I tried to use union find to solve this problem. However, we should immediately realize that 
+this is unfeasible because it is very hard to delete a range in union find data structure. Then I realized since we can only
+delete 1 segment, after the deletion the number of connected component is going to increase at the point where this segment
+is the only segment in that range [l, r] and there exists some segment [l',r'] and [l'',r''] such that l < r' and l'' < r.
+We can use sweeping to figure out the increment value for each segment. One special case is, if the segment is disjoint to all
+the other segment its removal cost should be -1. We should remove the segment with the largest removal cost and add that cost to
+our initial answer. https://vjudge.net/problem/CodeForces-1285E
+
 
 
