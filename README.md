@@ -962,5 +962,13 @@ O(m^2*2^m + nm)
 244. Three Pieces (diff=2200, dijkstra's algorithm/floyd-warshall algorithm)
 Quite stright forward problem, just be careful with the level-graph construction. https://vjudge.net/problem/CodeForces-1065D
 
+245. The Number Games (diff=2300, binary-lefting and amortized complexity)
+Key observation if we can select number v (the largest remaining number), we should definitly take it, because of the property of
+binary representations. Then, the problem is reduced to the following, we should query what's the total number of nodes on the path
+from v to the nearest selected parent node and see if it is no greater than k, if so we brute force update all the nodes from v to
+the parent node and decrease k. We should realize that the first type of operation can be done with binary-lifting because if a node
+is updated all its ancestors should be updated as well. The second type of operation can be done with brute force in an amortized O(1)
+complexity. Hence this solution works in O(nlogn). https://vjudge.net/problem/CodeForces-980E
+
 
 
