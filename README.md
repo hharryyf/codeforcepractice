@@ -953,6 +953,10 @@ After realizing this fact we search the minimum priority that satisfies the fini
 problem would be reduced to a standard line sweep problem which can be solved with a priority queue.
 https://vjudge.net/problem/CodeForces-253E
 
-
+243. Marbles (diff=2200, bitmask dp and observation)
+Let's firstly consider how to solve this problem by complete brute force. This is, we can brute force all the permutation of m (m=|{a[i]}|) and then assign each a[i] an element of the permutation, then we use divide and conquer algorithm to solve this problem. 
+This approach works in O(m!n) which is too slow. Let's try to optimize the approach, we can firstly work out how many i occurs before j
+for each pair of i, j and stores them in a 2-d array. Then, we let dp[state] represents the minimum number of inversion pairs to let all bits of state occupying the first bitcount(state) many chunks. Then the problem is a standard bitmask dp which can be done in
+O(m^2****2^m + nm)
 
 
