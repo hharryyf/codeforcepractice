@@ -959,4 +959,8 @@ This approach works in O(m!n) which is too slow. Let's try to optimize the appro
 for each pair of i, j and stores them in a 2-d array. Then, we let dp[state] represents the minimum number of inversion pairs to let all bits of state occupying the first bitcount(state) many chunks. Then the problem is a standard bitmask dp which can be done in
 O(m^2*2^m + nm)
 
+244. Three Pieces (diff=2200, dijkstra's algorithm/floyd-warshall algorithm)
+Quite stright forward problem, just be careful with the level-graph construction. https://vjudge.net/problem/CodeForces-1065D
+
+
 
