@@ -985,5 +985,8 @@ out the corresponding [l, r] bfs order of each query range in O(nlognlogn) time.
 line sweep and range tree problem, answer the number of distince elements in q [l, r] ranges which can be done in O(nlogn) time.
 https://vjudge.net/problem/CodeForces-246E
 
+248. Sum Queries? (diff=2300, obseration and range tree)
+The key observation is something we might ignore, the optimal solution is definitly two smallest numbers with 1 digit all not equal to 0. After this is figured out, the problem would be a standard point update and range min query problem. https://codeforces.com/problemset/problem/1217/E
+
 
 
