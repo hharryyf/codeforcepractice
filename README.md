@@ -979,5 +979,11 @@ We can use sweeping to figure out the increment value for each segment. One spec
 the other segment its removal cost should be -1. We should remove the segment with the largest removal cost and add that cost to
 our initial answer. https://vjudge.net/problem/CodeForces-1285E
 
+247. Blood Cousins Return (diff=2300, range tree and line sweep and binary-lifting)
+We observe that the query corresponds to a concecutive BFS order interval. Hence, we can use binary search/binary lifting to figure
+out the corresponding [l, r] bfs order of each query range in O(nlognlogn) time. Finally the problem is changed into the standard
+line sweep and range tree problem, answer the number of distince elements in q [l, r] ranges which can be done in O(nlogn) time.
+https://vjudge.net/problem/CodeForces-246E
+
 
 
