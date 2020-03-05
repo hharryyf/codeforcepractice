@@ -988,5 +988,7 @@ https://vjudge.net/problem/CodeForces-246E
 248. Sum Queries? (diff=2300, obseration and range tree)
 The key observation is something we might ignore, the optimal solution is definitly two smallest numbers with 1 digit all not equal to 0. After this is figured out, the problem would be a standard point update and range min query problem. https://codeforces.com/problemset/problem/1217/E
 
+249. The Maximum Subtree (diff=2300, observation and tree dp)
+If we draw enough examples, we can figure out the optimal solution is for each non-root node, it can attach 1 child with optimal structure and the remaining children. For the root is can attach 2 child with optimal structure and the remaining children. Since all nodes can be the root, we use 2 dfs to find the solution. https://vjudge.net/problem/CodeForces-1238F
 
 
