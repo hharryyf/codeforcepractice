@@ -991,4 +991,8 @@ The key observation is something we might ignore, the optimal solution is defini
 249. The Maximum Subtree (diff=2300, observation and tree dp)
 If we draw enough examples, we can figure out the optimal solution is for each non-root node, it can attach 1 child with optimal structure and the remaining children. For the root is can attach 2 child with optimal structure and the remaining children. Since all nodes can be the root, we use 2 dfs to find the solution. https://vjudge.net/problem/CodeForces-1238F
 
+250. Runner's Problem (diff=2300, line sweep and matrix)
+For this kind of recursive formula, we can use matrix fast exponential algorithm to get the value of f(i, j) efficiently. For
+the rest of the problem, we just need to know in the interval which matrix shall we use, which is a quite standard line sweep problem.
+https://codeforces.com/contest/954/problem/F
 
