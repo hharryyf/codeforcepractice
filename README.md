@@ -996,3 +996,7 @@ For this kind of recursive formula, we can use matrix fast exponential algorithm
 the rest of the problem, we just need to know in the interval which matrix shall we use, which is a quite standard line sweep problem.
 https://codeforces.com/contest/954/problem/F
 
+251. Optimal Sum (diff=2300, line sweep and greedy)
+The is a sliding window problem, we just need to maintain the k smallest negative numbers in a[i-len+1, i]. Make sure the invariant
+of each function is clear. https://vjudge.net/problem/CodeForces-182C
+
