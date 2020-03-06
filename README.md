@@ -1018,4 +1018,11 @@ Let's define dp[i] as the number of valid subsequence that ends with number i. W
 Since we need to support point update and range sum query quickly, we can use a fenwick tree to speed up our dp procedure.
 https://vjudge.net/problem/CodeForces-314C
 
+256. Lomsat gelral (diff=2300, dsu on tree, merge from small to large)
+The problem involves some very important technique. Let's solve the problem by a dfs traversal. For every node let's store
+an unoredered_map<color, colorcnt>, a set<pair<colorcnt, color>> and ans and f (the node that actually representing this node).
+Every time, when we are at a root node, we call merge(v, child[v]) for all u belongs to child[v]. What merge does is merge the smaller
+unordered_map to the larger one and fix the f array. Initially we might think this is a O(n^2logn) approach. However, if we apply master theorem we can see the worst case of this approach is T(n) = kT(n/k) + O(nlogn) which is O(nlognlogn).
+https://vjudge.net/problem/CodeForces-600E
+
 
