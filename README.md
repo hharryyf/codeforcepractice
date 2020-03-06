@@ -1006,11 +1006,16 @@ https://vjudge.net/problem/CodeForces-62D
 253. Strip (diff=2300, sparse table and binary search and range tree, dp optimization)
 https://vjudge.net/problem/CodeForces-487B
 
-254. uy Low Sell High (diff=2300, greedy observation)
+254. Buy Low Sell High (diff=2300, greedy observation)
 We could observe the following fact about the stock trading. If we buy stock v1 and sell v3, it is equivalent to buy v1, sell v2, 
 buy v2, sell v3. Hence, we can maintain a min heap and for every element if the heap is not empty, we check if the heap top is
 less than the element, if so, we make a trasition and insert the element to the heap (this is very important because the element 
 can still involve another trading). Otherwise, we insert the element to the heap.
 https://vjudge.net/problem/CodeForces-865D
+
+255. Sereja and Subsequences (diff=2300, dp and fenwick tree)
+Let's define dp[i] as the number of valid subsequence that ends with number i. We can observe that dp[i] = i * (1 + sum(dp[j], j = 1..i-1) + delta) The hardest part is how to calculate this delta. Note that for a subsequence that ends with i, only subsequence ends with i and subsequence that ends with v < i can be the prefix of i. Hence delta should equal to the most recent version of dp[i].
+Since we need to support point update and range sum query quickly, we can use a fenwick tree to speed up our dp procedure.
+https://vjudge.net/problem/CodeForces-314C
 
 
