@@ -1000,3 +1000,6 @@ https://codeforces.com/contest/954/problem/F
 The is a sliding window problem, we just need to maintain the k smallest negative numbers in a[i-len+1, i]. Make sure the invariant
 of each function is clear. https://vjudge.net/problem/CodeForces-182C
 
+252. Wormhouse （diff=2300, backtracking and pruning）
+https://vjudge.net/problem/CodeForces-62D
+
