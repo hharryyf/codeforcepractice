@@ -1003,3 +1003,6 @@ of each function is clear. https://vjudge.net/problem/CodeForces-182C
 252. Wormhouse （diff=2300, backtracking and pruning）
 https://vjudge.net/problem/CodeForces-62D
 
+253. Strip (diff=2300, sparse table and binary search and range tree, dp optimization)
+https://vjudge.net/problem/CodeForces-487B
+
