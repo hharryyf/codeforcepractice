@@ -1006,3 +1006,11 @@ https://vjudge.net/problem/CodeForces-62D
 253. Strip (diff=2300, sparse table and binary search and range tree, dp optimization)
 https://vjudge.net/problem/CodeForces-487B
 
+254. uy Low Sell High (diff=2300, greedy observation)
+We could observe the following fact about the stock trading. If we buy stock v1 and sell v3, it is equivalent to buy v1, sell v2, 
+buy v2, sell v3. Hence, we can maintain a min heap and for every element if the heap is not empty, we check if the heap top is
+less than the element, if so, we make a trasition and insert the element to the heap (this is very important because the element 
+can still involve another trading). Otherwise, we insert the element to the heap.
+https://vjudge.net/problem/CodeForces-865D
+
+
