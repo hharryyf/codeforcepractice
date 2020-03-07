@@ -1025,4 +1025,8 @@ Every time, when we are at a root node, we call merge(v, child[v]) for all u bel
 unordered_map to the larger one and fix the f array. Initially we might think this is a O(n^2logn) approach. However, if we apply master theorem we can see the worst case of this approach is T(n) = kT(n/k) + O(nlogn) which is O(nlognlogn).
 https://vjudge.net/problem/CodeForces-600E
 
+257. Dominant Indices (diff=2300, dsu on tree, merge from small to large)
+Almost the same as the previous problem. Just remember the map should be <depth, depthcnt> instead of <dist, distcnt>.
+https://vjudge.net/problem/CodeForces-1009F
+
 
