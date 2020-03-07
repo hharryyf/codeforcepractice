@@ -1038,4 +1038,10 @@ this approach would run only 20ms faster than the TL, any bad implementation wou
 even occurence of letters a-z, instead of storing the occurence, we store the bitmask and use xor/countbits to maintain the queries.
 This would wipe out the constant factor 26. https://vjudge.net/problem/CodeForces-570D
 
+259. Mahmoud and a xor trip (diff=2200, tree dp and bit operation)
+Let's represent value[v][i] as the cumulative xor sum of the ith bit from root to v. Then the ith bit of node v, u would contribute
+to answer iff value[v][i] ^ value[u][i] ^ value[LCA(u, v)][i] ^ value[pre[LCA(u, v)]][i] = 1. Hence, we can use tree dp to solve this
+problem, firstly count the number of 1 bit and 0 bit in the subtrees and use the above conditions to merge the results.
+https://vjudge.net/problem/CodeForces-766E
+
 
