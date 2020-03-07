@@ -1029,4 +1029,13 @@ https://vjudge.net/problem/CodeForces-600E
 Almost the same as the previous problem. Just remember the map should be <depth, depthcnt> instead of <dist, distcnt>.
 https://vjudge.net/problem/CodeForces-1009F
 
+258. Tree Requests (diff=2400, binary search and bitmask)
+If we solve this problem using a brute force way, we can achieve a time complexity of O(26 * mlogn). The approach is we establish
+a level graph which stores the dfs order of nodes of each level for each letter. Then, when we process a query, we just use binary
+search to find the L, R position of nodes on the level h which is in the subtree v. In order to make a string palindrome, there's
+at most 1 letter occurs odd number of times, hence we can use the prefix sum array to maintain the occurence of letters. However, 
+this approach would run only 20ms faster than the TL, any bad implementation would make it TLE. Since we only need to know the odd/
+even occurence of letters a-z, instead of storing the occurence, we store the bitmask and use xor/countbits to maintain the queries.
+This would wipe out the constant factor 26. https://vjudge.net/problem/CodeForces-570D
+
 
