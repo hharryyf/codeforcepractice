@@ -1044,4 +1044,10 @@ to answer iff value[v][i] ^ value[u][i] ^ value[LCA(u, v)][i] ^ value[pre[LCA(u,
 problem, firstly count the number of 1 bit and 0 bit in the subtrees and use the above conditions to merge the results.
 https://vjudge.net/problem/CodeForces-766E
 
+260. Random Task (diff=2200, binary search and digit dp)
+We can think what would happen if n is increased to n+1, we should consider how the bitcount change from [n+1, 2n] to [n+2, 2n+2].
+We realize that n+1 has the same number of bits as 2n+2, hence the total number of bit k numbers is none decreasing if we increase n.
+Therefore, we can binary search on the final answer and use digit dp to validate the solution.
+https://vjudge.net/problem/CodeForces-431D
+
 
