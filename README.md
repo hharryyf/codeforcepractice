@@ -1051,3 +1051,7 @@ Therefore, we can binary search on the final answer and use digit dp to validate
 https://vjudge.net/problem/CodeForces-431D
 
 
+261. Igloo Skyscraper (diff=2400, range tree and CHT)
+We know that convex-hull trick could deal with the dominate line at an x-coordinate query in O(logn) time and range tree could support
+range queries. We should combine these two together. The solution works as follows, we sort the lines according to gradient and break the tie by the y-intersect. We maintain a range tree of CHT data structure and then insert the lines to all ranges that covers it (total O(logn)). When we query, we just call the query function of the CHT of the corresponding ranges. The solution works in O(nlognlogn). https://vjudge.net/problem/CodeForces-91E
+
