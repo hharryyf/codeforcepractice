@@ -1062,3 +1062,8 @@ https://vjudge.net/problem/CodeForces-821E
 The only trick here is solve this problem backward. Instead of appending the numbers at the back, consider the string in a backward
 direction and append the numbers to the front. https://vjudge.net/problem/CodeForces-31E
 
+264. Skills (diff=2200, greedy and binary search)
+The key observation is we can iterate on how many full-skill we are going to choose and if this number is equal to k, we should choose
+the k largest skills. Then, we should use our remaining coins on maximizing the minimum skills which can be solved by using binary
+search on final answer. https://vjudge.net/problem/CodeForces-613B
+
