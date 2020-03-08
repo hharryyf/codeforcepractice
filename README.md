@@ -1058,3 +1058,7 @@ range queries. We should combine these two together. The solution works as follo
 262. Okabe and El Psy Kongroo (diff=2200, dp and matrix fast multiplication)
 https://vjudge.net/problem/CodeForces-821E
 
+263. TV Game (diff=2200, dp)
+The only trick here is solve this problem backward. Instead of appending the numbers at the back, consider the string in a backward
+direction and append the numbers to the front. https://vjudge.net/problem/CodeForces-31E
+
