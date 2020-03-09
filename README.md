@@ -1086,4 +1086,10 @@ Delete a nonconsecutive segment is something that cannot be done with range tree
 the back. When we deal with a deletion query we just delete a_i one by one, and this would achieved an amortized O(nlogn) complexity.
 https://vjudge.net/problem/CodeForces-374D
 
+268. Ann and Books (diff=2500, Mo's algorithm)
+The problem simply asks to count the number of pairs such that the prefix sum differs by k. Counting the number of v in a range is 
+usually undoable by range trees/fenwick trees. Hence, we use Mo's algorithm to solve the problem. We maintain a cnt hash map which
+counts the number of occurence of each prefix, and the rest of the problem is routine Mo's insert and deletion. The overall complexity
+of the solution is O(qsqrt(n)). https://codeforces.com/problemset/problem/877/F
+
 
