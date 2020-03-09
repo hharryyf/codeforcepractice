@@ -1067,3 +1067,10 @@ The key observation is we can iterate on how many full-skill we are going to cho
 the k largest skills. Then, we should use our remaining coins on maximizing the minimum skills which can be solved by using binary
 search on final answer. https://vjudge.net/problem/CodeForces-613B
 
+265. The Doctor Meets Vader (Medium) (diff=2300, Dinic's algorithm)
+Firstly, I think this is a MCMF problem. But the time complexity might be too high. Note that there's only 2 costs. We can firstly
+run Dinic's algorithm to find the largest bipartite matching of the graph. And then if we have the math observation, we should know
+that the answer is either k times flow or h times b. (Lesson we learned, Dinic's algorithm is |V|^(5/2) on complete bipartite graph,
+we shouldn't worry for |V| is up to 1000)
+https://vjudge.net/problem/CodeForces-1184B2
+
