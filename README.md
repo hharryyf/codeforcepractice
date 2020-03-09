@@ -1081,3 +1081,9 @@ of cost 0, capacity k. This means that at any time there's at most k machine wor
 s[i] and s[i] + t[i] with an edge of capacity 1 and cost c[i]. After that we'll run MCMF and get the solution. 
 https://codeforces.com/problemset/problem/164/C
 
+267. Inna and Sequence (diff=2300, range tree and searching)
+Delete a nonconsecutive segment is something that cannot be done with range trees. However, we might notice that there's only n operations. Which means that there's at most n numbers. We can establish a range tree and support delete the kth element, insert at
+the back. When we deal with a deletion query we just delete a_i one by one, and this would achieved an amortized O(nlogn) complexity.
+https://vjudge.net/problem/CodeForces-374D
+
+
