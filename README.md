@@ -1074,3 +1074,10 @@ that the answer is either k times flow or h times b. (Lesson we learned, Dinic's
 we shouldn't worry for |V| is up to 1000)
 https://vjudge.net/problem/CodeForces-1184B2
 
+266. Machine Programming (diff=2400, MCMF)
+Learned a lot from this problem. It is obvious that the problem can be solved using MCMF. However, the graph construction isn't that
+easy. We firstly get a unique vector of time (both s[i] and s[i] + t[i]) in sorted order. And connect the adjacent time with an edge
+of cost 0, capacity k. This means that at any time there's at most k machine working. Then, we connect the vertex corresponds to
+s[i] and s[i] + t[i] with an edge of capacity 1 and cost c[i]. After that we'll run MCMF and get the solution. 
+https://codeforces.com/problemset/problem/164/C
+
