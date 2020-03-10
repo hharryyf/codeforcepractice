@@ -1097,3 +1097,8 @@ of the solution is O(qsqrt(n)). https://codeforces.com/problemset/problem/877/F
 This problem can test whether your trie template is correct.
 https://vjudge.net/problem/CodeForces-706D
 
+270. Kuro and GCD and XOR and SUM  (diff=2200, Trie and amortized complexity)
+We should create 1e5 many tries. For a insertion query, we insert u to all tries with id | u. Then for the type-2 query, we just
+need to search in the trie[ki] for the v that would produce the largest v ^ xi and xi + v <= si. Since n/1 + n/2 + ... + n/n = O(nlogn)
+The overall complexity of the solution works in O(nlognlogn). https://vjudge.net/problem/CodeForces-979D
+
