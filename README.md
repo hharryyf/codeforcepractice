@@ -1093,3 +1093,7 @@ counts the number of occurence of each prefix, and the rest of the problem is ro
 of the solution is O(qsqrt(n)). https://codeforces.com/problemset/problem/877/F
 
 
+269. Vasiliy's Multiset (diff=1800, Trie template)
+This problem can test whether your trie template is correct.
+https://vjudge.net/problem/CodeForces-706D
+
