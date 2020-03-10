@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-// #define SUBMIT
+#define SUBMIT
 #define MAX_SIZE 100114
 using namespace std;
 
