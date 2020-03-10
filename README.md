@@ -1108,3 +1108,7 @@ the maximum number that satisfy the property r/x - (l-1)/x >= k. The key observa
 is O(sqrt(n)), hence, we can iterate x=1..sqrt(r) and select the maximum r/i or i that satisfy the above equation.
 https://codeforces.com/problemset/problem/226/C
 
+272. Addition Robot (diff=2200, range tree and matrix)
+Just be really careful on lazy propagation and range merge. Don't forget that matrix multiplication is not commutitive.
+https://codeforces.com/problemset/problem/1252/K
+
