@@ -1102,3 +1102,9 @@ We should create 1e5 many tries. For a insertion query, we insert u to all tries
 need to search in the trie[ki] for the v that would produce the largest v ^ xi and xi + v <= si. Since n/1 + n/2 + ... + n/n = O(nlogn)
 The overall complexity of the solution works in O(nlognlogn). https://vjudge.net/problem/CodeForces-979D
 
+271. Anniversary (diff=2100, fibonacci property and math)
+I actually know the key property of this problem. Fib(gcd(a, b)) = gcd(Fib(a), Fib(b)). But I got stuck on finding out
+the maximum number that satisfy the property r/x - (l-1)/x >= k. The key observation here is the total amount of value n/i can have
+is O(sqrt(n)), hence, we can iterate x=1..sqrt(r) and select the maximum r/i or i that satisfy the above equation.
+https://codeforces.com/problemset/problem/226/C
+
