@@ -1118,3 +1118,8 @@ The solution works as follows, we brute force all the cost(i, j), which cost(i, 
 which j is the maximum number in the left partition. Then, we might observe that we can sweep from 1-n and use a
 range tree to maintain the cost when i is the maximum number in the left partition. 
 https://vjudge.net/problem/CodeForces-1295E
+
+274. Castle Defense (diff=2100, binary search and line sweep)
+The problem seems routine after solving many other harder problems. 
+https://vjudge.net/problem/CodeForces-954G
+
