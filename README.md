@@ -1130,3 +1130,4 @@ Hence, the problem is reduced to a LIS problem. We can sort according to xi + V 
 Maintain a range tree on xi - V * ti. After than the problem is a routine range tree point update and
 range max query problem. https://vjudge.net/problem/CodeForces-76F
 
+* Mar 12 to Apr 11 --- "virus gap term training 2" focal point: dynamic programming, greedy and graph
