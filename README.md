@@ -1123,3 +1123,10 @@ https://vjudge.net/problem/CodeForces-1295E
 The problem seems routine after solving many other harder problems. 
 https://vjudge.net/problem/CodeForces-954G
 
+275. Tourist (diff=2400, DP and range tree optimization)
+The problem might seems very hard. However, we must observe that position j can go to position i iff
+|xi - xj| <= V * (ti - tj) which implies xi - V*ti <= xj - V * tj and xi + V*ti >= xj + V * tj.
+Hence, the problem is reduced to a LIS problem. We can sort according to xi + V * ti then V * ti - xi.
+Maintain a range tree on xi - V * ti. After than the problem is a routine range tree point update and
+range max query problem. https://vjudge.net/problem/CodeForces-76F
+
