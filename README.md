@@ -1112,3 +1112,9 @@ https://codeforces.com/problemset/problem/226/C
 Just be really careful on lazy propagation and range merge. Don't forget that matrix multiplication is not commutitive.
 https://codeforces.com/problemset/problem/1252/K
 
+273. Permutation Separation (diff=2200, range tree and line sweep)
+Firstly, let's think how to solve this problem with a polynomial algorithm. We can immediately have an O(n^3) solution.
+The solution works as follows, we brute force all the cost(i, j), which cost(i, j) means the splitting index is i,
+which j is the maximum number in the left partition. Then, we might observe that we can sweep from 1-n and use a
+range tree to maintain the cost when i is the maximum number in the left partition. 
+https://vjudge.net/problem/CodeForces-1295E
