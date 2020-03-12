@@ -1131,3 +1131,7 @@ Maintain a range tree on xi - V * ti. After than the problem is a routine range 
 range max query problem. https://vjudge.net/problem/CodeForces-76F
 
 * Mar 12 to Apr 11 --- "virus gap term training 2" focal point: dynamic programming, greedy and graph
+
+276. Palindrome Degree (diff=2200, rolling hash)
+https://vjudge.net/problem/CodeForces-7D
+
