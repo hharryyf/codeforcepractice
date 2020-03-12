@@ -1135,3 +1135,8 @@ range max query problem. https://vjudge.net/problem/CodeForces-76F
 276. Palindrome Degree (diff=2200, rolling hash)
 https://vjudge.net/problem/CodeForces-7D
 
+277. MUH and Cube Walls (diff=2000, KMP)
+We firstly build a new array A(2e9)B. Which A[i] = b[i+1] - b[i], B[i] = a[i+1] - a[i]. Then just run the 
+finding failure array function of the KMP algorithm and the number of nxt[i] = w-1 would be the final solution.
+https://vjudge.net/problem/CodeForces-471D
+
