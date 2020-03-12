@@ -1140,3 +1140,13 @@ We firstly build a new array A(2e9)B. Which A[i] = b[i+1] - b[i], B[i] = a[i+1] 
 finding failure array function of the KMP algorithm and the number of nxt[i] = w-1 would be the final solution.
 https://vjudge.net/problem/CodeForces-471D
 
+278. Till I Collapse (diff=2600, persistent range tree and complexity analysis)
+Let's think what would happen if we solve this problem using a smarter brute force. We let k iterate from 1 to n,
+and solve the problem for each k. We firstly use a persistent range tree that would maintain the number of distinct
+number from [l, r]. Then, for each k, we let i iterate from 1 to n, and i always jump to the leftmost point such
+that query[i, inext] > k. The solution seems to work in O(n^2logn). However, we should note the following fact,
+if query[i, inext] > k, inext - i >= k. Hence, for every k the number of calls to query function is at most n/k times.
+Which means the overall complexity of the algorithm would work in logn(n + n/2 + n/3 + ...) = O(nlognlogn) which would
+definitely run in TL. https://vjudge.net/problem/CodeForces-786C
+
+   
