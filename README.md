@@ -1155,3 +1155,6 @@ intersection of these ranges. We can observe that for each i and i+1, there's at
 a[i] < a[i+1]. Hence, we can use the prefix array to maintain this range addition operation. Note that Fenwick tree/range tree is
 overkill here, since the query is after the update. https://vjudge.net/problem/CodeForces-731D
 
+280. Ciel and Gondolas (diff=2600, dp and divide and conquer optimization)
+https://codeforces.com/problemset/problem/321/E
+
