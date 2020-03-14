@@ -1158,3 +1158,10 @@ overkill here, since the query is after the update. https://vjudge.net/problem/C
 280. Ciel and Gondolas (diff=2600, dp and divide and conquer optimization)
 https://codeforces.com/problemset/problem/321/E
 
+281. Berland and the Shortest Paths (diff=2400, shortest path tree and backtracking)
+The problem can be splited into 2 parts, firstly construct the shortest path dag using BFS, secondly
+find combinations of the n-1 edges that can form a shortest path tree. The first part is quite standard.
+The obstacle is how to do the second part correctly. We notice that except the root node, every node has
+at least 1 parent, instead of doing the dfs from root to leaf and use backtracking, we can do the dfs from 2-n,
+and use backtracking on the selected edges. https://vjudge.net/problem/CodeForces-1005F
+
