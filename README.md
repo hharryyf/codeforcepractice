@@ -1149,4 +1149,9 @@ if query[i, inext] > k, inext - i >= k. Hence, for every k the number of calls t
 Which means the overall complexity of the algorithm would work in logn(n + n/2 + n/3 + ...) = O(nlognlogn) which would
 definitely run in TL. https://vjudge.net/problem/CodeForces-786C
 
-   
+279. 80-th Level Archeology (diff=2200, observation)
+Since <= has trasitivity, the problem is equivalent to figure out the valid range that could make a[i] < a[i+1] and get the
+intersection of these ranges. We can observe that for each i and i+1, there's at most 2 non-intersecting ranges that could make
+a[i] < a[i+1]. Hence, we can use the prefix array to maintain this range addition operation. Note that Fenwick tree/range tree is
+overkill here, since the query is after the update. https://vjudge.net/problem/CodeForces-731D
+
