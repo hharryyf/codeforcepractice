@@ -1165,3 +1165,7 @@ The obstacle is how to do the second part correctly. We notice that except the r
 at least 1 parent, instead of doing the dfs from root to leaf and use backtracking, we can do the dfs from 2-n,
 and use backtracking on the selected edges. https://vjudge.net/problem/CodeForces-1005F
 
+282. Dish Shopping (diff=2800, line sweep and fenwick tree and ordered statistic tree)
+This problem is doable, but I failed to solve it. The main obstacle is the sweeping order and the nested data structure.
+https://vjudge.net/problem/CodeForces-1139F
+
