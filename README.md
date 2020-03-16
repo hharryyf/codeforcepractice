@@ -1172,3 +1172,7 @@ https://vjudge.net/problem/CodeForces-1139F
 283. Perfect Service (tree dp)
 https://vjudge.net/problem/UVA-1218
 
+284. DZY Loves Fibonacci Numbers (diff=2600, range tree, lazy propagation and fibonacci property)
+We need to use F[n] = fib[n-1] * F[2] + F[1] * fib[n-2] and S[n] = F[n+2] - F[2] to solve this problem.
+https://vjudge.net/problem/CodeForces-446C
+ 
