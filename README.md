@@ -1169,3 +1169,6 @@ and use backtracking on the selected edges. https://vjudge.net/problem/CodeForce
 This problem is doable, but I failed to solve it. The main obstacle is the sweeping order and the nested data structure.
 https://vjudge.net/problem/CodeForces-1139F
 
+283. Perfect Service (tree dp)
+https://vjudge.net/problem/UVA-1218
+
