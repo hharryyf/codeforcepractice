@@ -1175,4 +1175,7 @@ https://vjudge.net/problem/UVA-1218
 284. DZY Loves Fibonacci Numbers (diff=2600, range tree, lazy propagation and fibonacci property)
 We need to use F[n] = fib[n-1] * F[2] + F[1] * fib[n-2] and S[n] = F[n+2] - F[2] to solve this problem.
 https://vjudge.net/problem/CodeForces-446C
- 
+
+285. Bipartite Checking (diff=2600, dynamic union-find, range tree on queries)
+This is covered in Ray's assignment. https://vjudge.net/problem/CodeForces-813F
+
