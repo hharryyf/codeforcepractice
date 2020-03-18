@@ -1179,3 +1179,6 @@ https://vjudge.net/problem/CodeForces-446C
 285. Bipartite Checking (diff=2600, dynamic union-find, range tree on queries)
 This is covered in Ray's assignment. https://vjudge.net/problem/CodeForces-813F
 
+286. Mokia (CDQ divide and conquer)
+https://vjudge.net/problem/HYSBZ-1176
+
