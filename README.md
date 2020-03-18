@@ -1182,3 +1182,8 @@ This is covered in Ray's assignment. https://vjudge.net/problem/CodeForces-813F
 286. Mokia (CDQ divide and conquer)
 https://vjudge.net/problem/HYSBZ-1176
 
+287. Intersection of Permutations (diff=2300, CDQ divide and conquer)
+The size of the intersection is equal to the number of points in the rectangle (x1,y1,x2,y2). If we express it more precisely,
+it is (x1, y1, t, x2, y2, t). Which is a standard 3-dimensional partial order problem which can be solved by using CDQ divide and conquer.
+https://vjudge.net/problem/CodeForces-1093E
+
