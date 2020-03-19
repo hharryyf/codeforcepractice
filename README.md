@@ -1187,3 +1187,10 @@ The size of the intersection is equal to the number of points in the rectangle (
 it is (x1, y1, t, x2, y2, t). Which is a standard 3-dimensional partial order problem which can be solved by using CDQ divide and conquer.
 https://vjudge.net/problem/CodeForces-1093E
 
+288. Goodbye Souvenir (diff=2800, CDQ divide and conquer, line sweep observation)
+Firstly let's think how to solve this problem if no update involved. We can use the standard line sweep technique.
+We sort all the queries according to r, and do a line sweep, each time we update the previous occurence of the number.
+We can use a fenwick tree to support this in O(nlogn) time. Now let's consider updates. It is like we do an update at time t,
+and do a query at time t'. Hence another dimention involved, the problem is changed to a 3 dimensional partial order problem,
+which can be done by using CDQ divide and conquer. https://vjudge.net/problem/CodeForces-848C
+
