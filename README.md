@@ -1196,3 +1196,12 @@ which can be done by using CDQ divide and conquer. https://vjudge.net/problem/Co
 
 289. Heroes of Making Magic III (diff=2700, range tree and math observation)
 The explaination is in the code. https://vjudge.net/problem/CodeForces-717F
+
+290. Nearest Leaf (diff=2600, range tree and line sweep, dfs)
+Initially I think this problem is undoable. Suddenly, I realized there's a reduced version of this problem which is much simpler.
+Find the shortest distance from v (for every 1 to n) to any of the leaf. Which is a standard 2-time dfs problem. This problem
+just add restrictions on the range of nodes that can be selected. Firstly, we preprocess the depth of the nodes and establish a
+range tree of it (depth of non-leaf nodes are set to INF). Then, we do a second dfs, suppose nv is one of the child of v. We update
+[1, nv-1] [nv+sz[nv], n] by weight(v, nv) and [nv, nv+sz[nv]-1] by -weight(v, nv). Every time we reach a node v, we answer all the 
+range queries related to v. https://vjudge.net/problem/CodeForces-1110F
+
