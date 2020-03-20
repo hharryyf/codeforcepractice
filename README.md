@@ -1194,3 +1194,5 @@ We can use a fenwick tree to support this in O(nlogn) time. Now let's consider u
 and do a query at time t'. Hence another dimention involved, the problem is changed to a 3 dimensional partial order problem,
 which can be done by using CDQ divide and conquer. https://vjudge.net/problem/CodeForces-848C
 
+289. Heroes of Making Magic III (diff=2700, range tree and math observation)
+The explaination is in the code. https://vjudge.net/problem/CodeForces-717F
