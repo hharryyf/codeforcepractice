@@ -1212,3 +1212,7 @@ This problem is actually the template of CF813F. https://vjudge.net/problem/Code
 The observation is the number of triple is equal to sum of out[i] * in[i] for all i from 1 to n.
 https://vjudge.net/problem/CodeForces-1210D
 
+293. Looksery Party (diff=2300, graph construction)
+The most important sentence in the problem is every i would send a message to itself, think why. This would eliminate all -1 case!
+https://vjudge.net/problem/CodeForces-549B
+
