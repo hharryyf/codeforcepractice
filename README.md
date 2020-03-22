@@ -1205,3 +1205,6 @@ range tree of it (depth of non-leaf nodes are set to INF). Then, we do a second 
 [1, nv-1] [nv+sz[nv], n] by weight(v, nv) and [nv, nv+sz[nv]-1] by -weight(v, nv). Every time we reach a node v, we answer all the 
 range queries related to v. https://vjudge.net/problem/CodeForces-1110F
 
+291. Building Forest (diff=2200, union find)
+This problem is actually the template of CF813F. https://vjudge.net/problem/CodeForces-195E
+
