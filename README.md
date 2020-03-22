@@ -1208,3 +1208,7 @@ range queries related to v. https://vjudge.net/problem/CodeForces-1110F
 291. Building Forest (diff=2200, union find)
 This problem is actually the template of CF813F. https://vjudge.net/problem/CodeForces-195E
 
+292. Konrad and Company Evaluation (diff=2300, graph and complexity analysis)
+The observation is the number of triple is equal to sum of out[i] * in[i] for all i from 1 to n.
+https://vjudge.net/problem/CodeForces-1210D
+
