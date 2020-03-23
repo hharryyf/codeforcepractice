@@ -1219,3 +1219,8 @@ https://vjudge.net/problem/CodeForces-549B
 294. Leha and another game about graph (diff=2100, graph construction)
 We could shown that the graph has solution is equivalent to its spanning tree has solution.
 https://codeforces.com/contest/841/problem/D
+
+295. Chemistry in Berland (diff=2400, dfs)
+The only difficulty about this problem is the number might overflow, but we should realize if the required amount is less than 1e17,
+then it is impossible to make the chemical reaction happen. https://vjudge.net/problem/CodeForces-846E
+
