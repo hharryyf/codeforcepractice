@@ -1224,3 +1224,7 @@ https://codeforces.com/contest/841/problem/D
 The only difficulty about this problem is the number might overflow, but we should realize if the required amount is less than 1e17,
 then it is impossible to make the chemical reaction happen. https://vjudge.net/problem/CodeForces-846E
 
+296. One-Way Reform (diff=2300, Hierholzer's algorithm, Euler tour, observation)
+The very important observation is if the graph consists an Euler tour all nodes can satisfy the in=out condition.
+https://vjudge.net/problem/CodeForces-723E
+
