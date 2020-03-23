@@ -1216,3 +1216,6 @@ https://vjudge.net/problem/CodeForces-1210D
 The most important sentence in the problem is every i would send a message to itself, think why. This would eliminate all -1 case!
 https://vjudge.net/problem/CodeForces-549B
 
+294. Leha and another game about graph (diff=2100, graph construction)
+We could shown that the graph has solution is equivalent to its spanning tree has solution.
+https://codeforces.com/contest/841/problem/D
