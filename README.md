@@ -1232,3 +1232,9 @@ https://vjudge.net/problem/CodeForces-723E
 It can be seen easily that this is a matching problem. We split according to odd and even indices and for each number we do prime
 factorization and connect the common prime for each good pairs with INF capacity. https://vjudge.net/problem/CodeForces-498C
 
+298. President and Roads (diff=2600, dijkstra's algorithm and tarjan's bridge finding algorithm)
+The solution is very simple, we run dijkstra's algorithm twice and see if an edge is on the shortest path. Then, we construct 
+the shortest path (undirected) dag and find the bridges in that dag. Finally, when we do classification of edges, we return "YES",
+only if the edge is on the shortest path dag and is a bridge. Be really careful about the parrallel edges case.
+https://vjudge.net/problem/CodeForces-567E
+
