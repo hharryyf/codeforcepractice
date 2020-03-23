@@ -1228,3 +1228,7 @@ then it is impossible to make the chemical reaction happen. https://vjudge.net/p
 The very important observation is if the graph consists an Euler tour all nodes can satisfy the in=out condition.
 https://vjudge.net/problem/CodeForces-723E
 
+297. Array and Operations (diff=2400, Dinic's algorithm)
+It can be seen easily that this is a matching problem. We split according to odd and even indices and for each number we do prime
+factorization and connect the common prime for each good pairs with INF capacity. https://vjudge.net/problem/CodeForces-498C
+
