@@ -1243,3 +1243,6 @@ We should analyse how to make all edges red. It is for each red edge we either s
 edge we switch one of its endpoint. This would reduce the problem to a dfs coloring problem and can be solved in O(n+m) time.
 https://vjudge.net/problem/CodeForces-662B
 
+300. Cactusophobia (diff=2300, Dinic's algorithm and tarjan vertex biconnected component)
+I would review this problem once in a while, because it is so nice. https://codeforces.com/contest/720/problem/B
+
