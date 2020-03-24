@@ -1246,3 +1246,8 @@ https://vjudge.net/problem/CodeForces-662B
 300. Cactusophobia (diff=2300, Dinic's algorithm and tarjan vertex biconnected component)
 I would review this problem once in a while, because it is so nice. https://codeforces.com/contest/720/problem/B
 
+301. Underfail (diff=2400, MCMF)
+The problem is very similar to problem164C machine programming the graph construction procedure is almost the same.
+https://codeforces.com/problemset/problem/717/G
+
+ 
