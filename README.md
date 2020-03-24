@@ -1238,3 +1238,8 @@ the shortest path (undirected) dag and find the bridges in that dag. Finally, wh
 only if the edge is on the shortest path dag and is a bridge. Be really careful about the parrallel edges case.
 https://vjudge.net/problem/CodeForces-567E
 
+299. Graph Coloring (diff=2300, dfs)
+We should analyse how to make all edges red. It is for each red edge we either switch both of its endpoints or none and for each blue
+edge we switch one of its endpoint. This would reduce the problem to a dfs coloring problem and can be solved in O(n+m) time.
+https://vjudge.net/problem/CodeForces-662B
+
