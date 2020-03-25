@@ -1254,3 +1254,6 @@ https://codeforces.com/problemset/problem/717/G
 The can calaulate how many match(a, b) (i.e. a in the first string match b in the second string), match(a, c)... match(Y, Z) for all k*k pairs.
 Then the problem would be turned into a MCMF problem and can be solved easily. https://vjudge.net/problem/CodeForces-491C
 
+303. Privatization of Roads in Berland (diff=2600, Dinic's algorithm)
+The explaination is in my code. Learned something from Ray. https://vjudge.net/problem/CodeForces-1070I
+
