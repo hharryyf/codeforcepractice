@@ -1250,4 +1250,7 @@ I would review this problem once in a while, because it is so nice. https://code
 The problem is very similar to problem164C machine programming the graph construction procedure is almost the same.
 https://codeforces.com/problemset/problem/717/G
 
- 
+302. Deciphering (diff=2400, MCMF)
+The can calaulate how many match(a, b) (i.e. a in the first string match b in the second string), match(a, c)... match(Y, Z) for all k*k pairs.
+Then the problem would be turned into a MCMF problem and can be solved easily. https://vjudge.net/problem/CodeForces-491C
+
