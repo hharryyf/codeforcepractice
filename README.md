@@ -1257,3 +1257,7 @@ Then the problem would be turned into a MCMF problem and can be solved easily. h
 303. Privatization of Roads in Berland (diff=2600, Dinic's algorithm)
 The explaination is in my code. Learned something from Ray. https://vjudge.net/problem/CodeForces-1070I
 
+304. Road Construction (diff=2600, Dinic's algorithm and tarjan's bridge finding algorithm)
+Since the graph is a functional graph, we can only remove at most 1 cycle edge. Hence, we can firstly run the tarjan's bridge finding
+algorithm and then the problem would be turned into a matching problem. https://vjudge.net/problem/CodeForces-1252L
+
