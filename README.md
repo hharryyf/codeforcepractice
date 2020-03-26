@@ -1261,3 +1261,10 @@ The explaination is in my code. Learned something from Ray. https://vjudge.net/p
 Since the graph is a functional graph, we can only remove at most 1 cycle edge. Hence, we can firstly run the tarjan's bridge finding
 algorithm and then the problem would be turned into a matching problem. https://vjudge.net/problem/CodeForces-1252L
 
+305.  Electric Scheme (diff=2600, Dinic's algorithm and data structures, observation)
+We can think this problem as merge horizontal/vertical intervals together without producing any extra intersection points. Then we could
+transform the problem into a project selection type min-cut problem. We create a bipartite graph, put all horizontal segments on the left,
+vertical segments on the right. Then, for every edge we cut means we force to abandon that merge. For each invalid intersection of horizontal
+and vertical segments we connect an edge with INF capacity. Then the final answer would be the complement of the segments in the min-cut.
+To make our life easier, we can use some data structures to solve this. https://codeforces.com/problemset/problem/1054/F
+
