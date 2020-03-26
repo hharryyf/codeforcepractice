@@ -1268,3 +1268,8 @@ vertical segments on the right. Then, for every edge we cut means we force to ab
 and vertical segments we connect an edge with INF capacity. Then the final answer would be the complement of the segments in the min-cut.
 To make our life easier, we can use some data structures to solve this. https://codeforces.com/problemset/problem/1054/F
 
+306. Gang Up (diff=2600, MCMF)
+The technique to construct x^2 cost is similar to a 2300-MCMF problem. It is connect x edges which are 1,3,5,7,... And the technique to model
+graph traversal is similar to problem 78E, which is construct a 100-level graph. Combining those 2 techniques would give a MCMF solution.
+https://vjudge.net/problem/CodeForces-1187G
+
