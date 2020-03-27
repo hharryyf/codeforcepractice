@@ -1278,3 +1278,6 @@ The key observation here is for the edge connects a leaf node and its parent, th
 to the leaf node weight. Hence, we can create this tree greedily in a bottom up approach.
 https://vjudge.net/problem/CodeForces-260D
 
+308. Privatization of Roads in Treeland (diff=2500, graph construction)
+Solve this problem greedily. https://vjudge.net/problem/CodeForces-1141G
+
