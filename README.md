@@ -1273,3 +1273,8 @@ The technique to construct x^2 cost is similar to a 2300-MCMF problem. It is con
 graph traversal is similar to problem 78E, which is construct a 100-level graph. Combining those 2 techniques would give a MCMF solution.
 https://vjudge.net/problem/CodeForces-1187G
 
+307. Black and White Tree (diff=2200, graph construction)
+The key observation here is for the edge connects a leaf node and its parent, the edge must have a weight equal
+to the leaf node weight. Hence, we can create this tree greedily in a bottom up approach.
+https://vjudge.net/problem/CodeForces-260D
+
