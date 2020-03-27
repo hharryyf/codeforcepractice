@@ -1287,3 +1287,7 @@ simple, firstly find all the biconnected components and compress the points to m
 the leaves pairwise (the order is very important, according to dfs order 1->ans/2, 2->ans/2+1 etc.).
 https://vjudge.net/problem/CodeForces-45H
 
+310. Make k Equal (diff=2400, observation)
+First observation, the final element should be an element in the array. Hence, we can sort and calculate the cost of making at least k
+elements equal to a[i]. https://codeforces.com/problemset/problem/1328/F
+
