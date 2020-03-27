@@ -1281,3 +1281,9 @@ https://vjudge.net/problem/CodeForces-260D
 308. Privatization of Roads in Treeland (diff=2500, graph construction)
 Solve this problem greedily. https://vjudge.net/problem/CodeForces-1141G
 
+309. Road Problem (diff=2600, tarjan's biconnected component, construction)
+This problem is equivalent to add the minimum amount of edges to make the graph into one biconnected component. The approach is very
+simple, firstly find all the biconnected components and compress the points to make the graph into a tree. Then, we should connect
+the leaves pairwise (the order is very important, according to dfs order 1->ans/2, 2->ans/2+1 etc.).
+https://vjudge.net/problem/CodeForces-45H
+
