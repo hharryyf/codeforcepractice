@@ -1301,3 +1301,8 @@ The reason for this to work is because if we want to go accross an edge, we have
 Then if two special node has shortest distance greater than dist[i] + w + dist[j], this edge cannot be used. 
 https://vjudge.net/problem/CodeForces-1253F
 
+312. Vladik and Entertaining Flags (diff=2600, union find, range tree and divide and conquer)
+Since this is a range query problem, we should directly think the use of range trees. We should consider what would happen if we merge
+2 connected connected components together. Only the cells on the boarder can affect the result.
+https://vjudge.net/problem/CodeForces-811E
+
