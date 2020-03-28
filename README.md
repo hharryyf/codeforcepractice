@@ -1291,3 +1291,13 @@ https://vjudge.net/problem/CodeForces-45H
 First observation, the final element should be an element in the array. Hence, we can sort and calculate the cost of making at least k
 elements equal to a[i]. https://codeforces.com/problemset/problem/1328/F
 
+311. Cheap Robot (diff=2600, kruskal modification and dijkstra, observation)
+The first observation I had when solving this problem is if we define w(i, j) as the shortest distance between i and j, then by the
+property of Kruskal minimum spanning tree, the kruskal tree formed by the k special nodes with w(i, j) as edge weight is the tree
+that would describe the answer. When we query i, j we simply return the node value of LCA(i, j). However, how can we build the kruskal
+tree efficiently. The key observation here is we can replace our initial edge weight with dist[i] + w + dist[j], where dist[i] is the
+shortest distance of the ith node to any of the k special nodes. Then, we can just build the kruskal tree based on the new weights.
+The reason for this to work is because if we want to go accross an edge, we have to be safe to move like special_node ->... u->v->special_node.
+Then if two special node has shortest distance greater than dist[i] + w + dist[j], this edge cannot be used. 
+https://vjudge.net/problem/CodeForces-1253F
+
