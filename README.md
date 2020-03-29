@@ -1310,3 +1310,7 @@ https://vjudge.net/problem/CodeForces-811E
 The observation is we can greedily select the matching, if there's no n matching in the graph, then the remaining
 vertices must form an independent set. Think why :). https://vjudge.net/problem/CodeForces-1198C
 
+314. Trails and Glades (diff=2400, construction)
+This is definitely not a hard problem, but it is something we might get wrong. The main WA point is 1 might be an isolation vertex.
+https://codeforces.com/problemset/problem/209/C
+
