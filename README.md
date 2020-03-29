@@ -1306,3 +1306,7 @@ Since this is a range query problem, we should directly think the use of range t
 2 connected connected components together. Only the cells on the boarder can affect the result.
 https://vjudge.net/problem/CodeForces-811E
 
+313. Matching vs Independent Set (diff=2200, observation)
+The observation is we can greedily select the matching, if there's no n matching in the graph, then the remaining
+vertices must form an independent set. Think why :). https://vjudge.net/problem/CodeForces-1198C
+
