@@ -1314,3 +1314,6 @@ vertices must form an independent set. Think why :). https://vjudge.net/problem/
 This is definitely not a hard problem, but it is something we might get wrong. The main WA point is 1 might be an isolation vertex.
 https://codeforces.com/problemset/problem/209/C
 
+315. Weird Advertisement (line sweep)
+This is a modification of the union of rectangle area. https://vjudge.net/problem/UVA-11983
+
