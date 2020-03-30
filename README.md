@@ -1317,3 +1317,10 @@ https://codeforces.com/problemset/problem/209/C
 315. Weird Advertisement (line sweep)
 This is a modification of the union of rectangle area. https://vjudge.net/problem/UVA-11983
 
+316. Dima and Trap Graph (diff=2400, union find and line sweep)
+The observation is very similar to problem 377D, we are actually looking for a [l, r] bound that would satisfy
+if we union all the edges that covers [l, r] 1 and n are in the same connected component. After finding out
+this part the problem is reduced to a line sweep and union find problem.
+https://vjudge.net/problem/CodeForces-366D
+
+ 
