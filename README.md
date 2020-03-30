@@ -1323,4 +1323,9 @@ if we union all the edges that covers [l, r] 1 and n are in the same connected c
 this part the problem is reduced to a line sweep and union find problem.
 https://vjudge.net/problem/CodeForces-366D
 
- 
+317. Gift (diff=2300, kruskal)
+The observation is as follows once an edge is eliminated from the MST, it should never be considered again.
+Since n is only 200, we can maintain a sorted vector of size at most 200 that contains all the candidate edges
+so far. We iterate g in increasing order and create the MST of b. 
+https://vjudge.net/problem/CodeForces-76A
+
