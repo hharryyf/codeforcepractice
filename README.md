@@ -1341,3 +1341,7 @@ https://vjudge.net/problem/CodeForces-1291E
 The way to model order of events should be covered by many other MCMF problems. This problem is actually asking
 the min-cost flow with the flow exactly k. https://vjudge.net/problem/CodeForces-802N
 
+320. Dividing Kingdom II (diff=2500, union find)
+This problem is also similar to the problem in NOIP 2010, check bipartite of a graph using union find.
+I'll make up the qnlogn solution later, qm works though. https://vjudge.net/problem/CodeForces-687D
+
