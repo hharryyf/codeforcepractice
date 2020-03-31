@@ -1329,3 +1329,11 @@ Since n is only 200, we can maintain a sorted vector of size at most 200 that co
 so far. We iterate g in increasing order and create the MST of b. 
 https://vjudge.net/problem/CodeForces-76A
 
+318. Prefix Enlightenment (diff=2400, observation and union find)
+The key observation here is the k subsets form a bipartite graph. For any position at most 2 subset determines
+its status. Hence, the problem is reduced to the following, there are 3 types of queries and every time report
+the minimum possible size of the LHS of the bipartite graph. 1. join a and b 2. claim a and b are in different
+part of the graph 3. claim a is not in LHS of the graph. This can be done efficiently by using union find.
+The detailed of the trick is similar to a problem in NOIP 2010. 
+https://vjudge.net/problem/CodeForces-1291E
+
