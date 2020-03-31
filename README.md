@@ -1337,3 +1337,7 @@ part of the graph 3. claim a is not in LHS of the graph. This can be done effici
 The detailed of the trick is similar to a problem in NOIP 2010. 
 https://vjudge.net/problem/CodeForces-1291E
 
+319. April Fools' Problem (medium) (diff=2500, MCMF)
+The way to model order of events should be covered by many other MCMF problems. This problem is actually asking
+the min-cost flow with the flow exactly k. https://vjudge.net/problem/CodeForces-802N
+
