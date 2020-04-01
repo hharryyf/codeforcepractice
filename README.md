@@ -1345,3 +1345,12 @@ the min-cost flow with the flow exactly k. https://vjudge.net/problem/CodeForces
 This problem is also similar to the problem in NOIP 2010, check bipartite of a graph using union find.
 I'll make up the qnlogn solution later, qm works though. https://vjudge.net/problem/CodeForces-687D
 
+321. Yet Another Maxflow Problem (diff=2700, observation, line sweep and range tree)
+We know that the maxflow of a graph is equal to the min cut. The key observation here is for each cut, it is
+cutting an A_A edge, a B_B edge and all the A_B edges that pass through the cut. Another observation is the
+update for each i wouldn't affect the selection of B_B edge in that cut. Hence, we can process for each A_i cut
+on the LHS what's the optimal value of the B_j cut on the RHS, and this can be done with range tree and line sweep.
+Then with each update the problem is changed to a range query and point update problem which can also be done
+with range trees. https://vjudge.net/problem/CodeForces-903G
+
+ 
