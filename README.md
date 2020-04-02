@@ -1353,4 +1353,7 @@ on the LHS what's the optimal value of the B_j cut on the RHS, and this can be d
 Then with each update the problem is changed to a range query and point update problem which can also be done
 with range trees. https://vjudge.net/problem/CodeForces-903G
 
- 
+322. Power Tree (diff=2600, range tree and observation)
+After drawing many examples on paper, I successfully reduced the problem to on changing tree. Then it can be solved
+by using range tree and lazy propagation. https://vjudge.net/problem/CodeForces-607D
+
