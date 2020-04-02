@@ -1357,3 +1357,9 @@ with range trees. https://vjudge.net/problem/CodeForces-903G
 After drawing many examples on paper, I successfully reduced the problem to on changing tree. Then it can be solved
 by using range tree and lazy propagation. https://vjudge.net/problem/CodeForces-607D
 
+323. Watching Fireworks is Fun (diff=2400, dp and monotonic queue)
+The dp state is very simple, since n and m has a product of order 1e7, we should immediately come up with a 2-d
+dp equation. Then, the problem is reduced to maintain a range min in a range of fixed length. Which can be
+done with a monotonic queue. Note that using range tree/sparse table here is overkill. 
+https://vjudge.net/problem/CodeForces-372C
+
