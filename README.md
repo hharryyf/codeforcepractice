@@ -1363,3 +1363,7 @@ dp equation. Then, the problem is reduced to maintain a range min in a range of 
 done with a monotonic queue. Note that using range tree/sparse table here is overkill. 
 https://vjudge.net/problem/CodeForces-372C
 
+324. Bear and Fair Set  (diff=2500, Dinic's algorithm observation)
+The exactly k element condition is very easy to model, just build a flow graph and see if those edges are in there
+full capacity. https://vjudge.net/problem/CodeForces-628F
+
