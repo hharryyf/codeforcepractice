@@ -1367,3 +1367,10 @@ https://vjudge.net/problem/CodeForces-372C
 The exactly k element condition is very easy to model, just build a flow graph and see if those edges are in there
 full capacity. https://vjudge.net/problem/CodeForces-628F
 
+325. Appleman and a Sheet of Paper (diff=2500, fenwick tree, implementation)
+We know that for each fold the paper size would be reduced by the number of updates we make. Hence, the complexity
+would be an amortized O(nlogn). Then, we should realize a tricky part of the problem, when 2 * pos > len we cannot
+do the same thing as 2 * pos <= len. To counter this, we can introduce a tag, when tag is 1, we should update
+from right to left otherwise, we update from left to right. Every time a 2 * pos > len occurs, we invert our tag.
+https://vjudge.net/problem/CodeForces-461C
+
