@@ -1389,3 +1389,8 @@ We should make good use of the heap, since each path length is at most logn many
 levels of sorted vectors and support get the number of elements smaller than k. Overall complexity O(nlogn + mlogn^2)
 https://vjudge.net/problem/CodeForces-894D
 
+329. Minimal Segment Cover (diff=2200, binary lifting)
+We can see what's the furthest point that can be reached when using 1 << j many intervals. Then the problem
+can be solved easily by using line sweep and binary lifting. What's even more important is this problem
+is the first case of NN countery, a 2700 data structure problem. https://vjudge.net/problem/CodeForces-1175E
+
