@@ -1381,3 +1381,6 @@ be the largest x such that the number of dish with cost >= x is larger than the 
 This can be done with range tree and lazy propagation. 
 https://vjudge.net/problem/CodeForces-1179C
 
+327. Boxes And Balls (diff=2300, greedy)
+Working in reverse order. https://vjudge.net/problem/CodeForces-884D
+
