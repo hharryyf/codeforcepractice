@@ -1374,3 +1374,10 @@ do the same thing as 2 * pos <= len. To counter this, we can introduce a tag, wh
 from right to left otherwise, we update from left to right. Every time a 2 * pos > len occurs, we invert our tag.
 https://vjudge.net/problem/CodeForces-461C
 
+326. Serge and Dining Room (diff=2400, observation, range tree)
+The problem is very hard to observe the key property. For a group of people, if they change the order of the
+purchase procedurem the final set of dish wouldn't be changed. After this is figured out, the answer would
+be the largest x such that the number of dish with cost >= x is larger than the number of pupils with money >=x.
+This can be done with range tree and lazy propagation. 
+https://vjudge.net/problem/CodeForces-1179C
+
