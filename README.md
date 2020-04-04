@@ -1384,3 +1384,8 @@ https://vjudge.net/problem/CodeForces-1179C
 327. Boxes And Balls (diff=2300, greedy)
 Working in reverse order. https://vjudge.net/problem/CodeForces-884D
 
+328. Ralph And His Tour in Binary Country (diff=2300, implementation and binary search)
+We should make good use of the heap, since each path length is at most logn many nodes, we can maintain logn
+levels of sorted vectors and support get the number of elements smaller than k. Overall complexity O(nlogn + mlogn^2)
+https://vjudge.net/problem/CodeForces-894D
+
