@@ -1394,3 +1394,8 @@ We can see what's the furthest point that can be reached when using 1 << j many 
 can be solved easily by using line sweep and binary lifting. What's even more important is this problem
 is the first case of NN countery, a 2700 data structure problem. https://vjudge.net/problem/CodeForces-1175E
 
+330. Ray in the tube (diff=2400, observation)
+If we have some physics knowledge, we should know that only log(1e9) many steps should be considered. Also don't
+forget about to consider the edge case when the Ray emits in an upright direction.
+https://vjudge.net/problem/CodeForces-1041F
+
