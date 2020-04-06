@@ -1407,3 +1407,6 @@ https://vjudge.net/problem/CodeForces-68D
 332. Area (pick's theorem)
 https://vjudge.net/problem/POJ-1265
 
+333. LIS of Sequence (diff=2400, dp and observation)
+https://vjudge.net/problem/CodeForces-486E
+
