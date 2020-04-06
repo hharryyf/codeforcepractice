@@ -1399,3 +1399,8 @@ If we have some physics knowledge, we should know that only log(1e9) many steps 
 forget about to consider the edge case when the Ray emits in an upright direction.
 https://vjudge.net/problem/CodeForces-1041F
 
+331. Half-decay tree (diff=2400, observation)
+The most important thing is the height of the tree is O(logn), hence we should think how each update can affect the answer.
+We should realize that the update can only affact answer of log(n) many regions of leaves.
+https://vjudge.net/problem/CodeForces-68D
+
