@@ -1404,3 +1404,6 @@ The most important thing is the height of the tree is O(logn), hence we should t
 We should realize that the update can only affact answer of log(n) many regions of leaves.
 https://vjudge.net/problem/CodeForces-68D
 
+332. Area (pick's theorem)
+https://vjudge.net/problem/POJ-1265
+
