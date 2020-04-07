@@ -9,6 +9,15 @@ struct Point{
 
 typedef Point Vector;
 
+const double eps = 1e-9;
+int dcmp(double x, double y){
+    if(fabs(x - y) < eps)
+        return 0;
+    if(x > y)
+        return 1;
+    return -1;
+}
+
 Vector operator + (Vector A, Vector B){
     return Vector(A.x+B.x, A.y+B.y);
 }

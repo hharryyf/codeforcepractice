@@ -1416,3 +1416,6 @@ solution is optimal. Then the problem is reduced to a standard HLD problem. We j
 and for each unvisited node, we set the entire path from it to the furthest point to 1.
 https://vjudge.net/problem/CodeForces-1059E
 
+335. Lining Up (line point template)
+https://vjudge.net/problem/POJ-1118
+
