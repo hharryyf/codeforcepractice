@@ -1410,3 +1410,9 @@ https://vjudge.net/problem/POJ-1265
 333. LIS of Sequence (diff=2400, dp and observation)
 https://vjudge.net/problem/CodeForces-486E
 
+334. Split the Tree (diff=2400, greedy and HLD)
+The important observation is, for every leaf if we extend that path to the furthest point it can reach, the
+solution is optimal. Then the problem is reduced to a standard HLD problem. We just need to iterate backward,
+and for each unvisited node, we set the entire path from it to the furthest point to 1.
+https://vjudge.net/problem/CodeForces-1059E
+
