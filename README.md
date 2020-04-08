@@ -1429,3 +1429,6 @@ https://vjudge.net/problem/CodeForces-1C
 338. Pyramids (diff=2100, sine law)
 https://vjudge.net/problem/CodeForces-630Q
 
+339. Harry Potter and the Golden Snitch (diff=2100, binary search and similar triangle)
+https://vjudge.net/problem/CodeForces-65C
+
