@@ -1422,3 +1422,7 @@ https://vjudge.net/problem/POJ-1118
 336. Map (diff=2500, line sweep and monotonic queue)
 The main issue is finding the minimum element for every submatrix of size (a,b). This can be done efficiently
 by running the algorithm for 1d static range min of fixed length twice. https://vjudge.net/problem/CodeForces-15D
+
+337. Ancient Berland Circus (diff=2100, sine law and cosine law)
+https://vjudge.net/problem/CodeForces-1C
+
