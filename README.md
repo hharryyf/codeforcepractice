@@ -1426,3 +1426,6 @@ by running the algorithm for 1d static range min of fixed length twice. https://
 337. Ancient Berland Circus (diff=2100, sine law and cosine law)
 https://vjudge.net/problem/CodeForces-1C
 
+338. Pyramids (diff=2100, sine law)
+https://vjudge.net/problem/CodeForces-630Q
+
