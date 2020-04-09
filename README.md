@@ -1438,3 +1438,8 @@ Be careful about the precision issue, use acos(-1.0) to represent Pi!. https://v
 341. Tricky Function (diff=2100, geometry, divide and conquer)
 This is a standard nearest pair in a 2d plane. https://vjudge.net/problem/CodeForces-429D
 
+342. Rooter's Song (diff=2100, geometry, observation)
+We can see that collision happens only if two points are on the same y=-x+b line after considering the time
+offset. After that, we should observe that for each group, a point is actually moving in a z-shape.
+https://vjudge.net/problem/CodeForces-848B
+
