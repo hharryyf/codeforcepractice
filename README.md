@@ -1432,3 +1432,6 @@ https://vjudge.net/problem/CodeForces-630Q
 339. Harry Potter and the Golden Snitch (diff=2100, binary search and similar triangle)
 https://vjudge.net/problem/CodeForces-65C
 
+340. Area of a Star (diff=2400, sine law)
+Be careful about the precision issue, use acos(-1.0) to represent Pi!. https://vjudge.net/problem/CodeForces-630P
+
