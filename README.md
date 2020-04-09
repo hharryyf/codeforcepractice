@@ -1435,3 +1435,6 @@ https://vjudge.net/problem/CodeForces-65C
 340. Area of a Star (diff=2400, sine law)
 Be careful about the precision issue, use acos(-1.0) to represent Pi!. https://vjudge.net/problem/CodeForces-630P
 
+341. Tricky Function (diff=2100, geometry, divide and conquer)
+This is a standard nearest pair in a 2d plane. https://vjudge.net/problem/CodeForces-429D
+
