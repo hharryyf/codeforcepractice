@@ -1443,3 +1443,12 @@ We can see that collision happens only if two points are on the same y=-x+b line
 offset. After that, we should observe that for each group, a point is actually moving in a z-shape.
 https://vjudge.net/problem/CodeForces-848B
 
+343. Count The Rectangles (diff=2200, geometry, line sweep)
+Let's think how to solve this problem using O(n^3) brute force, it is we enumerate all pairs of horizontal 
+intervals and check how many vertical segments intersect with both, then add C(num, 2) to the answer.
+Then, we can try to optimize this approach, we should add in all the vertical segments that intersects with
+one of the horizontal segment, and then before each query, we delete all the vertical segments that has a
+upper point lower than the second horizontal segments. The number query is a range sum query which can be
+done by using a fenwick tree. The complexity of the solution is O(n^2logn) which fits the time limit.
+https://vjudge.net/problem/CodeForces-1194E
+
