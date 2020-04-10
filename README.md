@@ -1462,4 +1462,9 @@ https://vjudge.net/problem/CodeForces-576C
 We should realize that the problem is actually asking the left bound of 
 the intersection of some valid time intervals. https://vjudge.net/problem/CodeForces-793C
 
+346. Nature Reserve (diff=2200, geometry, binary search for final answer)
+We should know that if a circle of size r1 can cover all the points, a circle of size r2 > r1 can definitly
+cover all the points as well. Hence, we can binary search for the final answer and check whether there's a valid
+x for putting the circle on the x-axis. https://vjudge.net/problem/CodeForces-1059D
+
 
