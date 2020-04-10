@@ -1452,3 +1452,9 @@ upper point lower than the second horizontal segments. The number query is a ran
 done by using a fenwick tree. The complexity of the solution is O(n^2logn) which fits the time limit.
 https://vjudge.net/problem/CodeForces-1194E
 
+344. Points on Plane (diff=2300, geometry, sqrt decomposition observation)
+We should think what's special about 2500000000, it is larget than 2 times 1e9. Note that if we seperate the
+entire plane into 1e6 many 1e3 by 1e3 blocks, and for each block we sort those points according to y coordinate.
+Then connect the points in a z-shape, the path length would never exceed the required length.
+https://vjudge.net/problem/CodeForces-576C
+
