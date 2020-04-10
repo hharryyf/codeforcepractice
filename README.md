@@ -1458,3 +1458,8 @@ entire plane into 1e6 many 1e3 by 1e3 blocks, and for each block we sort those p
 Then connect the points in a z-shape, the path length would never exceed the required length.
 https://vjudge.net/problem/CodeForces-576C
 
+345. Mice problem (diff=2200, geometry, implementation)
+We should realize that the problem is actually asking the left bound of 
+the intersection of some valid time intervals. https://vjudge.net/problem/CodeForces-793C
+
+
