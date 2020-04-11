@@ -1483,4 +1483,7 @@ We should observe that if we brute force all the combination of permutations the
 would definitly fit the time limit. Then, given 8 points judging whether it forms a cube can be done by counting
 the number of 1, sqrt2, sqrt3 edges. https://vjudge.net/problem/CodeForces-464B
 
+350. Transmitters (cross product on angle calculation)
+https://vjudge.net/problem/UVALive-2290
+
 
