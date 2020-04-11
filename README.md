@@ -1478,4 +1478,9 @@ The key lesson here is read the problem statement clearly, think what's importan
 is odd. This means that we can seperate the space into 4 parts according to lower left vertex.
 https://vjudge.net/problem/CodeForces-763B
 
+349. Restore Cube (diff=2200, brute force)
+We should observe that if we brute force all the combination of permutations there's only 6^7 many cases which
+would definitly fit the time limit. Then, given 8 points judging whether it forms a cube can be done by counting
+the number of 1, sqrt2, sqrt3 edges. https://vjudge.net/problem/CodeForces-464B
+
 
