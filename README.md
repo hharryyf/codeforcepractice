@@ -1473,4 +1473,9 @@ total projection length from a query point to the given interval. Then we should
 would contribute to the answer, and the projection length can be calculated using similar triangles.
 https://vjudge.net/problem/CodeForces-1016E
 
+348. Timofey and rectangles (diff=2200, four-color theorem)
+The key lesson here is read the problem statement clearly, think what's important about the length of the edge
+is odd. This means that we can seperate the space into 4 parts according to lower left vertex.
+https://vjudge.net/problem/CodeForces-763B
+
 
