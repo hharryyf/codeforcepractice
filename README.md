@@ -1467,4 +1467,10 @@ We should know that if a circle of size r1 can cover all the points, a circle of
 cover all the points as well. Hence, we can binary search for the final answer and check whether there's a valid
 x for putting the circle on the x-axis. https://vjudge.net/problem/CodeForces-1059D
 
+347. Rest In The Shades (diff=2400, binary search, geometry)
+If we have some physics experience before, we should know that this problem is equivalent to finding the
+total projection length from a query point to the given interval. Then we should realize only a range [l, r]
+would contribute to the answer, and the projection length can be calculated using similar triangles.
+https://vjudge.net/problem/CodeForces-1016E
+
 
