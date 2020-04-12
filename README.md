@@ -1488,6 +1488,12 @@ https://vjudge.net/problem/UVALive-2290
 
 * Apr 12 to May 11 --- "virus gap term training 3" focal point: all except dynamic programming
 
-351. Nearest vectors (diff=2200, angel sort)
+351. Nearest vectors (diff=2200, angle sort)
 https://vjudge.net/problem/CodeForces-598C
+
+352. Vasya and Maximum Profit (diff=2400, line sweep and range tree, monotonic stack)
+The hardest part is how to deal with the d^2, we can see that each d^2 controls a range, we can use monotonic
+increasing stack to maintain a decreasing d^2 and then the problem is changed to a line sweep and range min 
+query problem. https://vjudge.net/problem/CodeForces-1107G
+
 
