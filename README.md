@@ -1486,4 +1486,8 @@ the number of 1, sqrt2, sqrt3 edges. https://vjudge.net/problem/CodeForces-464B
 350. Transmitters (cross product on angle calculation)
 https://vjudge.net/problem/UVALive-2290
 
+* Apr 12 to May 11 --- "virus gap term training 3" focal point: all except dynamic programming
+
+351. Nearest vectors (diff=2200, angel sort)
+https://vjudge.net/problem/CodeForces-598C
 
