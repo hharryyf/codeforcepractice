@@ -1496,4 +1496,9 @@ The hardest part is how to deal with the d^2, we can see that each d^2 controls 
 increasing stack to maintain a decreasing d^2 and then the problem is changed to a line sweep and range min 
 query problem. https://vjudge.net/problem/CodeForces-1107G
 
+353. Case of Computer Network (diff=2800, LCA, tarjan's algorithm, HLD)
+We can compress the graph into a tree by running tarjan's algorithm. Then, for each path in the compressed
+tree, let's denote the down to up path by -1 and up to down path by 1, then we can use HLD to maintain a
+range min segment tree and check whether there's any contradiction.
+https://vjudge.net/problem/CodeForces-555E
 
