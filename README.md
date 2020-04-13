@@ -1502,3 +1502,7 @@ tree, let's denote the down to up path by -1 and up to down path by 1, then we c
 range min segment tree and check whether there's any contradiction.
 https://vjudge.net/problem/CodeForces-555E
 
+354. Maximum Waterfall (diff=2500, line sweep and dp)
+We should realize the dominate relationship form a DAG. Then, we should use line sweep on the right endpoint, 
+not height!!! to build the DAG and run a simple dp to get the solution. https://vjudge.net/problem/CodeForces-269D
+
