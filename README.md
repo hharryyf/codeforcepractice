@@ -1517,3 +1517,7 @@ Then we set all nodes from v to that node to 0 using HLD. After that, we check w
 if so, we set all nodes from LCA2's parent to the original LCA to 0.
 https://vjudge.net/problem/CodeForces-372D
 
+356. Paint the Tree  (diff=2200, tree dp)
+We introduce 2 states for every node, [0] means select at most k edges, [1] means select at most k-1 edges
+from the subtree. https://vjudge.net/problem/CodeForces-1223E
+
