@@ -1521,3 +1521,7 @@ https://vjudge.net/problem/CodeForces-372D
 We introduce 2 states for every node, [0] means select at most k edges, [1] means select at most k-1 edges
 from the subtree. https://vjudge.net/problem/CodeForces-1223E
 
+357. Say Hello (diff=2300, geometry)
+The only hard part about this problem is checking whether there's a point where two points are closer than d1.
+This can be done by using the derivatives. https://vjudge.net/problem/CodeForces-1046I
+
