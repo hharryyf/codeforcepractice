@@ -1506,3 +1506,14 @@ https://vjudge.net/problem/CodeForces-555E
 We should realize the dominate relationship form a DAG. Then, we should use line sweep on the right endpoint, 
 not height!!! to build the DAG and run a simple dp to get the solution. https://vjudge.net/problem/CodeForces-269D
 
+355. Choosing Subtree is Fun (diff=2600, HLD, LCA, binary-lifting, line sweep, observation)
+The first obseration is if we consider each r, l can only increasing. Hence, we should maintain a dynamic data
+structure that records how many nodes are in the connected component [l, r]. We should observe that when we add 
+i to the structure, we are actually set the path from i-1 to i to 1. Then if the total node weight in our HLD
+structure exceeds k, we should remove l and increment l by 1. Then, the second obstacle of this problem comes,
+how can we remove node v and all its connected nodes that would not disconnect our current [l, r]. Here, we
+use binary-lifting, which is jump to the upmost node that in its subtree there's no active node in range [l, r].
+Then we set all nodes from v to that node to 0 using HLD. After that, we check whether the overall LCA is changed
+if so, we set all nodes from LCA2's parent to the original LCA to 0.
+https://vjudge.net/problem/CodeForces-372D
+
