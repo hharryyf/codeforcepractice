@@ -1525,3 +1525,12 @@ from the subtree. https://vjudge.net/problem/CodeForces-1223E
 The only hard part about this problem is checking whether there's a point where two points are closer than d1.
 This can be done by using the derivatives. https://vjudge.net/problem/CodeForces-1046I
 
+358. Rats (diff=2600, bfs, implementation)
+We should observe that each mice can be eliminated only if there's a bomb in the O(d^2) region alongside. 
+Hence, we can select a mice, do a BFS and select all the candidates for placing the first bomb. Then, for
+all candidates, we do a BFS and see the area that can be blown. After that if a mice isn't covered by the
+first explosion, we do a BFS from that mice and get a region for placing the second bomb, then, we do a 
+bfs from the second bomb. After that we check whether all mice are eliminated, if so we return the solution.
+The overall searching space for this solution is at most 290^3, which 290 is the maximum number of cells
+that can be affected with a d-8 explosion. https://vjudge.net/problem/CodeForces-254D
+
