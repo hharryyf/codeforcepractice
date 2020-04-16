@@ -1534,3 +1534,8 @@ bfs from the second bomb. After that we check whether all mice are eliminated, i
 The overall searching space for this solution is at most 290^3, which 290 is the maximum number of cells
 that can be affected with a d-8 explosion. https://vjudge.net/problem/CodeForces-254D
 
+359. Mancunian Candidate Master Forever (Graham scan)
+We should observe that this problem is asking the minimum convex-hull that contains all the points, 
+then the problem is a standard convex-hull construction problem, which can be solved by using the
+Graham scan algorithm. https://vjudge.net/problem/CodeChef-CH
+
