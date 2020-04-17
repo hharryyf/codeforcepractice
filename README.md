@@ -1539,3 +1539,9 @@ We should observe that this problem is asking the minimum convex-hull that conta
 then the problem is a standard convex-hull construction problem, which can be solved by using the
 Graham scan algorithm. https://vjudge.net/problem/CodeChef-CH
 
+360. Hill Climbing (diff=2200, Graham scan, LCA)
+It should be quite obvious that the right hill for every hill is unique, hence the movement graph form a tree.
+And the queries can be answered by using binary-lifting LCA. The key to this problem is how to find the right
+hill of the current hill. We should immediatelly realize that if we maintain an upper convex-hull using
+graham scan, the intersection relationship can be calculated. https://vjudge.net/problem/CodeForces-406D
+
