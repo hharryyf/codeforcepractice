@@ -1545,3 +1545,9 @@ And the queries can be answered by using binary-lifting LCA. The key to this pro
 hill of the current hill. We should immediatelly realize that if we maintain an upper convex-hull using
 graham scan, the intersection relationship can be calculated. https://vjudge.net/problem/CodeForces-406D
 
+361. Max and Bike (diff=2400, binary search for final answer, observation)
+If you have some physics experience before, you should know that the path length of the detector during T seconds
+of jurney is vT + 2rsin(theta). Here, theta is half the radiant - floor(radiant) in T seconds.
+https://vjudge.net/problem/CodeForces-594B
+
+ 
