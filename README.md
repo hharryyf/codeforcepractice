@@ -1558,3 +1558,10 @@ move from point to the tangent point on the circle then a small arc on the circl
 point to another point. This case can be solved by using the vertical theorem of circles and cosine law.
 https://vjudge.net/problem/CodeForces-198C
 
+363. Imbalance Value of a Tree (diff=2500, kruskal modification, tree dp, observation)
+We can process the max and min seperately. The thing we are interested in is for every node what are the nodes
+that can be reached by only walking through nodes that has weight (less/greater) than itself. This should
+remind us about the problem werewolf, we use the kruskal modification procedure and construct a tree.
+Then, we do tree dp on the constructed tree to get the final answer.
+https://vjudge.net/problem/CodeForces-915F
+
