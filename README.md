@@ -1565,3 +1565,12 @@ remind us about the problem werewolf, we use the kruskal modification procedure 
 Then, we do tree dp on the constructed tree to get the final answer.
 https://vjudge.net/problem/CodeForces-915F
 
+364. Rectangle Painting 1 (diff=2400, dp)
+We define dp[x1][y1][x2][y2] as the minimum cost of coloring the subregion (x1, y1, x2, y2) white. Then,
+we should observe that this can be achieved by a cost of max(x2 - x1 + 1, y2 - y1 + 1) or if the entire
+region is white the cost is zero. Or we can split the square with some splitting row/col and make those
+2 subresions white. The complexity of this approach is O(n^5). The reason this approach won't work for 1198E
+(that problem must be solved by using maxflow) is for 1198E n can be upto 1e9.
+https://vjudge.net/problem/CodeForces-1198D
+
+
