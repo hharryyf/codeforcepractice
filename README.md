@@ -1550,4 +1550,11 @@ If you have some physics experience before, you should know that the path length
 of jurney is vT + 2rsin(theta). Here, theta is half the radiant - floor(radiant) in T seconds.
 https://vjudge.net/problem/CodeForces-594B
 
- 
+362. Delivering Carcinogen (diff=2500, Vertical theorem, cosine law, line interval intersection, binary search)
+We can easily see that binary search for final answer works. Then the problem is changed to finding the shortest
+distance between two points with a circle as an obstacle. There are two cases, first we can directly move from
+one point to another, this case can be solved by using the line segment distance template. Secondly, we can
+move from point to the tangent point on the circle then a small arc on the circle and move from the tangent
+point to another point. This case can be solved by using the vertical theorem of circles and cosine law.
+https://vjudge.net/problem/CodeForces-198C
+
