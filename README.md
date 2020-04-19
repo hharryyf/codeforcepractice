@@ -1579,3 +1579,8 @@ cell is 'U', then it would go to the first cell on the right with 'D', then to t
 and this process repeats until we run out of 'U' on the left or 'D' on the right. The overall cost of moves
 can be maintained by a prefix sum vector. https://vjudge.net/problem/CodeForces-733E
 
+366. Maximize Mex (diff=2400, matching)
+Something very important to notice is the mex query can be treated as the first position we cannot let matching=
+value (i.e. the first position the full flow is not possible). https://vjudge.net/problem/CodeForces-1139E
+
+ 
