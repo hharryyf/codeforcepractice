@@ -1573,4 +1573,9 @@ region is white the cost is zero. Or we can split the square with some splitting
 (that problem must be solved by using maxflow) is for 1198E n can be upto 1e9.
 https://vjudge.net/problem/CodeForces-1198D
 
+365. Sleep in Class (diff=2500, line sweep, observation)
+If we draw some examples on paper we should realize the moving trajactory is like this. Let's suppose the starting
+cell is 'U', then it would go to the first cell on the right with 'D', then to the first cell on the left with 'U',
+and this process repeats until we run out of 'U' on the left or 'D' on the right. The overall cost of moves
+can be maintained by a prefix sum vector. https://vjudge.net/problem/CodeForces-733E
 
