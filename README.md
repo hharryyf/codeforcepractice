@@ -1586,3 +1586,10 @@ value (i.e. the first position the full flow is not possible). https://vjudge.ne
 367. Scalar Queries (diff=2300, math)
 The most important for this is simplify f(l, r) as the sum of contribution of a[i] times ord(l, r, a[i]).
 Learn some math derivation techniques from this.
+
+368. Robot Arm (diff=2500, matrices and range tree)
+The solution to this problem is quite simple. We maintain n vectors, each vector(x, y) represents the relative
+direction of point i to point i-1. Then, we can solve this problem using range tree. For each query of type
+1, we change the ith position to the required vector, otherwise, we multiply the vector by the rotational matrix.
+https://vjudge.net/problem/CodeForces-618E
+
