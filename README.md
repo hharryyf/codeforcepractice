@@ -1583,4 +1583,6 @@ can be maintained by a prefix sum vector. https://vjudge.net/problem/CodeForces-
 Something very important to notice is the mex query can be treated as the first position we cannot let matching=
 value (i.e. the first position the full flow is not possible). https://vjudge.net/problem/CodeForces-1139E
 
- 
+367. Scalar Queries (diff=2300, math)
+The most important for this is simplify f(l, r) as the sum of contribution of a[i] times ord(l, r, a[i]).
+Learn some math derivation techniques from this.
