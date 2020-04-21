@@ -1593,3 +1593,9 @@ direction of point i to point i-1. Then, we can solve this problem using range t
 1, we change the ith position to the required vector, otherwise, we multiply the vector by the rotational matrix.
 https://vjudge.net/problem/CodeForces-618E
 
+369. Artem and Array (diff=2500, greedy)
+The greedy observation is not that obvious, if there's a number which is less than or equal to both numbers
+on the left and right, we can simply remove it. After that we would get a sequence, that's increasing or decreasing
+or first increase then decrease or the other way around. In all cases, we can sort the sequence and sum up all
+numbers except the last 2. https://vjudge.net/problem/CodeForces-442C
+
