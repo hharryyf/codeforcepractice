@@ -1599,3 +1599,12 @@ on the left and right, we can simply remove it. After that we would get a sequen
 or first increase then decrease or the other way around. In all cases, we can sort the sequence and sum up all
 numbers except the last 2. https://vjudge.net/problem/CodeForces-442C
 
+370. Leaf Sets (diff=2400, dsu on tree, small to large, greedy)
+The key observation for this is if we maintain the depth of all leaves in the subtree, the more we can group
+the leaves, the better. A merge is valid if the sum of the depth of the leaves does not exceed 2d + k, which
+d is the depth of the current node and after that the merged node is changed to a single node with depth
+max(d1, d2). We can use the small to large/dsu on tree technique, and when we merge the small multiset to the
+large one, we iterate from the smaller depth and then always merge to the node that is prev(upper_bound(2d+k-d1)).
+This greedy procedure is definitly optimal.
+https://vjudge.net/problem/CodeForces-1042F
+
