@@ -1608,3 +1608,6 @@ large one, we iterate from the smaller depth and then always merge to the node t
 This greedy procedure is definitly optimal.
 https://vjudge.net/problem/CodeForces-1042F
 
+371. Special Segments of Permutation (diff=2400, small to large)
+The key is realizing the small to large trick actually works by some time complexity analysis.
+https://vjudge.net/problem/CodeForces-1156E
