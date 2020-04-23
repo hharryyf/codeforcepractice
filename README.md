@@ -1615,3 +1615,10 @@ https://vjudge.net/problem/CodeForces-1156E
 372. Awards For Contestants (diff=2500, sparse table)
 I'm very confused, why this is a 2500 problem? https://vjudge.net/problem/CodeForces-873E
 
+373. Two Segments (diff=2800, sqrt decomposition and line sweep)
+Let's define p[i, j] as the total number of segments with values[i, j] such that i is the minimum element.
+We could think what would happen if we add element j into the data structure. If would eventually change the
+problem to a range update and query total 1, 2 in the range. Which can be done by using sqrt decomposition.
+https://vjudge.net/problem/CodeForces-193D
+
+ 
