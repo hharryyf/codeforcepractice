@@ -1611,3 +1611,7 @@ https://vjudge.net/problem/CodeForces-1042F
 371. Special Segments of Permutation (diff=2400, small to large)
 The key is realizing the small to large trick actually works by some time complexity analysis.
 https://vjudge.net/problem/CodeForces-1156E
+
+372. Awards For Contestants (diff=2500, sparse table)
+I'm very confused, why this is a 2500 problem? https://vjudge.net/problem/CodeForces-873E
+
