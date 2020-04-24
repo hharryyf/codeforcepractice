@@ -1637,3 +1637,6 @@ a clockwise direction. The key observation for the recurrsive case is if we want
 i, the second vertex we visit is either i+1 or j otherwise, some vertices cannot be visited.
 https://vjudge.net/problem/CodeForces-838E
 
+377. A Dangerous Maze (probability, expected value)
+https://vjudge.net/problem/LightOJ-1027
+
