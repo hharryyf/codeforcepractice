@@ -1630,3 +1630,10 @@ right end point's parent and the component answer. Then, we should know that we 
 in O(K^2). Hence, we can deal with each query in O(K^2logn). Since K <= 5, this approach works within the 
 time limit. https://vjudge.net/problem/CodeForces-763E
 
+376. Convex Countour (diff=2300, interval dp)
+We define dp[i][j][0] as the maximum distance when we visit all the nodes [i, j] with i as a starting point.
+dp[i][j][1] as the maximum distance when we visit all nodes [i,j] with j as a starting point. Here [i, j] is
+a clockwise direction. The key observation for the recurrsive case is if we want to visit [i, j] and start from
+i, the second vertex we visit is either i+1 or j otherwise, some vertices cannot be visited.
+https://vjudge.net/problem/CodeForces-838E
+
