@@ -1624,3 +1624,9 @@ https://vjudge.net/problem/CodeForces-193D
 374. Antimatter (diff=2300, knapsack dp)
 https://vjudge.net/problem/CodeForces-383D
 
+375. Timofey and our friends animals (diff=2800, range tree, divide and conquer, union find)
+The trick we used is exactly the same as the one we used in 811E. We maintain K left end point's parent, K
+right end point's parent and the component answer. Then, we should know that we can easily merge 2 intervals
+in O(K^2). Hence, we can deal with each query in O(K^2logn). Since K <= 5, this approach works within the 
+time limit. https://vjudge.net/problem/CodeForces-763E
+
