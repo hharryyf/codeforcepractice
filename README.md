@@ -1640,3 +1640,6 @@ https://vjudge.net/problem/CodeForces-838E
 377. A Dangerous Maze (probability, expected value)
 https://vjudge.net/problem/LightOJ-1027
 
+378. Discovering Gold (probability)
+https://vjudge.net/problem/LightOJ-1030
+
