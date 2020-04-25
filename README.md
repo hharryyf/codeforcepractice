@@ -1658,4 +1658,6 @@ https://codeforces.com/problemset/problem/416/E
 381. That Nice Euler Circuit (Euler's formula, geometry)
 This is the same as CF933C except we work on segments. https://vjudge.net/problem/UVA-1342
 
- 
+382. Race to 1 Again (probability)
+https://vjudge.net/problem/LightOJ-1038
+
