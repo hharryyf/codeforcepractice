@@ -1643,3 +1643,8 @@ https://vjudge.net/problem/LightOJ-1027
 378. Discovering Gold (probability)
 https://vjudge.net/problem/LightOJ-1030
 
+379. A Colourful Prospect (diff=2400, Euler's formula, geometry)
+We should directly identify Euler's formula can be used in this problem. Then, we should work out the
+number of vertices, the number of edges, the number of components seperately. We need to use a new
+template circle circle intersection points. https://vjudge.net/problem/CodeForces-933C
+
