@@ -1655,4 +1655,7 @@ from i to j. Then, we should observe that the answer to ans[i][j] is the sum of 
 k is on the shortest path from i to j. This uses the transitivity property of shortest path.
 https://codeforces.com/problemset/problem/416/E
 
+381. That Nice Euler Circuit (Euler's formula, geometry)
+This is the same as CF933C except we work on segments. https://vjudge.net/problem/UVA-1342
+
  
