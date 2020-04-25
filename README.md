@@ -1648,3 +1648,11 @@ We should directly identify Euler's formula can be used in this problem. Then, w
 number of vertices, the number of edges, the number of components seperately. We need to use a new
 template circle circle intersection points. https://vjudge.net/problem/CodeForces-933C
 
+380. President's Path (diff=2400, dp)
+We should think how to count wisely. Firstly, let's preprocess the all pair shortest path. Then, we can define
+a state dp[i][j], which means the number of intermediate nodes k such that edge(i, k) is a shortest path edge
+from i to j. Then, we should observe that the answer to ans[i][j] is the sum of all dp[k][j] such that
+k is on the shortest path from i to j. This uses the transitivity property of shortest path.
+https://codeforces.com/problemset/problem/416/E
+
+ 
