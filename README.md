@@ -1661,3 +1661,7 @@ This is the same as CF933C except we work on segments. https://vjudge.net/proble
 382. Race to 1 Again (probability)
 https://vjudge.net/problem/LightOJ-1038
 
+383. Weights Distributing (diff=2400, BFS and greedy)
+This problem's observation is quite simple, a->b->c can be viewed as a->i->b->i->c, we check this intersection
+point i for all i from 1 to n. https://vjudge.net/problem/CodeForces-1343E
+
