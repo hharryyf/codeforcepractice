@@ -1665,3 +1665,7 @@ https://vjudge.net/problem/LightOJ-1038
 This problem's observation is quite simple, a->b->c can be viewed as a->i->b->i->c, we check this intersection
 point i for all i from 1 to n. https://vjudge.net/problem/CodeForces-1343E
 
+384. Drazil Likes Heap (diff=2400, greedy)
+I don't think this is a nice problem. It requires too much guesses.
+https://vjudge.net/problem/CodeForces-1329C
+
