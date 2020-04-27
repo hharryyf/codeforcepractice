@@ -1675,3 +1675,9 @@ of all numbers. Then, we scan the gcd from big to small. If there is a multiple 
 the answer to that query is that chunk id. Then, we remove the greatest element from that chunk.
 https://vjudge.net/problem/CodeForces-1333F
 
+386. Deputies (diff=2400, graph construction)
+We should observe that the graph is bipartite. Then, we should know that on each side of the bipartite graph
+when we take mod 3, we could get 2 cases 0+0 or 1 +2. The harder one is the 1+2 case. It is either the 1 + 2
+nodes that are on the other sides which there's no edge between. Otherwise, we should take 2 + 4 nodes on the
+other sides which there's no edge between. https://vjudge.net/problem/CodeForces-173D
+
