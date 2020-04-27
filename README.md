@@ -1681,3 +1681,7 @@ when we take mod 3, we could get 2 cases 0+0 or 1 +2. The harder one is the 1+2 
 nodes that are on the other sides which there's no edge between. Otherwise, we should take 2 + 4 nodes on the
 other sides which there's no edge between. https://vjudge.net/problem/CodeForces-173D
 
+387. Subway Innovation (diff=2200, greedy, observation)
+The only observation here is the k has to be consecutive, here consecutive means consecutive in x.
+https://vjudge.net/problem/CodeForces-371E
+
