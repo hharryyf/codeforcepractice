@@ -1669,3 +1669,9 @@ point i for all i from 1 to n. https://vjudge.net/problem/CodeForces-1343E
 I don't think this is a nice problem. It requires too much guesses.
 https://vjudge.net/problem/CodeForces-1329C
 
+385. Kate and imperfection (diff=2200, math, greedy)
+We can work in a backward direction. Firstly, preprocess all multiples of i from 1 to n, and record the factors
+of all numbers. Then, we scan the gcd from big to small. If there is a multiple chunk has element greater than 1
+the answer to that query is that chunk id. Then, we remove the greatest element from that chunk.
+https://vjudge.net/problem/CodeForces-1333F
+
