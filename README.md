@@ -1687,3 +1687,12 @@ https://vjudge.net/problem/CodeForces-371E
 
 388. Microtransactions (diff=2300, greedy, binary search on final answer)
 https://codeforces.com/problemset/problem/1165/F2
+
+389. Sonya and Bitwise OR (diff=2400, range tree, observation)
+The key observation here is if you do bitwise or from L to R, the resulting value cannot decrease. And
+for all segments, the number of unique prefix/suffix bitwise or value can be at most log(a[i]) which is 20.
+Hence, the solution is quite simple, we use range tree to do this divide and conquer procedure. We
+maintain the unique left prefix and right suffix for each segment, and when we merge, we use a two-pointer
+approach. The time complexity for this approach is O((m+n)lognlog(a[i])).
+https://vjudge.net/problem/CodeForces-1004F
+
