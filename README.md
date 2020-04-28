@@ -1685,3 +1685,5 @@ other sides which there's no edge between. https://vjudge.net/problem/CodeForces
 The only observation here is the k has to be consecutive, here consecutive means consecutive in x.
 https://vjudge.net/problem/CodeForces-371E
 
+388. Microtransactions (diff=2300, greedy, binary search on final answer)
+https://codeforces.com/problemset/problem/1165/F2
