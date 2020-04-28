@@ -1696,3 +1696,12 @@ maintain the unique left prefix and right suffix for each segment, and when we m
 approach. The time complexity for this approach is O((m+n)lognlog(a[i])).
 https://vjudge.net/problem/CodeForces-1004F
 
+390. Katya and Segments Sets (diff=2400, persistent range tree, line sweep)
+Since this is an online range query problem, we should know the solution might be persistent range tree.
+Let's think how to do this problem online. We've done CF524E rooks and rectangles before, the problem works
+similar to that. We build a range tree on id. Then, we sort the intervals according to right endpoints.
+We do a point update on the corresponding id with max(l, k[i].l), then then answer to the query would be
+whether the rangemin(l,r) is greater than q.l. Now let's get back to the online version, we can build a
+persistent range tree on the right end points of the intervals, and when we do the query, we query the version
+which right endpoint is no greater than q.r. https://vjudge.net/problem/CodeForces-1080F
+
