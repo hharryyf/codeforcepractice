@@ -1714,3 +1714,6 @@ The key and difficult observation for this problem is, if the string p is sorted
 would be 1 + the number of adjacent pairs of the string such that s[i] >= s[i+1]. Then, you know what to do.
 https://codeforces.com/problemset/problem/610/E
 
+393. Tree Painting (diff=2100, tree dp)
+2-dfs would solve this. https://vjudge.net/problem/CodeForces-1187E
+
