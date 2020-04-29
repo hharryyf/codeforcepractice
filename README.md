@@ -1705,3 +1705,7 @@ whether the rangemin(l,r) is greater than q.l. Now let's get back to the online 
 persistent range tree on the right end points of the intervals, and when we do the query, we query the version
 which right endpoint is no greater than q.r. https://vjudge.net/problem/CodeForces-1080F
 
+391. GukiZ and GukiZiana (diff=2400, sqrt decomposition)
+The only lesson here is when we use sqrt decomposition, use hashing as few as possible.
+https://vjudge.net/problem/CodeForces-551E
+
