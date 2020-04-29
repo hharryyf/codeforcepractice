@@ -1709,3 +1709,8 @@ which right endpoint is no greater than q.r. https://vjudge.net/problem/CodeForc
 The only lesson here is when we use sqrt decomposition, use hashing as few as possible.
 https://vjudge.net/problem/CodeForces-551E
 
+392. Alphabet Permutations (diff=2400, range tree, observation)
+The key and difficult observation for this problem is, if the string p is sorted 123.... Then, the answer
+would be 1 + the number of adjacent pairs of the string such that s[i] >= s[i+1]. Then, you know what to do.
+https://codeforces.com/problemset/problem/610/E
+
