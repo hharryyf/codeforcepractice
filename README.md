@@ -1726,7 +1726,14 @@ Implementation warning: use priority_queue instead of sets as much as possible. 
 The key to this problem is observing each segment if it can be merged to 1 number, then that number is fixed.
 https://vjudge.net/problem/CodeForces-1312E
 
-396. The Maths Lecture (diff=2100, combintorics)
+396. The Maths Lecture (diff=2100, combinatorics)
 How to remove double count is the key to this problem. The state definition should be smart.
 https://codeforces.com/problemset/problem/507/D
+
+397. Mike and Geometry Problem (diff=2100, combinatorics, line sweep)
+The key observation is realizing we can accumulate the intersection length. Firstly, we do the thing we always do in
+line sweep problems, point compression. Then, we just need to know for a given subsegment, if the total number of cover 
+x is greater than or equal to k. If so, we add c(x, k) * length. 
+https://vjudge.net/problem/CodeForces-689E
+
 
