@@ -1722,3 +1722,11 @@ We can easily see that binary search on final answer works. Then the problem can
 segments and vertical segments forms at least 1 rectangle. This can be done with line sweep, CF1194E is the model of this.
 Implementation warning: use priority_queue instead of sets as much as possible. https://vjudge.net/problem/CodeForces-374E
 
+395. Array Shrinking (diff=2100, interval dp)
+The key to this problem is observing each segment if it can be merged to 1 number, then that number is fixed.
+https://vjudge.net/problem/CodeForces-1312E
+
+396. The Maths Lecture (diff=2100, combintorics)
+How to remove double count is the key to this problem. The state definition should be smart.
+https://codeforces.com/problemset/problem/507/D
+
