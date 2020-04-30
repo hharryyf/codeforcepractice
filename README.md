@@ -1717,3 +1717,8 @@ https://codeforces.com/problemset/problem/610/E
 393. Tree Painting (diff=2100, tree dp)
 2-dfs would solve this. https://vjudge.net/problem/CodeForces-1187E
 
+394. Inna and Babies (diff=2500, line sweep, binary search on final answer)
+We can easily see that binary search on final answer works. Then the problem can be reduced to check whether a set of horizontal
+segments and vertical segments forms at least 1 rectangle. This can be done with line sweep, CF1194E is the model of this.
+Implementation warning: use priority_queue instead of sets as much as possible. https://vjudge.net/problem/CodeForces-374E
+
