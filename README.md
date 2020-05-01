@@ -1739,4 +1739,12 @@ https://vjudge.net/problem/CodeForces-689E
 398. Query on a tree (HLD)
 HLD on edges, preparing for CF827d. https://vjudge.net/problem/SPOJ-QTREE
 
+399. Best Edge Weight (diff=2700, kruskal mst, HLD)
+We firstly run the MST algorithm and create a tree. Then, we consider 2 cases, what's necessary for a MST edge to
+remain in the tree, what's necessary for a non-MST edge to replace an edge in the MST. The second case is simpler.
+If a non-tree edge can replace a MST-edge, it should be less than the maximum edge weight in the MST on the path (u, v).
+For a MST-edge, it can not be replaced. Hence, we can use HLD here. maintain a range tree, supports range update.
+Everytime, we update the weight of edges on the path from (u, v) to min(wt, w(u, v)), here (u, v) stands for all
+non-MST edges. https://vjudge.net/problem/CodeForces-827D
+
 
