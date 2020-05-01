@@ -1747,4 +1747,10 @@ For a MST-edge, it can not be replaced. Hence, we can use HLD here. maintain a r
 Everytime, we update the weight of edges on the path from (u, v) to min(wt, w(u, v)), here (u, v) stands for all
 non-MST edges. https://vjudge.net/problem/CodeForces-827D
 
+400. Progress Monitoring (diff=2200, interval dp)
+We define 2 states, dp[i][j][0] as the total number of ways to create trees root with b[i], use nodes in b[i:j].
+dp[i][j][1] as the total number of ways to split nodes b[i:j] into forests such that the dfs order is still valid.
+Then, the recursive procedure is quite simple dp[i][j][0] = dp[i+1][j][1], while dp[i][j][1] = sum(dp[i][k][0] * dp[k+1][j][1],
+which b[i] > b[k+1]). https://codeforces.com/problemset/problem/509/F
+
 
