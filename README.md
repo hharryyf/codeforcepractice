@@ -1736,4 +1736,7 @@ line sweep problems, point compression. Then, we just need to know for a given s
 x is greater than or equal to k. If so, we add c(x, k) * length. 
 https://vjudge.net/problem/CodeForces-689E
 
+398. Query on a tree (HLD)
+HLD on edges, preparing for CF827d. https://vjudge.net/problem/SPOJ-QTREE
+
 
