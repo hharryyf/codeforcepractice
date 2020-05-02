@@ -1,24 +1,32 @@
 #include <bits/stdc++.h>
-#define MAX_SIZE 171
+#define MAX_SIZE 10005
 using namespace std;
 
 const double eps = 1e-9;
 
 struct point {
-	int x, y;
-	point(int x = 0, int y = 0):x(x),y(y){}
+	double x, y;
+	point(double x = 0, double y = 0):x(x),y(y){}
+	point operator - (point B) const {
+    	return point(x-B.x, y-B.y);
+	}
+	double operator ^ (point B) const {
+		return x * B.y - y * B.x;
+	}
 };
 
-point operator - (point A, point B){
-    return point(A.x-B.x, A.y-B.y);
-}
 
-int Dot(point A, point B){
+
+double Dot(point A, point B){
     return A.x*B.x + A.y*B.y;
 }
 
-int Cross(point A, point B){
-    return A.x*B.y-A.y*B.x;
+double dist(point p1, point p2) {
+	return sqrt(Dot(p2-p1, p2-p1));
+}
+
+double mul(point p0, point p1, point p2) {
+	return (p1 - p0) ^ (p2 - p0);
 }
 
 int sgn(double x) {
@@ -32,20 +40,22 @@ point pt[MAX_SIZE];
 
 int main() {
 	int n, i, j;
-	while (scanf("%d%d%lf", &pt[0].x, &pt[0].y, &r) != EOF) {
+	while (scanf("%lf%lf%lf", &pt[0].x, &pt[0].y, &r) != EOF) {
 		if (r < 0) break;
 		scanf("%d", &n);
 		for (i = 1 ; i <= n; ++i) {
-			scanf("%d%d", &pt[i].x, &pt[i].y);
+			scanf("%lf%lf", &pt[i].x, &pt[i].y);
 		}
 		
 		int ans = 0;
 		for (i = 1; i <= n; ++i) {
 			int cnt = 0;
-			if (sgn(1.0 * Dot(pt[i] - pt[0], pt[i] - pt[0]) - r * r) == 1) continue;
+			
 			for (j = 1; j <= n; ++j) {
-				if (Cross(pt[i] - pt[0], pt[j] - pt[0]) >= 0 && sgn(1.0 * Dot(pt[j] - pt[0], pt[j] - pt[0]) - r * r) <= 0) {
-					++cnt;
+				if (sgn(dist(pt[j], pt[0]) - r) != 1) {
+					if (sgn(mul(pt[0], pt[i], pt[j])) != -1) {
+						++cnt;
+					}
 				}
 			}
 			ans = max(ans, cnt);
