@@ -1766,4 +1766,8 @@ whether [l, r] the maximum continuous length of v is greater than or equal to w.
 tree with height in decreasing order as versions, the problem would be solved. 
 https://vjudge.net/problem/CodeForces-484E
 
+403. Bear and Floodlight (diff=2200, bitmask dp, geometry)
+This problem is quite trivial bitmask dp, we define dp[mask] as the maximum right hand side when using the lights in the
+subset of mask. And when we do state transition, it is just a very simple geometry problem, sine laws and cosine laws are
+used. https://codeforces.com/problemset/problem/385/D
 
