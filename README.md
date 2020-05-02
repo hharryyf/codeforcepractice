@@ -1753,4 +1753,11 @@ dp[i][j][1] as the total number of ways to split nodes b[i:j] into forests such 
 Then, the recursive procedure is quite simple dp[i][j][0] = dp[i+1][j][1], while dp[i][j][1] = sum(dp[i][k][0] * dp[k+1][j][1],
 which b[i] > b[k+1]). https://codeforces.com/problemset/problem/509/F
 
+401. Dividing Kingdom (diff=2400, persistent range tree, observation)
+Before solving this problem, we should know how to count the number of points in a 2d plane in O(logn) time per query. Then, the
+key observation to this problem is if we can fix the 2 horizontal and 2 vertical lines, we should immediately check whether that
+configuration is valid. Since 9! is around 3e5, we can simply brute force all possible permutations and then use binary search
+to get the 2 horizontal and vertical lines. Finally, use the 2d plane trick to validate. The complexity of this solution is
+O((n+9!)logn). https://vjudge.net/problem/CodeForces-260E
+
 
