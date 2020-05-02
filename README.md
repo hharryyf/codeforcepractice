@@ -1760,4 +1760,10 @@ configuration is valid. Since 9! is around 3e5, we can simply brute force all po
 to get the 2 horizontal and vertical lines. Finally, use the 2d plane trick to validate. The complexity of this solution is
 O((n+9!)logn). https://vjudge.net/problem/CodeForces-260E
 
+402. Sign on Fence (diff=2500, persistent range tree, divide and conquer)
+There are 2 key observations, first we can binary search on final answer. Secondly, the validation can be done by checking
+whether [l, r] the maximum continuous length of v is greater than or equal to w. Here, if we create a persistent range 
+tree with height in decreasing order as versions, the problem would be solved. 
+https://vjudge.net/problem/CodeForces-484E
+
 
