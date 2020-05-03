@@ -1747,13 +1747,13 @@ For a MST-edge, it can not be replaced. Hence, we can use HLD here. maintain a r
 Everytime, we update the weight of edges on the path from (u, v) to min(wt, w(u, v)), here (u, v) stands for all
 non-MST edges. https://vjudge.net/problem/CodeForces-827D
 
-400. Progress Monitoring (diff=2200, interval dp)
+400. Progress Monitoring (diff=2300, interval dp)
 We define 2 states, dp[i][j][0] as the total number of ways to create trees root with b[i], use nodes in b[i:j].
 dp[i][j][1] as the total number of ways to split nodes b[i:j] into forests such that the dfs order is still valid.
 Then, the recursive procedure is quite simple dp[i][j][0] = dp[i+1][j][1], while dp[i][j][1] = sum(dp[i][k][0] * dp[k+1][j][1],
 which b[i] > b[k+1]). https://codeforces.com/problemset/problem/509/F
 
-401. Dividing Kingdom (diff=2400, persistent range tree, observation)
+401. Dividing Kingdom (diff=2500, persistent range tree, observation)
 Before solving this problem, we should know how to count the number of points in a 2d plane in O(logn) time per query. Then, the
 key observation to this problem is if we can fix the 2 horizontal and 2 vertical lines, we should immediately check whether that
 configuration is valid. Since 9! is around 3e5, we can simply brute force all possible permutations and then use binary search
@@ -1770,4 +1770,16 @@ https://vjudge.net/problem/CodeForces-484E
 This problem is quite trivial bitmask dp, we define dp[mask] as the maximum right hand side when using the lights in the
 subset of mask. And when we do state transition, it is just a very simple geometry problem, sine laws and cosine laws are
 used. https://codeforces.com/problemset/problem/385/D
+
+404. Phoenix and Science (diff=1900, constructive algorithm)
+When we see n=1e9, and the construction procedure has some relationship between powers of 2, we should always try
+1,2,4,8... construction. https://vjudge.net/problem/CodeForces-1348D
+
+405. Carousel (diff=1800, constructive algorithm)
+When we are dealing with coloring problems, always think is it possible to change the problem to a bipartite graph.
+https://vjudge.net/problem/CodeForces-1328D
+
+406. Dreamoon Likes Coloring (diff=1800, constructive algorithm)
+Greedily construct. https://vjudge.net/problem/CodeForces-1329A
+
 
