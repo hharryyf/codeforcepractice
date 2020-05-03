@@ -1786,4 +1786,11 @@ Greedily construct. https://vjudge.net/problem/CodeForces-1329A
 Palindrome problem always use this property, it allows only 1 type of alphabet that has odd occurence.
 https://vjudge.net/problem/CodeForces-600C
 
+408. Phoenix and Memory (diff=2600, line sweep, greedy)
+The first observation is we can construct an answer visa line sweep and greedy. Sort according to left. Then, every time extract
+the one with smallest right. Then, we need to know how to validate whether the answer is unique. The answer is definitly not unique
+if the following thing can happen. A later extract element is covering an id before the smallest right bound. Now we need to show this is
+also the only condition for the non-uniqueness to happen. This can be proved by pigeon hole principle. 
+https://vjudge.net/problem/CodeForces-1348F
+
 
