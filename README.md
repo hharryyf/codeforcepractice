@@ -1782,4 +1782,8 @@ https://vjudge.net/problem/CodeForces-1328D
 406. Dreamoon Likes Coloring (diff=1800, constructive algorithm)
 Greedily construct. https://vjudge.net/problem/CodeForces-1329A
 
+407. Make Palindrome (diff=1800, constructive algorithm)
+Palindrome problem always use this property, it allows only 1 type of alphabet that has odd occurence.
+https://vjudge.net/problem/CodeForces-600C
+
 

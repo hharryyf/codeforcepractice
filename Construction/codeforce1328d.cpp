@@ -54,11 +54,25 @@ int main() {
                     } 
                     printf("\n");
                 } else {
-                    printf("3\n");
-                    for (i = 1; i <= n - 1; ++i) {
-                        printf("%d ", i % 2 + 1);
+                    if (a[1] == a[n]) {
+                        ans[1] = ans[n] = 1;
+                        int j = 2;
+                        for (i = 2; i <= n-1; ++i) {
+                            ans[i] = j;
+                            j = j % 2 + 1;
+                        }
+                        printf("2\n");
+                        for (i = 1; i <= n; ++i) {
+                            printf("%d ", ans[i]);
+                        } 
+                        printf("\n");
+                    } else {
+                        printf("3\n");
+                        for (i = 1; i <= n - 1; ++i) {
+                            printf("%d ", i % 2 + 1);
+                        }
+                        printf("3\n");
                     }
-                    printf("3\n");
                 }
             }
         }
