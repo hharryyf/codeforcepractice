@@ -1799,4 +1799,21 @@ trees, we should realize that only the nodes that are on the path from 1 to the 
 the property dist(u, v) = dist(u, root) + dist(v, root) - 2 * dist(lca, root) to find the new LCA.
 https://vjudge.net/problem/CodeForces-916E
 
+410. A Mist of Florescence (diff=1800, constructive algorithm)
+The process is like painting. https://vjudge.net/problem/CodeForces-989C
+
+411. High Load (diff=1800, constructive algorithm)
+Construct from leaf to root. Using the fact that all nodes can have at most 1 parent.
+https://vjudge.net/problem/CodeForces-827B
+
+412. Vasya And The Matrix (diff=1800, constructive algorithm)
+We use the calculate twice trick. Suppose that there is a solution, then the xor of all a[i] must equal to the xor of
+all b[i]. Hence, we can put a[i] on all first element of each row except the last one, and b[i] on all columns of the
+last row except the first one. That intersection element can be calculated using b[1] ^ (a[1] ^ ... ^ a[m-1]).
+https://vjudge.net/problem/CodeForces-1016D
+
+413. Maximum Diameter Graph (diff=1800, constructive algorithm)
+The weakness of this problme is a[i] is the upper bound! So if we create a long line, it would only make the answer better.
+https://vjudge.net/problem/CodeForces-1082D
+
 
