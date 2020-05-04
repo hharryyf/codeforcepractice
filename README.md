@@ -1793,4 +1793,10 @@ if the following thing can happen. A later extract element is covering an id bef
 also the only condition for the non-uniqueness to happen. This can be proved by pigeon hole principle. 
 https://vjudge.net/problem/CodeForces-1348F
 
+409. Jamie and Tree (diff=2400, range tree, LCA, observation)
+The key problem here is figuring out what would happen if the root of the tree is changed to an LCA. If we draw the diagrams of several
+trees, we should realize that only the nodes that are on the path from 1 to the new root can be affected. After that we can use
+the property dist(u, v) = dist(u, root) + dist(v, root) - 2 * dist(lca, root) to find the new LCA.
+https://vjudge.net/problem/CodeForces-916E
+
 
