@@ -1558,7 +1558,7 @@ move from point to the tangent point on the circle then a small arc on the circl
 point to another point. This case can be solved by using the vertical theorem of circles and cosine law.
 https://vjudge.net/problem/CodeForces-198C
 
-363. Imbalance Value of a Tree (diff=2500, kruskal modification, tree dp, observation)
+363. Imbalance Value of a Tree (diff=2400, kruskal modification, tree dp, observation)
 We can process the max and min seperately. The thing we are interested in is for every node what are the nodes
 that can be reached by only walking through nodes that has weight (less/greater) than itself. This should
 remind us about the problem werewolf, we use the kruskal modification procedure and construct a tree.
@@ -1615,7 +1615,7 @@ https://vjudge.net/problem/CodeForces-1156E
 372. Awards For Contestants (diff=2500, sparse table)
 I'm very confused, why this is a 2500 problem? https://vjudge.net/problem/CodeForces-873E
 
-373. Two Segments (diff=2800, sqrt decomposition and line sweep)
+373. Two Segments (diff=2900, sqrt decomposition and line sweep)
 Let's define p[i, j] as the total number of segments with values[i, j] such that i is the minimum element.
 We could think what would happen if we add element j into the data structure. If would eventually change the
 problem to a range update and query total 1, 2 in the range. Which can be done by using sqrt decomposition.
@@ -1624,7 +1624,7 @@ https://vjudge.net/problem/CodeForces-193D
 374. Antimatter (diff=2300, knapsack dp)
 https://vjudge.net/problem/CodeForces-383D
 
-375. Timofey and our friends animals (diff=2800, range tree, divide and conquer, union find)
+375. Timofey and our friends animals (diff=2900, range tree, divide and conquer, union find)
 The trick we used is exactly the same as the one we used in 811E. We maintain K left end point's parent, K
 right end point's parent and the component answer. Then, we should know that we can easily merge 2 intervals
 in O(K^2). Hence, we can deal with each query in O(K^2logn). Since K <= 5, this approach works within the 
@@ -1815,5 +1815,12 @@ https://vjudge.net/problem/CodeForces-1016D
 413. Maximum Diameter Graph (diff=1800, constructive algorithm)
 The weakness of this problme is a[i] is the upper bound! So if we create a long line, it would only make the answer better.
 https://vjudge.net/problem/CodeForces-1082D
+
+414. Harmony Analysis (diff=1800, constructive algorithm)
+We know that for an orthogonal matrix AA_T = V. here V is a diagonal matrix. We used a divide and conquer approach.
+We put (AA|A-A) in a matrix of size 2A. https://vjudge.net/problem/CodeForces-610C
+
+415. Shovel Sale (diff=1800, constructive algorithm)
+https://vjudge.net/problem/CodeForces-899D
 
 
