@@ -1823,4 +1823,8 @@ We put (AA|A-A) in a matrix of size 2A. https://vjudge.net/problem/CodeForces-61
 415. Shovel Sale (diff=1800, constructive algorithm)
 https://vjudge.net/problem/CodeForces-899D
 
+416. New Year Tree Decorations (diff=2500, geometry, line sweep)
+The geometry knowledge that should be used in this problem includes line-line intersect, calculating y coordinate given x
+and a line. Key observation for this problem is, we can maintain the polyline for the previous i-1 shapes when calculating 
+the area of the ith shape. https://codeforces.com/problemset/problem/379/E
 
