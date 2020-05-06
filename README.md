@@ -1828,3 +1828,7 @@ The geometry knowledge that should be used in this problem includes line-line in
 and a line. Key observation for this problem is, we can maintain the polyline for the previous i-1 shapes when calculating 
 the area of the ith shape. https://codeforces.com/problemset/problem/379/E
 
+417. T-shirts Distribution (diff=1800, constructive algorithm)
+This is the process of greedily construct the perfect matching.
+https://vjudge.net/problem/CodeForces-727D
+
