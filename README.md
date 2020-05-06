@@ -1837,3 +1837,7 @@ The observation here is the -1 case only happens when the smallest gcd is not a 
 Then, we can build the sequence with a[1] a[2], a[1], a[3], a[1], a[4]...
 https://vjudge.net/problem/CodeForces-894C
 
+419. Complete Tripartite (diff=1900, constructive algorithm)
+Just be careful on all edge cases. 
+https://codeforces.com/contest/1228/problem/D
+
