@@ -1832,3 +1832,8 @@ the area of the ith shape. https://codeforces.com/problemset/problem/379/E
 This is the process of greedily construct the perfect matching.
 https://vjudge.net/problem/CodeForces-727D
 
+418. Marco and GCD Sequence (diff=1900, constructive algorithm)
+The observation here is the -1 case only happens when the smallest gcd is not a gcd of the other gcd.
+Then, we can build the sequence with a[1] a[2], a[1], a[3], a[1], a[4]...
+https://vjudge.net/problem/CodeForces-894C
+
