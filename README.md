@@ -1849,3 +1849,12 @@ union find to solve the problem. Since general deletion is impossible for dsu, w
 Since this approach is outlined in many many other problems in the list, I would not repeat it again.
 https://vjudge.net/problem/CodeForces-1140F
 
+421. Regular Bridge (diff=1900, constructive algorithm)
+For even degree, return No. otherwise, build something look like 2 complete graphs with a bridge connecting in the middle.
+https://codeforces.com/contest/550/problem/D
+
+422. Simple Subset (diff=1800, constructive algorithm)
+There are only 3 cases. Many 1 and one even number, two numbers that sum up to prime, 1 number.
+https://vjudge.net/problem/CodeForces-665D
+
+
