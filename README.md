@@ -1841,3 +1841,11 @@ https://vjudge.net/problem/CodeForces-894C
 Just be careful on all edge cases. 
 https://codeforces.com/contest/1228/problem/D
 
+420. Extending Set of Points (diff=2600, union-find, range tree on queries)
+This problem might seems extremely hard at first. Let's think what would we do if there's only add queries.
+We should observe that for each x it contains several y, when two x shares the same y, we could join them together
+and the resulting extension would be the sum of there width times the sum of there height. Hence, we could use
+union find to solve the problem. Since general deletion is impossible for dsu, we simply use range tree to help.
+Since this approach is outlined in many many other problems in the list, I would not repeat it again.
+https://vjudge.net/problem/CodeForces-1140F
+
