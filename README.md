@@ -1857,4 +1857,14 @@ https://codeforces.com/contest/550/problem/D
 There are only 3 cases. Many 1 and one even number, two numbers that sum up to prime, 1 number.
 https://vjudge.net/problem/CodeForces-665D
 
+423. Magic Grid (diff=1800, constructive algorithm)
+https://vjudge.net/problem/CodeForces
+
+424. Looking for Owls (diff=2400, geometry, binary search)
+The idea of this problem is quite simple, we group the lines into y=kx+b chunks, and each pair of valid
+circles, we just count the number of lines that are prependicular to the line connecting the circles,
+and have an intersection point. The hardest thing though, is the floating point numbers are inaccurate.
+Hence, we should write our own fraction class and work on integers.
+https://vjudge.net/problem/CodeForces-350D
+
 
