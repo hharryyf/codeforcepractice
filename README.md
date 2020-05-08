@@ -1867,4 +1867,13 @@ and have an intersection point. The hardest thing though, is the floating point 
 Hence, we should write our own fraction class and work on integers.
 https://vjudge.net/problem/CodeForces-350D
 
+425. Tolik and His Uncle  (diff=1800, constructive algorithm)
+https://vjudge.net/problem/CodeForces-1179B
+
+426. Vasya And Array (diff=1800, constructive algorithm)
+Something we should realize is if there is a total overlap between sort and unsort range the answer should
+be -1. We can treat sort query as union of ranges, and then we can construct the ranges in the following 
+way, in general a descending order, if the left, right element are in the same component make them equal.
+https://codeforces.com/problemset/problem/1187/C
+
 
