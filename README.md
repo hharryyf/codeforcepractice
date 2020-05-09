@@ -1890,4 +1890,13 @@ connected iff a[i] + b[j] >= h. We should realize that this is exactly the same 
 the largest index such that the number of b[i] is more than the number of a[j] that requires a match.
 https://vjudge.net/problem/CodeForces-338E
 
+430. Maximal Area Quadrilateral (diff=2100, cross product)
+We just iterate over all the diagonals and use the cross product to update areas.
+https://vjudge.net/problem/CodeForces-340B
+
+431. Monopole Magnets (diff=2000, constructive algorithm)
+There's definitly no solution if a row has no # and there's no column has no #, and vice versa. Besides,
+there's no solution if in any row/col . is surrouded by #. Otherwise, the answer would be the number of #
+connected components. https://vjudge.net/problem/CodeForces-1344B
+
 
