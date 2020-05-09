@@ -1876,4 +1876,18 @@ be -1. We can treat sort query as union of ranges, and then we can construct the
 way, in general a descending order, if the left, right element are in the same component make them equal.
 https://codeforces.com/problemset/problem/1187/C
 
+427. Paint the Tree (diff=1800, constructive algorithm)
+When there are 3 items/vertices in a row, try to see what's special about the middle one.
+https://vjudge.net/problem/CodeForces-1244D
+
+428. Minimum Euler Cycle (diff=1800, constructive algorithm)
+Pattern finding. https://vjudge.net/problem/CodeForces-1334D
+
+429. Optimize! (diff=2600, range tree, observation)
+The code is actually describing a brute force matching procedure. It is actually asking to following quetion.
+How many length len subarray of a[] satisfy that there is a perfect matching with array b. Two element can be
+connected iff a[i] + b[j] >= h. We should realize that this is exactly the same as CF1179C. We are looking for
+the largest index such that the number of b[i] is more than the number of a[j] that requires a match.
+https://vjudge.net/problem/CodeForces-338E
+
 
