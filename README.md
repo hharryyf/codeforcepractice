@@ -1899,4 +1899,16 @@ There's definitly no solution if a row has no # and there's no column has no #, 
 there's no solution if in any row/col . is surrouded by #. Otherwise, the answer would be the number of #
 connected components. https://vjudge.net/problem/CodeForces-1344B
 
+432. Function (diff=2900, CHT-trick and range tree)
+We should realize that the optimal path must be a vertical path plus a 45 degree diagnal path, this can be
+proved by contradiction. After that we should express the path cost(i, j) as some function on the prefix sum
+of a and optimal turning point k. Then, we should realize the function can be calculated quickly by using 
+CHT. Since the function has a valid input range, we should use range trees of CHT to solve it, just like
+CF91E. https://vjudge.net/problem/CodeForces-455E
+
+433. Drazil and Tiles (diff=2000, constructive algorithm, BFS)
+The key observation here is if there's no force move, there should be at least 2 solutions. Here, force move
+means degree 1 vertex. If there is a degree 1 vertex, we can simply math it with the only connection vertex u,
+and then repeat this process using BFS. https://vjudge.net/problem/CodeForces-515D
+
 
