@@ -1915,4 +1915,8 @@ and then repeat this process using BFS. https://vjudge.net/problem/CodeForces-51
 We should immediately realize that the graph exists an Euler path, and it looks like a S-shape.
 https://vjudge.net/problem/CodeForces-1301D
 
+435. Polygons (diff=2100, point in convex polygon)
+This is a template problem, just be careful about the on segment edge case.
+https://vjudge.net/problem/CodeForces-166B
+
 
