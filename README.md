@@ -1911,4 +1911,8 @@ The key observation here is if there's no force move, there should be at least 2
 means degree 1 vertex. If there is a degree 1 vertex, we can simply math it with the only connection vertex u,
 and then repeat this process using BFS. https://vjudge.net/problem/CodeForces-515D
 
+434. Time to Run (diff=2000, constructive algorithm)
+We should immediately realize that the graph exists an Euler path, and it looks like a S-shape.
+https://vjudge.net/problem/CodeForces-1301D
+
 
