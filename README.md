@@ -1919,4 +1919,22 @@ https://vjudge.net/problem/CodeForces-1301D
 This is a template problem, just be careful about the on segment edge case.
 https://vjudge.net/problem/CodeForces-166B
 
+436. Equalizing Two Strings (diff=2000, constructive algorithm)
+Key observation here is there are only 3 cases to be considered, frequency of characters is not the same.
+One string has a character occurs more than once. The odd/even of inversion pairs.
+
+437. Petya and Construction Set (diff=2000, constructive algorithm)
+Well, the problem says all di are less than or equal to n. Think how to use this constraint!
+https://vjudge.net/problem/CodeForces-1214E
+
+438. Dasha and Puzzle (diff=2000, constructive algorithm)
+We should note that only if a vertex has degree greater than 4, we should print NO. Then, the problem is
+how to construct the tree, we should walk from vertex 1, and walk with a step of 2^i in 4 directions.
+https://vjudge.net/problem/CodeForces-761E
+
+439. New Year Domino (diff=2300, range tree, line sweep)
+The observation is much harder than the implementation. We should observe that a domino is going to cover
+the range [pi, pi + li], hence, there's a non-trivial reduction to this problem, cover [l, r] by segments.
+Query [l, r] how many empty points in total. This can be done by range tree and line sweep.
+https://codeforces.com/problemset/problem/500/E
 
