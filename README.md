@@ -1938,3 +1938,8 @@ the range [pi, pi + li], hence, there's a non-trivial reduction to this problem,
 Query [l, r] how many empty points in total. This can be done by range tree and line sweep.
 https://codeforces.com/problemset/problem/500/E
 
+440. DFS (diff=2700, range tree, observation)
+We should observe that in all trees, a newly added edge can be ignored without changing the dfs tree,
+only if it is an edge connecting the u, v which u is an ancestor of v or the other way around.
+https://vjudge.net/problem/CodeForces-1044F
+
