@@ -1938,8 +1938,24 @@ the range [pi, pi + li], hence, there's a non-trivial reduction to this problem,
 Query [l, r] how many empty points in total. This can be done by range tree and line sweep.
 https://codeforces.com/problemset/problem/500/E
 
+
+*Term 2 training May 12, 2020 to July 31, 2020*
+
 440. DFS (diff=2700, range tree, observation)
 We should observe that in all trees, a newly added edge can be ignored without changing the dfs tree,
 only if it is an edge connecting the u, v which u is an ancestor of v or the other way around.
 https://vjudge.net/problem/CodeForces-1044F
+
+441. Dreamoon and Sets (diff=1900, constructive algorithm)
+https://codeforces.com/problemset/problem/476/D
+
+442. Maximal GCD (diff=1900, constructive algorithm)
+https://codeforces.com/problemset/problem/803/C
+
+443. Coloring Edges (diff=2100, constructive algorithm, dfs)
+There are 2 types of important edges in dfs, forward edge and back edge. We'll make all forward edges
+1, and all back edges 2, this would make the graph cycle free.
+https://vjudge.net/problem/CodeForces-1217D
+
+
 
