@@ -1957,5 +1957,14 @@ There are 2 types of important edges in dfs, forward edge and back edge. We'll m
 1, and all back edges 2, this would make the graph cycle free.
 https://vjudge.net/problem/CodeForces-1217D
 
+444. Robots on a Grid (diff=2200, binary lifting, functional graph observation)
+We should realize the graph is a functional graph, hence after 2e6 moves (double the size of the grid), 
+all robots would ended in the cycle component of each functional graph. Therefore, the number of unique
+points after 2e6 moves would be the answer. https://vjudge.net/problem/CodeForces-1335F
+
+445. Petya and Pipes (diff=2600, MCMF)
+After this problem, we should know that MCMF algorithm can find the max flow with cost no greater than K.
+https://vjudge.net/problem/CodeForces-362E
+
 
 
