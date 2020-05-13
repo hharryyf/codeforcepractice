@@ -1974,5 +1974,9 @@ force, O(nm^2) complexity would be too high. So, what we can do is construct pro
 none -1 entries for each row and sorted them in increasing order, then we connect v1_in ->(all index with v1 in current row) -> v1_out->v2_in ... This would make the final time complexity O(nmlogm).
 https://vjudge.net/problem/CodeForces-274D
 
+447. Berland Beauty (diff=2100, constructive algorithm)
+We sort the requirments in ascending order, and then just set the path(u, v) to wi. Then, set all unmodified
+edges to 1e6. Finally check whether all constraints are satisfied. Since this is just a div 3 problem, n=5e3,
+we can actually handle n up to 2e5 by using HLD. https://vjudge.net/problem/CodeForces-1296F
 
 
