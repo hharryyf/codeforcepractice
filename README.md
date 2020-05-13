@@ -1966,5 +1966,13 @@ points after 2e6 moves would be the answer. https://vjudge.net/problem/CodeForce
 After this problem, we should know that MCMF algorithm can find the max flow with cost no greater than K.
 https://vjudge.net/problem/CodeForces-362E
 
+446. Lovely Matrix (diff=2200, dfs, graph construction)
+This is a stunning problem. We should have the initial observation that the problem can be solved by using
+topological sort. However, the graph construction can not be done by brute force. The problem only has a 
+constraints that mn <= 1e5, which means m can be up to 1e5, if we construct the graph by a simple brute
+force, O(nm^2) complexity would be too high. So, what we can do is construct procedure graph, unique the
+none -1 entries for each row and sorted them in increasing order, then we connect v1_in ->(all index with v1 in current row) -> v1_out->v2_in ... This would make the final time complexity O(nmlogm).
+https://vjudge.net/problem/CodeForces-274D
+
 
 
