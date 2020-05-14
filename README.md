@@ -1979,4 +1979,17 @@ We sort the requirments in ascending order, and then just set the path(u, v) to 
 edges to 1e6. Finally check whether all constraints are satisfied. Since this is just a div 3 problem, n=5e3,
 we can actually handle n up to 2e5 by using HLD. https://vjudge.net/problem/CodeForces-1296F
 
+448. Orac and Medians (diff=2000, constructive algorithm)
+https://vjudge.net/problem/CodeForces-1349B
+
+449. Boring Partition (diff=1800, constructive algorithm)
+Observe smallest and largest numbers. https://vjudge.net/problem/CodeForces-238B
+
+450. Fox And Dinner (diff=2800, flow)
+The observation is we can definitly seperate odd/even numbers, but the trick thing here is if we select
+(u, v), we cannot select(v, u). The trick here is we add edges from source to odd numbers with capacity 2,
+add edges from even numbers to sink with capacity 2, prime(u, v) are connected with capacity 1 edges.
+The thing it is trying to model is, every odd number contributes to 2 pairs, every even number contributes
+to 2 pairs, since |odd number| must equal to |even number|, the matching must be groups of cycles.
+https://vjudge.net/problem/CodeForces-510E
 
