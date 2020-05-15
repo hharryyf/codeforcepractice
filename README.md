@@ -1993,3 +1993,10 @@ The thing it is trying to model is, every odd number contributes to 2 pairs, eve
 to 2 pairs, since |odd number| must equal to |even number|, the matching must be groups of cycles.
 https://vjudge.net/problem/CodeForces-510E
 
+451. Minimal k-covering (diff=2500, flow)
+Initially I was thinking this as some kind of min-cut problem on edges, but it seems we are not using the
+bipartite graph condition. Then, by drawing some examples, we should realize that the amount of edges
+selected is exactly the same as the mincut/maxflow of the bipartite graph. Hence, instead of thinking 
+what's the minimum amount of edges to delete in order to make all vertices to have degree k, we can think
+what's the maximum amout of edges (max flow) that can be deleted so that each vertex would lose degree
+no more than deg[v] - k. To speed up our algorithm, we can work backward (decreasing order of k), each iteration add 1 to all capacities from s to u, v to t by 1. The overall complexity of the algorithm would be limited to O(m^2). https://vjudge.net/problem/CodeForces-976F
