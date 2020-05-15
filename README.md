@@ -2000,3 +2000,11 @@ selected is exactly the same as the mincut/maxflow of the bipartite graph. Hence
 what's the minimum amount of edges to delete in order to make all vertices to have degree k, we can think
 what's the maximum amout of edges (max flow) that can be deleted so that each vertex would lose degree
 no more than deg[v] - k. To speed up our algorithm, we can work backward (decreasing order of k), each iteration add 1 to all capacities from s to u, v to t by 1. The overall complexity of the algorithm would be limited to O(m^2). https://vjudge.net/problem/CodeForces-976F
+
+452. Mobile Phone Network (diff=2600, kruskal, HLD)
+The observation here is we can form the minimum spanning tree with all f edges included using Kruskal.
+And then, each non tree edge is simply a set path query, set the weight of all edges in the path u, v
+to min(w, original weight). After that, we simply sum up all the weights and get the solution. Don't forget
+to minus the g edges. https://vjudge.net/problem/CodeForces-1023F
+
+
