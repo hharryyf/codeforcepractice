@@ -2007,4 +2007,18 @@ And then, each non tree edge is simply a set path query, set the weight of all e
 to min(w, original weight). After that, we simply sum up all the weights and get the solution. Don't forget
 to minus the g edges. https://vjudge.net/problem/CodeForces-1023F
 
+453. Optimal Number Permutation (diff=1900, constructive algorithm)
+There is a weakness here, n can be placed anywere with a cost of 0. 
+https://vjudge.net/problem/CodeForces-622D
+
+454. Idempotent functions (diff=2000, constructive algorithm)
+https://codeforces.com/problemset/problem/542/C
+
+
+455. Tidying Up (diff=2300, MCMF)
+I had the initial observation, divide the graph into 2 parts, (x, y) with x + y is even to one part, 
+x + y is odd to the other part. Then, the most important observation is the answer is exactly the same
+as the minimum number of unmatched pair in the square. unmatch here means two cells are neighbours and
+they are not the same color. https://codeforces.com/problemset/problem/316/C2
+
 
