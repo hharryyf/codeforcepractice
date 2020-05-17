@@ -2021,4 +2021,11 @@ x + y is odd to the other part. Then, the most important observation is the answ
 as the minimum number of unmatched pair in the square. unmatch here means two cells are neighbours and
 they are not the same color. https://codeforces.com/problemset/problem/316/C2
 
+456. Four Melodies (diff=2700, MCMF)
+We can use MCMF to solve this problem, the interpretation is as follows, every node should have a vertex capacity
+of 1 and vertex cost of 1, two nodes are connected if i < j and a[i] and be followed by a[j] according to 
+the definition. There should be at most 4 starting points. One thing to notice is SPFA can be killed by the 
+time limit, we must use dijkstra with potential to optimize our code!
+https://codeforces.com/contest/818/problem/G
+
 
