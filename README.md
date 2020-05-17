@@ -2028,4 +2028,16 @@ the definition. There should be at most 4 starting points. One thing to notice i
 time limit, we must use dijkstra with potential to optimize our code!
 https://codeforces.com/contest/818/problem/G
 
+457. Shortest and Longest LIS (diff=1800, constructive algorithm)
+https://vjudge.net/problem/CodeForces-1304D
+
+458. Neko and Flashback (diff=2400, Euler path)
+We should have an intial observation that b[i] > c[i] would lead to no solution. Consider a pair (b[i], c[i]),
+we know that in the initial sequence, there must exists a pair b[i] next to c[i]. In total there are n-1 such
+constraints. We should observe that there should be a sequence of traversal such that we can fulfill these
+b[i] next to c[i] constraints one after another. This is an Euler traversal! Hence, we establish the graph,
+and check 1) the graph is connected, 2) the graph has an Euler path/circuit. Then, we apply the Hierholzer's
+algorithm and find the euler path. https://vjudge.net/problem/CodeForces-1152E
+
+
 
