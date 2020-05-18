@@ -2039,5 +2039,12 @@ b[i] next to c[i] constraints one after another. This is an Euler traversal! Hen
 and check 1) the graph is connected, 2) the graph has an Euler path/circuit. Then, we apply the Hierholzer's
 algorithm and find the euler path. https://vjudge.net/problem/CodeForces-1152E
 
+459. Summoning Minions (MCMF)
+There are several important observations on this, 1) there are k selected items and n-k unselected items,
+the maximum cost you can achieve is by placing the items in the order (k-1 selected)_n-k unselected_1 selected.
+2) the maximum cost under this configuration is a[v1] + a[v2] + ... + a[vk] + b[v1] * 0 + ... + b[vk] * (k-1)
++ sum(b[u] * (k-1), u not in {v}). 3) The maximization can be done by a standard MCMF.
+https://codeforces.com/contest/1354/problem/F
+
 
 
