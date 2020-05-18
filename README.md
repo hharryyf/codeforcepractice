@@ -2051,3 +2051,6 @@ The resulting paths are two euler paths in the graph, we just need to do several
 and use the Hierholzer's algorithm to find the solution. 
 https://vjudge.net/problem/CodeForces-36E
 
+461. Sum of Nestings (diff=1800, constructive algorithm)
+Greedily construct. https://codeforces.com/problemset/problem/847/C
+
