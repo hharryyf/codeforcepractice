@@ -2046,5 +2046,8 @@ the maximum cost you can achieve is by placing the items in the order (k-1 selec
 + sum(b[u] * (k-1), u not in {v}). 3) The maximization can be done by a standard MCMF.
 https://codeforces.com/contest/1354/problem/F
 
-
+460. Two Paths (diff=2600, Euler path)
+The resulting paths are two euler paths in the graph, we just need to do several case differentiation
+and use the Hierholzer's algorithm to find the solution. 
+https://vjudge.net/problem/CodeForces-36E
 
