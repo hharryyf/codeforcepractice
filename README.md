@@ -2065,3 +2065,9 @@ part of the vertices is filled with 2 while the other part is filled with 1 and 
 select one part of each component, we are able to get n2, this can be done by a simple knapsack dp.
 https://vjudge.net/problem/CodeForces-1354E
 
+464. Weird journey (diff=2100, observation, constructive algorithm, Euler path)
+The observation is if all paths are used twice except 2, this means that if there is a directed Euler path
+in the graph there's exactly one outdeg-indeg=1 vertex and one outdeg-indeg=-1 vertex. We can consider
+which edges can be removed at the same time, it is either v1->v2->v3 or one self cycle and one arbitary edge.
+https://vjudge.net/problem/CodeForces-788B
+
