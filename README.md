@@ -2054,3 +2054,6 @@ https://vjudge.net/problem/CodeForces-36E
 461. Sum of Nestings (diff=1800, constructive algorithm)
 Greedily construct. https://codeforces.com/problemset/problem/847/C
 
+462. New Year and Rainbow Roads (diff=2400, Greedy)
+Just a case differentiation. https://vjudge.net/problem/CodeForces-908F
+
