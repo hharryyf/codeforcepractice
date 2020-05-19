@@ -2057,3 +2057,11 @@ Greedily construct. https://codeforces.com/problemset/problem/847/C
 462. New Year and Rainbow Roads (diff=2400, Greedy)
 Just a case differentiation. https://vjudge.net/problem/CodeForces-908F
 
+463. Graph Coloring (diff=2100, dfs bipartite graph, knapsack dp)
+The observation is as follows, for all edges one vertex must be 2 while the other must be (1, 3), this applies
+to all edges. Hence, we can decompose the graph into many bipartite components, each bipartite graph, one
+part of the vertices is filled with 2 while the other part is filled with 1 and 3. To make the assignment valid,
+2 conditions must be satisfied, firstly, the graph is bipartite, this can be checked by dfs. Secondly, if we
+select one part of each component, we are able to get n2, this can be done by a simple knapsack dp.
+https://vjudge.net/problem/CodeForces-1354E
+
