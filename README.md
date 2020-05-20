@@ -2071,3 +2071,9 @@ in the graph there's exactly one outdeg-indeg=1 vertex and one outdeg-indeg=-1 v
 which edges can be removed at the same time, it is either v1->v2->v3 or one self cycle and one arbitary edge.
 https://vjudge.net/problem/CodeForces-788B
 
+465. Underground Lab (diff=2100, constructive algorithm)
+The key observation on this is we can change the problem to the construction on the dfs tree. Since, for every
+tree there's at most 2n nodes visited during the Euler tour, the problem is doable.
+https://vjudge.net/problem/CodeForces-780E
+
+
