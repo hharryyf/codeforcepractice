@@ -2076,4 +2076,7 @@ The key observation on this is we can change the problem to the construction on 
 tree there's at most 2n nodes visited during the Euler tour, the problem is doable.
 https://vjudge.net/problem/CodeForces-780E
 
+466. Runaway to a Shadow (diff=2500, geometry)
+This is simply asking the union of intersection angles. https://vjudge.net/problem/CodeForces-681E
+
 
