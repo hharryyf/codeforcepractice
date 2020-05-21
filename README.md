@@ -2079,4 +2079,8 @@ https://vjudge.net/problem/CodeForces-780E
 466. Runaway to a Shadow (diff=2500, geometry)
 This is simply asking the union of intersection angles. https://vjudge.net/problem/CodeForces-681E
 
+467. Santa Claus and a Palindrome (diff=2100, Greedy)
+The most important information here is all strings have equal length. Then, we should think how a palindrome
+can be formed. Either concatination of a string and a reverse string or a single palindrome string in the middle.
+https://vjudge.net/problem/CodeForces-748D
 
