@@ -2084,3 +2084,6 @@ The most important information here is all strings have equal length. Then, we s
 can be formed. Either concatination of a string and a reverse string or a single palindrome string in the middle.
 https://vjudge.net/problem/CodeForces-748D
 
+468. Brackets in Implications (diff=2200, constructive algorithm)
+https://vjudge.net/problem/CodeForces-550E
+
