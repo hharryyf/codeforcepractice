@@ -2087,3 +2087,8 @@ https://vjudge.net/problem/CodeForces-748D
 468. Brackets in Implications (diff=2200, constructive algorithm)
 https://vjudge.net/problem/CodeForces-550E
 
+469. Little Elephant and Triangle (diff=2500, geometry, counting)
+This problem is much harder than it looks. There is a very tricky case to handle, all 3 points are at the
+same position, instead of subtract 6, we only subtract 1.
+https://vjudge.net/problem/CodeForces-220D
+
