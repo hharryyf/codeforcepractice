@@ -2098,3 +2098,17 @@ https://vjudge.net/problem/CodeForces-748F
 471. Little Pony and Summer Sun Celebration (diff=2200, constructive algorithm)
 Again, Euler tour. https://vjudge.net/problem/CodeForces-453C
 
+472. Wizard's Tour (diff=2300, constructive algorithm)
+We should observe that if we greedily match the edges into groups of 2 while letting the parent edge
+has the least priority, we could easily get a solution of size m/2 for each connected component.
+https://vjudge.net/problem/CodeForces-861F
+
+473. Graph Cutting (diff=2300, constructive algorithm)
+Exactly the same as the previous one. https://vjudge.net/problem/CodeForces-405E
+
+474. Tanya and Password (diff=2500, Euler path)
+For this kind of word connection problems, we just apply the standard Euler path trick. For every
+word s, we connect an edge from eocode(s[0,1]) to encode(s[1,2]). And then run the popular Hierholzer's
+algorithm to find the directed euler path/cycle in the graph. 
+https://vjudge.net/problem/CodeForces-508D
+
