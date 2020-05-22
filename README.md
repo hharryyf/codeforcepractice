@@ -2092,3 +2092,9 @@ This problem is much harder than it looks. There is a very tricky case to handle
 same position, instead of subtract 6, we only subtract 1.
 https://vjudge.net/problem/CodeForces-220D
 
+470. Santa Clauses and a Soccer Championship (diff=2300, constructive algorithm)
+https://vjudge.net/problem/CodeForces-748F
+
+471. Little Pony and Summer Sun Celebration (diff=2200, constructive algorithm)
+Again, Euler tour. https://vjudge.net/problem/CodeForces-453C
+
