@@ -2120,3 +2120,10 @@ to interprete this, it is the complete graph formed by this matrix satisfies all
 all edges in this complete graph can be a MST-edge ! After that we simply use the standard binary-lifting
 trick to finish off this problem. https://vjudge.net/problem/CodeForces-632F
 
+476. Little Victor and Set (diff=2300, constructive algorithm)
+The observation we use is for any even number x ^ (x + 1) = 1, hence for k>=4, the construcion is very simple.
+The toughest case is dealing with k = 3. Here, after some pattern finding, I realize only 
+(2^k - 1) (2 ^ k * 3 / 2 - 1) (2 ^ k * 3 / 2) are useful tuples, we can simply check if there's such tuples
+in the range(l, r), if not we just print the answer for k=2.
+https://vjudge.net/problem/CodeForces-460D
+
