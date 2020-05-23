@@ -2127,3 +2127,6 @@ The toughest case is dealing with k = 3. Here, after some pattern finding, I rea
 in the range(l, r), if not we just print the answer for k=2.
 https://vjudge.net/problem/CodeForces-460D
 
+477. Destroy it! (diff=2100, knapsack dp)
+https://vjudge.net/problem/CodeForces-1176F
+
