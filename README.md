@@ -2112,3 +2112,11 @@ word s, we connect an edge from eocode(s[0,1]) to encode(s[1,2]). And then run t
 algorithm to find the directed euler path/cycle in the graph. 
 https://vjudge.net/problem/CodeForces-508D
 
+475. Magic Matrix (diff=2400, observation, Kruskal algorithm, binary-lifting)
+I'm very excited that I can solve this problem by myself. The observation is we can firstly check the matrix
+is a symmetric matrix and then after rewrite the condition to a[i][j] <= max(a[i][k], a[k][j]), we use graph
+to interprete this, it is the complete graph formed by this matrix satisfies all length 3 cycles with length
+(a, b, c) (suppose a >= b >= c) satisfies a=b and b >= c. If we are familiar with MST, this also means that
+all edges in this complete graph can be a MST-edge ! After that we simply use the standard binary-lifting
+trick to finish off this problem. https://vjudge.net/problem/CodeForces-632F
+
