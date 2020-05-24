@@ -2141,3 +2141,11 @@ Instead of thinking whether v can exists in the set or not, we should think whet
 are removed or not. With these 2 observations, especially the second, the problem can be solved by a standard
 line sweep and range max tree. https://vjudge.net/problem/CodeForces-1326E
 
+480. Network Safety (diff=2200, union find, counting)
+Let's think when can the virus affect two nodes (u, v), we know that this would happen only if x = u ^ v, and
+one of u, v is infected. Hence, we can solve each such x seperately, in total O(m) of them. For each x, 
+we apply union-find procedure, and make the n nodes into cnt connected components (total s nodes) that would affect the final answer, and 1 component (n-s) nodes that would not make any difference to the final answer.
+We should observe that x would not make the connection invalid if we apply the xor operator to any of the
+cnt connected components as a whole (xor all numbers in the a complete connected component by x). 
+Then, we can get the final answer. https://vjudge.net/problem/CodeForces-1039C
+
