@@ -2135,3 +2135,9 @@ We should know that each circle can be valid in an initial angle range, and the 
 it can contribute to the final answer is 2 * 50 / 5 = 20. Only be careful about negative angles.
 https://vjudge.net/problem/CodeForces-420E
 
+479. Bombs (diff=2400, line sweep, observation)
+The key observation is the answer must be non-increasing. Now, let's think how to check whether v is the answer.
+Instead of thinking whether v can exists in the set or not, we should think whether all elements from v to n
+are removed or not. With these 2 observations, especially the second, the problem can be solved by a standard
+line sweep and range max tree. https://vjudge.net/problem/CodeForces-1326E
+
