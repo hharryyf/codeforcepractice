@@ -2130,3 +2130,8 @@ https://vjudge.net/problem/CodeForces-460D
 477. Destroy it! (diff=2100, knapsack dp)
 https://vjudge.net/problem/CodeForces-1176F
 
+478. Playing the ball (diff=2600, geometry)
+We should know that each circle can be valid in an initial angle range, and the maximum number of times
+it can contribute to the final answer is 2 * 50 / 5 = 20. Only be careful about negative angles.
+https://vjudge.net/problem/CodeForces-420E
+
