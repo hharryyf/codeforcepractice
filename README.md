@@ -2168,3 +2168,15 @@ Now, let's think how to construct the answer. We can run find the Euler tour, an
 we print the original direction, for the edges with even id, we reverse it. This is correct if we consider the
 degree contribution of edges. https://codeforces.com/problemset/problem/527/E
 
+484. Tree Destruction (diff=2400, constructive algorithm, greedy, LCA)
+I found some interesting properties on this. firstly, if the tree is a link list, the answer is simply every time
+remove one of the end point for n-1 times. then, let's consider the following constructive process
+1) find the tree's diameter, then remove all the points not in the diameter
+2) remove the diameter according to the way in the intuition.
+let's think why this is correct, for the non-diameter nodes let u, v be the two end points of the diameter
+consider a node w not on the diameter its distance with the closest point on the diameter p is d1, and dist(p, u) = d2, dist(p, v) = d3 suppose that d2 >= d3. Then d1 + d2 <= d2 + d3 and d1 + d3 <= d2 + d3 by definition.
+What's more, let's suppose there exists there's a node in the subtree of p has d4 + d1 >= d1 + d2
+this would form a contradiction. Hence, all nodes not on the diameter can achieve tha maximum cost.
+For a single list we left, the longer it is the larger the cost we can achieve. Hence, the construction is optimal.
+https://codeforces.com/problemset/problem/911/F
+
