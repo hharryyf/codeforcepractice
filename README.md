@@ -2156,3 +2156,15 @@ of colors for the graph coloring is |V|. 2) if the same ice cream form a subgrap
 coloring would work, i.e. no blocking case might occur. 
 https://vjudge.net/problem/CodeForces-804C
 
+482. Fake News (medium) (diff=2200, constructive algortihm)
+Observe that if we choose p="bbba", and the total subsequence can be made up of c(n, 3), which would solve
+the problem. https://vjudge.net/problem/CodeForces-802H
+
+483. Data Center Drama (diff=2600, constructive algorithm, Euler path)
+Firstly, I observed that since all vertices have even in and out degree, the graph must have an Euler tour.
+And at the same time the total number of edges must be even. Hence, we can use the standard trick to make
+the graph to have an Euler tour, and add a (1, 1) edge if the total number of edges in the modified graph is odd.
+Now, let's think how to construct the answer. We can run find the Euler tour, and for the edges with odd id, 
+we print the original direction, for the edges with even id, we reverse it. This is correct if we consider the
+degree contribution of edges. https://codeforces.com/problemset/problem/527/E
+
