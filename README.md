@@ -2149,3 +2149,10 @@ We should observe that x would not make the connection invalid if we apply the x
 cnt connected components as a whole (xor all numbers in the a complete connected component by x). 
 Then, we can get the final answer. https://vjudge.net/problem/CodeForces-1039C
 
+481. Ice cream coloring (diff=2200, constructive algorithm)
+There's a strange sentence in the problem statement "Vertices which have the i-th (1 ≤ i ≤ m) type of ice cream form a connected subgraph". We need to think what's special about this. Note that without such sentence, the
+problem is NP hard. We should have the following 2 observations, 1) for a complete graph, the minimum number
+of colors for the graph coloring is |V|. 2) if the same ice cream form a subgraph, (connected tree), greedily
+coloring would work, i.e. no blocking case might occur. 
+https://vjudge.net/problem/CodeForces-804C
+
