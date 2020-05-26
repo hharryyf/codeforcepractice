@@ -2192,3 +2192,9 @@ the total cost, we just need to make sure no elements move forward and then back
 3) greedily construct from s[1] to s[n] can always satisfy 2).
 https://vjudge.net/problem/CodeForces-584E
 
+487. Graph and String (diff=1800, constructive algorithm)
+The idea is construct a reverse graph, it is every edge not in the graph, add an edge in this new graph.
+Then, the new graph must be bipartite. We fill this graph with a and c, for the uncolored nodes, we filled
+with b. Finally, we check whether all conditions are satisfied. 
+https://codeforces.com/problemset/problem/623/A
+
