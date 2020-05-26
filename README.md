@@ -2180,3 +2180,15 @@ this would form a contradiction. Hence, all nodes not on the diameter can achiev
 For a single list we left, the longer it is the larger the cost we can achieve. Hence, the construction is optimal.
 https://codeforces.com/problemset/problem/911/F
 
+485. Earth Wind and Fire (diff=2300, constructive algorithm)
+The first response to this problem should be sorting. After that we should observe that one one match would
+definitly be the correct solution. https://vjudge.net/problem/CodeForces-1148E
+
+486. Anton and Ira (diff=2300, constructive algorithm)
+There are 3 observations and if we combine them together, the problem is solved.
+1) the number of swaps is bounded by c(n, 2) which is less than 2e6 using the property of bubble sort
+2) when we are doing sorting, some elements move forward and some elements move backwards, to minimize
+the total cost, we just need to make sure no elements move forward and then backward again or the otherway.
+3) greedily construct from s[1] to s[n] can always satisfy 2).
+https://vjudge.net/problem/CodeForces-584E
+
