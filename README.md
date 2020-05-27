@@ -2206,3 +2206,7 @@ Firstly, you should learn how to do Mo's algortihm on a tree. Secondly, for this
 are on a stright line, it is a template Mo's algorithm problem. Try to combine the Mo's algorithm template
 and Euler tour would give the correct answer. https://vjudge.net/problem/CodeForces-852I
 
+490. Edges in MST (diff=2300, Kruskal algorithm, HLD)
+This is such a routine MST problem, just determine whether an edge can be replaced.
+https://vjudge.net/problem/CodeForces-160D
+
