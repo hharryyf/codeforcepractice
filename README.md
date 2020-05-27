@@ -2198,3 +2198,11 @@ Then, the new graph must be bipartite. We fill this graph with a and c, for the 
 with b. Finally, we check whether all conditions are satisfied. 
 https://codeforces.com/problemset/problem/623/A
 
+488. Mike and distribution (diff=2400, constructive algorithm)
+Quite hard. https://codeforces.com/contest/798/problem/D
+
+489. Dating (diff=2300, line sweep, Mo's algorithm on the tree)
+Firstly, you should learn how to do Mo's algortihm on a tree. Secondly, for this problem, if the queries
+are on a stright line, it is a template Mo's algorithm problem. Try to combine the Mo's algorithm template
+and Euler tour would give the correct answer. https://vjudge.net/problem/CodeForces-852I
+
