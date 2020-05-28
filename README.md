@@ -2219,3 +2219,9 @@ point to have different color. Let's construct the graph by connecting v[x][i] a
 group of nodes. This would make the graph has no odd cycle and each group of adjacent nodes would have
 different color. https://vjudge.net/problem/CodeForces-547D
 
+493. Arpa’s overnight party and Mehrdad’s silent entering (diff=2600, constructive algorithm, bipartite graph)
+Again, this problem is supposed to be a bipartite graph, however, there might be odd cycles. Then, for the
+edges on the circle, we only add half of them, this would make the graph bipartite and all groups of adjacent
+nodes the color must be different within the group, which by pigeon hole principle we have a valid construction.
+https://vjudge.net/problem/CodeForces-741C
+
