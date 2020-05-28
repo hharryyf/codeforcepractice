@@ -2210,3 +2210,12 @@ and Euler tour would give the correct answer. https://vjudge.net/problem/CodeFor
 This is such a routine MST problem, just determine whether an edge can be replaced.
 https://vjudge.net/problem/CodeForces-160D
 
+491. Vus the Cossack and a Graph (diff=2400, constructive algorithm, Euler path again and again)
+https://vjudge.net/problem/CodeForces-1186F
+
+492. Mike and Fish (diff=2600, constructive algorithm, bipartite graph)
+The intuition is to make the graph only contains even cycle, this would make a point and its adjacent
+point to have different color. Let's construct the graph by connecting v[x][i] and v[x][i^1] for each 
+group of nodes. This would make the graph has no odd cycle and each group of adjacent nodes would have
+different color. https://vjudge.net/problem/CodeForces-547D
+
