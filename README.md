@@ -2225,3 +2225,19 @@ edges on the circle, we only add half of them, this would make the graph biparti
 nodes the color must be different within the group, which by pigeon hole principle we have a valid construction.
 https://vjudge.net/problem/CodeForces-741C
 
+494. Envy (diff=2300, MST property)
+There's a property that can be used for MST, for each weight X, if all the edges with weight X-1 are added in by
+Kruskal algorithm, the connectivity is the same (independent of the order of adding edges). Hence, this problem
+can be done offline. Instead of answering queries by queries, we answer the question weights by weights.
+https://vjudge.net/problem/CodeForces-891C
+
+495. Yaroslav and Sequence (diff=1800, constructive algorithm)
+https://vjudge.net/problem/CodeForces-301A
+
+496. Mass Change Queries (diff=2500, range tree on swapping queries)
+This is not a standard range tree problem. We maintain tree[index].to[i] means in this l, r range which
+value is i mapped to. Then, when we do updates, we change all i such that tree[index].to[i] = x to y.
+And when we do the pushdown operation, we do tree[left].to[i] = tree[index].to[tree[left].to[i]], which
+means that in the left range i is initially mapped to j, now it is mapped to where j is map to in the
+parent range. https://vjudge.net/problem/CodeForces-911G
+
