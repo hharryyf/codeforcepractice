@@ -2241,3 +2241,6 @@ And when we do the pushdown operation, we do tree[left].to[i] = tree[index].to[t
 means that in the left range i is initially mapped to j, now it is mapped to where j is map to in the
 parent range. https://vjudge.net/problem/CodeForces-911G
 
+497. Kuroni and the Score Distribution (diff=2200, constructive algorithm)
+We can greedily construct the answer. The final sequence look like 1, 2, 3..., X (a bit of math), {large odd numbers}. https://vjudge.net/problem/CodeForces-1305E
+
