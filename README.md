@@ -2252,3 +2252,9 @@ from the k special nodes to all other nodes. Also, we should change from to orig
 Here, origion array records the optimal starting nodes. After that we just run kruskal and if 1 is not a special
 node, we add dist[1] to the answer. https://vjudge.net/problem/CodeForces-196E
 
+499. Flights (diff=2600, system of different constraints)
+The condition for all edges on path 1 to n are points on the shortest path from 1 to n is
+dist[e.from] + w = dist[e.to], here dist[i] refers to the shortest path from 1 to n. Where w is between 1 and 2.
+Hence, we can use system of different constraints to solve this.
+https://vjudge.net/problem/CodeForces-241E
+
