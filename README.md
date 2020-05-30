@@ -2258,3 +2258,7 @@ dist[e.from] + w = dist[e.to], here dist[i] refers to the shortest path from 1 t
 Hence, we can use system of different constraints to solve this.
 https://vjudge.net/problem/CodeForces-241E
 
+500. Numbers on Tree (diff=1800, constructive algorithm)
+We could interpret the C[i] value as follows, if we sort all the values in the subtree of i, i has rank c[i].
+Then, instead of trying to calculate what value for each i, we can get the rank of i first and then fill the numbers. https://vjudge.net/problem/CodeForces-1286B
+
