@@ -2244,3 +2244,11 @@ parent range. https://vjudge.net/problem/CodeForces-911G
 497. Kuroni and the Score Distribution (diff=2200, constructive algorithm)
 We can greedily construct the answer. The final sequence look like 1, 2, 3..., X (a bit of math), {large odd numbers}. https://vjudge.net/problem/CodeForces-1305E
 
+498. Opening Portals (diff=2600, kruskal algorithm and dijkstra algorithm)
+This problem is very similar to CF1253F. We consider the simpliest case, when all n nodes are special nodes.
+This would be the MST of the graph. Hence, MST should be the direction of this problem. We change the 
+edge weight of each edge to w + dist[from] + dist[to]. Here, the dist array is the shortest path distance
+from the k special nodes to all other nodes. Also, we should change from to origion[from] and to to origion[to].
+Here, origion array records the optimal starting nodes. After that we just run kruskal and if 1 is not a special
+node, we add dist[1] to the answer. https://vjudge.net/problem/CodeForces-196E
+
