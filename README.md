@@ -2267,3 +2267,16 @@ After playing with several examples, we should realize that we can do dfs first 
 to 1 and when we backtrack we fix the cell to 0. There's a solution iff there's no 1 in the grid after this
 procedure. https://vjudge.net/problem/CodeForces-359E
 
+502. The Cake Is a Lie (diff=2400, constructive algorithm, topological sort, BFS)
+We should observe that the starting cut must be a cake with no more than 1 shared edge. We start from this piece,
+do a BFS, two cakes are called connected if there is a shared edge. During this process we establish a graph
+describing the partial order of the vertices, and do a top-sort on that to get the p. Finally, to get the q array,
+we simply start from the cake with the least amount of shared edges, cut it first and decrement the common edge
+of its neighbours, repeat this process until no cakes left. https://codeforces.com/problemset/problem/1282/E
+
+503. Money Transfers (diff=2100, greedy, dp)
+The observation is for any interval with sum 0, we can do this with len-1 times, len is the total elements in
+the interval. Hence, we want to find the partition of the original cycle such that the number of sum=0 subinterval
+is maximized. This is a very simple dp, can be done with the help of a map. 
+https://vjudge.net/problem/CodeForces-675C
+
