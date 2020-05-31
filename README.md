@@ -2262,3 +2262,8 @@ https://vjudge.net/problem/CodeForces-241E
 We could interpret the C[i] value as follows, if we sort all the values in the subtree of i, i has rank c[i].
 Then, instead of trying to calculate what value for each i, we can get the rank of i first and then fill the numbers. https://vjudge.net/problem/CodeForces-1286B
 
+501. Neatness (diff=2400, constructive algorithm)
+After playing with several examples, we should realize that we can do dfs first and fix the cell we move through
+to 1 and when we backtrack we fix the cell to 0. There's a solution iff there's no 1 in the grid after this
+procedure. https://vjudge.net/problem/CodeForces-359E
+
