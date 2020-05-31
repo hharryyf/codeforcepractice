@@ -2280,3 +2280,8 @@ the interval. Hence, we want to find the partition of the original cycle such th
 is maximized. This is a very simple dp, can be done with the help of a map. 
 https://vjudge.net/problem/CodeForces-675C
 
+504. Number of Components (diff=2100, dp, combinatorics)
+This is a special counting problem, instead of thinking how many components for each range, we think
+components=vertices-edges. Then count the vertex contribution and edge contribution seperately.
+https://codeforces.com/problemset/problem/1151/E
+
