@@ -2296,3 +2296,15 @@ construction procedure, each time, we select the a least coloring colunm and col
 Then complexity for this construction procedure is O(Tnmlogn).
 https://vjudge.net/problem/CodeForces-1360G
 
+507. Binary Median (diff=2100, constructive algorithm)
+https://codeforces.com/problemset/problem/1360/H
+
+508. Inverse Coloring (diff=2100, dp)
+The observation is if we know the first row, all the other rows must be the same/completely differnet.
+https://codeforces.com/contest/1027/problem/E
+
+509. Magic multisets (diff=2500, range tree, observation)
+This problem is very tricky. The most important observation is, we can firstly assume all updates
+are double the range sum. And then for the index which no such x exists, we update the range by time
+the inverse of 2 and plus 1. https://vjudge.net/problem/CodeForces-981G
+
