@@ -2285,3 +2285,14 @@ This is a special counting problem, instead of thinking how many components for 
 components=vertices-edges. Then count the vertex contribution and edge contribution seperately.
 https://codeforces.com/problemset/problem/1151/E
 
+505. K-th Path (diff=2200, floyd, observation)
+The property we are using here is the kth pair-wise shortest path is only related to the first k smallest edges.
+We should create a sparse graph first, then solve the problem using Floyd algorithm.
+https://vjudge.net/problem/CodeForces-1196F
+
+506. A/B Matrix (diff=1900, constructive algorithm)
+We can easily split the testing data into yes/no, by checking whether n * a = m * b. After that we do a greedy
+construction procedure, each time, we select the a least coloring colunm and color them to 1.
+Then complexity for this construction procedure is O(Tnmlogn).
+https://vjudge.net/problem/CodeForces-1360G
+
