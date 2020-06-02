@@ -2308,3 +2308,12 @@ This problem is very tricky. The most important observation is, we can firstly a
 are double the range sum. And then for the index which no such x exists, we update the range by time
 the inverse of 2 and plus 1. https://vjudge.net/problem/CodeForces-981G
 
+510. Garlands (diff=2400, 2d fenwick tree, observation)
+Here we should target on the condition |ask| <= 2000. We know that there are at most mn light bulbs in total.
+And the light bulbs in the same garland can only be on/off at the same time. Hence, we can calculate the 
+contribution of each garland to each query seperately in an offline way. This would make the complexity
+2000klognlogm. https://vjudge.net/problem/CodeForces-707E
+
+511. Splitting the Uniqueness (diff=2400, constructive algorithm)
+https://vjudge.net/problem/CodeForces-297C
+
