@@ -2317,3 +2317,7 @@ contribution of each garland to each query seperately in an offline way. This wo
 511. Splitting the Uniqueness (diff=2400, constructive algorithm)
 https://vjudge.net/problem/CodeForces-297C
 
+512. AND-permutations (diff=2500, constructive algorithm)
+Two observations: even & even + 1 is not 0, i & (2^k - i) is 0.
+https://vjudge.net/problem/CodeForces-909F
+
