@@ -2321,3 +2321,8 @@ https://vjudge.net/problem/CodeForces-297C
 Two observations: even & even + 1 is not 0, i & (2^k - i) is 0.
 https://vjudge.net/problem/CodeForces-909F
 
+513.  Restoring Numbers (diff=2200, constructive algorithm)
+By playing with examples, we have the following observations, firstly, we can fix b array,
+by simply filling with the first row of the matrix. Secondly, we should pay attention
+to g[i][j] and g[i][j+1], this would decrease k to a suitable value.
+https://codeforces.com/problemset/problem/509/D
