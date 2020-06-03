@@ -2333,3 +2333,11 @@ number to the lower frequency number in a diagonal shape. https://vjudge.net/pro
 
 515. Set of Points (diff=2300, constructive algorithm)
 https://vjudge.net/problem/CodeForces-277B
+
+516. Beautiful Road (diff=2300, union-find, dp on tree, line sweep)
+It is not hard to see that solving this problem online for each edge in dfs order seems stupid. Intead, we 
+can solve this problem in an offline, line sweep manner. Firstly, sort the edges according to their weights
+and maintain a union-find with size structure. Then, each time, when we add in a type of edges, we create
+a sparse forest, and run 2 dfs on that sparse forest to get the answer for each edge.
+https://codeforces.com/problemset/problem/87/D
+
