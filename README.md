@@ -2326,3 +2326,8 @@ By playing with examples, we have the following observations, firstly, we can fi
 by simply filling with the first row of the matrix. Secondly, we should pay attention
 to g[i][j] and g[i][j+1], this would decrease k to a suitable value.
 https://codeforces.com/problemset/problem/509/D
+
+514. Beautiful Rectangle (diff=2300, constructive algorithm)
+Firstly find the dimension, this can be done by sweeping. Secondly, fill in the numbers from the higher frequency
+number to the lower frequency number in a diagonal shape. https://vjudge.net/problem/CodeForces-1276C
+
