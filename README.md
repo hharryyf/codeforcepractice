@@ -2331,3 +2331,5 @@ https://codeforces.com/problemset/problem/509/D
 Firstly find the dimension, this can be done by sweeping. Secondly, fill in the numbers from the higher frequency
 number to the lower frequency number in a diagonal shape. https://vjudge.net/problem/CodeForces-1276C
 
+515. Set of Points (diff=2300, constructive algorithm)
+https://vjudge.net/problem/CodeForces-277B
