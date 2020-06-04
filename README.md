@@ -2349,3 +2349,10 @@ on the left of this pivot moves left, while all the elements on the right of thi
 this observation, the problem is turned into a quite standard counting problem.
 https://vjudge.net/problem/CodeForces-1268C
 
+518. Down or Right (diff=2100, constructive algorithm)
+We use the following trick, for the first half of the path, simply walk to the point the Manhattan distance
+to (n, n) is n - 1. Then, we do a reverse traversal from (n, n). And the key here is to explore the
+2 direction in an opposite way i.e. if you prioritize R to D in the first half of the path, you should
+prioritize D to R in the second half of the walk.
+https://vjudge.net/problem/CodeForces-1023E
+
