@@ -2356,3 +2356,7 @@ to (n, n) is n - 1. Then, we do a reverse traversal from (n, n). And the key her
 prioritize D to R in the second half of the walk.
 https://vjudge.net/problem/CodeForces-1023E
 
+519. Lexicography (diff=1800, constructive algorithm)
+The key observation here is the order of 2 strings are determined by the first different character.
+https://codeforces.com/problemset/problem/1267/L
+
