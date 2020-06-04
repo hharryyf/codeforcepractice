@@ -2341,3 +2341,11 @@ and maintain a union-find with size structure. Then, each time, when we add in a
 a sparse forest, and run 2 dfs on that sparse forest to get the answer for each edge.
 https://codeforces.com/problemset/problem/87/D
 
+517. K Integers (diff=2300, range tree, order statistics)
+We can think what's the solution to k=n, the solution is simply the total number of inversion pairs in the array.
+Then let's consider how to solve k < n in general. The only difference is there are elements from k+1 to n in
+the subarray. We should observe that some of these waste elements should move leftward, while others move rightward. Then to make the total number of moves minimum, there must be a pivot, i.e. all the waste elements
+on the left of this pivot moves left, while all the elements on the right of this pivot moves right. With
+this observation, the problem is turned into a quite standard counting problem.
+https://vjudge.net/problem/CodeForces-1268C
+
