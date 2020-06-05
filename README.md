@@ -2360,3 +2360,6 @@ https://vjudge.net/problem/CodeForces-1023E
 The key observation here is the order of 2 strings are determined by the first different character.
 https://codeforces.com/problemset/problem/1267/L
 
+520. Running in Pairs (diff=2400, constructive algorithm)
+Greedily construct. https://vjudge.net/problem/CodeForces-1244G
+
