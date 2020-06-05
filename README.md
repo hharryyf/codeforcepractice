@@ -2363,3 +2363,8 @@ https://codeforces.com/problemset/problem/1267/L
 520. Running in Pairs (diff=2400, constructive algorithm)
 Greedily construct. https://vjudge.net/problem/CodeForces-1244G
 
+521. Subarray Sorting (diff=2400, constructive algorithm)
+There are 2 key observations, firstly sorting can be achieved by swapping adjacent elements, secondly,
+the leftmost position an element can go is determined by the range min of its left elements.
+https://codeforces.com/contest/1187/problem/D
+
