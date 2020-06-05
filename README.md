@@ -2368,3 +2368,7 @@ There are 2 key observations, firstly sorting can be achieved by swapping adjace
 the leftmost position an element can go is determined by the range min of its left elements.
 https://codeforces.com/contest/1187/problem/D
 
+522. MST Company (diff=2400, binary search, kruskal modification)
+This problem is very tricky. We can make the following claim, if we increment all edges that connects 1 and
+some other vertices by +x, the MST for the k-degree tree has larger weight than the MST of the k+1 degree tree.
+Hence, we can binary search on this x, and find the largest x such that we can have a k-degree tree.
