@@ -2372,3 +2372,12 @@ https://codeforces.com/contest/1187/problem/D
 This problem is very tricky. We can make the following claim, if we increment all edges that connects 1 and
 some other vertices by +x, the MST for the k-degree tree has larger weight than the MST of the k+1 degree tree.
 Hence, we can binary search on this x, and find the largest x such that we can have a k-degree tree.
+https://codeforces.com/problemset/problem/125/E
+
+523. Last chance (diff=2500, max flow, range tree graph construction)
+The intuition of this problem is actually quite simple, just use the range tree graph construction technique
+to build the graph and for the type 3 weapon, the capacity of the node is 2. It is quite simple to proof the
+max flow is equal to the answer. The hard part however, is finding the correct matching. We do a reverse dfs
+for each weapon, only walk the residual edges and each time if the residual edge has flow < 0, we increment the
+flow and walk up. https://vjudge.net/problem/CodeForces-1045A
+
