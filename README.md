@@ -2381,3 +2381,6 @@ max flow is equal to the answer. The hard part however, is finding the correct m
 for each weapon, only walk the residual edges and each time if the residual edge has flow < 0, we increment the
 flow and walk up. https://vjudge.net/problem/CodeForces-1045A
 
+524. Competition (diff=2200, greedy)
+https://vjudge.net/problem/CodeForces-144E
+
