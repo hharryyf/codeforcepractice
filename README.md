@@ -2384,3 +2384,12 @@ flow and walk up. https://vjudge.net/problem/CodeForces-1045A
 524. Competition (diff=2200, greedy)
 https://vjudge.net/problem/CodeForces-144E
 
+525. The Coronation (diff=2300, bipartite graph, dfs)
+This trick is now getting too old. https://vjudge.net/problem/CodeForces-1250E
+
+526. Searching Rectangles (diff=2200, constructive algorithm)
+I'm not going to implement this, because it is tedious. The main idea here is horizontally and vertically
+there must be at least 1 direction such that you can draw a line that seperate the 2 rectangles.
+You found this seperate line and then do 8 binary search to get the solution.
+https://vjudge.net/problem/CodeForces-713B
+
