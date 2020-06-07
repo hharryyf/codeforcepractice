@@ -2393,3 +2393,9 @@ there must be at least 1 direction such that you can draw a line that seperate t
 You found this seperate line and then do 8 binary search to get the solution.
 https://vjudge.net/problem/CodeForces-713B
 
+527. Problem for Nazar (diff=1800, constructive algorithm)
+https://vjudge.net/problem/CodeForces-1151C
+
+528. Little C Loves 3 II (diff=2200, constructive algorithm)
+Pattern finding, no magic. https://codeforces.com/problemset/problem/1034/B
+
