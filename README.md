@@ -2411,3 +2411,6 @@ So, we could formulate the problem as follows, find the smallest cycle for all v
 less than 1000, this is a template BFS problem and would lead to the solve of this problem.
 https://codeforces.com/problemset/problem/1325/E
 
+530. Recover the String (diff=1900, constructive algorithm)
+First find number of 0, number of 1, then greedily construct. https://vjudge.net/problem/CodeForces-708B
+
