@@ -2399,3 +2399,15 @@ https://vjudge.net/problem/CodeForces-1151C
 528. Little C Loves 3 II (diff=2200, constructive algorithm)
 Pattern finding, no magic. https://codeforces.com/problemset/problem/1034/B
 
+529. Ehab's REAL Number Theory Problem (diff=2600, observation, BFS cycle finding)
+There are several key observations that would lead to an essential template problem. Firstly, since every
+number has at most 7 divisors, we can easily show that each number has at most 2 prime factor. Then, the problem
+is changed to the following, select a set of numbers such that the combined prime factors of the selected set
+of numbers occur even number of times. Instead of thinking it as some kind of undoable NP problems, we use
+the standard trick. Each number can be represented as an edge connecting the 2 primes (or 1 and itself).
+Then, we want to find the smallest cycle inside the graph. Then, another observation is since each number
+is less than 1e6, we only need to consider the cycle with prime less than 1e3 as starting point.
+So, we could formulate the problem as follows, find the smallest cycle for all vertices that are prime and
+less than 1000, this is a template BFS problem and would lead to the solve of this problem.
+https://codeforces.com/problemset/problem/1325/E
+
