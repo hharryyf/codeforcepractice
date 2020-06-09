@@ -2423,3 +2423,11 @@ When we eliminate an edge on this path, all the bridges that are on the path fro
 edge is removed) are useful. Based on these 4 observations, we would solve the problem in O(nm).
 https://vjudge.net/problem/CodeForces-700C
 
+532. Queue (diff=1800, constructive algorithm)
+Similar to another construction problem. Firstly, fix the order of students, then fill in height.
+https://vjudge.net/problem/CodeForces-141C
+
+533. Magic Stones (diff=2200, constructive algorithm)
+Firstly, the first/last number cannot be changed. Secondly, we observe that the difference set cannot be changed.
+https://vjudge.net/problem/CodeForces-1110E
+
