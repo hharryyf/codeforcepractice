@@ -2414,3 +2414,12 @@ https://codeforces.com/problemset/problem/1325/E
 530. Recover the String (diff=1900, constructive algorithm)
 First find number of 0, number of 1, then greedily construct. https://vjudge.net/problem/CodeForces-708B
 
+531. Break Up (diff=2600, tarjan's bridge finding algorithm)
+This problem should be extremely simple if c=1. The answer would be either 0 or the smallest bridge in the graph.
+Then, let's think how to extend the result into c=2. There are several observations, 1) we only need to 
+consider the edges that are in the biconnected components from s to t in the compressed graph. 2) If we pick
+any path from s to t, at least one edge on this path should be eliminated. 3) The path length <= 1000. 4)
+When we eliminate an edge on this path, all the bridges that are on the path from s to t in the graph (after the
+edge is removed) are useful. Based on these 4 observations, we would solve the problem in O(nm).
+https://vjudge.net/problem/CodeForces-700C
+
