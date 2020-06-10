@@ -2435,3 +2435,6 @@ https://vjudge.net/problem/CodeForces-1110E
 When we are dealing with distance/partition problems, odd/even partition is something we should always try.
 https://vjudge.net/problem/CodeForces-1270E
 
+535. Restore a Number (diff=2300, constructive algorithm)
+Case differentiation. https://codeforces.com/problemset/problem/670/F
+
