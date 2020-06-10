@@ -2431,3 +2431,7 @@ https://vjudge.net/problem/CodeForces-141C
 Firstly, the first/last number cannot be changed. Secondly, we observe that the difference set cannot be changed.
 https://vjudge.net/problem/CodeForces-1110E
 
+534. Divide Points (diff=2300, constructive algorithm)
+When we are dealing with distance/partition problems, odd/even partition is something we should always try.
+https://vjudge.net/problem/CodeForces-1270E
+
