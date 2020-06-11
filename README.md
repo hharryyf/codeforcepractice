@@ -2438,3 +2438,9 @@ https://vjudge.net/problem/CodeForces-1270E
 535. Restore a Number (diff=2300, constructive algorithm)
 Case differentiation. https://codeforces.com/problemset/problem/670/F
 
+536. Permutation recovery (diff=2100, constructive algorithm, line sweep, top-sort)
+The first observation is if we treat (i, nxt[i]) as segments, if there's a partial overlap relationship
+we must print -1. Then, we can construct a graph and run the top-sort algorithm. The only thing tricky
+here is we cannot add all the edge in, we can only add O(n) many edges. But this is not very hard by
+using the fact of total overlap between segments. https://vjudge.net/problem/CodeForces-1158C
+
