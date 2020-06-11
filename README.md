@@ -2444,3 +2444,11 @@ we must print -1. Then, we can construct a graph and run the top-sort algorithm.
 here is we cannot add all the edge in, we can only add O(n) many edges. But this is not very hard by
 using the fact of total overlap between segments. https://vjudge.net/problem/CodeForces-1158C
 
+537. Sonya and Ice Cream (diff=2400, tree diameter)
+I'm quite excited that I can solve this problem after 8 months I saw it. The most important observation is
+the k shops must be on the diameter of the tree. I guessed this because I solved 911F before, and this conclution
+can easily be proved by contradiction. Then, let's think what the answer should be. Again, by using the
+property of the diameter of the tree, we can see that it should be the A = maximum distance from
+points not on the diameter to the diameter, B = when you place the chain of length k on the diameter,
+the distance of endpoint 1 to the chain, C = when you place the chain of length k on the diameter,
+the distance of endpoint 2 to the chain. A can be calculated by dijkstra. B and C can be calculated by sliding window. The answer would be max(min(B, C), A). https://vjudge.net/problem/CodeForces-1004E
