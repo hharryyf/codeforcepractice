@@ -2456,3 +2456,9 @@ the distance of endpoint 2 to the chain. A can be calculated by dijkstra. B and 
 538. Happy Line (diff=2200, constructive algortihm)
 https://vjudge.net/problem/CodeForces-549G
 
+539. Restore the Permutation by Sorted Segments (diff=2400, constructive algorithm)
+This problem should be dealt with carefully. The easy observation we can fill in the numbers in a backward
+direction. However, the only obstacle is there might be 2 candidate. But if we think this carefully, we should
+realize that 2 candidate case should only happen once during the entire program. 
+https://vjudge.net/problem/CodeForces-1343F
+
