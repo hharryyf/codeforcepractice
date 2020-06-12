@@ -2462,3 +2462,14 @@ direction. However, the only obstacle is there might be 2 candidate. But if we t
 realize that 2 candidate case should only happen once during the entire program. 
 https://vjudge.net/problem/CodeForces-1343F
 
+540. Tourists (diff=2600, line sweep, range tree)
+I was ready to give up on this. When suddenly, I have an idea to deal with the trickiest case of this problem.
+The problem can be formulated as follows, given many 45 degree segments, from (t-r, l) to (t-l, r).
+You have to answer q queries, what's the total projection for the segments on x=q[i].
+There is a very simple case, it is all the segments are not intersecting. We can deal with this by simiply
+applying line sweep. But how to deal with the interection of segments? Here, we apply a trick. Since each
+wall would stand there after it occurs, so that actually, if we discrete all the distinct y coordinates and
+build a range min tree on it, each time we do something like update the earlist occurence of wall in range[l, r] to t. And after that instead of considering the origional segments, we can consider the modified set of
+non-overlapping small segments, formed by adjacent y. This would solve the problem by applying the algorithm in
+the simple case. https://vjudge.net/problem/CodeForces-286D
+
