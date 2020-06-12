@@ -2452,3 +2452,7 @@ property of the diameter of the tree, we can see that it should be the A = maxim
 points not on the diameter to the diameter, B = when you place the chain of length k on the diameter,
 the distance of endpoint 1 to the chain, C = when you place the chain of length k on the diameter,
 the distance of endpoint 2 to the chain. A can be calculated by dijkstra. B and C can be calculated by sliding window. The answer would be max(min(B, C), A). https://vjudge.net/problem/CodeForces-1004E
+
+538. Happy Line (diff=2200, constructive algortihm)
+https://vjudge.net/problem/CodeForces-549G
+
