@@ -2473,3 +2473,13 @@ build a range min tree on it, each time we do something like update the earlist 
 non-overlapping small segments, formed by adjacent y. This would solve the problem by applying the algorithm in
 the simple case. https://vjudge.net/problem/CodeForces-286D
 
+541. Biologist (diff=2300, min cut)
+The hardest part on this problem is it has so many constraints. Firstly, it is not hard to observe this is 
+a project selection type max flow problem. The key here is how to formulate all the constraints accuratly.
+We partition the graph into 2 parts, left part all the plan with target 0 and all the dogs with sex 0.
+Then, we can think this as all the dogs that want to avoid changing to sex 1 and all the plan that should 
+avoid a dog in the set has sex 1. Hence, instead of calculating the max flow, let's use min cut to express
+the minimum penalty that can be gained. A final trick is if a dog is shared by 2 different types of plan,
+there's an edge with capacity INF between these 2 plans, because these plans cannot exist at the same time!
+https://vjudge.net/problem/CodeForces-311E
+
