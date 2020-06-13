@@ -2483,3 +2483,7 @@ the minimum penalty that can be gained. A final trick is if a dog is shared by 2
 there's an edge with capacity INF between these 2 plans, because these plans cannot exist at the same time!
 https://vjudge.net/problem/CodeForces-311E
 
+542. The Feast and the Bus (diff=1800, constructive algorithm)
+The only trick is justify brute force on s works.
+https://vjudge.net/problem/CodeForces-1250B
+
