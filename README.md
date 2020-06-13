@@ -2487,3 +2487,14 @@ https://vjudge.net/problem/CodeForces-311E
 The only trick is justify brute force on s works.
 https://vjudge.net/problem/CodeForces-1250B
 
+543. Power Tree (diff=2500, MST, binary-lifting)
+I'm very excited that I can solve this problem by myself. If we formulated this problem, we should know
+this is equivalent to finding a basis for the leaf with the minimum cost. By the definition of basis,
+it must contain |leaf| number of nodes and all the range cover of the nodes are linearly independent.
+Here range cover [l, r] means the id of the leftmost leaf that's in the subtree and the rightmost leaf
+that's in the subtree. There's a property of linearly dependent, if a group of vectors are linearly dependent
+then there must be an index i such that the previous i-1 vector can combine to be i. Based on the special
+property of leaf cover, we can solve this problem by using MST. It is add edges between [l, r+1], then
+see which edge can appear in at least 1 MST. This is a standard MST problem, can be done with 
+kruskal algorithm and binary-lifting. https://vjudge.net/problem/CodeForces-1120D
+
