@@ -2503,4 +2503,12 @@ The intuition is we could sort from the middle, and we should know that a[i] and
 occur as a pair, hence we only need to check whether the set formed by a[i], a[n-i+1] is the same as the
 set formed by b[i], b[n-i+1] for all i. https://vjudge.net/problem/CodeForces-1365F
 
+545. Number of Components (diff=2800, union find)
+I hate this problem. The constraints were set to target the normal range tree on queries solution.
+We should observe the following property, each color's add query occurs before all its delete query.
+Hence, we can process color by color, add in forward order, delete in reverse order. The reason
+for color by color works is also because of the constraints. So in conclusion, the constraints were
+set to make sure only this solution work, even if this solution would not work if you remove any of the
+constraints. https://codeforces.com/problemset/problem/1303/F
+
 
