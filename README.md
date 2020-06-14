@@ -2498,3 +2498,9 @@ property of leaf cover, we can solve this problem by using MST. It is add edges 
 see which edge can appear in at least 1 MST. This is a standard MST problem, can be done with 
 kruskal algorithm and binary-lifting. https://vjudge.net/problem/CodeForces-1120D
 
+544. Swaps Again (diff=2100, constructive algorithm)
+The intuition is we could sort from the middle, and we should know that a[i] and a[n-i+1] should always
+occur as a pair, hence we only need to check whether the set formed by a[i], a[n-i+1] is the same as the
+set formed by b[i], b[n-i+1] for all i. https://vjudge.net/problem/CodeForces-1365F
+
+
