@@ -2511,4 +2511,8 @@ for color by color works is also because of the constraints. So in conclusion, t
 set to make sure only this solution work, even if this solution would not work if you remove any of the
 constraints. https://codeforces.com/problemset/problem/1303/F
 
+546. Lena and Queries (diff=2500, CHT-trick, range tree on queries)
+We should immediately realize the range tree on queries trick. The only tricky part is the query part,
+we can use descending on range tree to solve this. https://vjudge.net/problem/CodeForces-678F
+
 
