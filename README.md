@@ -2532,3 +2532,7 @@ connected components, there's no solution, by pigeon hole princinple.
 https://vjudge.net/problem/CodeForces-1027F
 
 
+549. Road Widening (diff=1800, constructive algorithm)
+We can formulate this problem as n inequalities and the x solved by each inequality should satisfy the adjacent x
+differs no more than 1. https://vjudge.net/problem/CodeForces-883K
+
