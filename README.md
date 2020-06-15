@@ -2515,4 +2515,10 @@ constraints. https://codeforces.com/problemset/problem/1303/F
 We should immediately realize the range tree on queries trick. The only tricky part is the query part,
 we can use descending on range tree to solve this. https://vjudge.net/problem/CodeForces-678F
 
+547. Clearing Up (diff=2300, constructive algorithm, BFS, kruskal)
+The problem is asking to find a spanning tree with half 0 edge and half 1 edge. We can firstly add in all the
+0 edges, and then all the 1 edges using kruskal algorithm. Then, if |0| < |1| no solution. Otherwise,
+we add in the remaining 1-edge 1 by 1, each time use BFS to find a 0-edge on the shortest path of the two end
+points and eliminate that edge. https://vjudge.net/problem/CodeForces-141E
+
 
