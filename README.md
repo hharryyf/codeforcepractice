@@ -2521,4 +2521,14 @@ The problem is asking to find a spanning tree with half 0 edge and half 1 edge. 
 we add in the remaining 1-edge 1 by 1, each time use BFS to find a 0-edge on the shortest path of the two end
 points and eliminate that edge. https://vjudge.net/problem/CodeForces-141E
 
+548. Session in BSU (diff=2400, union find)
+This is a very neat problem, even if I failed to solve it by myself. The key here is to jump out of the box.
+We shouldn't think flow is the only way of solving this kind of problem. Observe that if we join the 
+2 days for each person by an edge, the days would be seperated into different connected components.
+There are actually only 3 cases on these connected components, a tree, a functional graph, some other graph.
+We could easily check the following claim is true, for a tree the answer is the second largest date,
+for a functional graph, the answer is the largest date, and if any other graph occurs in any of the 
+connected components, there's no solution, by pigeon hole princinple.
+https://vjudge.net/problem/CodeForces-1027F
+
 
