@@ -2536,3 +2536,6 @@ https://vjudge.net/problem/CodeForces-1027F
 We can formulate this problem as n inequalities and the x solved by each inequality should satisfy the adjacent x
 differs no more than 1. https://vjudge.net/problem/CodeForces-883K
 
+550. Short Colorful Strip (diff=2200, interval dp)
+https://vjudge.net/problem/CodeForces-1178F1
+
