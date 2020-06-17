@@ -2539,3 +2539,19 @@ differs no more than 1. https://vjudge.net/problem/CodeForces-883K
 550. Short Colorful Strip (diff=2200, interval dp)
 https://vjudge.net/problem/CodeForces-1178F1
 
+551. Ralph And His Magic Field (diff=1800, constructive algorithm)
+Very simple if you've solved 1016D before. https://vjudge.net/problem/CodeForces-894B
+
+552. Points, Lines and Ready-made Titles (diff=2300, union-find)
+This is a problem that stucked me for a long time. The most important observation is we try to think the "component" of a painting.
+There are 2 types of components, horizontal lines and vertical lines. If all of the components can appear at the same time,
+the total number of painting would simply be 2^|x| * 2^|y|. We firstly apply union find to join points with the same x/y coordinate
+then, if a connected component has a cycle, we simply use the above formula to calculate the answer, otherwise, the answer is
+given by 2^(sz + 1) - 1. We should multiply the contribution of each connected component together to get our final answer.
+https://vjudge.net/problem/CodeForces-870E
+
+553. New Year and Castle Construction (diff=2500, geometry)
+This problem is very hard to come up with the correct idea. Intead of calculating how many castles in total, we can subtract
+the number of invalid set of 4 points for each point. If 4 points cannot shelter another vertex v, it must occur on the same side.
+Then, the problem is changed into a typical sorting by polar angle problem. https://vjudge.net/problem/CodeForces-1284E
+
