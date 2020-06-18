@@ -2560,3 +2560,6 @@ This problem is a bit weird. Firstly, we note that two cells can reach each othe
 the same. Hence, we want to sum up the "id" of the rectangle grids covered on these two points and check whether they are the same.
 This "id" can be done by using hashing. Strange problem :(. https://vjudge.net/problem/CodeForces-869E
 
+555. DayAndNight (min-cut)
+The greatest legacy left by Ray. https://vjudge.net/problem/TopCoder-14687
+
