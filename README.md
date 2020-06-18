@@ -2555,3 +2555,8 @@ This problem is very hard to come up with the correct idea. Intead of calculatin
 the number of invalid set of 4 points for each point. If 4 points cannot shelter another vertex v, it must occur on the same side.
 Then, the problem is changed into a typical sorting by polar angle problem. https://vjudge.net/problem/CodeForces-1284E
 
+554. The Untended Antiquity (diff=2400, 2d-fenwick tree, hashing)
+This problem is a bit weird. Firstly, we note that two cells can reach each other if the rectangles cover on these 2 cells are exactly 
+the same. Hence, we want to sum up the "id" of the rectangle grids covered on these two points and check whether they are the same.
+This "id" can be done by using hashing. Strange problem :(. https://vjudge.net/problem/CodeForces-869E
+
