@@ -2573,3 +2573,9 @@ flow is equal to the outgoing flow. And another thing is, if we do a BFS procedu
 there must be a node in its successor such that the after we direct the edge in between the netflow of that successor is also 0.
 Such vertices must exist, because the graph is a DAG. https://vjudge.net/problem/CodeForces-269C
 
+558. Scaygerboss (diff=2800, binary search on final answer, maxflow)
+The fact that this is a matching problem should be quite obvious. And for these kind of graph based max flow problems, the 
+most standard trick is using binary search on final answer and check full flow. We build the graph in this way, man on LHS,
+position with vertex capacity 1 in the middle and female on the other side.
+https://codeforces.com/contest/513/problem/F2
+
