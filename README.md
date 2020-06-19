@@ -2567,3 +2567,9 @@ The greatest legacy left by Ray. https://vjudge.net/problem/TopCoder-14687
 This problem seems very simple right now after I solved huge amount of similar problems.
 https://vjudge.net/problem/CodeForces-1181D
 
+557. Flawed Flow (diff=2100, constructive algorithm)
+The key observation is, for all the nodes except 1 and n, the netflow through each vertices must be 0, which is the incoming
+flow is equal to the outgoing flow. And another thing is, if we do a BFS procedure and stand at a node that has been balanced,
+there must be a node in its successor such that the after we direct the edge in between the netflow of that successor is also 0.
+Such vertices must exist, because the graph is a DAG. https://vjudge.net/problem/CodeForces-269C
+
