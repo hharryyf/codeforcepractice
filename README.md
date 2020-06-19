@@ -2563,3 +2563,7 @@ This "id" can be done by using hashing. Strange problem :(. https://vjudge.net/p
 555. DayAndNight (min-cut)
 The greatest legacy left by Ray. https://vjudge.net/problem/TopCoder-14687
 
+556. Irrigation (diff=2200, line sweep)
+This problem seems very simple right now after I solved huge amount of similar problems.
+https://vjudge.net/problem/CodeForces-1181D
+
