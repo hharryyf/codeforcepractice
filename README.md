@@ -2579,3 +2579,11 @@ most standard trick is using binary search on final answer and check full flow. 
 position with vertex capacity 1 in the middle and female on the other side.
 https://codeforces.com/contest/513/problem/F2
 
+559. New Year Tree (diff=2400, tree diameter, binary-lifting)
+Learned something new on tree diameter. There's a key property on tree diameter, every vertex's furthest point must be on at
+least 1 tree diameter. https://vjudge.net/problem/CodeForces-379F
+
+560. Destroying Roads (diff=2100, BFS)
+Observe that the optimal construction should look like s1->(common roads)->t1, s2->(common roads)->t2, we can simply manipulate
+all the possible end points of the common roads. https://vjudge.net/problem/CodeForces-543B
+
