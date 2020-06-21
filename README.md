@@ -2587,3 +2587,9 @@ least 1 tree diameter. https://vjudge.net/problem/CodeForces-379F
 Observe that the optimal construction should look like s1->(common roads)->t1, s2->(common roads)->t2, we can simply manipulate
 all the possible end points of the common roads. https://vjudge.net/problem/CodeForces-543B
 
+561. Catowice City (diff=2400, tarjan's scc algorithm, 2-sat)
+We can easily formulate this problem as a 2-sat problem. For a constraint that jury A and cat B (let's say jury ~B) are not in the
+same set. We can write it as ~A | ~~B, which is A -> B, thus we can add an edge between jury A and jury B for these constraints.
+The solution exists iff the number of scc in the graph in more than 1.
+https://codeforces.com/contest/1239/problem/D
+
