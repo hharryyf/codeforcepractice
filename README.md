@@ -2593,3 +2593,7 @@ same set. We can write it as ~A | ~~B, which is A -> B, thus we can add an edge 
 The solution exists iff the number of scc in the graph in more than 1.
 https://codeforces.com/contest/1239/problem/D
 
+562.  Natasha, Sasha and the Prefix Sums (diff=2300, dp)
+The lesson I learned from this problem is, combinatorics problems should be solved by calculating contributions.
+https://codeforces.com/problemset/problem/1204/E
+
