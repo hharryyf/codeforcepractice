@@ -2607,4 +2607,11 @@ and do binary search to find one of the end point u/v. Then, we use the distance
 The maximum number of queries for this approach is 12. Hence, it can solve the easy version with a query limit 14, but
 not the hard one with a query limit 11. https://vjudge.net/problem/CodeForces-1370F1
 
+565. The Hidden Pair (Hard Version) (diff=2700, binary search, dfs, observation)
+The cored of the algorithm isn't changed. We actually just need to reduce 1 query. Think amout how HLD works, we should know
+that if we let the point we get after the first query as root, by setting low = d/2, we can still get the downward nodes.
+This would reduce the binary search time by 1, hence solve the general version of the problem. 
+https://vjudge.net/problem/CodeForces-1370F2
+
+
 
