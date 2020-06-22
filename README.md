@@ -2597,3 +2597,7 @@ https://codeforces.com/contest/1239/problem/D
 The lesson I learned from this problem is, combinatorics problems should be solved by calculating contributions.
 https://codeforces.com/problemset/problem/1204/E
 
+563. Binary Subsequence Rotation (diff=2100, greedy)
+The observation is we can treat (1, 0) as 1 and (0, 1) as -1, and the answer is the maximum absolute value subarray.
+https://codeforces.com/contest/1370/problem/E
+
