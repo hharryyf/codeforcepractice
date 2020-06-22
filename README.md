@@ -2601,3 +2601,9 @@ https://codeforces.com/problemset/problem/1204/E
 The observation is we can treat (1, 0) as 1 and (0, 1) as -1, and the answer is the maximum absolute value subarray.
 https://codeforces.com/contest/1370/problem/E
 
+564. The Hidden Pair (Easy Version) (diff=2400, binary search, dfs)
+The observation is if we firstly query all the points, we can get a point on the (u, v) path. Then, we use that point,
+and do binary search to find one of the end point u/v. Then, we use the distance on the tree to fix the other u/v.
+The maximum number of queries for this approach is 12. Hence, it can solve the easy version with a query limit 14, but
+not the hard one with a query limit 11. https://vjudge.net/problem/CodeForces-
+
