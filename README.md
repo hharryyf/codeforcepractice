@@ -2613,5 +2613,13 @@ that if we let the point we get after the first query as root, by setting low = 
 This would reduce the binary search time by 1, hence solve the general version of the problem. 
 https://vjudge.net/problem/CodeForces-1370F2
 
+566. Deduction Queries (diff=2400, union find)
+This is a quite weird problem. Firstly, and obviously, we should write xor[l, r] as p[l-1] xor p[r] which p is the xor prefix sum.
+Then, the next observation is we can use union find to maintain related ids. This is because p[a] is known p[b] is known
+p[a] xor p[b] must be known, due to the transitivity of xor. https://codeforces.com/problemset/problem/1044/D
+
+567. Special Matrices (diff=2100, dp)
+Quite standard trick. https://vjudge.net/problem/CodeForces-489F
+
 
 
