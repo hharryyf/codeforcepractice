@@ -2621,5 +2621,17 @@ p[a] xor p[b] must be known, due to the transitivity of xor. https://codeforces.
 567. Special Matrices (diff=2100, dp)
 Quite standard trick. https://vjudge.net/problem/CodeForces-489F
 
+568. The Doctor Meets Vader (Hard) (diff=2700, min cut, line sweep, floyd algorithm)
+The natrual idea is we observe that the base are actually independent from the spaceship, every spaceship can attack the base
+that would bring the maximum profit. So the first subproblem of this one is as follows, each spaceship has an attacking range,
+find the maximum profit such that the base is within its attacking range and has a defence no more than its 'a' value.
+This can be done by preprocessing all pair shortest path and solve the queries using line sweep. I would ignore the details because
+it is sooooo standard. Secondly, we observe that these profits (+/-) have dependencies. It is if you select a profit, you must select
+another one. This is the typical maximum enclosure graph model. Which can be solved by connect s to all the + profit nodes and t
+to all the - profit nodes and add the forced edge with INF capacity. Something we should be careful is, k is less than 1000, so that
+the "important spaceship" is less than 2000. If a spaceship has no constraints on it and it has positive cost, just add it to the answer,
+don't include it into the flow graph. This would reduce the number of nodes from 1e5 to 2e3, which is a huge improvement to run time.
+https://codeforces.com/problemset/problem/1184/B3
+
 
 
