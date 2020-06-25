@@ -2633,5 +2633,15 @@ the "important spaceship" is less than 2000. If a spaceship has no constraints o
 don't include it into the flow graph. This would reduce the number of nodes from 1e5 to 2e3, which is a huge improvement to run time.
 https://codeforces.com/problemset/problem/1184/B3
 
+569. Heidi and Library (hard) (diff=2600, MCMF)
+I had some initial observations on this problem, we can firstly purchase all the books in and minus the merging cost (i.e. the 
+book of the same type that is required on day d1 and d2 can be calculated only once). But what happened next to this problem is
+stunning. The flow graph works like this, each vertex is splitted into 2 nodes i and i'. Then we add edges (1, cost) from src to i
+and edges (1, 0) from i' to sink. Then, we add edges from i to i' (1, 0). To make sure each day there's only k books in hand, we
+can add edges (k-1, 0) from i to i+1. And to deal with the merging cost condition, we can add edges from i-1 to j' (1, -cost[tp[i]]).
+Here j' is the outgoing vertices such that tp[i] = tp[j] and j is the maximum of those nodes (j < i). The MCMF would be the answer.
+The key lesson for this problem is how to model the k books in hand condition.
+https://codeforces.com/problemset/problem/802/C
+
 
 
