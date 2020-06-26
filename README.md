@@ -2643,5 +2643,8 @@ Here j' is the outgoing vertices such that tp[i] = tp[j] and j is the maximum of
 The key lesson for this problem is how to model the k books in hand condition.
 https://codeforces.com/problemset/problem/802/C
 
+570. Bits of merry old England (diff=2700, MCMF)
+Exactly the same as the previous problem, just use line sweep to extract the flow.
+https://vjudge.net/problem/CodeForces-132E
 
 
