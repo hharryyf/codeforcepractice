@@ -2652,3 +2652,7 @@ This problem is routine right now. But just be careful about taking mods, you ca
 https://vjudge.net/problem/CodeForces-1030F
 
 
+572. Vladik and Favorite Game (diff=2100, constructive algorithm, BFS)
+Very easy. Just do a BFS and walk along the path, if we realize we are moving towards the opposite direction,
+we swap the corresponding symbols. https://vjudge.net/problem/CodeForces-811D
+
