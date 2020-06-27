@@ -2647,4 +2647,8 @@ https://codeforces.com/problemset/problem/802/C
 Exactly the same as the previous problem, just use line sweep to extract the flow.
 https://vjudge.net/problem/CodeForces-132E
 
+571. Putting Boxes Together (diff=2500, range tree, binary search)
+This problem is routine right now. But just be careful about taking mods, you cannot take mods on W[i]. 
+https://vjudge.net/problem/CodeForces-1030F
+
 
