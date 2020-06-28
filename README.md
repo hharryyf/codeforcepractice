@@ -2656,3 +2656,9 @@ https://vjudge.net/problem/CodeForces-1030F
 Very easy. Just do a BFS and walk along the path, if we realize we are moving towards the opposite direction,
 we swap the corresponding symbols. https://vjudge.net/problem/CodeForces-811D
 
+573. Ehab's Last Theorem (diff=2500, dfs maximum cycle finding)
+If we can find the maximum cycle and it is greater than sqrt(n), then we can have solution of second type. However, if
+we don't have such thing, it doesn't mean the job we done are useless. It means that if we partition our tree according to
+height % (sqrt(n) - 1), the maximum chunk is an independent set. 
+https://vjudge.net/problem/CodeForces-1325F
+
