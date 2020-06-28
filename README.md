@@ -2662,3 +2662,8 @@ we don't have such thing, it doesn't mean the job we done are useless. It means 
 height % (sqrt(n) - 1), the maximum chunk is an independent set. 
 https://vjudge.net/problem/CodeForces-1325F
 
+574. Xenia and Tree (diff=2400, sqrt decomposition)
+This problem is so interesting. We can process the updates in sqrt blocks. If the unprocessed updates exceeds sqrt(m), we do
+a multisource BFS and update our dist value, otherwise, the answer is given by the shortest distance to our unprocessed nodes,
+this can be done by sparse table and LCA. https://vjudge.net/problem/CodeForces-342E
+
