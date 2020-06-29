@@ -2667,3 +2667,13 @@ This problem is so interesting. We can process the updates in sqrt blocks. If th
 a multisource BFS and update our dist value, otherwise, the answer is given by the shortest distance to our unprocessed nodes,
 this can be done by sparse table and LCA. https://vjudge.net/problem/CodeForces-342E
 
+575. Subset Sums (diff=2500, sqrt decomposition)
+This problem is a bit unexpected. We should realize that two types of operations are actually operated on non-consecutive segments,
+hence range tree/line sweep in general cannot be used. Type 2 operation can be done quickly if the updates are tagged on the 
+corresponding sets. However, this would affect the ? query. Let's think how to make use of the tag idea. We divide the sets into
+heavy and light, heavy sets have more than sqrt(n) many elements, while light sets have less than that amount. Then, for the heavy
+set updates, we simply apply the tag operation, and for the light set operation, we simply updates using brute force. The 
+algorithm works because the the number of intersection sets each heavy sets can have is O(sqrt(n)), and the same for light set.
+Another tricky thing is amout the implementation, be careful about the invariant of your data structure. 
+https://vjudge.net/problem/CodeForces-348C
+
