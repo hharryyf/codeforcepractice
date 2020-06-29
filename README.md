@@ -2681,3 +2681,6 @@ https://vjudge.net/problem/CodeForces-348C
 This problem used the property of dfs, and the definition of backedge. With the experience of 1325F, solving this problem
 should be simple enough. https://vjudge.net/problem/CodeForces-1364D
 
+577. Table Compression (diff=2200, union find, partial order)
+This problem is trival. Firstly, use union find to compress the equal points, then establish a tag to model the partial orders.
+https://vjudge.net/problem/CodeForces-650C
