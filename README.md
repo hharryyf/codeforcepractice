@@ -2677,3 +2677,7 @@ algorithm works because the the number of intersection sets each heavy sets can 
 Another tricky thing is amout the implementation, be careful about the invariant of your data structure. 
 https://vjudge.net/problem/CodeForces-348C
 
+576. Ehab's Last Corollary (diff=2100, constructive algorithm)
+This problem used the property of dfs, and the definition of backedge. With the experience of 1325F, solving this problem
+should be simple enough. https://vjudge.net/problem/CodeForces-1364D
+
