@@ -2684,3 +2684,15 @@ should be simple enough. https://vjudge.net/problem/CodeForces-1364D
 577. Table Compression (diff=2200, union find, partial order)
 This problem is trival. Firstly, use union find to compress the equal points, then establish a tag to model the partial orders.
 https://vjudge.net/problem/CodeForces-650C
+
+578.  Oleg and chess (diff=3400, max flow, range tree, line sweep)
+The trickiest thing about this problem is if your code didn't do what you want, you might get TLE instead of wrong answer.
+If the grid is very small, we can simply put all rows on one side and all colunms on the other. And if there is an rectangle
+area, we can simply add O(rc) edges. This would be a standard flow problem. However, now, each remaining rectangle area can sum
+up to 1e6 many cells, hence, brute force adding edges would not work. Here, recall the trick used in 1045A, we can build two range
+trees, one on the left, one on the right, so in total O(log(r)log(c)) edges might be added in for each rectangle. Now comes the
+hardest part. We are given the region that is forbidden to place chess pieces, we have to reformulate the area that is allowed to
+put chess pieces into rectangle areas, and the number of rectangle areas can only be O(n). We can use line sweep here, and solve
+this subproblem in O(n^2). So the overall time complexity of the algorithm is O(n^2lognlogn), which 6.5s is enough for this.
+https://vjudge.net/problem/CodeForces-793G
+
