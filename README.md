@@ -2706,3 +2706,8 @@ is very simple to be maintained. https://vjudge.net/problem/CodeForces-1373G
 The problem is very similar to another MCMF problem. If we fix the number of days, things are very easy. 
 https://vjudge.net/problem/CodeForces-1107F
 
+581. Network Coverage (diff=2400, binary search for final answer, greedy)
+It is quite obvious that if we know how many items b[1] gives to a[1], all the rest item allocation should be done greedily.
+Note that it b[1]->a[1] is too high, we might face early run out. Otherwise, a[1] might be insufficient. Hence, we can
+binary search on this amount. https://vjudge.net/problem/CodeForces-1373F
+
