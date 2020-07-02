@@ -2702,3 +2702,7 @@ The observation is very simple, let cover(i) be the number of pawns that can rea
 in a board of size m, cover(i) <= m - i + 1 for all i. This means that the total number of rows is max(cover(i) + i - 1), which
 is very simple to be maintained. https://vjudge.net/problem/CodeForces-1373G
 
+580. Vasya and Endless Credits (diff=2600, MCMF)
+The problem is very similar to another MCMF problem. If we fix the number of days, things are very easy. 
+https://vjudge.net/problem/CodeForces-1107F
+
