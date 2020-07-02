@@ -2696,3 +2696,9 @@ put chess pieces into rectangle areas, and the number of rectangle areas can onl
 this subproblem in O(n^2). So the overall time complexity of the algorithm is O(n^2lognlogn), which 6.5s is enough for this.
 https://vjudge.net/problem/CodeForces-793G
 
+579. Pawns (diff=2600, range tree, lazy propagation, observation)
+This problem is very similar to 338E and 1179C, but as the previous 2 problems, it took me 3 hours to solve this.
+The observation is very simple, let cover(i) be the number of pawns that can reach [i, 2n]. Then, if all pawns can be placed
+in a board of size m, cover(i) <= m - i + 1 for all i. This means that the total number of rows is max(cover(i) + i - 1), which
+is very simple to be maintained. https://vjudge.net/problem/CodeForces-1373G
+
