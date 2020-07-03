@@ -2711,3 +2711,10 @@ It is quite obvious that if we know how many items b[1] gives to a[1], all the r
 Note that it b[1]->a[1] is too high, we might face early run out. Otherwise, a[1] might be insufficient. Hence, we can
 binary search on this amount. https://vjudge.net/problem/CodeForces-1373F
 
+582. Souvenirs (diff=3100, range tree, line sweep, pruning)
+Firstly, I observed that the the problm should be solved with a fixed right end sweeping. And a range tree is used to maintain
+the answer for each index as the left end point. Then, a key observation was made, that's each number is less than 1e9, the times
+for us to update each index is no more than log(1e9). Hence, the only obstacle is to figure out an invariant of detecting if
+any number in the current range can be updated. The simpliest trick is maintain a range tree of vectors and keeps doing the 
+lower_bound check. https://vjudge.net/problem/CodeForces-765F
+
