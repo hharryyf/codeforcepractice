@@ -2726,3 +2726,6 @@ We can define ans[0] as the real answer, and ans[1] as the answer of the current
 Then, each update is basically increment the lazy tag and when we do the pushdown operation, we can do a cycle shift of lz[index],
 to the leftchild and rightchild. https://vjudge.net/problem/CodeForces-311D
 
+584. P1251 (MCMF)
+https://www.luogu.com.cn/problem/P1251
+
