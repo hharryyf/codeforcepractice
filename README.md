@@ -2718,3 +2718,11 @@ for us to update each index is no more than log(1e9). Hence, the only obstacle i
 any number in the current range can be updated. The simpliest trick is maintain a range tree of vectors and keeps doing the 
 lower_bound check. https://vjudge.net/problem/CodeForces-765F
 
+583. Interval Cubing (diff=2600, fermat's little theorem, range tree, lazy propagation)
+If we are lucky enough, we might observe that 3^48 - 1 is divisable by 95542721. Hence, this problem can be reformulate as, 
+each number has a cycle of length 48. Each update requires to shift all element in [l, r] by 1. Query the range sum. The range
+shift type range tree is the kind of range tree I'm not very familiar with. A typical problem I've solved before is 911G. 
+We can define ans[0] as the real answer, and ans[1] as the answer of the current range after we've shift all elements by 1 and so on.
+Then, each update is basically increment the lazy tag and when we do the pushdown operation, we can do a cycle shift of lz[index],
+to the leftchild and rightchild. https://vjudge.net/problem/CodeForces-311D
+
