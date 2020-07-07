@@ -2727,5 +2727,26 @@ Then, each update is basically increment the lazy tag and when we do the pushdow
 to the leftchild and rightchild. https://vjudge.net/problem/CodeForces-311D
 
 584. P1251 (MCMF)
-https://www.luogu.com.cn/problem/P1251
+This problem is very similar to 802C and 132E. https://www.luogu.com.cn/problem/P1251
+
+585. Vicky's Delivery Service (diff=2400, union find, small to large) 
+This problem is very tricky. The hardest part is to define the equivalence relation reachable. Note that, we can only define
+this equivalence relationship for (u, v) if u and v has an even length rainbow road between them. So we use a set for each
+color representing the node that is connected by just 1 edge away from this connected component. And also a map that records
+for each color which node is connected to it by this color. Then by applying the small to large trick and union-find at the
+same time this problem is solved. https://codeforces.com/contest/1166/problem/F
+
+586. P2766 (maxflow on DAG)
+This problem uses the same trick as 818G. https://www.luogu.com.cn/problem/P2766
+
+587. Bear and Square Grid (diff=2400, line sweep, union find)
+There is a preprocessing step that we can do which is to use union find and join all the connected components together. Let answer
+to be the largest of them. This is very important, because after that we only need to consider updating our answer by the size of
+the connected component including that k by k square. Let's think what this special connected component is made up of. Firstly,
+all the X in the square. Secondly, all the connected components that are within and share a side with the square. Now what we need to
+do is clear, we use the trick that's always used in Mo's algorithm. Maintain a counter for the occurence of each connected component
+in the square. If the counter increase from 0 to 1, we increment our answer by the size of that connected component. Similarly,
+if the counter decrease from 1 to 0, we decrease our answer by the size of the connected component. For the X inside the square, we
+can simply use cumulative sum to deal with it. So the overall time complexity for this algorithm is O(kn(n+k)).
+https://codeforces.com/contest/679/problem/C
 
