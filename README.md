@@ -2753,3 +2753,7 @@ https://codeforces.com/contest/679/problem/C
 588. The penguin's game (diff=2400, constructive algorithm)
 Binary representation is a very cool idea. https://codeforces.com/problemset/problem/835/E
 
+589. P3357 (MCMF)
+Similar to CF164C. But be careful about the vertical segment case!
+https://www.luogu.com.cn/problem/P3357
+
