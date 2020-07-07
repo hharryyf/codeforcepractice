@@ -2750,3 +2750,6 @@ if the counter decrease from 1 to 0, we decrease our answer by the size of the c
 can simply use cumulative sum to deal with it. So the overall time complexity for this algorithm is O(kn(n+k)).
 https://codeforces.com/contest/679/problem/C
 
+588. The penguin's game (diff=2400, constructive algorithm)
+Binary representation is a very cool idea. https://codeforces.com/problemset/problem/835/E
+
