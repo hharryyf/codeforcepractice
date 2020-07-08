@@ -2757,3 +2757,13 @@ Binary representation is a very cool idea. https://codeforces.com/problemset/pro
 Similar to CF164C. But be careful about the vertical segment case!
 https://www.luogu.com.cn/problem/P3357
 
+590. P3358 (MCMF)
+Exactly the same as the previous one.
+https://www.luogu.com.cn/problem/P3358
+
+591. Kindergarten (diff=2400, dp, observation)
+We should immediately observe that the answer would not be greater than the sum of all abs(a[i] - a[i-1]). There is a limitation
+on selecting these (i, i-1) pairs. If the point i-1 is a turning point (i.e. a[i-1] is greater than both a[i], a[i-2] or less than both).
+We cannot select both (i, i-1) and (i-1, i-2). Hence, the problem can be formulated as a very simple dp problem.
+https://codeforces.com/problemset/problem/484/D
+
