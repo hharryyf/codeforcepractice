@@ -2767,3 +2767,9 @@ on selecting these (i, i-1) pairs. If the point i-1 is a turning point (i.e. a[i
 We cannot select both (i, i-1) and (i-1, i-2). Hence, the problem can be formulated as a very simple dp problem.
 https://codeforces.com/problemset/problem/484/D
 
+592. Berland.Taxi (diff=2500, simulation)
+This is a simulation and implementation problem. The only difficulty here is to do a precise implementation. The trickiest test
+case you might expect is the case when a person has to wait for a taxi to becomes available. And when you select this taxi, make
+sure that your sorting method can pick out the smallest id taxi among all taxies with the same distance to the person. Use prev 
+of the set iterator should be very careful in this case. https://vjudge.net/problem/CodeForces-883L
+
