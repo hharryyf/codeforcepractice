@@ -2773,3 +2773,10 @@ case you might expect is the case when a person has to wait for a taxi to become
 sure that your sorting method can pick out the smallest id taxi among all taxies with the same distance to the person. Use prev 
 of the set iterator should be very careful in this case. https://vjudge.net/problem/CodeForces-883L
 
+593. The Door Problem (diff=2000, tarjan's algorithm, 2-sat)
+The only reason I solved this easy problem is because it can be done with the 2-sat trick. If we realize the yes no is depending
+on the truth value of a 2-CNF expression, we can apply this trick. The key here is to rewrite (a or b) to (not a imp b).
+And we add an edge from not a to b and also from not b to a. The truth value of the expression is depending on whethere there is
+a node v such that v and not v are in the same SCC. If so, the expression has no solution.
+https://codeforces.com/contest/776/problem/D
+
