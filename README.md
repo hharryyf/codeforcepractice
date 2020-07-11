@@ -2780,3 +2780,17 @@ And we add an edge from not a to b and also from not b to a. The truth value of 
 a node v such that v and not v are in the same SCC. If so, the expression has no solution.
 https://codeforces.com/contest/776/problem/D
 
+594. National Property (diff=2100, tarjan's algorithm, 2-sat)
+The key observation is we only care about the first different letter in word i and word i+1. And there are two cases,
+c_word[i] < c_word[i+1]. In this case, two conditions must be true. If we swap i+1, we must swap i and if we do not swap i, 
+we must keep i+1 unchanged. Similarly, for c_word[i] > c_word[i+1]. The condition is swap i and not swap [i+1].
+We could observe that these conditions can be written as a 2-CNF. We simply use tarjan's algorithm to find the solution.
+https://vjudge.net/problem/CodeForces-875C
+
+595. Post Lamps (diff=2100, time complexity analysis, greedy)
+I made a ridiculous mistake when implementing this problem. The observation is quite simple, we cannot avoid manipulating k, and
+if we can achieve a fast jump for each k, the time complexity would be n + n/2 + ... + n/i + ... + n/n = nlogn. This would solve
+the problem. However, I didn't consider an array out of boundary case and magically got TLE instead of RE, which directly results
+in the failure of solving this problem in the contest.
+https://vjudge.net/problem/CodeForces-990E
+
