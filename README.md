@@ -2800,3 +2800,9 @@ seen easily that this happens only if the sum of s[i] is non-zero. Secondly, we 
 for the construction. Hence, we just do a dfs on the dfs tree and solve the problem from leaf to root.
 https://vjudge.net/problem/CodeForces-990F
 
+597. Jongmah (diff=2200, dp)
+This problem is very tricky for me. The idea is for any 3 [x, x + 1, x+2] and 3 [x,x,x], [x+1,x+1,x+1], [x+2,x+2,x+2]. They are
+equivalent. Hence, we define dp[i][j][k] as the maximum triple ends at i with j remaining [i-1,i,i+1] and k [i,i+1,i+2].
+After that, we can construct a dp transition from dp[i-1][l][j] to dp[i][j][k].
+https://vjudge.net/problem/CodeForces-1110D
+
