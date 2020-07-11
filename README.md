@@ -2794,3 +2794,9 @@ the problem. However, I didn't consider an array out of boundary case and magica
 in the failure of solving this problem in the contest.
 https://vjudge.net/problem/CodeForces-990E
 
+596. Flow Control (diff=2400, constructive algorithm)
+I'm quite shock that this can be a 2400 problem. The trick is so simple. Firstly, decide when there's no solution. It can be
+seen easily that this happens only if the sum of s[i] is non-zero. Secondly, we should know that we only need the dfs tree
+for the construction. Hence, we just do a dfs on the dfs tree and solve the problem from leaf to root.
+https://vjudge.net/problem/CodeForces-990F
+
