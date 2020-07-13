@@ -2806,3 +2806,7 @@ equivalent. Hence, we define dp[i][j][k] as the maximum triple ends at i with j 
 After that, we can construct a dp transition from dp[i-1][l][j] to dp[i][j][k].
 https://vjudge.net/problem/CodeForces-1110D
 
+598. Indecisive Taxi Fee (diff=3000, shortest path tree, range tree)
+There is a stunning problem. I still need some time to digest. https://vjudge.net/problem/CodeForces-1163F
+
+
