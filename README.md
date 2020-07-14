@@ -2809,4 +2809,12 @@ https://vjudge.net/problem/CodeForces-1110D
 598. Indecisive Taxi Fee (diff=3000, shortest path tree, range tree)
 There is a stunning problem. I still need some time to digest. https://vjudge.net/problem/CodeForces-1163F
 
+599. Arkady and Rectangles (diff=3300, range tree, line sweep)
+The hardest part of this problem is how to "reveal" the change in a range tree. Firstly, we could observe that we can record
+the dominant color in a range that is not marked. This is very each to maintain with the help of a tree of sets and a range tree.
+However, this is insufficient. The case that's missed by this construction is a small color is fully covered by several large colors
+together. So, there's another important variable that must be maintained, which is the minimum visable color in a range. This 
+also satisfies transitivity. Then the problem would be turned into a standard line sweep problem.
+https://vjudge.net/problem/CodeForces-983D
+
 
