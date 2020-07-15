@@ -2817,4 +2817,12 @@ together. So, there's another important variable that must be maintained, which 
 also satisfies transitivity. Then the problem would be turned into a standard line sweep problem.
 https://vjudge.net/problem/CodeForces-983D
 
+600. Distance in Tree (diff=1800, centroid decomposition)
+This is a template problem for centroid decomposition. Check your template with it.
+https://vjudge.net/problem/CodeForces-161D
+
+601. Palindromes in a Tree (diff=2400, centroid decomposition)
+Tree path query is a strong hint on centroid decomposition. We've already seen the trick on judging whether a strong can be
+permute to a palindrome, xor trick. https://vjudge.net/problem/CodeForces-914E
+
 
