@@ -2825,4 +2825,11 @@ https://vjudge.net/problem/CodeForces-161D
 Tree path query is a strong hint on centroid decomposition. We've already seen the trick on judging whether a strong can be
 permute to a palindrome, xor trick. https://vjudge.net/problem/CodeForces-914E
 
+602. Close Vertices (diff=2700, line sweep, centroid decomposition, fenwick tree)
+This is a really nice problem. We should realize it is just a modified version of 161D. The origional problem involves counting
+in 1D but this problem has 2D. Dealing with 2D counting problem, the standard trick is line sweep. However, there's something
+very important here, we must firstly do a line sweep on the root node and then many line sweeps to the direct childs.
+The reason is the path we count must pass the root, we might double count some paths that do not path the root if we do not 
+subtract the answers we get from the second line sweep. https://codeforces.com/problemset/problem/293/E
+
 
