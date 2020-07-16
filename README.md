@@ -2832,4 +2832,9 @@ very important here, we must firstly do a line sweep on the root node and then m
 The reason is the path we count must pass the root, we might double count some paths that do not path the root if we do not 
 subtract the answers we get from the second line sweep. https://codeforces.com/problemset/problem/293/E
 
+603. Ciel the Commander (diff=2100, constructive algorithm, property of centroid decomposition)
+The centroid tree has height of O(logn) that's around a height of 17, less than 26. Hence, we can use centroid decomposition
+and build the centroid tree. After that, we color the tree level by level from 'A' to 'Z'.
+https://vjudge.net/problem/CodeForces-321C
+
 
