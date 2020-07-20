@@ -2840,4 +2840,7 @@ https://vjudge.net/problem/CodeForces-321C
 604. Columns Swaps (diff=2300, bipartite coloring)
 https://vjudge.net/problem/CodeForces-1385G
 
+605. Arthur and Walls (diff=2400, BFS, constructive algorithm)
+The property here is every 2*2 cell, if there's a single * symbol, then that symbol must be eliminated.
+https://vjudge.net/problem/CodeForces-525D
 
