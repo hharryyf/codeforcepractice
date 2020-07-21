@@ -2844,3 +2844,11 @@ https://vjudge.net/problem/CodeForces-1385G
 The property here is every 2*2 cell, if there's a single * symbol, then that symbol must be eliminated.
 https://vjudge.net/problem/CodeForces-525D
 
+606. Forced Online Queries Problem (diff=2600, sqrt decomposition)
+If there's a deletion in Union-find data structure, we have to rebuild the struction. The key here is we balance the advantage
+of two operations. If the time complexity of rebuild the union find structure is O(N), the complexity of query the union find
+structure is O(1) or O(logn). Hence, we can use sqrt decomposition on this. Process the queries of size sqrt(log[N] * Q) at a time.
+Then, after each block has been answered, reconstruct the union find structure. 
+https://vjudge.net/problem/CodeForces-1217F
+
+
