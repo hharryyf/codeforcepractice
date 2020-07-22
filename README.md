@@ -2851,4 +2851,17 @@ structure is O(1) or O(logn). Hence, we can use sqrt decomposition on this. Proc
 Then, after each block has been answered, reconstruct the union find structure. 
 https://vjudge.net/problem/CodeForces-1217F
 
+607. Bridges (APIO 2019 task 2, line sweep, union find, sqrt decomposition)
+Let's thinks how to solve each subtask. Firstly for subtask (1, 2), the idea is very simple. Brute force + range min tree would
+do the job. Now, for subtask 4, it is a quite standard offline sweeping problem. We short the edges and the queries based on the 
+weight, then build the union find data structure with size to answer the queries. Time complexity is O((q+m)log(q+m)).
+It seems like we are stucked at this point, because all the rest subtasks involves updates, offline seems not working. But we
+can use the idea of CF1217F, the sqrt decomposition trick. We seperate the queries into blocks of size Q, before processing each
+block, we iterate over all the edges in the graph and put the edges that are irrelevent to the updates of the current block
+into a sorted vector In. Similarly, we put the edges that are relevent to the current update into another vector called Pend.
+Now, for each block, we apply the trick used for subtask 4. But now the union find data structure must support updates.
+The time complexity used for each block combined is O(MQlogN), the time complexity between blocks is O(M/Q * N).Hence, by selecting Q = sqrt(NlogN), We can have a time compexltiy of O(Msqrt(NlogN)). Note that there's a tricky case. How to obtain the sorted vectors between
+each blocks, this must be done with a complexity no greater than O(M), merge sort merge function can do the job.
+https://vjudge.net/problem/Gym-102257B
+
 
