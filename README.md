@@ -2864,4 +2864,9 @@ The time complexity used for each block combined is O(MQlogN), the time complexi
 each blocks, this must be done with a complexity no greater than O(M), merge sort merge function can do the job.
 https://vjudge.net/problem/Gym-102257B
 
+608. Allowed Letters (diff=2400, greedy and hall's theorem)
+It is quite obvious that we can greedily check if the ith position a-f works. Here works means there exists a perfect matching
+between the number of remaining a-f and the positions [i+1, n]. We can apply hall's theorem to deal with this.
+https://codeforces.com/problemset/problem/1009/G
+
 
