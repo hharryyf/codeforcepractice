@@ -2869,4 +2869,15 @@ It is quite obvious that we can greedily check if the ith position a-f works. He
 between the number of remaining a-f and the positions [i+1, n]. We can apply hall's theorem to deal with this.
 https://codeforces.com/problemset/problem/1009/G
 
+609. Holes (diff=2700, sqrt decomposition)
+This is actually a LCT problem, however since LCT is way too hard, I decided to use sqrt decomposition to solve it. We have seen
+quite a lot of times on how to deal with dynamic graph problems with sqrt decomposition. The idea is break the queries into blocks
+of size sqrt(n) and process it at once. We could observe that the jumping "graph" forms a forest. Then, let's seperate the edges
+into 2 groups, 1) edges that are related to queries in the current block, 2) edges are completely irrelevant to tp=0 queries in
+the current block. Then, we can add in and compress the edges of group 2) before we solve the queries. Then, when we answer
+the queries of the current block, we just walk up the tree until we reach the root. It can be observed that type 1) edge is
+no more than sqrt(n), the weighted tree formed by type 2) edge has height at most 2, hence the time complexity for each query
+is O(sqrt(n)). And the rebuiding cost combined is O(msqrt(n)). Hence the time complexity of the algorithm is O(sqrt(n)).
+https://codeforces.com/contest/13/problem/E
+
 
