@@ -2880,4 +2880,8 @@ no more than sqrt(n), the weighted tree formed by type 2) edge has height at mos
 is O(sqrt(n)). And the rebuiding cost combined is O(msqrt(n)). Hence the time complexity of the algorithm is O(sqrt(n)).
 https://codeforces.com/contest/13/problem/E
 
+610. The LCMs Must be Large (diff=2100, constructive algorithm)
+It can be seen easily that if any two of the constraints are not intersecting there's definitly no solution. 
+https://vjudge.net/problem/CodeForces-1166E
+
 
