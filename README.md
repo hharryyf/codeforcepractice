@@ -2884,4 +2884,13 @@ https://codeforces.com/contest/13/problem/E
 It can be seen easily that if any two of the constraints are not intersecting there's definitly no solution. 
 https://vjudge.net/problem/CodeForces-1166E
 
+611. Instant Messanger (sqrt decomposition)
+We can think how to solve this problem by using brute force. Type O,F,A,D query can be done in worst case O(1) time and type
+C query can be done in worst case O(M) time. This is a very strong hint on sqrt decomposition, we should try to balance the
+time for each kind of query. Let's answer the queries in blocks of size sqrt(Q), we mark the people as inuse = 0/1, inuse=1
+means the person is relevant to the current block. Then, between each blocks, we iterate through all the edges, if an edge
+has both end points connecting inuse person, then we add that edge into the graph. Otherwise, we simply update the counter
+of the inuse person and igonre the edge. Then, the algorithm would work in worst case O(Qsqrt(Q)) instead of O(QE).
+https://codeforces.com/contest/398/problem/D
+
 
