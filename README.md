@@ -2893,4 +2893,11 @@ has both end points connecting inuse person, then we add that edge into the grap
 of the inuse person and igonre the edge. Then, the algorithm would work in worst case O(Qsqrt(Q)) instead of O(QE).
 https://codeforces.com/contest/398/problem/D
 
+612. Strange Device (APIO2019, number theory)
+I was shocked by the simplicity of the problem. Initially the problem seems hard, let's try to think when (x1, y1) = (x2,y2).
+From the second term, we know y2-y1=KB which K is an integer. If x1=x2 then y2-y1+y2/B-y1/B = PA which P is an interger.
+Hence K(B+1) = PA, which means that K = lcm(A, B+1)/B+1 = A/gcd(A, B+1). Hence, the function T(t) = (x, y) is periodic. 
+The period of such function is AB/gcd(A, B+1). Now the problem is reduced to a segment cover problem, which is standard.
+https://vjudge.net/problem/Gym-102257A
+
 
