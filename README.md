@@ -2900,4 +2900,6 @@ Hence K(B+1) = PA, which means that K = lcm(A, B+1)/B+1 = A/gcd(A, B+1). Hence, 
 The period of such function is AB/gcd(A, B+1). Now the problem is reduced to a segment cover problem, which is standard.
 https://vjudge.net/problem/Gym-102257A
 
+613. Bicolored Segments (diff=2600, matching, line sweep)
+https://codeforces.com/problemset/problem/1389/F
 
