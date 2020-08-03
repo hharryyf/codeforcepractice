@@ -2901,5 +2901,13 @@ The period of such function is AB/gcd(A, B+1). Now the problem is reduced to a s
 https://vjudge.net/problem/Gym-102257A
 
 613. Bicolored Segments (diff=2600, matching, line sweep)
+The problem has a matching solution, which is quite cool. The largest independent set = total vertices - maximum matching.
+Hence, we can calculate the maximum matching of the bipartite graph. This can be solved greedily using line sweep.
 https://codeforces.com/problemset/problem/1389/F
+
+614. George and Interesting Graph (diff=2200, maximum matching)
+The observation here is we can manipulate the "centre", then we can observe that there are two types of edges.
+1) edges relating to the "centre", we shall save all of them. 2) edges that are irrelevent to the centre, here we need to
+select the maximum number of them such that no vertices except the centre has indegree > 1 or outdegree > 1, this can be
+done with the help of a matching algorithm. Then, the rest of the problem is straight forward.
 
