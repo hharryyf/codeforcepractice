@@ -2910,4 +2910,9 @@ The observation here is we can manipulate the "centre", then we can observe that
 1) edges relating to the "centre", we shall save all of them. 2) edges that are irrelevent to the centre, here we need to
 select the maximum number of them such that no vertices except the centre has indegree > 1 or outdegree > 1, this can be
 done with the help of a matching algorithm. Then, the rest of the problem is straight forward.
+https://vjudge.net/problem/CodeForces-387D
+
+615. Street Lamps (APIO2019, line sweep, CDQ divide and conquer)
+This is a stunning problem, if we can treat [l, r] as the coordinate (l, r), the problem can be solved with standard 3-dimensional partial sum (CDQ divc). But this reduction is certainly hard. https://vjudge.net/problem/Gym-102257C
+
 
