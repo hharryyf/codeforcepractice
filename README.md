@@ -2915,4 +2915,9 @@ https://vjudge.net/problem/CodeForces-387D
 615. Street Lamps (APIO2019, line sweep, CDQ divide and conquer)
 This is a stunning problem, if we can treat [l, r] as the coordinate (l, r), the problem can be solved with standard 3-dimensional partial sum (CDQ divc). But this reduction is certainly hard. https://vjudge.net/problem/Gym-102257C
 
+616. Running Competition (diff=2600, FFT)
+This is a stunning problem. The key is how to expose x[i] - x[j]. The way is consider the transform a = K - x[i], b = x[i].
+And we convolt the 2 sequences, the non-zero terms of the polynomial are the possible values of x[i] - x[j].
+https://codeforces.com/contest/1398/problem/G
+
 
