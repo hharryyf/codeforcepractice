@@ -2920,4 +2920,8 @@ This is a stunning problem. The key is how to expose x[i] - x[j]. The way is con
 And we convolt the 2 sequences, the non-zero terms of the polynomial are the possible values of x[i] - x[j].
 https://codeforces.com/contest/1398/problem/G
 
+617. Yet Another String Matching Problem (diff=2200, FFT)
+This one is not very hard, we are just curious whether there's an (i, j) pair in some intervals, which is a typical convolution problem.
+https://vjudge.net/problem/CodeForces-954I
+
 
