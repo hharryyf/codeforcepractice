@@ -2924,4 +2924,8 @@ https://codeforces.com/contest/1398/problem/G
 This one is not very hard, we are just curious whether there's an (i, j) pair in some intervals, which is a typical convolution problem.
 https://vjudge.net/problem/CodeForces-954I
 
+618. Conveyor Belts (diff=2700, sqrt decomposition)
+The problem is very similar to other dynamic graph problems. If there's no modification, we simply run the simple dfs. For the modifications, we solve the queries in blocks and each block, we don't do state compression only for the link (u, v) such that
+the node v is modified in this block. https://vjudge.net/problem/CodeForces-487D
+
 
