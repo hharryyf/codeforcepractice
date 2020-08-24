@@ -2928,4 +2928,13 @@ https://vjudge.net/problem/CodeForces-954I
 The problem is very similar to other dynamic graph problems. If there's no modification, we simply run the simple dfs. For the modifications, we solve the queries in blocks and each block, we don't do state compression only for the link (u, v) such that
 the node v is modified in this block. https://vjudge.net/problem/CodeForces-487D
 
+619. Merchant (APIO2017, 0-1 fractional programming, binary search on final answer)
+The question asks us to optimize some fractions, the most promising direction is always binary search on final answer (0-1 fractional
+programming). Then, let's consider how to validate this answer. Something we should pay attention to is, we are allowed to compelte
+only one trade at a time. Hence, we can precompute the optimal sell - buy cost for all pairs of (i, j), in O(N^2K) time and also the
+all pair shortest path in O(N^3) time. Then, the task is to validate whether lambda is correct. When we check whether lambda is
+correct, we only need to create a modified graph, each pair(i, j) create an edge cost(i, j) - lambda * time(i, j). Then, we can just
+run floyd once more and see if there's a positive cycle, if so, we return true otherwise, we return false.
+https://vjudge.net/problem/LibreOJ-2308
+
 
