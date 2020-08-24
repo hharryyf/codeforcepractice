@@ -2937,4 +2937,8 @@ correct, we only need to create a modified graph, each pair(i, j) create an edge
 run floyd once more and see if there's a positive cycle, if so, we return true otherwise, we return false.
 https://vjudge.net/problem/LibreOJ-2308
 
+620. Weights Division (hard version) (diff=2200, greedy)
+This problem is very simple, the only tricky case is 2 type 1 can achieve a better reduction than a type 2.
+https://vjudge.net/problem/CodeForces-1399E2
+
 
