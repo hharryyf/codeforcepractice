@@ -2941,4 +2941,9 @@ https://vjudge.net/problem/LibreOJ-2308
 This problem is very simple, the only tricky case is 2 type 1 can achieve a better reduction than a type 2.
 https://vjudge.net/problem/CodeForces-1399E2
 
+621. Inversion Expectation (diff=2300, dp)
+This is the first time in history that I solved a 2300 combinatorics dp completely by myself, even if I got wrong answer
+feedback for 10 times because of implementing the range sum tree in a ridiculous way.
+https://vjudge.net/problem/CodeForces-1096F
+
 
