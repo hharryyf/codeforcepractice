@@ -1939,7 +1939,7 @@ Query [l, r] how many empty points in total. This can be done by range tree and 
 https://codeforces.com/problemset/problem/500/E
 
 
-*Term 2 training May 12, 2020 to July 31, 2020*
+*Term 2 training May 12, 2020 to Aug 31, 2020*
 
 440. DFS (diff=2700, range tree, observation)
 We should observe that in all trees, a newly added edge can be ignored without changing the dfs tree,
@@ -2949,5 +2949,10 @@ https://vjudge.net/problem/CodeForces-1096F
 622. Editor (suffix array)
 A good template problem, can be used to check the suffix array implmentation.
 https://vjudge.net/problem/UVA-1223
+
+623. Match & Catch (diff=2200, suffix array)
+When we see something like longest/unique occurence of substrings, suffix array is always the data structure we should try.
+Firstly, note that to apply suffix array, we can only have one string, a good trick here is to concatenate the two strings
+together with a '#'. Case work is shown in the code. https://vjudge.net/problem/CodeForces-427D
 
 
