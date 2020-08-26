@@ -2946,4 +2946,8 @@ This is the first time in history that I solved a 2300 combinatorics dp complete
 feedback for 10 times because of implementing the range sum tree in a ridiculous way.
 https://vjudge.net/problem/CodeForces-1096F
 
+622. Editor (suffix array)
+A good template problem, can be used to check the suffix array implmentation.
+https://vjudge.net/problem/UVA-1223
+
 
