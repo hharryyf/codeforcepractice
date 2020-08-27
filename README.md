@@ -2955,9 +2955,13 @@ When we see something like longest/unique occurence of substrings, suffix array 
 Firstly, note that to apply suffix array, we can only have one string, a good trick here is to concatenate the two strings
 together with a '#'. Case work is shown in the code. https://vjudge.net/problem/CodeForces-427D
 
-624. Forbidden Indices (diff=2400, suffix array)
+624. Forbidden Indices (diff=2400, suffix array, line sweep)
 This is a typical suffix array problem. We should think how to make good use of the height/lcp array. Firstly, processing prefix
 is hard, we can reverse the strings. Then, we should realize the a times f(a) is actually related to the largest histogram rectangle
 area, which can be done by sweeping and range tree. https://vjudge.net/problem/CodeForces-873F
+
+625. Fake News (hard) (diff=2300, suffix array, line sweep)
+Again, we play on the histogram established by the height array. We can write the square as 2 * t * (t - 1) / 2 + t.
+https://vjudge.net/problem/CodeForces-802I
 
 
