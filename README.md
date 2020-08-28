@@ -2976,4 +2976,7 @@ of our origional array, we can change the problem to a suffix array problem. It 
 subarray such that the indices is among within some ranges. This 2D counting porblem can be done by persistent range tree.
 https://codeforces.com/problemset/problem/232/D
 
+628. Clear the Multiset (diff=2200, divide and conquer, greedy)
+https://codeforces.com/contest/1400/problem/E
+
 
