@@ -2964,4 +2964,16 @@ area, which can be done by sweeping and range tree. https://vjudge.net/problem/C
 Again, we play on the histogram established by the height array. We can write the square as 2 * t * (t - 1) / 2 + t.
 https://vjudge.net/problem/CodeForces-802I
 
+626. String (diff=2300, suffix array, line sweep)
+Exactly the same as 802I, just change one line of code. https://vjudge.net/problem/CodeForces-123D
+
+627. Fence (diff=2900, suffix array, persistent range tree)
+The most difficult part of this problem is to reduce it to a pattern matching problem. Firstly, it is quite easy to see that
+we are actually looking for subsegments that the difference between adjacent elements sum up to 0 (i.e. for c = a[l:r], we are
+looking for b = a[k:k+r-l], such that b[i] - b[i-1] = c[i] - c[i-1] for all i <= r - l). We haven't learned any data structures
+that can calculate this directly, however, we should observe that if we negate the difference array and concatenate it to the back
+of our origional array, we can change the problem to a suffix array problem. It is asking, how many prefix matches with a given
+subarray such that the indices is among within some ranges. This 2D counting porblem can be done by persistent range tree.
+https://codeforces.com/problemset/problem/232/D
+
 
