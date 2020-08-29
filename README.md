@@ -2979,4 +2979,9 @@ https://codeforces.com/problemset/problem/232/D
 628. Clear the Multiset (diff=2200, divide and conquer, greedy)
 https://codeforces.com/contest/1400/problem/E
 
+629. k-substrings (diff=2700, hashing, binary search on final answer)
+The key information in this question is the required string has odd length which means each string has a "centre (a[(i+1)/2])".
+We can calculate the maximum length a string can be if it is centred at i, this can be done by binary search and hashing.
+https://vjudge.net/problem/CodeForces-961F
+
 
