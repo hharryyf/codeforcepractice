@@ -2989,3 +2989,8 @@ https://vjudge.net/problem/UVA-1254
 
 631. Prefixes and Suffixes (diff=2000, KMP)
 https://vjudge.net/problem/CodeForces-432D
+
+632. Secret Word (KMP)
+This is just a simple application of the fail table, we concatenate the reverse of the string after a '#' to the end of the
+string. https://vjudge.net/problem/UVA-12467
+
