@@ -2984,4 +2984,7 @@ The key information in this question is the required string has odd length which
 We can calculate the maximum length a string can be if it is centred at i, this can be done by binary search and hashing.
 https://vjudge.net/problem/CodeForces-961F
 
+630. Top 10 (suffix array, binary search, range tree)
+https://vjudge.net/problem/UVA-1254
+
 
