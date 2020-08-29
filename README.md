@@ -2987,4 +2987,5 @@ https://vjudge.net/problem/CodeForces-961F
 630. Top 10 (suffix array, binary search, range tree)
 https://vjudge.net/problem/UVA-1254
 
-
+631. Prefixes and Suffixes (diff=2000, KMP)
+https://vjudge.net/problem/CodeForces-432D
