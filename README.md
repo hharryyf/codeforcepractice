@@ -2994,3 +2994,10 @@ https://vjudge.net/problem/CodeForces-432D
 This is just a simple application of the fail table, we concatenate the reverse of the string after a '#' to the end of the
 string. https://vjudge.net/problem/UVA-12467
 
+633. Isomorphic Strings (diff=2300, hashing)
+The key word in this problem is "Isomorphic". We know that Isomorphism is an equivalence relation. So instead of trying to 
+come up with an algorithm that directly judge whether two substrings are isomorphism to each other. We can use an alternative
+approach. If we check A = B?, we can "generate" a string C = A and check whether C = B. The most convenient string here is
+the string that is isomorphic to A which has the least lexicographical order. Then, the remaining task is hashing.
+https://codeforces.com/contest/985/problem/F
+
