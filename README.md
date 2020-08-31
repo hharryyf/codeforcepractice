@@ -3004,3 +3004,8 @@ https://codeforces.com/contest/985/problem/F
 634. Cinema (diff=2400, union find)
 Key observation: the largest distance is of O(sqrt(Q)). https://vjudge.net/problem/CodeForces-200A
 
+635. Om Nom and Necklace (diff=2200, KMP)
+Key observation: we find the "period" of each prefix by KMP. Then, the answer is simply checking whether
+there's a multiple of such period L, L * K <= i and L * (K + 1) >= i.
+https://vjudge.net/problem/CodeForces-526D
+
