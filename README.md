@@ -3009,3 +3009,7 @@ Key observation: we find the "period" of each prefix by KMP. Then, the answer is
 there's a multiple of such period L, L * K <= i and L * (K + 1) >= i.
 https://vjudge.net/problem/CodeForces-526D
 
+636. Compress Words (diff=2000, KMP)
+Key observation: the maximum number of overlap between result[i-1] and word[i] is min(len(result[i-1], word[i])).
+https://vjudge.net/problem/CodeForces-1200E
+
