@@ -3001,3 +3001,6 @@ approach. If we check A = B?, we can "generate" a string C = A and check whether
 the string that is isomorphic to A which has the least lexicographical order. Then, the remaining task is hashing.
 https://codeforces.com/contest/985/problem/F
 
+634. Cinema (diff=2400, union find)
+Key observation: the largest distance is of O(sqrt(Q)). https://vjudge.net/problem/CodeForces-200A
+
