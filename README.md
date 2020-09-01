@@ -3013,3 +3013,10 @@ https://vjudge.net/problem/CodeForces-526D
 Key observation: the maximum number of overlap between result[i-1] and word[i] is min(len(result[i-1], word[i])).
 https://vjudge.net/problem/CodeForces-1200E
 
+637. DZY Loves Strings (diff=2500, hashing, binary search)
+Key observation: length of the query string is only 4. Hence, we can store the hash of all the substrings with length 1-4,
+in total there's only 2e5 such strings. Then for the query it is equivalent to asking given 2 arrays a[1:k] and b[1:p], find
+a[i] and b[j] such that |a[i] - b[j]| is minimumm. This can be done by iterating on the smaller array and binary search on the
+larger array. To avoid repeat calculations we can memorize the already calculated results. Overall time complexity O(Qlogn + nlogn).
+https://vjudge.net/problem/CodeForces-444D
+
