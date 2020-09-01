@@ -3020,3 +3020,7 @@ a[i] and b[j] such that |a[i] - b[j]| is minimumm. This can be done by iterating
 larger array. To avoid repeat calculations we can memorize the already calculated results. Overall time complexity O(Qlogn + nlogn).
 https://vjudge.net/problem/CodeForces-444D
 
+638. Matching Names (diff=2300, Trie, greedy)
+Key observation: we can merge together two "maximum matching" first. https://vjudge.net/problem/CodeForces-566A
+
+
