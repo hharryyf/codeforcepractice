@@ -3028,3 +3028,10 @@ We can brute force the results of the last 15 bits and store it in a map, then b
 and check whether the map contains our desired results.
 https://vjudge.net/problem/CodeForces-1257F
 
+640.  Lizard Era: Beginning (diff=2300, meet in the middle)
+Very standard meet in the middle problem. The hint is 3^25 is too large 3^13 is fine.
+https://codeforces.com/problemset/problem/585/D
+
+641. Xor-Paths (diff=2100, dfs, meet in the middle)
+Key observation: bidirectional search model. https://vjudge.net/problem/CodeForces-1006F
+
