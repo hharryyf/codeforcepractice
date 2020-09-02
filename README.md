@@ -3023,4 +3023,8 @@ https://vjudge.net/problem/CodeForces-444D
 638. Matching Names (diff=2300, Trie, greedy)
 Key observation: we can merge together two "maximum matching" first. https://vjudge.net/problem/CodeForces-566A
 
+639. Make Them Similar (diff=2400, meet in the middle)
+We can brute force the results of the last 15 bits and store it in a map, then brute force the results of the first 15 bits
+and check whether the map contains our desired results.
+https://vjudge.net/problem/CodeForces-1257F
 
