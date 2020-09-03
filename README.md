@@ -3035,3 +3035,7 @@ https://codeforces.com/problemset/problem/585/D
 641. Xor-Paths (diff=2100, dfs, meet in the middle)
 Key observation: bidirectional search model. https://vjudge.net/problem/CodeForces-1006F
 
+642. Anthem of Berland (diff=2300, dp, KMP)
+https://codeforces.com/problemset/problem/808/G
+
+
