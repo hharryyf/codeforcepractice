@@ -3044,4 +3044,11 @@ convex contour. We define dp[i][j][0] as the number of ways of making [i, j] con
 dp[i][j][1] as the number of ways of making [i,j] connected with (i, j) not connected by an edge. The solution is dp[1][n][0] + 
 dp[1][n][1]. The recursive step is quite standard, just consider the splitting points k in [i, j). https://vjudge.net/problem/CodeForces-888F
 
+644. Similar Words (diff=2300, Trie, tree dp)
+Key observation: the forbidden words form a tree/forest structure, i.e. edge(i, j) means prefix[i] and prefix[j] cannot be selected
+together. The reason is, based on the definition, there's no cycle similarity relationship. Hence, we firstly use build a trie,
+and then add edges between similar prefix by the second dfs. Finally, solve the standard tree dp problem what's the maximum number
+of vertices that can be selected if no two adjacent vertices can be selected together. 
+https://codeforces.com/problemset/problem/856/B
+
 
