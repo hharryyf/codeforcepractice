@@ -3051,4 +3051,9 @@ and then add edges between similar prefix by the second dfs. Finally, solve the 
 of vertices that can be selected if no two adjacent vertices can be selected together. 
 https://codeforces.com/problemset/problem/856/B
 
+645. Games on a CD (diff=2300, hashing)
+Key observation: we only need to manipulate k starting positions, each iteration the cost is O(n * k / k). Hence, the overall
+time complexity is O(n*k). For matching, we simply apply greedy matching and use double-hashing to check string equality.
+https://vjudge.net/problem/CodeForces-727E
+
 
