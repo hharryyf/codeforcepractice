@@ -3038,4 +3038,10 @@ Key observation: bidirectional search model. https://vjudge.net/problem/CodeForc
 642. Anthem of Berland (diff=2300, dp, KMP)
 https://codeforces.com/problemset/problem/808/G
 
+643. Connecting Vertices (diff=2500, interval dp)
+Key observation: if i,j is connected by a segment, the graph is splitted into two parts. This is similar to the dp problem
+convex contour. We define dp[i][j][0] as the number of ways of making [i, j] connected with (i, j) connected by an edge.
+dp[i][j][1] as the number of ways of making [i,j] connected with (i, j) not connected by an edge. The solution is dp[1][n][0] + 
+dp[1][n][1]. The recursive step is quite standard, just consider the splitting points k in [i, j). https://vjudge.net/problem/CodeForces-888F
+
 
