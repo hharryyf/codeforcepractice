@@ -3056,4 +3056,5 @@ Key observation: we only need to manipulate k starting positions, each iteration
 time complexity is O(n*k). For matching, we simply apply greedy matching and use double-hashing to check string equality.
 https://vjudge.net/problem/CodeForces-727E
 
-
+646. Increase Sequence (diff=2100, dp)
+Key observation: dp state (i, j) means the number of ways to fulfill all height requirements of a[1:i] such that there are j unclosed intervals at point i. https://vjudge.net/problem/CodeForces-466D
