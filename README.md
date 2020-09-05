@@ -3058,3 +3058,8 @@ https://vjudge.net/problem/CodeForces-727E
 
 646. Increase Sequence (diff=2100, dp)
 Key observation: dp state (i, j) means the number of ways to fulfill all height requirements of a[1:i] such that there are j unclosed intervals at point i. https://vjudge.net/problem/CodeForces-466D
+
+647. Fedor and Essay (diff=2400, tarjan scc)
+Key observation: this problem is equivalent to asking what is the "minimum" word any initial words can reach. Which can be done
+by compressing the graph to a dag and run a simple dfs. https://vjudge.net/problem/CodeForces-467D
+
