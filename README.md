@@ -3063,3 +3063,7 @@ Key observation: dp state (i, j) means the number of ways to fulfill all height 
 Key observation: this problem is equivalent to asking what is the "minimum" word any initial words can reach. Which can be done
 by compressing the graph to a dag and run a simple dfs. https://vjudge.net/problem/CodeForces-467D
 
+648. Placing Rooks (diff=2300, combinatorics)
+Key observation: the problem is can be transformed to the following, how many ways can be place n rooks into n-k cols such that
+each cols contains at least 1 rook. This is a typical inclusion-exclusion problem. https://vjudge.net/problem/CodeForces-1342E
+
