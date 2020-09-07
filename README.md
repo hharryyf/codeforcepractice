@@ -3071,3 +3071,7 @@ each cols contains at least 1 rook. This is a typical inclusion-exclusion proble
 Key observation: we can sort the a[] and b[], according to the lexicographical order. Then, the problem can be solved with line sweep
 and stack. https://vjudge.net/problem/CodeForces-1073G
 
+650. Crisp String (diff=2500, dp)
+Key observation: the hardest part of the question is how to validate string[mask]. The idea is manipulating the adjacent characters,
+and eliminate all illeagal masks using memorization. https://vjudge.net/problem/CodeForces-1117F
+
