@@ -3067,3 +3067,7 @@ by compressing the graph to a dag and run a simple dfs. https://vjudge.net/probl
 Key observation: the problem is can be transformed to the following, how many ways can be place n rooks into n-k cols such that
 each cols contains at least 1 rook. This is a typical inclusion-exclusion problem. https://vjudge.net/problem/CodeForces-1342E
 
+649. Yet Another LCP Problem (diff=2600, line sweep, suffix array)
+Key observation: we can sort the a[] and b[], according to the lexicographical order. Then, the problem can be solved with line sweep
+and stack. https://vjudge.net/problem/CodeForces-1073G
+
