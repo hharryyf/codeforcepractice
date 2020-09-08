@@ -3075,3 +3075,7 @@ and stack. https://vjudge.net/problem/CodeForces-1073G
 Key observation: the hardest part of the question is how to validate string[mask]. The idea is manipulating the adjacent characters,
 and eliminate all illeagal masks using memorization. https://vjudge.net/problem/CodeForces-1117F
 
+651. Encoding (diff=2400, hashing)
+The first time I solved a 2400 in a contest. Similar to 985F, the equivalence relation observation is extremely important.
+https://codeforces.com/contest/533/problem/F
+
