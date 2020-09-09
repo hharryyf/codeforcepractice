@@ -3079,3 +3079,6 @@ and eliminate all illeagal masks using memorization. https://vjudge.net/problem/
 The first time I solved a 2400 in a contest. Similar to 985F, the equivalence relation observation is extremely important.
 https://codeforces.com/contest/533/problem/F
 
+652. I Love Strings!! (template problem for AC automation)
+https://vjudge.net/problem/UVA-10679
+
