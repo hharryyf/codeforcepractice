@@ -3082,3 +3082,8 @@ https://codeforces.com/contest/533/problem/F
 652. I Love Strings!! (template problem for AC automation)
 https://vjudge.net/problem/UVA-10679
 
+653. Mike and Friends (diff=2800, line sweep, BIT, suffix array)
+Key observation: we can calculate the rank[l, r] of the suffix such that lcp(p[l], string[k]) = string[k] and lcp(p[r], string[k]) = 
+string[k] by binary search. Then, the problem is reduced to a 2D point counting problem which can be done efficiently by line sweep 
+and BIT. https://vjudge.net/problem/CodeForces-547E
+
