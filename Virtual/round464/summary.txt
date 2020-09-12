@@ -31,12 +31,12 @@ F. Cutlet (diff=2400, dp optimization)
 I failed to solve the problem in the contest. I had some observations though. For every interval that the flipping can happen,
 the number of flip is at most 2. 
 
-Final solution: let dp[i][j] be the minimum flips for the first i seconds which the side that is currently not fired has been fried for
+Final solution: let dp[i][j] be the minimum flips for the first i seconds which the side that is currently fired has been fried for
 j seconds. Then the state transformation is quite simple dp[i][j] = min(dp[i-1][j], dp[i-1][i-j]+1) however, the state is O(N^2) which is
 unacceptable. We observed that the first transformation dp[i-1][j] is almost useless and the second transformation can only be used 
 in the segments [l_i, r_i], which in total only k=100 such disjointed segments. Hence, we redefine dp[i][j] be the minimum flips for
 the first r[i] seconds which the side that is currently not fried has been fried for j seconds. Then, let's consider the state transition.
 Firstly, we set dp[i][j] = dp[i-1][j] for all j. Then, using the observation I had in contest, we could obtain the state transformation
 dp[i][j] = min(dp[i-1][r[i] - j - t] + 1, dp[i-1][j-t] + 2, 0 <= t <= r[i] - l[i]). The first transformation is a bit complicated. But
-after we have figure out the transformations, we can use a range max tree to solve the problem. Code to be added soon.
+after we have figure out the transformations, we can use a range max tree to solve the problem. 
 https://codeforces.com/contest/939/problem/F
