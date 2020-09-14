@@ -1,0 +1,34 @@
+I participated in this round virtually and individually. In the end, I solved
+5 out of 6 problems.
+
+A. Sweet Problem (diff=1100, math inequality)
+Just right down the inequality and discuss the two cases. https://codeforces.com/contest/1263/problem/A
+
+B. PIN Codes (diff=1400, brute force, greedy)
+The observation is the number of time is equal to the number of equal numbers - 1. And we can set the non-distinct 
+string to any string that's not in the current set. https://codeforces.com/contest/1263/problem/B
+
+C. Everyone is a Winner! (diff=1400, math)
+We should know a property that n/i has at most O(sqrt(n)) many values. We can simply iterate from 1 to sqrt(n) and put n/i 
+and n/(n/i) in the set. The set size is the answer. https://codeforces.com/contest/1263/problem/C
+
+D. Secret Passwords (diff=1500, union-find)
+We join the words and the characters it contains together with union-find. 
+https://codeforces.com/contest/1263/problem/D
+
+E. Editor (diff=2100, range tree, divide and conquer)
+Key observation: 1) the maximum range is n. 2) we only need to deal with the following two types of queries
+type 1, change i at pos to -1/0/1, type 2, query the largest subarray sum and check whether the brackests are balanced.
+Type 2 query is a very standard divide and conquer problem with range tree. Something to be careful is 
+"The user can move the cursor left or right one position. If the cursor is already at the first (leftmost) position, then it does not move left."
+https://codeforces.com/contest/1263/problem/E
+
+F. Economic Difficulties (diff=2400, dp)
+Again, I failed to solve any dp problems in a contest :(. We define dp[i] to be the maximum number of edges that can be eliminated
+when the first i devices are ok. Then, it is not hard to see dp[i] = max(dp[j-1] + val[j][i], j = 1..i). Here val[j][i] is the maximum
+number of edges that can be eliminated if [j, i] can be disconnected. This can be done by a simple dfs. Note that, the hardest part to
+understand for this question is val[i][j] don't need to make sense for all pair(i, j) such that i <= j, only [i, j] that is fully controlled
+by a subtree must be valid. The reason is, all the other cases can be viewed as the combination of two or more subtrees, which has already
+been covered in our dp state. https://codeforces.com/contest/1263/problem/F
+
+

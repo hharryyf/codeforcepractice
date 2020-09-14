@@ -3087,3 +3087,9 @@ Key observation: we can calculate the rank[l, r] of the suffix such that lcp(p[l
 string[k] by binary search. Then, the problem is reduced to a 2D point counting problem which can be done efficiently by line sweep 
 and BIT. https://vjudge.net/problem/CodeForces-547E
 
+654 - 659 virtual contest, round 464
+https://codeforces.com/contest/939
+
+660 - 665 virtual contest, round 603 
+https://codeforces.com/contest/1263
+
