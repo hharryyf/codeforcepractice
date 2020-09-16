@@ -1,0 +1,31 @@
+I participated this virtual contest individually, solved 4 out of 5 problems.
+
+A. Kirill And The Game (diff=1200, simulation, WA = 0)
+Just iterate over [x, y] and check. https://codeforces.com/contest/842/problem/A
+
+B. Gleb And Pizza (diff=1100, simple gemoetry, WA = 0)
+This is basically check the intersection relation between 2 circles, note that we can avoid
+floating point numbers by comparing squares. https://codeforces.com/contest/842/problem/B
+
+C. Ilya And The Tree (diff=2000, dfs, line sweep, WA = 0)
+Key observation: one node and its parent must not be set to 0 at the same time. We maintain a counter
+of all the current active divisors, and when we go down from root to child,
+we just add 1 to all the divisors of the number in the root, when we get back, we subtract 1. A divisor can be
+treated as answer for node i only if its occurence is no less than d - 1, d is the depth of node i.
+https://codeforces.com/contest/842/problem/C
+
+D. Vitya and Strange Lesson (diff=2000, Trie, WA = 4)
+The idea is quite simple, it is actually asking the mex of number of x ^ any number in the array. We can 
+store the numbers not in the array to the trie and the rest is just a trie query problem. 
+https://codeforces.com/contest/842/problem/D 
+
+E. Nikita and game (diff=2800, LCA, property of tree diameter)
+I failed to solve this problem in contest.
+The property is actually quite simple to proof (and I knew this property), the points we are interested in can be splitted into
+at most 2 parts, and their intersection is a consecutive segments in the tree. We let one part to be s1 and the other to be s2.
+Then, there are only 2 cases. Case 1: if we add in i+1 and the diameter is changed (D < dist) to dist(i+1, any point in s1), 
+then in this cases we add i + 1 to s2 and also clear s2, note that before we clear s2, we iterate all points in s2 and insert the points
+that has distance dist with i + 1 to s1 (case when the centroid is unique). Case 2: add i + 1, i + 1 is on the diameter, this case
+is very easy. https://vjudge.net/problem/CodeForces-842E
+
+

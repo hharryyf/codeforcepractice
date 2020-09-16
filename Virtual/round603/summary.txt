@@ -1,22 +1,22 @@
 I participated in this round virtually and individually. In the end, I solved
 5 out of 6 problems.
 
-A. Sweet Problem (diff=1100, math inequality)
+A. Sweet Problem (diff=1100, math inequality, WA = 0)
 Just right down the inequality and discuss the two cases. https://codeforces.com/contest/1263/problem/A
 
-B. PIN Codes (diff=1400, brute force, greedy)
+B. PIN Codes (diff=1400, brute force, greedy, WA = 0)
 The observation is the number of time is equal to the number of equal numbers - 1. And we can set the non-distinct 
 string to any string that's not in the current set. https://codeforces.com/contest/1263/problem/B
 
-C. Everyone is a Winner! (diff=1400, math)
+C. Everyone is a Winner! (diff=1400, math, WA = 0)
 We should know a property that n/i has at most O(sqrt(n)) many values. We can simply iterate from 1 to sqrt(n) and put n/i 
 and n/(n/i) in the set. The set size is the answer. https://codeforces.com/contest/1263/problem/C
 
-D. Secret Passwords (diff=1500, union-find)
+D. Secret Passwords (diff=1500, union-find, WA = 0)
 We join the words and the characters it contains together with union-find. 
 https://codeforces.com/contest/1263/problem/D
 
-E. Editor (diff=2100, range tree, divide and conquer)
+E. Editor (diff=2100, range tree, divide and conquer, WA = 2)
 Key observation: 1) the maximum range is n. 2) we only need to deal with the following two types of queries
 type 1, change i at pos to -1/0/1, type 2, query the largest subarray sum and check whether the brackests are balanced.
 Type 2 query is a very standard divide and conquer problem with range tree. Something to be careful is 

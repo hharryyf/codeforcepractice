@@ -3093,3 +3093,9 @@ https://codeforces.com/contest/939
 660 - 665 virtual contest, round 603 
 https://codeforces.com/contest/1263
 
+666. Divide Square (diff=2400, line sweep, fenwick tree, euler's formula)
+https://codeforces.com/problemset/problem/1401/E
+
+667 - 671 virtual contest, round 430
+https://codeforces.com/contest/842
+
