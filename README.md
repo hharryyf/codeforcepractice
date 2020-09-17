@@ -3099,3 +3099,6 @@ https://codeforces.com/problemset/problem/1401/E
 667 - 671 virtual contest, round 430
 https://codeforces.com/contest/842
 
+672 - 676 virtual contest, round 668
+https://codeforces.com/contest/1405
+

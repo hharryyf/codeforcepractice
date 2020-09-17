@@ -1,0 +1,26 @@
+I participated this virtual contest individually, for the first time in 
+history eliminating all the problems.
+https://codeforces.com/contest/1405
+
+A. Permutation Forgery (diff=800, math, WA = 0)
+Just reverse the permutation and print.
+
+B. Array Cancellation (diff=1000, simple greedy, WA = 0)
+Just maintain a prefix sum, the answer is abs(min(prefix[i])) where 1 <= i <= n, 
+prefix[i] is negative.
+
+C. Balanced Bitstring (diff=1500, greedy, WA = 0)
+We observe that every numbers in a chunk (chunk is partitioned by i % k) must be the same.
+The rest is very simple.
+
+D. Tree Tag (diff=1900, observation, WA = 0)
+Initially, I think this problem as undoable so I solved E first. The observation is if 2 * da >= db,
+Alice must win. For case 2 * da + 1 <= db, by drawing several diagrams we should observe Alice cannot
+catch Bob if the diameter of the tree is less than 2 * da + 1.
+
+E. Fixed Point Removal (diff=2300, line sweep, range tree, WA = 0)
+Key observations: we should remove the points from right to left, i.e. remove the first removable point on the right,
+because removing points on the right would not affect the points on the left. Then, we should observe that a point
+is removable only if the potentially removable points on the left is no less than i - a[i] (if a[i] > i, the point is never removable). 
+Hence, the problem is reduced to a standard "one ocurrence" type line sweep problem which can be done by range tree.
+
