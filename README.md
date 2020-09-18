@@ -3102,3 +3102,10 @@ https://codeforces.com/contest/842
 672 - 676 virtual contest, round 668
 https://codeforces.com/contest/1405
 
+677. Three Occurrences (diff=2500, line sweep, range tree, elimination)
+The solution to this problem is very smart, instead of thinking which [l, r] segment is valid, we can eliminate
+all the intervals that are invalid using range cover. Then, the problem is reduced to how many points in [1, i]
+is not covered by any interval. This can be efficiently done by a range min tree. 
+https://vjudge.net/problem/CodeForces-1418G
+
+
