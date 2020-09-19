@@ -1,0 +1,29 @@
+I participated this virtual contest as a team of 3, we solved 5 out of 6 problems,
+almost cleared all problems in contest. I was in charged of solving B, C, D and F. 
+
+https://codeforces.com/contest/1362
+
+A. Johnny and Ancient Computer (diff=1000, simulation)
+
+B. Johnny and His Hobbies (diff=1200, brute force simulation)
+The constraints is a big hint that brute force works.
+
+C. Johnny and Another Rating Drop (diff=1400, pattern finding)
+I realized the pattern i + i / 2 + i / 4 + i / 8 + ... works.
+
+D. Johnny and Contribution (diff=1700, greedy)
+Key observation: filling the nodes from low order to high order always works, we only
+need to check whether the filling procedure is valid.
+
+E. Johnny and Grandmaster (diff=1900, two pointers)
+Failed to solve this in contest, an insane implementation error.
+
+F. Johnny and Megan's Necklace (diff=2500, Euler cycle, Hierholzer's algorithm)
+Key observation: we can check whether 2^0, 2^1, ... 2 ^ 20 would work one by one.
+Then, the problem seems like a Hamiltonian problem, we should think whether it can be reduced
+to an Euler path problem. Let's consider we are checking the case fac = 2^i. Then, we add
+an edge from a[i] % fac to b[i] % fac for all i in [1, n]. The solution exists for fac iff
+there's an Euler tour in the graph. This idea is just a modification to the word puzzle one.
+PS: the most excited about this problem is it was the first 2500 problem I solved in contest and
+I solved it in the last 30 seconds which is decisive.
+

@@ -3108,4 +3108,7 @@ all the intervals that are invalid using range cover. Then, the problem is reduc
 is not covered by any interval. This can be efficiently done by a range min tree. 
 https://vjudge.net/problem/CodeForces-1418G
 
+678 - 683 virtual contest, round 647
+https://codeforces.com/contest/1362
+
 
