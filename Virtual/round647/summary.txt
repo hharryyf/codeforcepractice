@@ -16,7 +16,13 @@ Key observation: filling the nodes from low order to high order always works, we
 need to check whether the filling procedure is valid.
 
 E. Johnny and Grandmaster (diff=1900, two pointers)
-Failed to solve this in contest, an insane implementation error.
+Failed to solve this in contest, due to implementation error. 
+Key observation: case for p = 1 can be solved by print n % 2. for the other p, note that we 
+can group the numbers by ki, count(ki). Then, that's a line sweep problem. We maintain 2
+sets of numbers, first set always has a greater sum than the second and can then, for each
+p^k that is owned in the first set, a p^k or p p^(k-1) or p^2 p^(k-2) should be used to 
+balance it. We just greedily balance the sum. Note that, this procedure won't last too long
+because of the fact that the moves is at most log_p_n.
 
 F. Johnny and Megan's Necklace (diff=2500, Euler cycle, Hierholzer's algorithm)
 Key observation: we can check whether 2^0, 2^1, ... 2 ^ 20 would work one by one.
