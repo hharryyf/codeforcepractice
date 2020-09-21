@@ -1,0 +1,27 @@
+I participated this virtual contest individually, in the
+end I solved all problems for the second time.
+
+A. Mashmokh and Lights (diff=900, simulation)
+
+B. Mashmokh and Tokens (diff=1500, math, binary search on final answer)
+
+C. Mashmokh and Numbers (diff=1500, constructive algorithm)
+Key observation: the -1 cases are very simple, and using the fact that x and x + 1
+has gcd 1, the construction procedure is extremely simple. Put 1e9 all the way down
+and then k - n / 2 + 1 and (k - n / 2 + 1) * 2 as the last pair.
+
+D. Mashmokh and ACM (diff=1400, simple dp)
+No magic, probably the only kinds of dp I can solve :).
+
+E. Mashmokh and Reverse Operation (diff=2100, divide and conquer)
+We should consider the inversion pair divide and algorithm working procedure. Note that
+when an inversion pair is formed, it is when mergiong [l, mid] and [mid + 1, r] such
+that something in the right interval is less than something in the left interval.
+Since the operations are alibean (can be proved easily). We only need to maintain whether
+each interval is on the correct way or not, and add the corresponding inversion pairs.
+E.g. if size 2^2 interval contributes to cost[2][0] inversion pairs when the interval is
+in the correct order and cost[2][1] in the reverse order. Then, we only need to check whether
+this size of interval is on the correct way or not. 
+https://codeforces.com/contest/415/problem/E
+
+

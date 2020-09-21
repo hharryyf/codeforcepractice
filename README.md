@@ -3111,4 +3111,6 @@ https://vjudge.net/problem/CodeForces-1418G
 678 - 683 virtual contest, round 647
 https://codeforces.com/contest/1362
 
+684 - 688 virtual contest, round 240
+https://codeforces.com/contest/415
 
