@@ -1,0 +1,24 @@
+I participated this round individually, solved 4 of the 5 problems.
+
+A. Line to Cashier (diff=800, simulation)
+
+B. Garland (diff=1200, simulation, WA = 1)
+Read the problem statement carefully.
+
+C. Triangle (diff=1600, similar triangle, WA = 4)
+Be careful about the condition of NO, b % a != 0 might be YES as well.
+
+D. Long Path (diff=1600, interval dp)
+We define dp[i][j] as the number of moves from i and go over j.
+
+E. Curious Array (diff=2500, combinatorics, prefix sum)
+I failed to solve this in the contest. There is a very importance result on comb numbers.
+1 1 1 1 1 1 1
+  1 2 3 4 5 6
+    1 3 6 10 15
+
+We should observe that C(i, j) is actually equal to sum(C(i-1, k)) where k = 0..j-1.
+This implies that we can use 101 dimension of prefix sum to solve this.
+
+
+

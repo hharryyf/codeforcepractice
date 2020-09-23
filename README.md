@@ -3114,3 +3114,19 @@ https://codeforces.com/contest/1362
 684 - 688 virtual contest, round 240
 https://codeforces.com/contest/415
 
+689. Deleting Numbers (diff=2600, sqrt decomposition, binary search)
+Key observation: 1e4 is very close to the number of primes less than 1e5 (total 9552 of them).
+Then, we can come up with a trick, firstly since x <= 1e5, we know that if we do prime factorization
+on x then, the prime factor greater than sqrt(n) has power at most 1. For prime factor less or
+equal to sqrt(n), it might has power more than 1. For the later one, we can call B type query on
+all primes less than or equal to sqrt(n) first use binary search and type A query to find the exact
+power of those primes (in this case there are at most 65 primes). For the former case, we can
+divide the type B queries into chunks of size sqrt(9552), and execute the queries chunk by chunk.
+After each chunk, we check "A 1", and if the expected number of removed number differs by 1, 
+we know x has a factor within this chunk. We call type A query on all primes in this chunk and terminates. https://codeforces.com/contest/1406/problem/E
+
+690 - 694 virtual contest round 239
+https://codeforces.com/contest/408
+
+
+
