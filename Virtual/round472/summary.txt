@@ -1,0 +1,27 @@
+VK cup is quite difficult, even for a div2 round. The problems
+are quite hard to understand. This is my worst performance so far,
+solving only 3 of the 5 problems. The worst performance is mainly
+because of a wrong strategy.
+
+A. Tritonic Iridescence (diff=1300, greedy)
+Just fill the certain ?, if there's ? remaining and no contradiction,
+the answer is yes.
+
+B. Mystical Mosaic (diff=1300, logic)
+No magic, just implementation.
+
+C. Three-level Laser (diff=1600, binary search, greedy)
+Key observation: j must be i + 1.
+
+D. Riverside Curio (diff=1700, greedy)
+I didn't even understand about this simple problem in the contest, the main reason
+is because the process described in the problem seems a bit complicated. However,
+the problem is very simple. The trick here is we can write out the set of inequalities,
+then greedily fulfill d[i].
+
+E. Contact ATC (diff=2500, divide and conquer)
+This is the problem that cost me dearly. The problem is very simple, we can just write out
+the constraints of the wind if (i, j) pair is valid. We should then observe this is equivalent
+of asking us how many inversion pairs are there if we sort by x / (v - w) and let the array be
+x / (v + w). The trickiest part is only sorting according to the pair is not enough, we must
+sort according to x / (v + w) in non-decreasing order !!!!! 

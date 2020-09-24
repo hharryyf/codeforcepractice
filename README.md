@@ -3128,5 +3128,8 @@ we know x has a factor within this chunk. We call type A query on all primes in 
 690 - 694 virtual contest round 239
 https://codeforces.com/contest/408
 
+695 - 699 virtual contest round 472
+https://codeforces.com/contest/957
+
 
 
