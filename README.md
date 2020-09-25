@@ -3131,5 +3131,12 @@ https://codeforces.com/contest/408
 695 - 699 virtual contest round 472
 https://codeforces.com/contest/957
 
+700. Decryption (diff=2100, constructive algorithm)
+Key observation: the answer is at most 1, that's when n is the product of 2 prime numbers. Otherwise,
+the construction procedure works as follows: firstly put all the primes into chunks, then put all numbers
+that are cannot be expressed as the product of adjacent primes into the chunk of one of its factor,
+then put the rest of the numbers except N into the first chunk that p_i * p_(i+1)|v. Finally, insert N
+into the last chunk. https://codeforces.com/problemset/problem/1419/E
+
 
 
