@@ -3138,5 +3138,14 @@ that are cannot be expressed as the product of adjacent primes into the chunk of
 then put the rest of the numbers except N into the first chunk that p_i * p_(i+1)|v. Finally, insert N
 into the last chunk. https://codeforces.com/problemset/problem/1419/E
 
+701. Rain of Fire (diff=2800, union find, binary search on final answer)
+It is obvious that binary search on T works. We should consider how to validate it, if we join all the adjacent edges
+that are less than or equal to T, the number of connected components must be between 1 - 4 otherwise no solution to this T.
+Case 1, very simple. Case 2, try if you can join two points together. Case 3, try if you can join a point and a segment together.
+Case 4, try if you can join a horizontal and vertical segments together. The reason for this to be a 2800 problem is the implmentation
+is a bit tricky, very easy to miss cases. 
+https://codeforces.com/problemset/problem/1419/F
+
+
 
 
