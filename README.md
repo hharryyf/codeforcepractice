@@ -3146,6 +3146,9 @@ Case 4, try if you can join a horizontal and vertical segments together. The rea
 is a bit tricky, very easy to miss cases. 
 https://codeforces.com/problemset/problem/1419/F
 
+702. Museums Tour (diff=2500, tarjan scc, dp)
+https://codeforces.com/contest/1138/problem/E
+
 
 
 
