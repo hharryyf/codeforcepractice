@@ -1,0 +1,22 @@
+This is a strange round, a lot of ad-hoc problems.
+I solved only 4 out of 6 problems.
+
+A. Suffix Three (diff=800, simulation)
+
+B. Azamon Web Services (diff=1600, greedy, WA=4)
+We should swap the last smallest alternatives not the first one, be careful
+about the implenetation.
+
+C. Cut and Paste (diff=1700, implementation)
+Note that x is relatively small, we brute force when i is less than or equal to x,
+and for the other case, we simply use math on that.
+
+D. Beingawesomeism (diff=1800, constructive algorithm)
+Just be careful about implementation.
+
+E. Jeremy Bearimy (diff=2000, dfs)
+I have no idea on how to solve the maximum case. The maximum case is consider the maximum
+contribution of each edge when linking connected components (i.e. w * min(n - sz[v], sz[v])).
+
+F. Miss Punyverse (diff=2500, dp)
+Quite hard, still need time to digest.

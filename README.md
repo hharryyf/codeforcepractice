@@ -3149,6 +3149,9 @@ https://codeforces.com/problemset/problem/1419/F
 702. Museums Tour (diff=2500, tarjan scc, dp)
 https://codeforces.com/contest/1138/problem/E
 
+703 - 708 virtual round 607
+https://codeforces.com/contest/1281
+
 
 
 
