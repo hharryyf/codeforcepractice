@@ -3152,6 +3152,11 @@ https://codeforces.com/contest/1138/problem/E
 703 - 708 virtual round 607
 https://codeforces.com/contest/1281
 
+709. Divisor Paths (diff=2200, combinatorics, prime factorization)
+Key observation: the path is definitely u->gcd(u, v)->v. Then, for the number of path is
+u->gcd(u, v) times v->gcd(u, v). Which can be reduced to a combinatorics problem (how many distinct words
+can be made with AAAABBBCCCCDDD). https://codeforces.com/problemset/problem/1334/E
+
 
 
 
