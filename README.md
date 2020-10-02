@@ -3157,6 +3157,17 @@ Key observation: the path is definitely u->gcd(u, v)->v. Then, for the number of
 u->gcd(u, v) times v->gcd(u, v). Which can be reduced to a combinatorics problem (how many distinct words
 can be made with AAAABBBCCCCDDD). https://codeforces.com/problemset/problem/1334/E
 
+710 - 714 virtual round 237
+https://codeforces.com/contest/404
+
+715. New Year and Old Subsequence (diff=2600, range tree, dp, automaton)
+Even if a lot of people said this problem is a matrix problem, this problem has almost nothing to do with matrices
+(even if we use a 2d array). The technique here is to look at this problem in the automaton way. Let's define
+cost[i][j] as the minimum amount of deletion tp transform state i to state j by feeding the substring(l, r) to the automaton.
+Here i {0, 1, 2, 3, 4} means before we meet str(l, r), we have a subsequence ("", "2", "20", "201", "2017") respectively.
+Then, the state transformation is not difficult, cost[i][j] = min(cost[i][k] + cost[k][j]).
+https://vjudge.net/problem/CodeForces-750E
+
 
 
 

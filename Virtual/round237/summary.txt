@@ -1,0 +1,18 @@
+I did this virtual contest with one of my teammate. We solved all 
+problems in 1h40min. 
+
+A. Valera and X (diff=1000, simulation)
+
+B. Marathon (diff=1500, simple math)
+
+C. Restore Graph (diff=1800, constructive algorithm)
+
+D. Minesweeper 1D (diff=1900, dp)
+By defining dp[i][0-4][0/1] as the number of ways of placing the first i cells with the ith cell 
+with 0/1/2/* and the i+1 cell is/isn't a *.
+
+E. Maze 1D (diff=2200, binary search on final answer)
+This is an incredible problem. Firstly, we should see k = 0 or k = 1. Then, we should notice that 
+if the block is on the left, the final position of the robot must be at the positive x and similarly
+if the block is on the right, robot must be at neagtive x. Thus, by using this property, we can 
+binary search on the leftmost and rightmost position that the block can be put.
