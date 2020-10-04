@@ -1,0 +1,26 @@
+We participated this round as a team of 3, solving 5 out of 6 problems and 
+rank 3 in the end.
+
+A. Fingerprints (diff=800, simulation)
+
+B. Knights of a Polygonal Table (diff=1400, simple greedy, implementation)
+
+C. Two Squares (diff=1600, simple geometry)
+The way to avoid case work is to use the fact that all points has an integer coordinate within [-100,100].
+Hence we can check whether there's a point in both squares. Checking whether a point is in a Polygon
+can be done using cross products. 
+
+D. Open Communication (diff=1900, brute force, implmentation)
+I don't know how to implement this, but Tom just AC this problem in one go (quit amazing implementation skill).
+
+E. Careful Maneuvering (diff=2100, brute force, bitmask)
+This problem might seems undoable at the beginning, however we should realize that only O(nm) number of points
+are useful. We just need to think how to choose 2 from these points. n and m are less than 60 should remind
+us about bitmask. We can introduce 2 bitmasks on the craft that can be destroyed by placing a point at all those
+useful points and use O(n^2m^2) time to check the value of our choice. The value is just the sum of the number of bits
+of these 2 bitmasks.
+
+F. Compute Power (diff=2500, 0/1 fractional programming, dp, greedy)
+We actually know this is a 0/1 fractional programming problem. We just need to check whether the fraction mid works.
+When validating, we can let dp[i][j] be the min cost of using the first i groups which there are still j available
+spots for task 2. Group here means grouping all tasks with same a[i] together and sort by a[i] - mid * b[i] in non-increasing order.

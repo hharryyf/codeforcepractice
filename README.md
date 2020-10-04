@@ -3146,19 +3146,24 @@ Case 4, try if you can join a horizontal and vertical segments together. The rea
 is a bit tricky, very easy to miss cases. 
 https://codeforces.com/problemset/problem/1419/F
 
+
 702. Museums Tour (diff=2500, tarjan scc, dp)
 https://codeforces.com/contest/1138/problem/E
 
+
 703 - 708 virtual round 607
 https://codeforces.com/contest/1281
+
 
 709. Divisor Paths (diff=2200, combinatorics, prime factorization)
 Key observation: the path is definitely u->gcd(u, v)->v. Then, for the number of path is
 u->gcd(u, v) times v->gcd(u, v). Which can be reduced to a combinatorics problem (how many distinct words
 can be made with AAAABBBCCCCDDD). https://codeforces.com/problemset/problem/1334/E
 
+
 710 - 714 virtual round 237
 https://codeforces.com/contest/404
+
 
 715. New Year and Old Subsequence (diff=2600, range tree, dp, automaton)
 Even if a lot of people said this problem is a matrix problem, this problem has almost nothing to do with matrices
@@ -3168,6 +3173,21 @@ Here i {0, 1, 2, 3, 4} means before we meet str(l, r), we have a subsequence (""
 Then, the state transformation is not difficult, cost[i][j] = min(cost[i][k] + cost[k][j]).
 https://vjudge.net/problem/CodeForces-750E
 
+
+716. Graph and Queries (diff=2600, union find, binary-lifting, range tree)
+This problem is extremely technical. Firstly, the normal reaction to deleting edges is to reverse all the queries and make
+the "delete" to "add". However, the main difficulty of the problem occurs at this point. If we add edges in a reverse order
+how can we know whether the vertex v has been set to 0 or not. Thus, we must solve the queries in a forward order and it 
+seems like we are trapped. Now comes the technical part of this problem. Consider the property of the union-find tree.
+1) All ancestors of node v is joined after v 
+2) if v is an ancestor of u, w then there is a path from u->w before v is removed.
+Thus, we can construct the union-find tree in reverse order and solve the queries by use binary lifting to find the upper most v such that v has not been removed at at this query. Then all nodes in the subtree of such node should be considered, which is a
+standard range query point update problem which can be done by range tree.
+https://vjudge.net/problem/CodeForces-1416D
+
+
+717 - 722 virtual round 488
+https://codeforces.com/contest/994
 
 
 
