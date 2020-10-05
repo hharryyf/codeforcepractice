@@ -1,0 +1,20 @@
+I participated this virtual round individually solving all problems in ~1h,
+and rank 5 in the end.
+
+A. Minimum Difficulty (diff=900, brute force, simulation)
+Key observation: O(n) works, but since n is so small we can brute force.
+
+B. Secret Combination (diff=1500, brute force, implementation)
+Key observation: the 2 operations are abelian, we can simply brute force all 10000 possibilities.
+
+C. Removing Columns (diff=1500, greedy)
+Key observation: we greedily select the colunms we are saving from left to right.
+
+D. Tennis Game (diff=1900, time complexity analysis)
+Key observation: each t there's only one valid s. And t is from 1 to n. Note the serie simulation
+n + n / 2 + n / 3 + ... is O(nlogn), as long as we can fast jump to validate each t we are done.
+Validation is not hard at all, the only edge case here is if A wins more sets, A must win the last set as well.
+
+E. Distributing Parts (diff=2100, greedy, line sweep)
+Key observation: we sort the plays and actors according to right and plays are in front of actors to break the tie.
+Then, we do a line sweep and greedily select the leftmost valid play for actors. 
