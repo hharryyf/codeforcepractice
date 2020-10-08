@@ -3193,3 +3193,14 @@ https://codeforces.com/contest/994
 723 - 727 virtual round 283
 https://codeforces.com/contest/496
 
+
+728. Morse Code (diff=2400, small to large, trie)
+Firstly, it is quite easy to see that we just need to merge tries repeatedly, and everytime we merge the small trie
+to the large one. To save space, I used map<char, node*> instead of node*[26]. 
+https://codeforces.com/problemset/problem/601/D
+
+729. Returning Home (diff=2300, dijkstra)
+I haven't worked on shortest path problem for quite a long time ~1 month. This problem is quite straight forward. We extract
+each row/col and src, target as vertices. Adding edges is quite straight forward. 
+https://vjudge.net/problem/CodeForces-1422D
+
