@@ -3194,7 +3194,7 @@ https://codeforces.com/contest/994
 https://codeforces.com/contest/496
 
 
-728. Morse Code (diff=2400, small to large, trie)
+728.  Acyclic Organic Compounds (diff=2400, small to large, trie)
 Firstly, it is quite easy to see that we just need to merge tries repeatedly, and everytime we merge the small trie
 to the large one. To save space, I used map<char, node*> instead of node*[26]. 
 https://codeforces.com/problemset/problem/601/D
