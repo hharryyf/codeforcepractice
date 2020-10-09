@@ -3213,3 +3213,13 @@ path level graph from n - 1 to 0. Finally, we run a level order traversal and gr
 The idea is not hard at all, just requires some case work and implementation.
 https://codeforces.com/contest/575/problem/G
 
+731. Paper task (diff=2600, suffix array, range tree)
+This problem asks the number of distinct valid bracket substring. Remember the template problem on counting the number of distinct
+substring. We used a suffix array and the solution is simply n(n+1)/2 - sum(lcp(p[i], p[i+1]), i = 0 .. n - 2). 
+We can do something similar but more technical for this problem. Firstly, let's think how many valid bracket substring start with l and
+with right bound no more than r. We set ( to be 1 and ) to be -1 and maintain a range min tree on the prefix sum. Then, the number
+of bracket substring is simply equal to the occurence of range min value of range (l, r). Note that if range min value is not prefix[l-1], then the answer is 0. Is that all? No! Because there are cases like ()))), and query(0, 4) = 1 not 0. To tackle with this case, 
+we need to be careful about the right bound of our range min query, it should be x - 1, which x is the position of the leftmost position
+such that prefix[x] < prefix[l-1]. After that, we can do something similar to the template problem, we eliminate query(p[i], p[i] + lcp(p[i], p[i+1]) - 1) for each i = 0..n-2. https://vjudge.net/problem/CodeForces-653F
+
+
