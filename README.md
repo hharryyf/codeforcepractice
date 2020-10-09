@@ -3204,3 +3204,12 @@ I haven't worked on shortest path problem for quite a long time ~1 month. This p
 each row/col and src, target as vertices. Adding edges is quite straight forward. 
 https://vjudge.net/problem/CodeForces-1422D
 
+730. Run for beer (diff=2200, dijkstra, bfs)
+Key observation: len <= 9, the only tricky case is len = 0. We construct the path as follows, firstly, create a zero graph (weight 1)
+which only include len = 0 edges. Then, run BFS from n - 1, record the shortest path from n - 1 to all the other nodes in this
+zero graph. After that, we insert the origional edge into a new graph, edge weight 1 if one of the end points is not reachable
+from n - 1 in the zero graph, otherwise edge weight is 0. After that, we run 2 dijkstra from 0 and from n - 1 and create the shortest
+path level graph from n - 1 to 0. Finally, we run a level order traversal and greedily select weights for each level.
+The idea is not hard at all, just requires some case work and implementation.
+https://codeforces.com/contest/575/problem/G
+
