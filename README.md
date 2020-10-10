@@ -3222,4 +3222,9 @@ of bracket substring is simply equal to the occurence of range min value of rang
 we need to be careful about the right bound of our range min query, it should be x - 1, which x is the position of the leftmost position
 such that prefix[x] < prefix[l-1]. After that, we can do something similar to the template problem, we eliminate query(p[i], p[i] + lcp(p[i], p[i+1]) - 1) for each i = 0..n-2. https://vjudge.net/problem/CodeForces-653F
 
+732. Battle Lemmings (diff=2500, dp)
+We can think how many pairs we lost. We define dp[i][j][k][l] as the minimum pair we can lost for the first i person, with exactly
+j operations and the last suffix has k 0s, and l 1s has been used. This state can express all.
+https://vjudge.net/problem/CodeForces-1420E
+
 
