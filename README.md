@@ -3227,4 +3227,8 @@ We can think how many pairs we lost. We define dp[i][j][k][l] as the minimum pai
 j operations and the last suffix has k 0s, and l 1s has been used. This state can express all.
 https://vjudge.net/problem/CodeForces-1420E
 
+733. Max History (diff=2300, combinatorics)
+Key observation: calculate the contribution of each element to the answer. An element contributes to the answer iff
+all elements no less than it is at the back of it. https://codeforces.com/contest/938/problem/E
+
 
