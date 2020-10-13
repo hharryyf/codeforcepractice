@@ -1,0 +1,23 @@
+I participated this round with Tom, we solved 5 out of 6 problems together.
+I solved A, D, E. Tom solved B, C and also E.
+https://codeforces.com/contest/1321
+
+A. Contest for Robots (diff=900, simulation)
+
+B. Journey Planning (diff=1400, simluation)
+
+C. Remove Adjacent (diff=1600, simple greedy)
+
+D. Navigation System (diff=1700, BFS)
+key observation: edge must be on the shortest path and edge can be on the shortest path are the edges we are interested in.
+
+E. World of Darkraft: Battle for Azathoth (diff=2000, line sweep and range tree)
+This problem is extremely standard right now.
+
+F. Reachable Strings (diff=2500, range tree, hashing)
+We failed to make any progress on this in the contest. This problem is extremely technical.
+Key observation: the reachability is an equivalence relation. We just need to compare whether two substrings both reachable 
+to the same string with the least alphabetical order.
+Observation 2: we can use range tree to do this maintain the hash value of segments, when merging two segments, only when
+left.right = true, right.left = true we need to do a rehash.
+
