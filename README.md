@@ -3234,3 +3234,11 @@ all elements no less than it is at the back of it. https://codeforces.com/contes
 734 - 738 virtual contest round625
 https://codeforces.com/contest/1321
 
+739 Boring Queries (diff=2700, persistent range tree, line sweep)
+I remembered that I have solved a problem called REQ in Dec 2019. This problem requires a similar trick.
+Firstly, note that the problem force online, but we should firstly come up with a sweeping solution and then
+use persistent range tree to deal with the online requirement. If we solve this problem offline, we can sort 
+the queries by r and do a line sweep. We maintain a range product tree. Let's consider how to insert a number
+into the tree. The idea is we can factorize the number and for each prime p^k, we maintain a decreasing stack on
+the corresponding power p_i. https://vjudge.net/problem/CodeForces-1422F
+
