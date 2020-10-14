@@ -3242,3 +3242,5 @@ the queries by r and do a line sweep. We maintain a range product tree. Let's co
 into the tree. The idea is we can factorize the number and for each prime p^k, we maintain a decreasing stack on
 the corresponding power p_i. https://vjudge.net/problem/CodeForces-1422F
 
+740. Controversial Rounds (diff=2500, line sweep)
+Consider the sum n/1 + n/2 + ... + n/n = O(nlogn). https://vjudge.net/problem/CodeForces-1398F
