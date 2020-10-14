@@ -3244,3 +3244,11 @@ the corresponding power p_i. https://vjudge.net/problem/CodeForces-1422F
 
 740. Controversial Rounds (diff=2500, line sweep)
 Consider the sum n/1 + n/2 + ... + n/n = O(nlogn). https://vjudge.net/problem/CodeForces-1398F
+
+741. Team Building (diff=2300, bitmask dp, greedy observation)
+First time in history, I solved a pure dp problem with rating 2300 by myself. The observation is p is so small, 
+we might define a state like dp[i][mask] the maximum strength of a team with player "mask" only consider people up to i.
+Note that for the extra k people, we just need to pick the remaining people from the first bitcount(mask) + k people that is
+not selected as a player. So the first thing to do is sorting based on a[i]. After that we have dp equation of 2 cases.
+https://vjudge.net/problem/CodeForces-1316E
+
