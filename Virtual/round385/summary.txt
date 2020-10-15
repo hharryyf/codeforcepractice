@@ -1,0 +1,16 @@
+I made some insane mistakes in this round even if we solved 4 out of 5 problems.
+https://codeforces.com/contest/745
+
+A, B (diff= 900, diff=1400) very simiple implementation problems
+
+C. (diff=1500, union find) I wasted 20 min on a mistake, the input order is first special points then edges :(.
+
+D. (diff=1900, bitmask, interaction) Quite simple trick, just be careful that when a query has length 0, you cannot ask it!
+
+E. (diff=2400, strong bitmask dp)
+This is a problem that seems quite easy, however because of the "dynamic" cost, the standard salesman model just won't work.
+We should consider the cost function, the cost is defined as max(r[i] - A, 0) for red and similarly for blue.
+Note that here A and B must be less than n. So instead of thinkng what's the minimum cost, we can think what's the maximum 
+reduction of cost, then we can have a dp state dp[mask][i] means given the current mask subset of items, we have reduce
+the red cost for i times, what's the maximum time we can reduce for the blue cost.
+ 

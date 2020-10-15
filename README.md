@@ -3234,7 +3234,7 @@ all elements no less than it is at the back of it. https://codeforces.com/contes
 734 - 738 virtual contest round625
 https://codeforces.com/contest/1321
 
-739 Boring Queries (diff=2700, persistent range tree, line sweep)
+739. Boring Queries (diff=2700, persistent range tree, line sweep)
 I remembered that I have solved a problem called REQ in Dec 2019. This problem requires a similar trick.
 Firstly, note that the problem force online, but we should firstly come up with a sweeping solution and then
 use persistent range tree to deal with the online requirement. If we solve this problem offline, we can sort 
@@ -3251,4 +3251,7 @@ we might define a state like dp[i][mask] the maximum strength of a team with pla
 Note that for the extra k people, we just need to pick the remaining people from the first bitcount(mask) + k people that is
 not selected as a player. So the first thing to do is sorting based on a[i]. After that we have dp equation of 2 cases.
 https://vjudge.net/problem/CodeForces-1316E
+
+742 - 746 virtual round 385 https://codeforces.com/contest/745
+
 
