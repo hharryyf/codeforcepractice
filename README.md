@@ -3254,4 +3254,12 @@ https://vjudge.net/problem/CodeForces-1316E
 
 742 - 746 virtual round 385 https://codeforces.com/contest/745
 
+747. Up and Down the Tree (diff=2500, tree dp)
+I first saw this problem in June 2019, at that time it was completely undoable for me. The trick is extremely standard
+in tree dp, define dp[i][0] as the maximum leaf that can be visited with i as root and return to i, dp[i][1] as the
+maximum leaf that can be visited with i as root and we can end at some nodes in the subtree of i. Then, consider the property
+that if we can return to node i after visiting some leaves, then the nearest leaf must be visited, so we should also maintain
+a count of the nearest leaf distance and determine the feasibility of returning to i. 
+https://vjudge.net/problem/CodeForces-1065F
+
 
