@@ -3262,4 +3262,14 @@ that if we can return to node i after visiting some leaves, then the nearest lea
 a count of the nearest leaf distance and determine the feasibility of returning to i. 
 https://vjudge.net/problem/CodeForces-1065F
 
+748. Vladik and cards (diff=2200, binary search on final answer, bitmask dp)
+It is quite obvious that we can binary search on final answer, here final answer refers to mid which means all 1 to 8 exists
+mid or mid + 1 times. For each mid if it exists we get the maximum length of the sequence. Use dp[i][mask] refers to the
+maximum length of the sequence end at i with number in "mask" used mid or mid + 1 times.
+https://codeforces.com/problemset/problem/743/E
+
+749. Birds (diff=2200, dp)
+The sum notation is a big hint that the number of birds should in the dp state. We define dp[i][j] as the maximum money with
+we are at the ith tree with j birds. Then the answer is simply the maximum j such that dp[n][j] is non-negative.
+https://vjudge.net/problem/CodeForces-922E
 
