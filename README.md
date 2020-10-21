@@ -3273,3 +3273,14 @@ The sum notation is a big hint that the number of birds should in the dp state. 
 we are at the ith tree with j birds. Then the answer is simply the maximum j such that dp[n][j] is non-negative.
 https://vjudge.net/problem/CodeForces-922E
 
+750. Dreamoon and Strings (diff=2200, dp)
+The problem might seems unsolvable at the begining, however, the question itself is a big hint. The dp state should definitely be
+dp[i][j] = maximum occ for s[1:i] with j deletions. After that we should consider we would select the occurence end at i or not.
+Note that if we select the occurence end at i, and start at lst[i] (here lst can be calculated by the greedy matching algorithm).
+Then, we must delete i - lst[i] + 1 - m characters. The rest would be routine.
+https://codeforces.com/problemset/problem/476/E
+
+751. Pluses everywhere (diff=2200, dp)
+Key observation: we could calculate the contribution of each digit to the final answer.
+https://codeforces.com/contest/520/problem/E
+
