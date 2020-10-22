@@ -3284,3 +3284,10 @@ https://codeforces.com/problemset/problem/476/E
 Key observation: we could calculate the contribution of each digit to the final answer.
 https://codeforces.com/contest/520/problem/E
 
+752. Demiurges Play Again (diff=2200, tree dp)
+The problem might seem undoable, but we should observe that each subtree is "independent". We could maintain dp[v][0] as the
+maximum order of a value that can be obtained by the tree rooted at v. dp[v][1] would be the minimum order of a value that
+can be obtained by the tree rooted at v. Here "order" is very important, because at the root of the tree, "order" = answer.
+https://codeforces.com/problemset/problem/538/E
+
+
