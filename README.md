@@ -3290,4 +3290,8 @@ maximum order of a value that can be obtained by the tree rooted at v. dp[v][1] 
 can be obtained by the tree rooted at v. Here "order" is very important, because at the root of the tree, "order" = answer.
 https://codeforces.com/problemset/problem/538/E
 
+753. Berland Federalization (diff=2200, knapsack tree dp)
+Define dp[i][j] as the minimum number of deletions when we have the top connected component as size j and root at i. 
+Then the rest is routine. https://vjudge.net/problem/CodeForces-440D
+
 
