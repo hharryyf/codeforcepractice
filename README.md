@@ -3294,4 +3294,10 @@ https://codeforces.com/problemset/problem/538/E
 Define dp[i][j] as the minimum number of deletions when we have the top connected component as size j and root at i. 
 Then the rest is routine. https://vjudge.net/problem/CodeForces-440D
 
+754. Daniel and Spring Cleaning (diff=2300, digit dp)
+The obvious approach here is to calculate f(r, r) + f(l-1, l-1) - 2 * f(l-1, r) here f(i, j) is the number of pairs such that
+p1 <= i and p2 <= j and p1 + p2 = p1 ^ p2. Then, the problem is a simple digit dp problem, we can observe that p1 + p2 != p1 ^ p2
+iff there exists a position such that p1[pos] = p2[pos] = 1 here p1 and p2 are the binary representation of the numbers.
+https://vjudge.net/problem/CodeForces-1245F
+
 
