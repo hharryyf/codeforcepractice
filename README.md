@@ -3300,4 +3300,15 @@ p1 <= i and p2 <= j and p1 + p2 = p1 ^ p2. Then, the problem is a simple digit d
 iff there exists a position such that p1[pos] = p2[pos] = 1 here p1 and p2 are the binary representation of the numbers.
 https://vjudge.net/problem/CodeForces-1245F
 
+755. Asterism (Hard Version) (diff=2300, binary search on final answer, line sweep, combinatorics)
+The problem might seems strange at the begining, but the statement itself is a big hint. We should firstly consider 
+how to calculate the number of valid permutation for a particular x. The idea is we sort the a[i] in ascending order 
+and then we know each a[i] can be defeated at some interval [l, n]. We do a line sweep, and for each index i, we insert all 
+a[i] that start at i into our consideration, then after the insertion, we multiply our answer by |set size| and minus the set size
+by 1. This is enough for solving E1 the easy version, but for E2 this is still too slow. Then, we should have 2 observations, if
+x the answer is not 0, then for all k > x, the answer is not 0 as well, hence we can binary search on final answer to get the smallest
+x that has at least 1 valid permutation. Similarly, if for an x, f(x) is not good, then for all k > x, f(k) is not good as well,
+so that we can binary search to get the largest x such that f(x) is good, the answer is simply all x between these bounds.
+https://vjudge.net/problem/CodeForces-1371E2
+
 
