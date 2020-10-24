@@ -3311,4 +3311,8 @@ x that has at least 1 valid permutation. Similarly, if for an x, f(x) is not goo
 so that we can binary search to get the largest x such that f(x) is good, the answer is simply all x between these bounds.
 https://vjudge.net/problem/CodeForces-1371E2
 
+756. Fruit Sequences (diff=2400, range tree, line sweep)
+These kind of problem is extremely simple for me at this point, another one occurrence type problem. 
+https://vjudge.net/problem/CodeForces-1428F
+
 
