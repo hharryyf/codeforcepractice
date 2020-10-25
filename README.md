@@ -3315,4 +3315,7 @@ https://vjudge.net/problem/CodeForces-1371E2
 These kind of problem is extremely simple for me at this point, another one occurrence type problem. 
 https://vjudge.net/problem/CodeForces-1428F
 
+757. Yet Another Segments Subset (diff=2300, interval dp)
+https://vjudge.net/problem/CodeForces-1399F
+
 
