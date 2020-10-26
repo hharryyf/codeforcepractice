@@ -3328,4 +3328,9 @@ However, this is wasting the state, we can do something smarter. dp[i][j] as the
 t1[1:i] and t2[1:j]. Here, we manipulate all "cuts" of string t (total len(t) of such splits). 
 https://codeforces.com/contest/1303/problem/E
 
+760. Complicated Computations (diff=2400, line sweep, range tree)
+We should observe that the mexmex cannot be k if there exists a subarray that has end points as k and in between there
+exists all elements in [1, k-1] and no k. This would reduce the problem into a rocks and rectangle variation which is naive.
+https://vjudge.net/problem/CodeForces-14
+
 
