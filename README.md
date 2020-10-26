@@ -3322,3 +3322,10 @@ https://vjudge.net/problem/CodeForces-1399F
 key obervation: optimize the fraction... oh, well, binary search on this fraction. 
 https://vjudge.net/problem/CodeForces-489E
 
+759. Erase Subsequences (diff=2200, dp)
+The initial idea is dp[i][j][k] is 0 or 1 depending on whether it is possible to form sequence up to j and up to k with s[1:i].
+However, this is wasting the state, we can do something smarter. dp[i][j] as the minimum length of string s that can make
+t1[1:i] and t2[1:j]. Here, we manipulate all "cuts" of string t (total len(t) of such splits). 
+https://codeforces.com/contest/1303/problem/E
+
+
