@@ -3318,4 +3318,7 @@ https://vjudge.net/problem/CodeForces-1428F
 757. Yet Another Segments Subset (diff=2300, interval dp)
 https://vjudge.net/problem/CodeForces-1399F
 
+758. Hiking (diff=2300, 0/1 fraction programming, simple dp)
+key obervation: optimize the fraction... oh, well, binary search on this fraction. 
+https://vjudge.net/problem/CodeForces-489E
 
