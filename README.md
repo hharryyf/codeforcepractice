@@ -3333,4 +3333,8 @@ We should observe that the mexmex cannot be k if there exists a subarray that ha
 exists all elements in [1, k-1] and no k. This would reduce the problem into a rocks and rectangle variation which is naive.
 https://vjudge.net/problem/CodeForces-14
 
+761. Three Religions (diff=2200, dp)
+Almost the same as 1303E, but with memorization, be careful about which states must be cancelled.
+https://vjudge.net/problem/CodeForces-1149B
+
 
