@@ -3337,4 +3337,9 @@ https://vjudge.net/problem/CodeForces-14
 Almost the same as 1303E, but with memorization, be careful about which states must be cancelled.
 https://vjudge.net/problem/CodeForces-1149B
 
+762. Mike and Foam (diff=2300, bitmask dp, simple number theory)
+The observation is there are at most 6 distinct prime factor for each number, and we can use bitmask and inclusion-exclusion
+to solve this problem. Quite similar to one of the problem in Ray's problem set in 2019. 
+https://vjudge.net/problem/CodeForces-547C
+
 
