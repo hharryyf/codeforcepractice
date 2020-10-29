@@ -3342,4 +3342,10 @@ The observation is there are at most 6 distinct prime factor for each number, an
 to solve this problem. Quite similar to one of the problem in Ray's problem set in 2019. 
 https://vjudge.net/problem/CodeForces-547C
 
+763. Knapsack (diff=2300, dp, math observation)
+We should firstly eliminate a simple case sum(cnt[i] * i, i = 1..8) <= W, print sum. Next, we should realize the answer
+is within [W-8, W], this means that we can simply greedily make up any number over W and see if we can use some -1, some 1,
+some 2, some -2, ... to create the number -1 to -16. This can be done efficiently by a simple knapsack dp. Time complexity
+is O(8^4)? https://codeforces.com/contest/1132/problem/E
+
 
