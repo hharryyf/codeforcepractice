@@ -3353,4 +3353,9 @@ We define dp[i][j][k] to be the minimum sum with the first j number of a[1:i] af
 The only thing to be careful is on codeforces O(n^4) with n = 150 can pass all tests in 0.14s !!
 https://codeforces.com/problemset/problem/590/D
 
+765. Polycarp's problems (diff=2300, greedy, binary search on final answer)
+I got some inspiration from another problem I failed to solve, we can firstly calculate something f[i] which refers to the minimum 
+q such that removing no more than i problems is valid. Note that finding such q can be done by binary search on final answer.
+Similarly after we obtain the f array, we can use another binary search for each query q[i] which is the smallest i such that f[i] <= q[k]. https://vjudge.net/problem/CodeForces-727F
+
 
