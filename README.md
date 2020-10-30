@@ -3348,4 +3348,9 @@ is within [W-8, W], this means that we can simply greedily make up any number ov
 some 2, some -2, ... to create the number -1 to -16. This can be done efficiently by a simple knapsack dp. Time complexity
 is O(8^4)? https://codeforces.com/contest/1132/problem/E
 
+764. Top Secret Task (diff=2300, dp)
+We define dp[i][j][k] to be the minimum sum with the first j number of a[1:i] after k operations. Observation is k is at most c(n, 2).
+The only thing to be careful is on codeforces O(n^4) with n = 150 can pass all tests in 0.14s !!
+https://codeforces.com/problemset/problem/590/D
+
 
