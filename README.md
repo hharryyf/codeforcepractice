@@ -3359,3 +3359,8 @@ q such that removing no more than i problems is valid. Note that finding such q 
 Similarly after we obtain the f array, we can use another binary search for each query q[i] which is the smallest i such that f[i] <= q[k]. https://vjudge.net/problem/CodeForces-727F
 
 
+766. Yet Another Substring Reverse (diff=2200, bitmask dp)
+This problem shows some properties of bitmask. We can define dp[i] as the maximum number of bits for the any subset of mask = i.
+Then, dp[i] = max(dp[i ^ j], dp[i]) if (1 << j) is in i. Note that if we iterate i from 0 to 1 << t all the dp states can be 
+calculated correctly, because i ^ j is always less than i in our case. https://vjudge.net/problem/CodeForces-1234F
+
