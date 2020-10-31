@@ -3364,3 +3364,9 @@ This problem shows some properties of bitmask. We can define dp[i] as the maximu
 Then, dp[i] = max(dp[i ^ j], dp[i]) if (1 << j) is in i. Note that if we iterate i from 0 to 1 << t all the dp states can be 
 calculated correctly, because i ^ j is always less than i in our case. https://vjudge.net/problem/CodeForces-1234F
 
+767. Gerald and Giant Chess (diff=2200, combinatorics)
+The state definition is quite smart, define dp[i] as the number of ways from (1, 1) to the ith black cell (after sorting the pairs),
+without going through any other black cells. Note that this state definition is extremely smart because the property any path that
+has different first black cell must be different! Hence, the state transition is quite easy.
+https://vjudge.net/problem/CodeForces-559C
+
