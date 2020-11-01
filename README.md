@@ -3373,3 +3373,7 @@ https://vjudge.net/problem/CodeForces-559C
 768.  Vasya and Array (diff=2400, combinatorics)
 This problem is trivial even if it has 2400 rating. https://codeforces.com/contest/1093/problem/F
 
+769. String Compression (diff=2400, KMP, dp)
+First 2400 dp. The trick is the 'period' should be as long as possible. Then, we should establish n prefix arrays and use KMP
+to solve find the period. Then, the dp transition is quite simple. https://vjudge.net/problem/CodeForces-825F
+
