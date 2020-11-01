@@ -3370,3 +3370,6 @@ without going through any other black cells. Note that this state definition is 
 has different first black cell must be different! Hence, the state transition is quite easy.
 https://vjudge.net/problem/CodeForces-559C
 
+768.  Vasya and Array (diff=2400, combinatorics)
+This problem is trivial even if it has 2400 rating. https://codeforces.com/contest/1093/problem/F
+
