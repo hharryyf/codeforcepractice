@@ -3383,3 +3383,8 @@ problem as what's the maximum number of edges we can preserve so that there's no
 follows, for each 1 to m create a vertex, for each 1 - n create a vertex, then v is in set i we connect i to v + m with cost
 -a[i] - b[v], then run the MST algorithm. https://codeforces.com/contest/1408/problem/E
 
+771. Virus (diff=2500, range tree on queries, union-find)
+This problem is quite routine. We can reformulate the problem as each edge has a time interval of existence and we must support
+insert, delete, query the size of the connected component. This can be done efficiently by range tree on queries and process
+the queries offline with the support of a union by rank structure. https://codeforces.com/contest/1423/problem/H
+
