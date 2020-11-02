@@ -3377,3 +3377,9 @@ This problem is trivial even if it has 2400 rating. https://codeforces.com/conte
 First 2400 dp. The trick is the 'period' should be as long as possible. Then, we should establish n prefix arrays and use KMP
 to solve find the period. Then, the dp transition is quite simple. https://vjudge.net/problem/CodeForces-825F
 
+770. Avoid Rainbow Cycles (diff=2400, Kruskal)
+This is a technical problem. Firstly, it is quite obvious that deletion is scary, we can use insertion instead. Reformulate the
+problem as what's the maximum number of edges we can preserve so that there's no rainbow cycle. We can construct the graph as
+follows, for each 1 to m create a vertex, for each 1 - n create a vertex, then v is in set i we connect i to v + m with cost
+-a[i] - b[v], then run the MST algorithm. https://codeforces.com/contest/1408/problem/E
+
