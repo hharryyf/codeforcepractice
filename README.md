@@ -3388,3 +3388,8 @@ This problem is quite routine. We can reformulate the problem as each edge has a
 insert, delete, query the size of the connected component. This can be done efficiently by range tree on queries and process
 the queries offline with the support of a union by rank structure. https://codeforces.com/contest/1423/problem/H
 
+772. Decreasing Heights (diff=2200, dp)
+We know how to solve this for 1d case, just fix one unchanged spot and calculate total cost using simulation. 2d case is not much
+harder than that, fix (i, j) and run 2 simple dp from (1, 1) to (i, j) and (i, j) to (n, m), the total time complexity is O(n^2m^2).
+https://vjudge.net/problem/CodeForces-1353F
+
