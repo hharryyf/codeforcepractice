@@ -3393,3 +3393,8 @@ We know how to solve this for 1d case, just fix one unchanged spot and calculate
 harder than that, fix (i, j) and run 2 simple dp from (1, 1) to (i, j) and (i, j) to (n, m), the total time complexity is O(n^2m^2).
 https://vjudge.net/problem/CodeForces-1353F
 
+773. Kaavi and Magic Spell (diff=2200, interval dp)
+The most annoying part of this problem is s and t have different length. To make it a lot easier, we can think t as t + '*', here
+'*' is the symbol we used in regular expression. Then we can define dp[l][r] as the number of ways to match T[l, r] with S[1, r - l + 1].
+https://codeforces.com/contest/1336/problem/C
+
