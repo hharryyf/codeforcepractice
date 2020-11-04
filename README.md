@@ -3398,3 +3398,5 @@ The most annoying part of this problem is s and t have different length. To make
 '*' is the symbol we used in regular expression. Then we can define dp[l][r] as the number of ways to match T[l, r] with S[1, r - l + 1].
 https://codeforces.com/contest/1336/problem/C
 
+774. Karen and Supermarket (diff=2400, tree dp, knapsack dp)
+This is just a knapsack and tree dp version of 1303E. https://codeforces.com/contest/815/problem/C
