@@ -3400,3 +3400,12 @@ https://codeforces.com/contest/1336/problem/C
 
 774. Karen and Supermarket (diff=2400, tree dp, knapsack dp)
 This is just a knapsack and tree dp version of 1303E. https://codeforces.com/contest/815/problem/C
+
+775. Pudding Monsters (diff=3000, line sweep)
+This is a doable problem, but it's just hard and I can't solve it. We can view this problem as a combination of 1422F and 1418G
+a 2700 and a 2500 problem (thus 3000 is a fair rating for this one). The first step is quite obvious, the answer is counting
+the number of ranges [l, r] such that max(l, r) - min(l, r) + l = r. But this is very difficult and there's no direct O(nlogn) solution for this one. But we should observe that max(l, r) - min(l, r) >= r - l for all l, r. Then, if we maintain min{max(l, r) - min(l, r) + l}
+for all ranges and the number of ocurrence of the min value. If the min value is r then we add the count value to our answer.
+The way to maintain max(l, r) - min(l, r) is to use two stacks just like the 1422F trick.
+https://vjudge.net/problem/CodeForces-526F
+
