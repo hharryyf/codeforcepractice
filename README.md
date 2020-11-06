@@ -3409,3 +3409,13 @@ for all ranges and the number of ocurrence of the min value. If the min value is
 The way to maintain max(l, r) - min(l, r) is to use two stacks just like the 1422F trick.
 https://vjudge.net/problem/CodeForces-526F
 
+776. NN country (diff=2800, line sweep, binary lifting)
+This problem again proves a 2800 problem is a combination two or more 2200+ problems. We have solved the case on a straight line before,
+which is problem 1175E. We use binary lifting to maintain pmin[v][i] which means the upmost vertex v can reach by walking exactly 2^i
+moves. Then, we've solved the case when the query points (v1, v2) satisfies LCA(v1, v2) == v1 or LCA(v1, v2) == v2.
+Now we come to the critical part of the problem what if this is not the case. Then, the answer is actually 2 + walk(v1, lca) + walk(v2,
+lca). But is that all? No, if there's a route from x <-> y then we should reduce 1 to the answer. Here x is the upmost point
+safisfies pmin[x][0] is an anscestor of LCA(v1, v2) and x is an anscestor of v1, similar for y. How to solve this? We should note
+that this is actually a 2d-counting problem, the reduction way is similar to APIO2019 T3 or 377D.
+https://vjudge.net/problem/CodeForces-983E
+
