@@ -3419,3 +3419,9 @@ safisfies pmin[x][0] is an anscestor of LCA(v1, v2) and x is an anscestor of v1,
 that this is actually a 2d-counting problem, the reduction way is similar to APIO2019 T3 or 377D.
 https://vjudge.net/problem/CodeForces-983E
 
+777. Team-Building (diff=2500, line sweep, union find)
+This problem is equivalent to asking how many pair (i, j) such that the closure graph formed by all vertices with color i and color j
+is bipartite. Judging bipartite graph is simple with a union find with 2n vertices. We can solve this problem as follows, instead
+of counting the number of good pairs, we can subtract the number of bad pairs. Each component, we use a control-Z union-find.
+https://codeforces.com/problemset/problem/1444/C
+
