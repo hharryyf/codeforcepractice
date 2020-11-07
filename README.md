@@ -3425,3 +3425,11 @@ is bipartite. Judging bipartite graph is simple with a union find with 2n vertic
 of counting the number of good pairs, we can subtract the number of bad pairs. Each component, we use a control-Z union-find.
 https://codeforces.com/problemset/problem/1444/C
 
+778. (Zero XOR Subset)-less (diff=2300, math, Z2 basis)
+This is a linear algebra problem, which is doable. Firstly, we should recongnize that we should print -1 if and only if
+the xor of all numbers are 0. Otherwise, we can think the problem as follows. We are asked to find the maximum possible
+dimension of the set ((pre[0] ^ pre[i1]), (pre[i1] ^ pre[i2]), ...(pre[ik], pre[n])). Here this set is linearly independent.
+Note that, we can actually make the following reduction to (pre[0], pre[1], pre[2], ... pre[n]). So, we are actually asked
+the dimension of the origional pre array, here pre[i] = pre[i-1] ^ a[i] !!! And this problem can be solved with linearity basis.
+https://codeforces.com/contest/1101/problem/G
+
