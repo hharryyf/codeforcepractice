@@ -3433,3 +3433,9 @@ Note that, we can actually make the following reduction to (pre[0], pre[1], pre[
 the dimension of the origional pre array, here pre[i] = pre[i-1] ^ a[i] !!! And this problem can be solved with linearity basis.
 https://codeforces.com/contest/1101/problem/G
 
+779.  Reverse and Swap (diff=2400, range tree)
+We can observe that reverse(k) is equivalent to swap(0..k-1). Note that whatever we do to the range tree, the property always holds
+tree[index] = tree[LEFT] + tree[RIGHT]. We can use a swp[19] array to keep track of whether the current depth is swapped or not.
+If so, when we want to go to the left range, we should go to the right range and vice versa. Nothing special.
+https://codeforces.com/contest/1401/problem/F
+
