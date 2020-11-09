@@ -3439,3 +3439,6 @@ tree[index] = tree[LEFT] + tree[RIGHT]. We can use a swp[19] array to keep track
 If so, when we want to go to the left range, we should go to the right range and vice versa. Nothing special.
 https://codeforces.com/contest/1401/problem/F
 
+780. Make It Increasing  (diff=2200, LIS)
+Quite old trick, replace a[i] with a[i] - 1 and find LIS for k times. https://vjudge.net/problem/CodeForces-1437E
+
