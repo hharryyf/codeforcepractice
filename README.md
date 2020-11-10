@@ -3440,5 +3440,11 @@ If so, when we want to go to the left range, we should go to the right range and
 https://codeforces.com/contest/1401/problem/F
 
 780. Make It Increasing  (diff=2200, LIS)
-Quite old trick, replace a[i] with a[i] - 1 and find LIS for k times. https://vjudge.net/problem/CodeForces-1437E
+Quite old trick, replace a[i] with a[i] - i and find LIS for k times. https://vjudge.net/problem/CodeForces-1437E
+
+781. Sonya and Problem Wihtout a Legend (diff=2300, dp)
+Observation: 1) we can change a[i] to a[i] - i and solve the problem, what's the minimum amount of operations such that a is
+non-decreasing. 2) there's always a fixed index. We define dp[i][j] as the minimum number of operations such that a[i] is no
+greater than b[j] here b is a sorted in non-decreasing order. 
+https://vjudge.net/problem/CodeForces-713C
 
