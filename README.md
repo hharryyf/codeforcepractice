@@ -3448,3 +3448,7 @@ non-decreasing. 2) there's always a fixed index. We define dp[i][j] as the minim
 greater than b[j] here b is a sorted in non-decreasing order. 
 https://vjudge.net/problem/CodeForces-713C
 
+782. Reducing Delivery Cost (diff=2100, dijkstra)
+The difficulty of this problem is time complexity control. We can obtain pair-wise shortest path by running dijkstra for n times.
+Then, we manipulate which edge we want to change to 0 and calculate the total cost for k walks.
+https://vjudge.net/problem/CodeForces-1433G
