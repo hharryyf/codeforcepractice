@@ -3452,3 +3452,13 @@ https://vjudge.net/problem/CodeForces-713C
 The difficulty of this problem is time complexity control. We can obtain pair-wise shortest path by running dijkstra for n times.
 Then, we manipulate which edge we want to change to 0 and calculate the total cost for k walks.
 https://vjudge.net/problem/CodeForces-1433G
+
+783. Yaroslav and Time (diff=2100, binary search on final answer, bellman-ford)
+It is quite straight forward that we should binary search on final answer. Then we can construct the graph as follows, 
+each i we connect in(i) to out(i) with weight -a[i] and each pair (u, v) (u != v) we connect out(u) to in(v) with cost
+equals the given cost. Then, since there are negative edges in the graph we simply run bellman-ford to validate the answer.
+The only modification to the origional algorithm is the relax condition, only perform the relaxation step when dist[from] <= 0.
+Note that given the constraints there can never by negative cycles! which makes our life a lot easier.
+https://vjudge.net/problem/CodeForces-301B
+
+
