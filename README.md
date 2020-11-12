@@ -3461,4 +3461,14 @@ The only modification to the origional algorithm is the relax condition, only pe
 Note that given the constraints there can never by negative cycles! which makes our life a lot easier.
 https://vjudge.net/problem/CodeForces-301B
 
+784. Subsequences of Length Two (diff=2100, dp)
+If t[1] != t[2], we define dp[i][j][k] as the maximum answer for string [1:i] with exactly j t[1] and k operations. 
+Note that if t[1] = t[2], we can replace the letters greedily. https://vjudge.net/problem/CodeForces-1409F
+
+785. Carrots for Rabbits (diff=2200, greedy)
+The idea is not hard, we want for every move the total square sum reduces the most. Something we should be really careful is
+how to decide how many cuts for each carrot? The answer is instead of trying to split the carrot into two parts or more we can
+do an operation called add 1 cut. Here add 1 cut means origionally the carrot is cut by x times now we cut it by x + 1 times.
+We always perform the add 1 cut operation to the carrot that would maximally reduce the total square sum.
+https://codeforces.com/problemset/problem/1428/E
 
