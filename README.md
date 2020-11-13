@@ -3472,3 +3472,11 @@ do an operation called add 1 cut. Here add 1 cut means origionally the carrot is
 We always perform the add 1 cut operation to the carrot that would maximally reduce the total square sum.
 https://codeforces.com/problemset/problem/1428/E
 
+786. Course Selection (min-cut)
+This is a good recap on how to model the prereq in a flow diagram. Since directly figuring out the maximum average is very hard,
+we can think how to solve the minimum average loss. In other words, the minimum total score loss. Use a similar trick to 
+day and night, we extract each courses as m + 1 nodes connect couse(v,i) -> course(v,i+1) an edge of capacity 100 - mark[v][i].
+Note that the capacity should be INF if mark[v][i] is -1. Next, for the prereq (u, v) we simly add an edge between
+course(u, i) -> course(v, i + 1) with capacity of INF for all i from 1 to m. Then, the min cut is the minimum points lost.
+https://vjudge.net/problem/CodeChef-RIN
+
