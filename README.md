@@ -3480,3 +3480,14 @@ Note that the capacity should be INF if mark[v][i] is -1. Next, for the prereq (
 course(u, i) -> course(v, i + 1) with capacity of INF for all i from 1 to m. Then, the min cut is the minimum points lost.
 https://vjudge.net/problem/CodeChef-RIN
 
+787. Instant Noodles (diff=2300, constructive algorithm, number theory)
+https://codeforces.com/contest/1322/problem/C
+
+788. Two Different (diff=2300, constructive algorithm)
+Need to be careful that 1.5e4 * log(1.5e4) ~ 2.1e5 which is almost half of the maximum allowed operations.
+Let's firstly think how to solve the problem for n which n is a power of 2. We can easily observe that add (i, i + 1 << k) k 
+from 1 to log[n] would work. Now how to deal with the case when n is not a power of 2. The idea is we can run the above procedure
+twice, one from [1:1 << log[n]], the other from [n - 1 << log[n] + 1: n].
+https://codeforces.com/contest/1408/problem/F
+
+
