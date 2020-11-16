@@ -3490,4 +3490,11 @@ from 1 to log[n] would work. Now how to deal with the case when n is not a power
 twice, one from [1:1 << log[n]], the other from [n - 1 << log[n] + 1: n].
 https://codeforces.com/contest/1408/problem/F
 
+789. The minimal unique substring (diff=2200, constructive algorithm)
+Try to use n%2 == k%2. https://codeforces.com/contest/1158/problem/B
+
+790. Covered Points (diff=2400, geometry)
+This problem is not hard at all, the only important thing is to find a reliable template that can compute the intersection of
+two segments. https://codeforces.com/problemset/problem/1036/E
+
 
