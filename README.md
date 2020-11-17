@@ -3497,4 +3497,10 @@ Try to use n%2 == k%2. https://codeforces.com/contest/1158/problem/B
 This problem is not hard at all, the only important thing is to find a reliable template that can compute the intersection of
 two segments. https://codeforces.com/problemset/problem/1036/E
 
+791. Array Beauty (diff=2500, combinatorics)
+This question gives us a very good idea on how to calculate sum(i * cnt[i]). There are 3 properties that we can use
+1) the maximum beauty of an array is max(a[i]) / (K - 1). 2) we have the ability to solve how many sequence of length k with beauty
+no less than x, this is a school level problem. 3) if we can solve 2, we can solve it for every i to max(a[i]) / (k - 1) and
+the sum is the final answer. https://vjudge.net/problem/CodeForces-1188C
+
 
