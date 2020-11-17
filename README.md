@@ -3508,4 +3508,9 @@ It is not hard to observe that the question is trying to find an optimal x such 
 It is also not hard to observe that cost(x) is a function that first decrease then increase, we need to find the lowest point
 of the function. This is a perfect use-case of ternary search. https://codeforces.com/problemset/problem/1355/E
 
+793. Award Ceremony (diff=2200, greedy)
+There are three properties: 1) teams that goes up and teams that goes down can be processed independently 2) teams that goes
+down should be processed from 1 to n. 3) teams that goes up should be processed from n to 1. Of course, don't forget to
+sort the teams before the above steps. https://codeforces.com/problemset/problem/730/E
+
 
