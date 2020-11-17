@@ -3503,4 +3503,9 @@ This question gives us a very good idea on how to calculate sum(i * cnt[i]). The
 no less than x, this is a school level problem. 3) if we can solve 2, we can solve it for every i to max(a[i]) / (k - 1) and
 the sum is the final answer. https://vjudge.net/problem/CodeForces-1188C
 
+792. Restorer Distance (diff=2100, ternary search)
+It is not hard to observe that the question is trying to find an optimal x such that the cost to make all height to x is minimum.
+It is also not hard to observe that cost(x) is a function that first decrease then increase, we need to find the lowest point
+of the function. This is a perfect use-case of ternary search. https://codeforces.com/problemset/problem/1355/E
+
 
