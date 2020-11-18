@@ -3513,4 +3513,10 @@ There are three properties: 1) teams that goes up and teams that goes down can b
 down should be processed from 1 to n. 3) teams that goes up should be processed from n to 1. Of course, don't forget to
 sort the teams before the above steps. https://codeforces.com/problemset/problem/730/E
 
+794.  Change-free (diff=2400, greedy)
+https://codeforces.com/problemset/problem/767/E
+
+795. Ants in Leaves (diff=2200, greedy)
+This problem actually uses hall's theorem. https://vjudge.net/problem/CodeForces-622E
+
 
