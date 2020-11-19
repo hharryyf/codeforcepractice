@@ -3519,4 +3519,9 @@ https://codeforces.com/problemset/problem/767/E
 795. Ants in Leaves (diff=2200, greedy)
 This problem actually uses hall's theorem. https://vjudge.net/problem/CodeForces-622E
 
+796. Excitation of Atoms (diff=2200, greedy)
+The idea is K >= 2 is the same as K = 2, K = 0 is very simple. Only K = 1 is very annoying. But there are only 3 possibilities
+connect i -> i + 2, connect i  -> 1 and connect 1 -> N. Using some logorithm data structure would solve this immediately.
+https://codeforces.com/contest/1425/problem/E
+
 
