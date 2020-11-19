@@ -3524,4 +3524,9 @@ The idea is K >= 2 is the same as K = 2, K = 0 is very simple. Only K = 1 is ver
 connect i -> i + 2, connect i  -> 1 and connect 1 -> N. Using some logorithm data structure would solve this immediately.
 https://codeforces.com/contest/1425/problem/E
 
+797. Two Companies (LCA, min-cut)
+Since there are two "parts" and the size of each "part" is around 700, matching might be the final solution. The idea is
+basically if two path intersect then you cannot get the profit of both, in other words, at least one of the profit should be
+lost. Here, the project selection graph construction technique can be used. https://vjudge.net/problem/CodeChef-TWOCOMP
+
 
