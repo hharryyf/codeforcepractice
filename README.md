@@ -3529,4 +3529,7 @@ Since there are two "parts" and the size of each "part" is around 700, matching 
 basically if two path intersect then you cannot get the profit of both, in other words, at least one of the profit should be
 lost. Here, the project selection graph construction technique can be used. https://vjudge.net/problem/CodeChef-TWOCOMP
 
+798. Card Bag (diff=2300, dp)
+This problem is quite simple, just the most standard definition dp[i][j] as the the probability of winning with i picks and
+the last pick is number j would do the job. https://codeforces.com/contest/1156/problem/F
 
