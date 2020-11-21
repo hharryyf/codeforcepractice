@@ -3533,3 +3533,8 @@ lost. Here, the project selection graph construction technique can be used. http
 This problem is quite simple, just the most standard definition dp[i][j] as the the probability of winning with i picks and
 the last pick is number j would do the job. https://codeforces.com/contest/1156/problem/F
 
+799. Bricks (diff=2800, min-cut)
+The observation is we can solve the largest number of merge boarder such that we cannot merge two boarders that forms 'L'.
+This is equivalent to finding the largest independent set of the graph formed by the boarder as vertices.
+https://vjudge.net/problem/CodeForces-1404E
+
