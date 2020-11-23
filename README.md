@@ -3538,3 +3538,14 @@ The observation is we can solve the largest number of merge boarder such that we
 This is equivalent to finding the largest independent set of the graph formed by the boarder as vertices.
 https://vjudge.net/problem/CodeForces-1404E
 
+800. Xor Tree (diff=2100, constructive algorithm)
+https://codeforces.com/contest/1446/problem/C
+
+801. Makoto and a Blackboard (diff=2200, combinatorics)
+The hardest part of this problem is the conditionally independence observation. Note that if N is of form p^k it is not
+hard at all, just run the most simple dp would solve the problem. If N is of form (p_1^k_1) * (p_2 ^ k_2) * ...
+Then, the answer is the product of all (p_1^k_1), (p_2^k_2) etc. The reason is, consider the result for K = 1, then
+the solution is sum(all divisors of N) / (number of divisors of N), both of these functions can be calculated as the
+product of the corresponding function for all primes of N. Then, if we use an induction proof, we could get the result we want.
+https://codeforces.com/contest/1097/problem/D
+
