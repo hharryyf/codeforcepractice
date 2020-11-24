@@ -3556,3 +3556,9 @@ largest values. Then, we could build a bipartite graph and set the edge capacity
 to be -val[cell1] - val[cell2] and the edge capacity between src and cell1, cell2 and target to be 1. 
 Then, simply run the MCMF algorithm. https://vjudge.net/problem/CodeChef-HOGON 
 
+803. Flying Sort (Hard Version) (diff=2400, dp)
+The observation is not hard, we are asked to find the longest subarray of the sorted version of a such that this subarray
+is a subsequence of a. This is a typical dp problem, we define dp[i][0] as the maximum answer that ends at i with
+selecting all a[i] we've met, dp[i][1] as the answer that ends at i and the previous element is a[i] or a[i-1], dp[i][2] as the
+answer that ends at i and we have selected all a[i]. https://vjudge.net/problem/CodeForces-1367F2
+
