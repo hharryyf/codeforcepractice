@@ -3562,3 +3562,8 @@ is a subsequence of a. This is a typical dp problem, we define dp[i][0] as the m
 selecting all a[i] we've met, dp[i][1] as the answer that ends at i and the previous element is a[i] or a[i-1], dp[i][2] as the
 answer that ends at i and we have selected all a[i]. https://vjudge.net/problem/CodeForces-1367F2
 
+804. Xenon's Attack on the Gangs (diff=2300, tree dp)
+This problem might seems undoable, but after I played with the second example case, I realized that the function we are trying
+to maximize is similar to the function we are going to calculate in CF1188C. Then, we can do something similar to solve this one.
+https://vjudge.net/problem/CodeForces-1292C
+
