@@ -3549,3 +3549,10 @@ the solution is sum(all divisors of N) / (number of divisors of N), both of thes
 product of the corresponding function for all primes of N. Then, if we use an induction proof, we could get the result we want.
 https://codeforces.com/contest/1097/problem/D
 
+802. Hogathon (MCMF)
+We should observe that the grid is "bipartite", which should remind us that this is a flow problem. Since K is very small,
+we can take the top 100 (cell1, cell2) pairs where cell1 and cell2 are adjacent and val[cell1] + val[cell2] is in the top100
+largest values. Then, we could build a bipartite graph and set the edge capacity between cell1 and cell2 to be 1 and cost 
+to be -val[cell1] - val[cell2] and the edge capacity between src and cell1, cell2 and target to be 1. 
+Then, simply run the MCMF algorithm. https://vjudge.net/problem/CodeChef-HOGON 
+
