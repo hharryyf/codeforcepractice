@@ -3570,3 +3570,6 @@ https://vjudge.net/problem/CodeForces-1292C
 805. Animal Observation (hard version) (diff=2400, dp, range tree, line sweep optimization)
 https://vjudge.net/problem/CodeForces-1304F2
 
+806. Discrete Centrifugal Jumps (diff=2200, dp, monotoinc stack optimization)
+https://codeforces.com/problemset/problem/1407/D
+
