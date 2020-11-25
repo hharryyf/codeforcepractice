@@ -3567,3 +3567,6 @@ This problem might seems undoable, but after I played with the second example ca
 to maximize is similar to the function we are going to calculate in CF1188C. Then, we can do something similar to solve this one.
 https://vjudge.net/problem/CodeForces-1292C
 
+805. Animal Observation (hard version) (diff=2400, dp, range tree, line sweep optimization)
+https://vjudge.net/problem/CodeForces-1304F2
+
