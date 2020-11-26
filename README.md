@@ -3573,3 +3573,10 @@ https://vjudge.net/problem/CodeForces-1304F2
 806. Discrete Centrifugal Jumps (diff=2200, dp, monotoinc stack optimization)
 https://codeforces.com/problemset/problem/1407/D
 
+807. Maximum Matching (diff=2400, euler path)
+We can transform this to a word-dragon type Euler path. Then, we can have the following observation: there are only 10 types
+of edges (1, 1)...(1, 4), (2, 2)...(2, 4), (3, 3)...(3, 4), (4, 4). Then, each type of edges only have 3 states: select none, 
+select all, select all but 1 (Think why). The select all but 1 case, we can just eliminate the edge with minimum weight.
+The overall complexity is O(4 * 10*3^10). https://vjudge.net/problem/CodeForces-1038E
+
+
