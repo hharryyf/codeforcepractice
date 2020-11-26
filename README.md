@@ -3579,4 +3579,12 @@ of edges (1, 1)...(1, 4), (2, 2)...(2, 4), (3, 3)...(3, 4), (4, 4). Then, each t
 select all, select all but 1 (Think why). The select all but 1 case, we can just eliminate the edge with minimum weight.
 The overall complexity is O(4 * 10*3^10). https://vjudge.net/problem/CodeForces-1038E
 
+808. Product Oriented Recurrence (diff=2300, matrices, fast exponential)
+The most natrual idea is we can see 6 = 3 + 2 + 1, we can try to multiply c^x on both sides. Then we define F(x) = f(x)*c^x and
+F(x) = F(x-1)F(x-2)F(x-3). Here, we should observe that F(n) can be calculated as pow(F(3), p3) * pow(F(2), p2) * pow(F(1), p1).
+And the final answer would be mul(F(n), pow(c, mod - 2)). But something we should notice is p1 and p2 and p3 are very large,
+how can be make sure pow(F(3), p3) = pow(F(3), p3'), here p3' is a number not greater than mod? If we apply fermat little theorem,
+we can easily derive that as long as p3' % (mod - 1) = p3 % (mod - 1) everything is fine. Hence, when we calculate matrix exponential
+we use mod - 1 as the "Mod". https://codeforces.com/problemset/problem/1182/E
+
 
