@@ -3587,4 +3587,8 @@ how can be make sure pow(F(3), p3) = pow(F(3), p3'), here p3' is a number not gr
 we can easily derive that as long as p3' % (mod - 1) = p3 % (mod - 1) everything is fine. Hence, when we calculate matrix exponential
 we use mod - 1 as the "Mod". https://codeforces.com/problemset/problem/1182/E
 
+809. New Year and Arbitrary Arrangement (diff=2200, probabilty dp)
+Not hard at all, just be careful about the base case. But the second test case is quite strong, if it is correct, you can AC this
+problem with high probability. https://codeforces.com/contest/908/problem/D
+
 
