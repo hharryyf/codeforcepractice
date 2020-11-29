@@ -3591,4 +3591,15 @@ we use mod - 1 as the "Mod". https://codeforces.com/problemset/problem/1182/E
 Not hard at all, just be careful about the base case. But the second test case is quite strong, if it is correct, you can AC this
 problem with high probability. https://codeforces.com/contest/908/problem/D
 
+810. Dirty Arkady's Kitchen (diff=3200, dijkstra)
+This problem is very hard but since our main oppnent learned it several days ago, we must learn it as well. The natural idea is put a
+time dimension into dijkstra but that's impossible since time can be as large as 1e9. A very important observation is if we go through
+edge (u, v) at time t then if this edge is used repeatedly, we should arrive at v at t + 1, t + 3, ... In other words at the time 
+that has the same parity as t. This means we can use the following trick. Splite each edge into 4 directed edges referring to
+u[0] -> v[1], u[1] -> v[0], v[0] -> u[1], v[1] -> u[0]. Here, 0, 1 refer to the parity of the start time. After that a second important
+property must be used, for each edge, we are only interested in the earliest possible time it can be passed through, the reason is,
+if a larger time to path through the current edge is desired then we can apply the trick u->v->u->v until we reach the larger time.
+This problem is hard but the basic idea is actually dijkstra algorithm on edges.
+https://codeforces.com/contest/827/problem/F
+
 
