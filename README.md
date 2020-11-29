@@ -3606,4 +3606,14 @@ https://codeforces.com/contest/827/problem/F
 https://vjudge.net/problem/CodeForces-946G
 
 
+812. Almost Increasing Array (diff=2500, range tree optimize dp)
+Since we have many life experience on this type of question, the first step is routine set a[i] to a[i-1]. Then, we set dp[i][0] to 
+be the LIS end at i and dp[i][1] to be the answer that end at i and i is not an abandoned element. Here abandoned means if some elements
+are concatenated after i the answer still makes sense. Then, we can write dp[i+2][1] = max(dp[j][0] + 2, j <=i and a[j] - 1 <= a[i+2]),
+dp[i+1][1] = max(1 + dp[j][0], j <= i and a[j] - 1 <= a[i+1]). Note that to make our life a lot easier, we should better put a[i] - i + 1
+into our disc array as well when we do data compression. Is that all? No. there's a case we miss, it is when i is the end of our answer
+but we eliminate that element, this case can be handled seperately just the maximum dp[i][0] + 1 for all i less than n.
+https://vjudge.net/problem/CodeForces-946G
+
+
 
