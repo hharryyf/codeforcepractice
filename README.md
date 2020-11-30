@@ -3616,4 +3616,8 @@ but we eliminate that element, this case can be handled seperately just the maxi
 https://vjudge.net/problem/CodeForces-946G
 
 
+813. Vasya and Magic Matrix (diff=2300, probability dp)
+This is a quite standard trick, we just need to expand the expression (i-j)^2 + (k-l)^2 = i^2 + j^2 + k^2 + l^2 - 2ij - 2kl.
+https://vjudge.net/problem/CodeForces-1042E
+
 
