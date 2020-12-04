@@ -3605,7 +3605,6 @@ https://codeforces.com/contest/827/problem/F
 811. Almost Increasing Array (diff=2300, combinatorics, probability dp)
 https://vjudge.net/problem/CodeForces-946G
 
-
 812. Almost Increasing Array (diff=2500, range tree optimize dp)
 Since we have many life experience on this type of question, the first step is routine set a[i] to a[i-1]. Then, we set dp[i][0] to 
 be the LIS end at i and dp[i][1] to be the answer that end at i and i is not an abandoned element. Here abandoned means if some elements
@@ -3615,9 +3614,18 @@ into our disc array as well when we do data compression. Is that all? No. there'
 but we eliminate that element, this case can be handled seperately just the maximum dp[i][0] + 1 for all i less than n.
 https://vjudge.net/problem/CodeForces-946G
 
-
 813. Vasya and Magic Matrix (diff=2300, probability dp)
 This is a quite standard trick, we just need to expand the expression (i-j)^2 + (k-l)^2 = i^2 + j^2 + k^2 + l^2 - 2ij - 2kl.
 https://vjudge.net/problem/CodeForces-1042E
+
+814. Sonya and Informatics (diff=2300, matrix exponential, dp)
+It is obvious that this is a dp problem, the state we define is dp[i][k] = probability of having i 1s in the first cnt places in the
+kth turn, here cnt is the total number of 0 in the array. The transition is quite easy, to speed up we can use a matrix.
+https://codeforces.com/contest/1151/problem/F
+
+815. Hyakugoku and Ladders (diff=2300, probability dp)
+The obvious observation is the only place we can apply strategy is if we take the ladder or not. We use dp[i][1] to be the minimum
+expected turns if we use a ladder at step i and dp[i][0] means we do not. Just be careful, when you transite there's no dp[next][1]
+follow a dp[i][1]. https://codeforces.com/contest/1245/problem/E
 
 
