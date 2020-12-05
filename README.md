@@ -3633,5 +3633,10 @@ The idea is given (v, c) there's only one next state, hence the entire graph is 
 10, for the c dimension, we only need to consider the first 2520 numbers since 2520 is the LCM of 1 to 10.
 https://codeforces.com/problemset/problem/1200/F
 
+817. Graph Transpositions (diff=2400, shortest path)
+This is an amazing problem. The basic idea is the operation of type 2 cannot be too large, if it is greater than log(m) then, we should
+know that any operation of type 2 is more expensive than moving through all edges of the graph. 
+https://codeforces.com/problemset/problem/1442/C
+
 
 
