@@ -3638,5 +3638,8 @@ This is an amazing problem. The basic idea is the operation of type 2 cannot be 
 know that any operation of type 2 is more expensive than moving through all edges of the graph. 
 https://codeforces.com/problemset/problem/1442/C
 
+818. Swapping Characters (diff=2200, constructive algorithm)
+https://vjudge.net/problem/CodeForces-903E
+
 
 
