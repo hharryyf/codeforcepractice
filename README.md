@@ -3628,4 +3628,10 @@ The obvious observation is the only place we can apply strategy is if we take th
 expected turns if we use a ladder at step i and dp[i][0] means we do not. Just be careful, when you transite there's no dp[next][1]
 follow a dp[i][1]. https://codeforces.com/contest/1245/problem/E
 
+816. Graph Traveler (diff=2300, functional graph, dfs)
+The idea is given (v, c) there's only one next state, hence the entire graph is a functional graph. Since all outdegree is no more than
+10, for the c dimension, we only need to consider the first 2520 numbers since 2520 is the LCM of 1 to 10.
+https://codeforces.com/problemset/problem/1200/F
+
+
 
