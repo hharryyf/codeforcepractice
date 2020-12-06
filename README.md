@@ -3648,5 +3648,10 @@ can get is fixed. And the way to do this preprocessing step is by line sweep whe
 we get the profit array, we use a dp to get the answer (the dp is a mini-max type dp, also quite standard).
 https://codeforces.com/problemset/problem/1099/F
 
+820. Boboniu Walks on Graph (diff=2300, hashing, graph observation)
+The problem is actually asking if we select a set of ci, if it is possible that the formed graph satisfies all vertices has indegree
+equals to 1 and outdegree equals to 1 as well. Note that there are just k! number of possible combinations. We need to come up with
+how to validate the degree requirement fast. The idea is we can use hashing. https://vjudge.net/problem/CodeForces-1394B
+
 
 
