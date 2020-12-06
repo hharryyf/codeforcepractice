@@ -3641,5 +3641,12 @@ https://codeforces.com/problemset/problem/1442/C
 818. Swapping Characters (diff=2200, constructive algorithm)
 https://vjudge.net/problem/CodeForces-903E
 
+819. Cookies (diff=2400, line sweep, BIT, binary search, dp)
+A year ago, in 2019, I had no idea on how to approach this problem. But a year later, I solved it directly. The most important
+observation of this problem is for each vertex if we want to go down to that vertex and get back, the maximum number of cookies we
+can get is fixed. And the way to do this preprocessing step is by line sweep when dfs with greedy strategy (quite standard). After
+we get the profit array, we use a dp to get the answer (the dp is a mini-max type dp, also quite standard).
+https://codeforces.com/problemset/problem/1099/F
+
 
 
