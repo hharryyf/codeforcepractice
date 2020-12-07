@@ -3653,5 +3653,9 @@ The problem is actually asking if we select a set of ci, if it is possible that 
 equals to 1 and outdegree equals to 1 as well. Note that there are just k! number of possible combinations. We need to come up with
 how to validate the degree requirement fast. The idea is we can use hashing. https://vjudge.net/problem/CodeForces-1394B
 
+821. Super Jaber (diff=2600, shortest path)
+The only difficulty of the problem is how we can use the condition k is no more than 40. Note that we can compute the distance of
+each node to each color seperately using multiple source 0-1 BFS. https://codeforces.com/contest/1301/problem/F
+
 
 
