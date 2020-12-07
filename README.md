@@ -3657,5 +3657,13 @@ how to validate the degree requirement fast. The idea is we can use hashing. htt
 The only difficulty of the problem is how we can use the condition k is no more than 40. Note that we can compute the distance of
 each node to each color seperately using multiple source 0-1 BFS. https://codeforces.com/contest/1301/problem/F
 
+822. Ehab and a component choosing problem (diff=2400, dp)
+We should analyse the sample test cases. It is quite easy to see two simple cases which is when the maximum number in the tree is
+no more than 0. In this case, the answer is definitly (maximum_number * cnt_maximum_number, cnt_maximum_number). Now, we comes to the
+difficult case when the maximum number is greater than 0. This reduce to the following tree dp problem. Find the maximum sum component
+in a tree and calculate how many such components. Since the maximum sum is more than 0 we can use 2 dfs, dfs #1 would find the 
+maximum sum and dfs #2 would find the count. The state definition is trivial.
+https://codeforces.com/problemset/problem/1088/E
+
 
 
