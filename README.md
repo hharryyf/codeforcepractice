@@ -3691,5 +3691,8 @@ the total palindrome substrings such that no prohibited index is used. This is a
 complexity of this part is O(M) which M is the length of the string. The remaining of the problem is to use hashing to transform
 the origional problem to the problem I just mentioned. https://vjudge.net/problem/CodeForces-1080E
 
+828. Arithmetic Progression (diff=2200, constructive algorithm)
+https://vjudge.net/problem/CodeForces-1114E
+
 
 
