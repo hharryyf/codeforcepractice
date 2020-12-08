@@ -3668,5 +3668,9 @@ https://codeforces.com/problemset/problem/1088/E
 823. Tests for problem D (diff=2200, constructive algorithm, linked-list)
 https://vjudge.net/problem/CodeForces-1278E
 
+824. Culture Code (diff=2300, dp, range tree optimization)
+Quite simple, just maintain use a range min tree to maintain a LIS type dp.
+https://codeforces.com/problemset/problem/1197/E
+
 
 
