@@ -3676,5 +3676,11 @@ https://codeforces.com/problemset/problem/1197/E
 The only difficulty about the problem is case work, be careful about the no carry case.
 https://codeforces.com/contest/1373/problem/E
 
+826. Nastya and Unexpected Guest (diff=2400, shortest path)
+The constraint is a big hint, for every m we could establish g + r nodes. Note that every node there's at most 3 outgoing edges.
+And because m(g+r) is very large dijkstra might not work, we can express the answer as form cnt*(g+r) + rem 
+we need to firstly minimize cnt and then rem. After that, this problem can be done efficiently with 0-1 BFS.
+https://vjudge.net/problem/CodeForces-1340C
+
 
 
