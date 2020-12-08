@@ -3682,5 +3682,14 @@ And because m(g+r) is very large dijkstra might not work, we can express the ans
 we need to firstly minimize cnt and then rem. After that, this problem can be done efficiently with 0-1 BFS.
 https://vjudge.net/problem/CodeForces-1340C
 
+827. Sonya and Matrix Beauty (diff=2400, manchester's algorithm)
+Let's firstly consider how to get a polynomial solution. Note that it is quite easy to see that a matrix is beautiful iff
+each row can be reformed into a palindrome and the first row and the last row is similar. Here we define similar as the occurence
+of each element is the same. But this solution is of O(M^3N^3) which is definitely bad. However, we get a polynomial solution.
+Now let's think how to optimize this approach. Let's consider another problem, give a string with some prohibited indices count
+the total palindrome substrings such that no prohibited index is used. This is a use case of the manchester's algorithm and the
+complexity of this part is O(M) which M is the length of the string. The remaining of the problem is to use hashing to transform
+the origional problem to the problem I just mentioned. https://vjudge.net/problem/CodeForces-1080E
+
 
 
