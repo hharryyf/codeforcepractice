@@ -3672,5 +3672,9 @@ https://vjudge.net/problem/CodeForces-1278E
 Quite simple, just maintain use a range min tree to maintain a LIS type dp.
 https://codeforces.com/problemset/problem/1197/E
 
+825. Sum of Digits (diff=2200, constructive algorithm)
+The only difficulty about the problem is case work, be careful about the no carry case.
+https://codeforces.com/contest/1373/problem/E
+
 
 
