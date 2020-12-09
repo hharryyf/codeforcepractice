@@ -3702,6 +3702,10 @@ The problem is a bit ambiguous, but what is trying to ask is whether there is a 
 the words are sorted after we called a stable sort on pages. This can be done efficiently by top-sort (just a partial order problem).
 https://codeforces.com/problemset/problem/1424/M
 
+831. Trash Problem (diff=2100, implementation)
+The idea is design a data structure that supports insert, delete and query the min/max and largest difference between two consequtive
+elements after sorting. A set and a multiset would work. https://codeforces.com/problemset/problem/1418/D
+
 
 
 
