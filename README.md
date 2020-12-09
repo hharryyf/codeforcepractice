@@ -3697,5 +3697,11 @@ https://vjudge.net/problem/CodeForces-1114E
 829. Short Code (diff=2200, trie, small to large)
 https://codeforces.com/contest/965/problem/E
 
+830. Ancient Language (diff=2200, topological sort)
+The problem is a bit ambiguous, but what is trying to ask is whether there is a permutation of the occured alphabet such that
+the words are sorted after we called a stable sort on pages. This can be done efficiently by top-sort (just a partial order problem).
+https://codeforces.com/problemset/problem/1424/M
+
+
 
 
