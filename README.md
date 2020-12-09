@@ -3694,5 +3694,8 @@ the origional problem to the problem I just mentioned. https://vjudge.net/proble
 828. Arithmetic Progression (diff=2200, constructive algorithm)
 https://vjudge.net/problem/CodeForces-1114E
 
+829. Short Code (diff=2200, trie, small to large)
+https://codeforces.com/contest/965/problem/E
+
 
 
