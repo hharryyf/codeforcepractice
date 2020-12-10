@@ -3712,6 +3712,13 @@ https://codeforces.com/problemset/problem/1418/E
 833. Inversions After Shuffle (diff=2400, probability, BIT)
 Just apply the definition of expected value and game over. https://codeforces.com/problemset/problem/749/E
 
+834. Selling Souvenirs (diff=2300, ternary search)
+We can think how to solve this problem is there's only w=1 and w=2 the answer is very simple we can manipulate how many w=2
+we are using. If there's some item equals has w=3 the answer is not too much of a difference. We can manipulate how many w=3
+items are using and solve another problem. For a given i, what's the maximum cost we can get only with weight w=1 and w=2 items.
+Note that this is a typical ternary search problem. https://codeforces.com/problemset/problem/808/E
+
+
 
 
 
