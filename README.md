@@ -3709,6 +3709,9 @@ elements after sorting. A set and a multiset would work. https://codeforces.com/
 832. Expected Damage (diff=2400, probability)
 https://codeforces.com/problemset/problem/1418/E
 
+833. Inversions After Shuffle (diff=2400, probability, BIT)
+Just apply the definition of expected value and game over. https://codeforces.com/problemset/problem/749/E
+
 
 
 
