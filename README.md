@@ -3706,6 +3706,9 @@ https://codeforces.com/problemset/problem/1424/M
 The idea is design a data structure that supports insert, delete and query the min/max and largest difference between two consequtive
 elements after sorting. A set and a multiset would work. https://codeforces.com/problemset/problem/1418/D
 
+832. Expected Damage (diff=2400, probability)
+https://codeforces.com/problemset/problem/1418/E
+
 
 
 
