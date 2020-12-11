@@ -3727,5 +3727,11 @@ The idea is firstly we sort the students according to b in ascending order and t
 from left to right and each time, we query the sum of the k largest a of students that is on our right. We can use two sets to 
 achieve this. https://codeforces.com/problemset/problem/332/C
 
+837. Professor GukiZ and Two Arrays (diff=2200, binary search)
+If we only make 1 swap or 0 swap, we can solve this problem using brute force. If we can make 2 swaps, we are actually swapping
+two elements with two elements. The idea is we can use two sorted arrays to maintain all pairwise sum of a and b and iterate
+through a and find the value v in b such that would minimize the absolute value if we make such swap. This query can be done
+with binary search. https://codeforces.com/problemset/problem/620/D
+
 
 
