@@ -3718,6 +3718,10 @@ we are using. If there's some item equals has w=3 the answer is not too much of 
 items are using and solve another problem. For a given i, what's the maximum cost we can get only with weight w=1 and w=2 items.
 Note that this is a typical ternary search problem. https://codeforces.com/problemset/problem/808/E
 
+835. Streets and Avenues in Berhattan (diff=2300, knapsack dp)
+Common sense tells us only 1 kind of letter can intersect in the optimal construction. Hence, we just manipulate this color from A-Z
+and the problem can be reduced to a knapsack dp. https://vjudge.net/problem/CodeForces-1070J
+
 
 
 
