@@ -3722,7 +3722,10 @@ Note that this is a typical ternary search problem. https://codeforces.com/probl
 Common sense tells us only 1 kind of letter can intersect in the optimal construction. Hence, we just manipulate this color from A-Z
 and the problem can be reduced to a knapsack dp. https://vjudge.net/problem/CodeForces-1070J
 
-
+836. Students' Revenge (diff=2200, greedy)
+The idea is firstly we sort the students according to b in ascending order and then a in descending order. After that we sweep
+from left to right and each time, we query the sum of the k largest a of students that is on our right. We can use two sets to 
+achieve this. https://codeforces.com/problemset/problem/332/C
 
 
 
