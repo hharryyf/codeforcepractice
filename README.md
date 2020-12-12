@@ -3733,5 +3733,8 @@ two elements with two elements. The idea is we can use two sorted arrays to main
 through a and find the value v in b such that would minimize the absolute value if we make such swap. This query can be done
 with binary search. https://codeforces.com/problemset/problem/620/D
 
+838 - 842 virtual contest round 688 without problem F
+https://codeforces.com/contest/1453
+
 
 

@@ -1,0 +1,13 @@
+Tom and I solved 5 out of 6 problems in this round which was acceptable.
+
+A. Cancel the Trains (diff=800, implementation)
+
+B. Suffix Operations (diff=1400, simple simulation)
+
+C. Triangles (diff=1700, greedy, case work)
+
+D. Checkpoints (diff=1900, constructive algorithm)
+The observation of this problem is the pattern 10, 100, 1000 is extremely useful.
+
+E. Dog Snacks (diff=2300, greedy, dp)
+The only tricky part of this problem is we must process the root (v=1) seperately. 
