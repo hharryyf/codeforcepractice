@@ -3739,5 +3739,6 @@ https://codeforces.com/contest/1453
 843. Count Pairs (diff=2300, number theory)
 If we multiply (a[i] - a[j]) on both sides, game over. https://codeforces.com/problemset/problem/1188/B
 
-
+844. Sausage Maximization (diff=2200, Tries)
+https://codeforces.com/contest/282/problem/E
 
