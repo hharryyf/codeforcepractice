@@ -3742,3 +3742,7 @@ If we multiply (a[i] - a[j]) on both sides, game over. https://codeforces.com/pr
 844. Sausage Maximization (diff=2200, Tries)
 https://codeforces.com/contest/282/problem/E
 
+845. Alternating Tree (diff=2300, combinatorics, tree dp)
+Just calculate the contribution of each vertices to the final answer.
+https://codeforces.com/problemset/problem/960/E
+
