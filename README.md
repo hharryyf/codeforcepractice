@@ -3736,5 +3736,8 @@ with binary search. https://codeforces.com/problemset/problem/620/D
 838 - 842 virtual contest round 688 without problem F
 https://codeforces.com/contest/1453
 
+843. Count Pairs (diff=2300, number theory)
+If we multiply (a[i] - a[j]) on both sides, game over. https://codeforces.com/problemset/problem/1188/B
+
 
 
