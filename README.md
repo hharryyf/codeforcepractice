@@ -3752,3 +3752,8 @@ We should then consider how to calculate E[l, r] which is the expected length of
 If we write out the steady state equation and do some pattern finding, the answer would be trivial.
 https://codeforces.com/problemset/problem/1264/C
 
+847. Minimum Possible LCM (diff=2200, number theory)
+We can find the two minimum numbers a[i] and a[j] such that v | a[i] and v | a[j] for all v from 1 to 1e7. This can be done efficiently
+by using the property of the partial sum n + n / 2 + ... + n / n = O(nlogn).
+https://vjudge.net/problem/CodeForces-1154G
+
