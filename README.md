@@ -3746,3 +3746,9 @@ https://codeforces.com/contest/282/problem/E
 Just calculate the contribution of each vertices to the final answer.
 https://codeforces.com/problemset/problem/960/E
 
+846. Beautiful Mirrors with queries (diff=2400, probability)
+Firstly, we should note that the total value is the sum of each seperate subsegments (these subsegments are seperated by checkpoints).
+We should then consider how to calculate E[l, r] which is the expected length of walking from l to r which l is the only checkpoint.
+If we write out the steady state equation and do some pattern finding, the answer would be trivial.
+https://codeforces.com/problemset/problem/1264/C
+
