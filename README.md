@@ -3757,3 +3757,6 @@ We can find the two minimum numbers a[i] and a[j] such that v | a[i] and v | a[j
 by using the property of the partial sum n + n / 2 + ... + n / n = O(nlogn).
 https://vjudge.net/problem/CodeForces-1154G
 
+848. Zbazi in Zeydabad (diff=2300?, line sweep, BIT)
+I highly doubt this problem has a rating of 2300 because it is extremely technical. https://codeforces.com/contest/628/problem/E
+
