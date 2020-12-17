@@ -20,6 +20,7 @@ void permute() {
     for (i = 1; i <= M; ++i) st.insert(i);
     for(i = 1; i <= M; ++i) {
 		int t = x / fac[M-i] + 1;
+        // cout << t << endl;
         int k = *st.find_by_order(t - 1);
 		st.erase(k);
         p[i] = k;
@@ -32,6 +33,7 @@ int main() {
     scanf("%d%d", &N, &Q);
     for (i = 1; i <= N; ++i) {
         pre[i] = pre[i-1] + i;
+        a[i] = i;
     }
 
     M = min(15, N);
@@ -50,9 +52,14 @@ int main() {
             ord = ord + x;
             permute();
             for (i = 1; i <= M; ++i) {
-                a[i + N - M] = p[i];
-                pre[i + N - M] = pre[i + N - M - 1] + p[i];
+                a[i + N - M] = p[i] + (N - M);
+                pre[i + N - M] = pre[i + N - M - 1] + a[i + N - M];
             }
+/*
+            for (i = 1; i <= N; ++i) {
+                printf("%d ", a[i]);
+            }
+            printf("\n");*/
         }
     }
     return 0;

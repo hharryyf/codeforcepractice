@@ -3771,3 +3771,6 @@ number of ways to make up u. We just need to create a linearity basis and add in
 added number is not in the spanning set then we add in the number, otherwise, we times our current answer by 2.
 https://vjudge.net/problem/CodeForces-959F
 
+851 - 860 north-west-pacific-2016-div1 without E and L
+https://codeforces.com/gym/101201/attachments
+
