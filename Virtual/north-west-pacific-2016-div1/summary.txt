@@ -1,0 +1,38 @@
+We did this contest as a group of 3 and in the end we solved 8 out of the 12 problems in 5 hours
+which is acceptable. The only regret thing about the contest is problem K.
+https://codeforces.com/gym/101201/attachments
+
+A. This is probably one of the easiest problem in the contest, the idea is the answer is 26 - LCS(s, t), which
+t is the string of length 26 "abc....xyz".
+
+B. This is a standard problem, but it is tricky to some extent. Note that dp would not work in this case, because
+the states are not acyclic. The way we deal with this is to use some shortest path algorithm. We define dist[x][y][z] 
+as the minimum number of cost when we arrive at (x, y) and consume all letters up to z. Then, we can use 0-1 BFS to solved
+this SSSP problem. Note that dijkstra is overkill, because the edges have binary weights.
+
+C. This is another easitest problem in the contest, the idea is we iterate from left to right and maintain a partial sum for the
+last r entries, if there's less than 2 filled position, fill on the rightmost unfilled position. Not hard to
+see this greedy strategy always works.
+
+D. Still learning.
+
+E. This problem is a geometry problem, currently we have no idea on it.
+
+F. I solved this problem in contest. If we define the horizontal position as ok(i) and vertical position as !ok(i), we can
+easily write up a set of 2-CNF. Then, we just use tarjan's SCC algorithm to check whether this 2-CNF has any solution.
+
+G. This is a tricky one, but I AC it in one go during the contest. The idea is there's no need to place any island in the place
+next to the origional island. And for the remaining grid, it is bipartite. We just find the maximum independent set of that grid
+and add the number of connected component of island of the origional grid. This maximum independent set part can be done with
+min-cut. 
+
+H. Another simple problem in the contest. This is just a 1d dp, no range data structure required. 
+
+I. This problem is solved by Tom in contest, quite tricky. The optimal strategy is to fufill the furthest position first.
+
+J. Note that as long as we can check what's the left most position no greater than v in O(logn) time, this problem is solved. Not
+hard to proof this procedure can only last for O(logv) times for each query.  
+
+K. Still learning.
+
+L. Another geometry problem, no need to worry at this stage.
