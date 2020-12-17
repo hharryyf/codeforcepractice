@@ -3760,3 +3760,8 @@ https://vjudge.net/problem/CodeForces-1154G
 848. Zbazi in Zeydabad (diff=2300?, line sweep, BIT)
 I highly doubt this problem has a rating of 2300 because it is extremely technical. https://codeforces.com/contest/628/problem/E
 
+849. Long Permutation (diff=2400, )
+Firstly, note that 15! is much larger than 1e5 * 2e5, hence we only need to maintain the last 15 digits using brute force.
+The remaining task is finding the kth permutation efficiently, which is trivial. 
+https://vjudge.net/problem/CodeForces-1443E
+
