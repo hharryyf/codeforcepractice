@@ -3760,8 +3760,14 @@ https://vjudge.net/problem/CodeForces-1154G
 848. Zbazi in Zeydabad (diff=2300?, line sweep, BIT)
 I highly doubt this problem has a rating of 2300 because it is extremely technical. https://codeforces.com/contest/628/problem/E
 
-849. Long Permutation (diff=2400, )
+849. Long Permutation (diff=2400, kth-permutation algorithm)
 Firstly, note that 15! is much larger than 1e5 * 2e5, hence we only need to maintain the last 15 digits using brute force.
 The remaining task is finding the kth permutation efficiently, which is trivial. 
 https://vjudge.net/problem/CodeForces-1443E
+
+850. Mahmoud and Ehab and yet another xor task (diff=2400, Z2 basis)
+The idea is if a set of number can make up a number v, and a number u then the number of ways to make up v is equal to the
+number of ways to make up u. We just need to create a linearity basis and add in the numbers from left to right, if the newly
+added number is not in the spanning set then we add in the number, otherwise, we times our current answer by 2.
+https://vjudge.net/problem/CodeForces-959F
 
