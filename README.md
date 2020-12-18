@@ -3774,3 +3774,21 @@ https://vjudge.net/problem/CodeForces-959F
 851 - 860 north-west-pacific-2016-div1 without E and L
 https://codeforces.com/gym/101201/attachments
 
+861. Rarity and New Dress (diff=2100, dp)
+We should try to answer the following question fast, how many "dresses" are centred at (i, j). This is similar to the preprocessing
+step of CF628E Zbazi in Zeydabad. https://codeforces.com/problemset/problem/1393/D
+
+862. Array Partition (diff=2100, sparse table, line sweep, binary search)
+Just iterate through the right end point of the middle part of the partition. https://codeforces.com/problemset/problem/1454/F
+
+863. Decypher the String (diff=2200, constructive algorithm)
+Note that if N is no more than 26, the idea is simple, feed in a-z and get back the permutation. Since N can be up to 1e4, and
+we realize that 26^3 is more than 1e4, we can encode 1-N in 26-nary, feed in and get back the permutation.
+https://codeforces.com/problemset/problem/1117/E
+
+864. Tiling Terrace (diff=2300, greedy, dp)
+This problem is stunning, we manipulate the total number of type-3 tiles we use and then calculate dp[i][j], maximum number of
+type-2 tiles we can use if we have j type-3 tiles and only use type-2 tiles for the remainings to tile the first i cells.
+The rest of the problem is replacing type-2 tiles with type-1 tiles and fill the empty cells with type-1 tiles which is simple.
+https://vjudge.net/problem/CodeForces-1252J
+
