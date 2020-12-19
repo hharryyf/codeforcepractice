@@ -3796,4 +3796,10 @@ https://vjudge.net/problem/CodeForces-1252J
 There are 2 cases u, v != lca(u, v) and u = lca(u, v) || v = lca(u, v). The later case is a little bit more complicated.
 https://codeforces.com/problemset/problem/629/E
 
+866. Rock Is Push (diff=2200, binary search, dp)
+The state definition is not hard, dp[i][j][0] means ways of getting to (i, j) with the last step walking right and 
+dp[i][j][1] stands for ways of getting to (i, j) with the last step walking down. The tough part is how to avoid overcount,
+we should realize the fact that if the last step of getting to one cell is different, the two ways are considered different.
+https://codeforces.com/problemset/problem/1225/E
+
 
