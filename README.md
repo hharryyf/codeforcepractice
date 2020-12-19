@@ -3802,4 +3802,9 @@ dp[i][j][1] stands for ways of getting to (i, j) with the last step walking down
 we should realize the fact that if the last step of getting to one cell is different, the two ways are considered different.
 https://codeforces.com/problemset/problem/1225/E
 
+867. Fafa and Ancient Mathematics (diff=2300, expression parsing, tree dp, knapsack dp)
+The idea is we establish a prefix tree from the infix expression and use tree dp with state dp[v][k][0/1] as the maximum/minimum
+value that can be obtained in the subtree v with k (+/-) signs here if M>=P, [k] refers to #negative_sign otherwise, #plus_sign.
+https://codeforces.com/problemset/problem/935/E
+
 
