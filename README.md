@@ -3792,3 +3792,8 @@ type-2 tiles we can use if we have j type-3 tiles and only use type-2 tiles for 
 The rest of the problem is replacing type-2 tiles with type-1 tiles and fill the empty cells with type-1 tiles which is simple.
 https://vjudge.net/problem/CodeForces-1252J
 
+865. Famil Door and Roads (diff=2300, tree dp, binary lifting, case work)
+There are 2 cases u, v != lca(u, v) and u = lca(u, v) || v = lca(u, v). The later case is a little bit more complicated.
+https://codeforces.com/problemset/problem/629/E
+
+
