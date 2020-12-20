@@ -3807,4 +3807,7 @@ The idea is we establish a prefix tree from the infix expression and use tree dp
 value that can be obtained in the subtree v with k (+/-) signs here if M>=P, [k] refers to #negative_sign otherwise, #plus_sign.
 https://codeforces.com/problemset/problem/935/E
 
+868 - 872 virtual contest educational round 100, without F
+https://codeforces.com/contest/1463
+
 

@@ -1,0 +1,20 @@
+We did this round as a team of 2 and solved 5 out of 6 problems. Since F has a rating of 3100, 
+failed to solve that is completely normal.
+
+A. Dungeon (diff=1100)
+Too simple, details ignored.
+
+B. Find The Array (diff=1400, constructive algorithm)
+Too simple, use the closest power of 2 would work.
+
+C. Busy Robot (diff=1800, simulation, implementation)
+
+D. Pairs (diff=1900, greedy)
+The idea is the answer is within an interval [l, r] and we should consider how to find the bounds. l can be found by iterating backward,
+and put the first element smaller than a[i] if exists, otherwise, the largest element. r can be found by iterationg forward in a similar
+manner. 
+
+E. Plan of Lectures (diff=2400, top-sort, union find)
+We can complete the problem in 4 steps, 1) use union find to merge the points of the second type together, if cycle exists, no solution
+2) run top sort on components. 3) extract the single linked-lists from components according to top sort order. 
+4) validate if the obtained answer is correct.
