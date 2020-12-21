@@ -3822,4 +3822,7 @@ and we store them into 2 seperate vectors. When we validate answers, we can use 
 about integer multiplication, if you don't want to overflow, try to use 1e18 / v1 >= v2 instead of v1 * v2 <= 1e18 to check inequality.
 https://codeforces.com/problemset/problem/912/E
 
+875. Range Deleting (diff=2100, line sweep, range tree)
+https://codeforces.com/contest/1167/problem/E
+
 
