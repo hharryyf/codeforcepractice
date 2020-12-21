@@ -3814,4 +3814,12 @@ https://codeforces.com/contest/1463
 Note that we are interested in the maximum length t[l,r] such that it can be a subsequence of s, even a brute force O(N^3T) would
 work perfectly. https://codeforces.com/problemset/problem/1231/E
 
+874. Prime Gift (diff=2400, meet in the middle, binary search on final answer)
+The binary search on final answer idea is not hard, however, the validation seems impossible. An interesting fact is there are only
+7e9 numbers that are less than 1e18 and contains only prime factors from the first 16 primes. However, this is still too much.
+We should use the meet in the middle trick. Generate all numbers that contains only prime factors p1,p3,p5,... and p2,p4,p6...
+and we store them into 2 seperate vectors. When we validate answers, we can use a two-pointer approach. A warning is be careful
+about integer multiplication, if you don't want to overflow, try to use 1e18 / v1 >= v2 instead of v1 * v2 <= 1e18 to check inequality.
+https://codeforces.com/problemset/problem/912/E
+
 
