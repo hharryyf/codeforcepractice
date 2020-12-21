@@ -3810,4 +3810,8 @@ https://codeforces.com/problemset/problem/935/E
 868 - 872 virtual contest educational round 100, without F
 https://codeforces.com/contest/1463
 
+873. Middle-Out (diff=2200, greedy, constructive algorithm)
+Note that we are interested in the maximum length t[l,r] such that it can be a subsequence of s, even a brute force O(N^3T) would
+work perfectly. https://codeforces.com/problemset/problem/1231/E
+
 
