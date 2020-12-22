@@ -3833,4 +3833,9 @@ https://codeforces.com/problemset/problem/660/D
 877. List Of Integers (diff=2200, bitmask dp, inclusion-exclusion, binary search on final answer)
 It is obvious that binary search works in this case, let's think how to count total number no greater than x that is coprime with p.
 Since p has at most 6 prime factors, we can use the standard inclusion-exclusion and bitmask trick to get the answer. The overall
-time complexity is O(log(1e7) * T * 6 * 64).  
+time complexity is O(log(1e7) * T * 6 * 64). 
+
+878. Different Subsets For All Tuples (diff=2300, combinatorics)
+Very technical problem. https://codeforces.com/problemset/problem/660/E
+
+
