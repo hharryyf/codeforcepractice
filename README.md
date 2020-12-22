@@ -3825,4 +3825,12 @@ https://codeforces.com/problemset/problem/912/E
 875. Range Deleting (diff=2100, line sweep, range tree)
 https://codeforces.com/contest/1167/problem/E
 
+876. Number of Parallelograms (diff=1900, geometry)
+We just need to maintain pair(k, len^2) for each pair of points and add C(cnt, 2) for each chunk to the final answer. The overall 
+answer should be divided by 2. Only thing to note is for percision issue, the scope should be stored as fraction form, not double.
+https://codeforces.com/problemset/problem/660/D
 
+877. List Of Integers (diff=2200, bitmask dp, inclusion-exclusion, binary search on final answer)
+It is obvious that binary search works in this case, let's think how to count total number no greater than x that is coprime with p.
+Since p has at most 6 prime factors, we can use the standard inclusion-exclusion and bitmask trick to get the answer. The overall
+time complexity is O(log(1e7) * T * 6 * 64).  
