@@ -3838,4 +3838,7 @@ time complexity is O(log(1e7) * T * 6 * 64).
 878. Different Subsets For All Tuples (diff=2300, combinatorics)
 Very technical problem. https://codeforces.com/problemset/problem/660/E
 
+879. DNA Evolution (diff=2100, BIT)
+https://codeforces.com/problemset/problem/827/C
+
 
