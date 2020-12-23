@@ -3841,4 +3841,9 @@ Very technical problem. https://codeforces.com/problemset/problem/660/E
 879. DNA Evolution (diff=2100, BIT)
 https://codeforces.com/problemset/problem/827/C
 
+880. Discarding Game (diff=2300, line sweep, binary search, greedy, dp)
+Critical observation, each operation if prefixa[i] > prefixb[i] then x is changed to prefixa[i] - prefixb[i] and y is changed to 0.
+Similar for prefixa[i] < prefixb[i]. After that formulate the problem into a simple dp problem and we can use some logorithm data structure to speed it up. https://codeforces.com/contest/1250/problem/G
+
+
 
