@@ -3845,5 +3845,8 @@ https://codeforces.com/problemset/problem/827/C
 Critical observation, each operation if prefixa[i] > prefixb[i] then x is changed to prefixa[i] - prefixb[i] and y is changed to 0.
 Similar for prefixa[i] < prefixb[i]. After that formulate the problem into a simple dp problem and we can use some logorithm data structure to speed it up. https://codeforces.com/contest/1250/problem/G
 
+881. Two Sets (diff=2000, 2-sat)
+https://codeforces.com/problemset/problem/468/B
+
 
 
