@@ -3848,5 +3848,9 @@ Similar for prefixa[i] < prefixb[i]. After that formulate the problem into a sim
 881. Two Sets (diff=2000, 2-sat)
 https://codeforces.com/problemset/problem/468/B
 
+882. Full Binary Tree Queries (diff=2100, implementation)
+The only trick here is for shift node operation all levels below the current level is shifted by 2*k, 4 * k....
+https://codeforces.com/problemset/problem/960/D
+
 
 
