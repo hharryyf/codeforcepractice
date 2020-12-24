@@ -3852,5 +3852,15 @@ https://codeforces.com/problemset/problem/468/B
 The only trick here is for shift node operation all levels below the current level is shifted by 2*k, 4 * k....
 https://codeforces.com/problemset/problem/960/D
 
+883. Alex and Complicated Task (diff=2300, line sweep, range tree, dp, greedy)
+This is an amazing problem, I managed to solve it completely by myself though. A natural idea is we define dp[i] to be the maximum
+length of a valid sequence ending before i (inclusive). There are 3 cases, firstly we don't take element i, then dp[i] = dp[i-1].
+Secondly, we take 4 elements equal to a[i] which is the latest 4 occurrences of a[i], this case can also be solved easily. Thirdly,
+we take baba, here a is not equal to b. This case is hardest, but we should realize we only need to consider the case when the 
+occurence of the first b is before the second last occurence of a and the occurence of the second b is after the second last occurence
+of a (this is a greedy observation, can be proved easily). And the position where the first b occurs should be as late as possible.
+This can be done by line sweep and range tree (see closest equal 522D for more idea).
+https://codeforces.com/problemset/problem/467/E
+
 
 
