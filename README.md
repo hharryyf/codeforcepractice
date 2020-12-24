@@ -3875,5 +3875,9 @@ from a bag of n and a bag of m, the rest is trivial. https://codeforces.com/prob
 886. DIY Garland (diff=2200, constructive algorithm)
 https://codeforces.com/problemset/problem/1283/F
 
+887. Engineer Artem (diff=2000, constructive algorithm)
+Since the board is bipartite, then we just make v and x + y have the same parity. 
+https://codeforces.com/contest/1438/problem/C
+
 
 
