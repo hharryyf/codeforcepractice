@@ -3867,5 +3867,10 @@ Firstly, need to be aware that the problem allows additional reachability, this 
 answer is still considered as valid. Then, the natural idea is to compress the graph into a dag using tarjan's algorithm. We can observe that as long as we link up the components in top-sort order the answer is always valid. We make the following claim (easy to proof): 
 if we build the compressed graph as an undirected graph, each connected component answer is total size - 1 iff all compressed vertices has size 1 otherwise, the answer should be totol size. https://codeforces.com/problemset/problem/505/D
 
+885. Anton and School - 2 (diff=2300, combinatorics)
+It is not hard to see we can calculate the number of valid sequence with i as the inner most left bracket. With the help of a
+very important partial sum i.e. sum(C(n, i) * C(m, k-i), i = 0..k) = C(n + m, k), the total number of ways of selecting k items
+from a bag of n and a bag of m, the rest is trivial. https://codeforces.com/problemset/problem/785/D
+
 
 
