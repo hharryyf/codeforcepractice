@@ -3886,5 +3886,10 @@ A very standard trick, use segment cover to model the "cannot be selected". http
 Quite simple, define dp[mask][i] as the maximum probability of a victory for player 1 if the current remaining person is 1 << i | mask,
 while the previous victory player is i. https://codeforces.com/problemset/problem/678/E
 
+890. Sum of Remainders (diff=2200, math trick)
+This is another standard trick, note that n / 1, n / 2 ... n / n has O(sqrt(n)) many different values, we can calculate the 
+sum of remainder for each quotient since the total number of quotient is of O(sqrt(n))!
+https://codeforces.com/problemset/problem/616/E
+
 
 
