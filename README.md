@@ -3891,5 +3891,11 @@ This is another standard trick, note that n / 1, n / 2 ... n / n has O(sqrt(n)) 
 sum of remainder for each quotient since the total number of quotient is of O(sqrt(n))!
 https://codeforces.com/problemset/problem/616/E
 
+891. Hamiltonian Spanning Tree (diff=2200, tree dp, greedy)
+Firstly, by greedy we should realize the easy case when X > Y, the answer is either Y * (N - 1) or Y * (N - 2) + X depending on
+whether there's a node with degree N - 1. Secondly, for X < Y case, we need to use as many X as possible, we should realize this
+is the minimum path cover of a tree which can be found by tree dp (note that for general graph we should run bipartite matching).
+https://codeforces.com/problemset/problem/618/D
+
 
 
