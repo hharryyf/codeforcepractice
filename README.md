@@ -3879,5 +3879,12 @@ https://codeforces.com/problemset/problem/1283/F
 Since the board is bipartite, then we just make v and x + y have the same parity. 
 https://codeforces.com/contest/1438/problem/C
 
+888. High Cry (diff=2200, line sweep, range tree)
+A very standard trick, use segment cover to model the "cannot be selected". https://codeforces.com/contest/875/problem/D
+
+889. Another Sith Tournament (diff=2200, bitmask, propability dp)
+Quite simple, define dp[mask][i] as the maximum probability of a victory for player 1 if the current remaining person is 1 << i | mask,
+while the previous victory player is i. https://codeforces.com/problemset/problem/678/E
+
 
 
