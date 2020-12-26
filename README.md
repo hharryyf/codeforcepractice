@@ -3901,5 +3901,13 @@ https://codeforces.com/problemset/problem/618/D
 Quite easy to see when you merge two connected component, the tree diameter is the maximum of the diameter of both components and
 d1 / 2 + d1 & 1 + d2 / 2 + d2 & 1 + 1. https://codeforces.com/contest/455/problem/C
 
+893. Double Profiles (diff=2300, graph, hashing)
+Note that there are two cases we need to consider, if i and j are connected then if (i, j) is valid, then append i to the adjacency
+list g[i] and append j to the adjacency list g[j] then sort g[i] and g[j], the two lists should be identical. For i and j that are
+not connected directly, (i, j) is valid if the two lists are identical. However, put a sorted list of vector is too expensive, and
+we only need to worry about the content of the adjacency list not the order to deal with this we can use hashing. And amazingly,
+single hash cannot work (both 19260817 and 19260421 fails...), we must use double hash.
+https://codeforces.com/problemset/problem/154/C
+
 
 
