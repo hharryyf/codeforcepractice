@@ -3897,5 +3897,9 @@ whether there's a node with degree N - 1. Secondly, for X < Y case, we need to u
 is the minimum path cover of a tree which can be found by tree dp (note that for general graph we should run bipartite matching).
 https://codeforces.com/problemset/problem/618/D
 
+892. Civilization (diff=2100, union find, tree diameter)
+Quite easy to see when you merge two connected component, the tree diameter is the maximum of the diameter of both components and
+d1 / 2 + d1 & 1 + d2 / 2 + d2 & 1 + 1. https://codeforces.com/contest/455/problem/C
+
 
 
