@@ -3920,6 +3920,6 @@ how can this get done efficiently? The greedy approach is each time find the nea
 must be sorted in non-increasing order)'s middle point to it. As long as at some i our total available vertices is no less than K
 return this i. The entire process can be done with line sweep. https://codeforces.com/contest/1469/problem/F 
 
-896 - 907 north-west-pacific-2017-div1 without B
+896 - 908 north-west-pacific-2017-div1
 https://codeforces.com/gym/101615/attachments
 
