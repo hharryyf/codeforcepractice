@@ -3910,11 +3910,11 @@ single hash cannot work (both 19260817 and 19260421 fails...), we must use doubl
 https://codeforces.com/problemset/problem/154/C
 
 
-894. A Bit Similar (bitmask, greedy, line sweep)
+894. A Bit Similar (diff=2400, bitmask, greedy, line sweep)
 We should realize only the last 20 bits can be non-zero, the reason is 1<<20 is much more than 1e6. 
 This would make the problem solvable.https://codeforces.com/contest/1469/problem/E
 
-895. Power Sockets (greedy, line sweep)
+895. Power Sockets (diff= 2600, greedy, line sweep)
 Firstly, not hard to proof the answer cannot exceed 8e5. The idea is we should validate the answer one by one, 
 how can this get done efficiently? The greedy approach is each time find the nearest vertices to the root and connect l[i] (which
 must be sorted in non-increasing order)'s middle point to it. As long as at some i our total available vertices is no less than K
@@ -3922,4 +3922,17 @@ return this i. The entire process can be done with line sweep. https://codeforce
 
 896 - 908 north-west-pacific-2017-div1
 https://codeforces.com/gym/101615/attachments
+
+909. Numerical Sequence (hard version) (diff=2200, binary search)
+We can use 2 binary search to solve this problem, firstly use a binary search to locate the "block" that the nth digit is
+located, then another binary search to find the "number" which the nth digit belongs to.
+https://codeforces.com/problemset/problem/1216/E2
+
+910. Construct the Binary Tree (diff=2200, constructive algorithm)
+Every time we just need to link the deepest node to the lowest node such that this link would not make the total depth less than D.
+https://codeforces.com/problemset/problem/1311/E
+
+911. And Reachability (diff=2200, bitmask dp)
+We define dp[i][j] as the maximum vertices v that i can reach which v <= i and a[v] & (1 << j) is not 0. The transition is trivial.
+https://codeforces.com/contest/1168/problem/C
 
