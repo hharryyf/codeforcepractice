@@ -1,0 +1,66 @@
+We did this practice contest as a team of 3 and solved 11 out of 13 problems which was a quite
+strong performance. Need to mention, "solving" H was quite lucky, because the algorithm we came
+up with in contest has a worst case performance of O(N^2) but magically none of the test case picked this out.
+https://codeforces.com/gym/101615/
+
+
+A. Odd Palindrome (simulation)
+Solved. Very simple, just check whether there exists i such that a[i] = a[i-1].
+
+B. Enlarging Enthusiasm (bitmask dp)
+Unsolved. This problem is too hard, the idea is look at the q[i] in a different way. Instead of thinking it in a left to right
+order we can think it in a low to up order.
+  ----
+ -----
+------  
+We define dp[mask][j][k] as the number of ways to give points to mask people which the previous person is j and there are still K
+remaining points. Then, if we consider the transition, instead of considering what is the next q we should assign to the next persion,
+we consider what number of points we should assign to all person remaining. This makes the problem doable.
+
+C. Fear Factoring (partial sum N / 1 + N / 2 + ... + N / N = O(NlogN))
+Solved. Note that to avoid overcount, we can apply some similar counting trick as CF616E.
+
+D. Rainbow Roads (line sweep on tree)
+Solved. The idea is to eliminate "bad" vertices, and we can use line sweep to eliminate overkill logorithm data structures.
+
+E. Straight Shot (math)
+Solved. This is actually a physics problem, decompose the velocity into horizontal and vertical components. 
+Too simple for someone that's good at physics.
+
+F. Distinct Distances (geometry)
+Solved. This is a high school geometry problem, the only hard point is we must avoid using == for double comparison,
+instead, we should check if fabs(a-b) <= eps.
+
+G. Security Badge (point compression, dfs)
+Solved. This problem uses some idea from CF286D, we do dfs for at most 2e4 times on minimal segments.
+
+H. Avoiding Airports (dp, CHT, line sweep)
+Solved. The "correct" solution of this problem should be dp and convex hull trick. Firstly, we should realize solving this
+problem in the order of time is correct. Let dp[i] be the minimum frustration that could be gained if someone travels through
+the ith edge as the last move. We can quite easily obtained dp[i] = min(dp[j] + (s[i] - e[j]) * (s[i] - e[j]), e[j] <= s[i] and a[i] = b[j]).
+Note that we are solving this problem in an increasing order of time, hence in an increasing order of e[i]. This reminds us about the CHT.
+It is not hard to simplify the above equation to a CHT form and since we need to make sure a[i] = b[j], we should establish n convex-hulls
+one for each city. 
+
+I. Long Long Strings (implementation, linked list)
+Solved. This is a pure implementation of a data structure "set of intervals", each operation can be done in O(N).
+Note that a case that might be ignored is merging intervals like (l,r) and (r+1, p).
+
+J. Grid Coloring (dp)
+Solved. The formed figure must form 2 components. The upper one is blue, the lower one is red. The idea is define dp[i][j] as the number
+of ways to color the first i rows such that the ith row has the first j cols as blue. 
+
+K. Spinning Up Palindromes (dp)
+Unsolved. This is a very difficult problem, probably one of the hardest one in the contest. The idea is to realize 3 facts:
+1) each position you can flip at most 9 times. 2) each position can undergoes at most 1 9->0 transition. 3) we can solve
+this problem using dp and the dp order is from "out to middle". Then we define dp[i][j][k] as the minimum number of steps
+that can make s[1:i] = reverse(s[N-i+1:N]) such that i got a carry of j from i+1 and N-i+1 give N-i k such carry. The dp state
+transition is simple though. 
+
+L. Delayed Work (math)
+Solved. This is a very easy year 1 calculus problem. Take the derivative of the cost function and set it to zero. 
+
+M. Unsatisfying (2-sat)
+Solved. Note that the only hard part about this problem is to realize there are some cases that the answer is 2. This case happens
+only if pos(x) can reach some neg(z) and neg(x) can be reached by some pos(y) and initially neg(x) cannot reach pos(x). 
+
