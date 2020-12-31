@@ -3940,3 +3940,8 @@ https://codeforces.com/contest/1168/problem/C
 This problem is trivial, the only trick is to make our hashing more accurate we can compress the numbers to 1-1e5 first. 
 https://vjudge.net/problem/CodeForces-19C
 
+913. Love Triangles (diff=2200, math, proof by contradiction, union find)
+This is a very technical problem. Firstly we union find with type 1 edges. Then, the answer would be 2^(#CC - 1) if the remaining
+graph is bipartite, otherwise the answer is 0. To proof the result, firstly we should note that union-find would not make things
+bad, because every component all the edges must be type=1. https://codeforces.com/problemset/problem/553/C
+
