@@ -3936,3 +3936,7 @@ https://codeforces.com/problemset/problem/1311/E
 We define dp[i][j] as the maximum vertices v that i can reach which v <= i and a[v] & (1 << j) is not 0. The transition is trivial.
 https://codeforces.com/contest/1168/problem/C
 
+912. Deletion of Repeats (diff=2200, hashing)
+This problem is trivial, the only trick is to make our hashing more accurate we can compress the numbers to 1-1e5 first. 
+https://vjudge.net/problem/CodeForces-19C
+
