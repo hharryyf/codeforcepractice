@@ -3959,3 +3959,9 @@ the points such that each interval there's at least 1 removed point. Calculate t
 this problem by firstly sort all the intervals and then define dp[i][j] as the minimum cost of satisfied the first i intervals 
 where there is a removed point at l_i + j - 1. https://vjudge.net/problem/Gym-100923D
 
+917. Maximum Weight Subset (diff=2200, tree dp)
+The state definition is quite trivial dp[v][i] as the maximum profit that can be achieved in the subtree v such that the nearest
+point we get has distance greater than or equal to i to node v. The key observation is for every child of v only one of them can
+get i, all the other must get K - i, this is when i is less than K - i. Using this property and given n and k are small, the
+state transition is simple. https://codeforces.com/problemset/problem/1249/F
+
