@@ -3945,3 +3945,17 @@ This is a very technical problem. Firstly we union find with type 1 edges. Then,
 graph is bipartite, otherwise the answer is 0. To proof the result, firstly we should note that union-find would not make things
 bad, because every component all the edges must be type=1. https://codeforces.com/problemset/problem/553/C
 
+914. Martian Strings (diff=2300, z-function)
+https://vjudge.net/problem/CodeForces-149E
+
+
+915. JARVIS and LCP (suffix array, binary search)
+A good refresh on suffix array, be careful about x=y case. https://vjudge.net/problem/CodeChef-INSQ16F
+
+916. Por Costel and the Censorship Committee (suffix array, binary search, dp)
+Firstly, we use suffix array and binary search to get all the occurence intervals, the problem is then transformed to a dp
+problem, given a set of intervals [l_i, r_i], 1 <= li <= ri <= N, each point i has a removal cost of c[i], you should remove
+the points such that each interval there's at least 1 removed point. Calculate the minimum cost to do so. We can solve
+this problem by firstly sort all the intervals and then define dp[i][j] as the minimum cost of satisfied the first i intervals 
+where there is a removed point at l_i + j - 1. https://vjudge.net/problem/Gym-100923D
+
