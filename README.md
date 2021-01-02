@@ -3965,3 +3965,9 @@ point we get has distance greater than or equal to i to node v. The key observat
 get i, all the other must get K - i, this is when i is less than K - i. Using this property and given n and k are small, the
 state transition is simple. https://codeforces.com/problemset/problem/1249/F
 
+918. Couple Cover (diff=2200, sieve)
+Since we've solved problem C of northwest pacific regional contest 2017, this problem becomes trivial. Instead of counting the number
+of valid pairs, we can count the number of invalid pairs and use the total number of pairs (which is fixed N * N - N) and subtract
+the invalid from it. Since p is less than 3e6 which is relatively small, we can count the number of pairs which product is i (here i
+is from 1 to 3e6). https://codeforces.com/contest/691/problem/F
+
