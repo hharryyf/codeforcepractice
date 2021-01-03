@@ -3974,3 +3974,8 @@ is from 1 to 3e6). https://codeforces.com/contest/691/problem/F
 919 - 926 central-europe-2015 ABDEHIJK
 https://codeforces.com/gym/101480
 
+927.  Jon and Orbs (diff=2200, probability dp)
+Note that the expected number of days of getting 1000 items is around 7500, hence we can define dp[i][j] to be the probability
+of getting exactly j items in i days, here we initialize dp with size(8010, 1011) is enough. Then, the rest of the problem is trivial.
+https://codeforces.com/problemset/problem/768/D
+
