@@ -3971,3 +3971,6 @@ of valid pairs, we can count the number of invalid pairs and use the total numbe
 the invalid from it. Since p is less than 3e6 which is relatively small, we can count the number of pairs which product is i (here i
 is from 1 to 3e6). https://codeforces.com/contest/691/problem/F
 
+919 - 926 central-europe-2015 ABDEHIJK
+https://codeforces.com/gym/101480
+

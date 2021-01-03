@@ -1,0 +1,51 @@
+Even if the problemset was rated 5 star (WF level), I think our performance was unprofessional.
+We only solved 5 out of 12 problems in the 5h period, mainly because
+some ridiculous guy focused on the extremely technical problem F.  
+https://codeforces.com/gym/101480
+
+A. ASCII Addition (implementation)
+Solved. There's nothing hard on this one, just some tedious implementation. Firstly read in the two numbers and do integer sum 
+and consider how to print an integer figure. 
+
+B. Book Borders (partial sum n / 1 + n / 2 + ... + n / n = O(nlogn))
+Solved. This is a standard trick, the idea is queries seem independent from each other, we must process them one by one. After
+realizing the partial sum size, we just need to consider how to quick jump (jump to the next new line quickly), and 
+we can use cumulative sum and binary search.
+
+D. Digit Division (math)
+Solved. The idea for this problem is similar to CF553C, CF959F and many other problems, the answer is 2^(sz-1). Here sz is the total
+number of components, here a component is the integer formed by a subsegment which is divisible by m. An edge case is, if the
+final block is not divisible by m, the answer is 0. 
+
+E. Export Estimate (union-find, line sweep)
+Solved afterward. It is quite obvious that solving the queries online is pointless, we can process the queries in non-increasing order
+of weights and add the edges in non-increasing order of weights as well. Note that the order of contracting points won't affect the final
+answer, we just need to consider 2 cases: case 1 some connected componet is just a cycle, case 2 some connected component has some degree 2
+points but the component is not just a cycle. Note that the only different case for the pure cycle case is there's one less vertices
+and one less edge that can be deleted (because the component would end up with a self-loop and vertex). We can use union-find to maintain
+this information. 
+
+H. Hovering Hornet (geometry)
+Solved. We should calculate the contribution of each side to the final answer, the topside is very simple, the main difficulty is the other
+sides. Since there are only 4 sides for a square, we can process the sides one by one. The sketch method is find the points that
+forms the corresponding convex-hull and use the convex-hull area method to get the answer. Note that as long as your geometry
+template is organized enough (not my case though), this problem should be trivial.
+
+I. Ice Igloos (geometry, clever brute force)
+Solved afterward. There's some very important observation the (x, y) are all integers no more than 500 and the size of the radius
+is 0.X (X=1..9). Our idea of dealing with this is to maintain cnt[x][y][1-9] for each coordinate which means the number of circle
+of radius 0.X centred at (x, y). Then, when we process the queries one by one, case x1=x2 is trivial (but don't forget). case x1 != x2:
+we iterate from x1 to x2 and each such x we iterate possible y from [floor(f(x-1)), ceil(f(x+1))), here f(x) is the equation of the line.
+Each (x, y) we query the threshold radius of the circle and return cnt[x][y][9] - cnt[x][y][threshold-1]. Time complexity O(Q(x + y))  
+
+J. Juice Junctions (tarjan biconnected component, hashing, maxflow-mincut theorem)
+Unsolved but interesting. This is an extremely technical problem but it is very nice. Firstly, note that the max flow is either 0 or
+1 or 2 or 3. We can find out how many pair of points that has flow >= 1, >= 2, >= 3 and use the i * cnt[i] trick to get the final answer.
+For the flow >=1, two points must be in the same connected component. For the flow >= 2 case, two points must be in the same biconnected
+component. For the flow >= 3 case, two points must be in the same biconnected component after removal of any edges. The hardest part
+is to deal with the last case. We can use hashing trick here. 
+
+K. Kernel Knights (constructive algorithm)
+Solved. The idea is we start from some degree 0 points of the functional graph and select it and then make the vertex it arrives to
+be cannot select. If there's no such degree 0 points remaining, we are left with even cycles, each cycle we just need to select
+the points with id less than or equal to N. 
