@@ -3979,3 +3979,9 @@ Note that the expected number of days of getting 1000 items is around 7500, henc
 of getting exactly j items in i days, here we initialize dp with size(8010, 1011) is enough. Then, the rest of the problem is trivial.
 https://codeforces.com/problemset/problem/768/D
 
+928. Jzzhu and Numbers (diff=2400, inclusion exclusion, bitmask dp)
+If we can work out dp[i] = #total number in array such that i & v = i, the problem can be solved with inclusion and exclusion.
+The way to avoid overcount is to count it bit by bit. dp[i] = dp[i] + dp[i ^ (1 << j)] if the jth bit of i is 0 otherwise, we do nothing.
+The reason here is we only include the transform that would arrive to i in 1 step. 
+https://codeforces.com/problemset/problem/449/D
+
