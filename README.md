@@ -3985,3 +3985,7 @@ The way to avoid overcount is to count it bit by bit. dp[i] = dp[i] + dp[i ^ (1 
 The reason here is we only include the transform that would arrive to i in 1 step. 
 https://codeforces.com/problemset/problem/449/D
 
+929. Persistent Bookcase (diff=2200, line sweep, dfs)
+The most difficult query to deal with is type 4 query, and an interesting idea is to construct an operation tree and we answer the
+queries in an offline mode. https://codeforces.com/problemset/problem/707/D
+
