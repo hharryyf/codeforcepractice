@@ -3989,3 +3989,6 @@ https://codeforces.com/problemset/problem/449/D
 The most difficult query to deal with is type 4 query, and an interesting idea is to construct an operation tree and we answer the
 queries in an offline mode. https://codeforces.com/problemset/problem/707/D
 
+930. Digraphs (constructive algorithm)
+https://codeforces.com/gym/100299/attachments
+
