@@ -45,6 +45,7 @@ void dfs(int v) {
             cycle.push_back(st.top());
             instack[st.top()] = 0;
             st.pop();
+            reverse(cycle.begin(), cycle.end());
         }
     }
     

@@ -1,0 +1,37 @@
+I did not do this problemset in practice mode, but I think this problemset
+is better than 2013 and 2015 CERC.
+https://codeforces.com/gym/101173
+
+A. Appearance Analysis (implementation)
+This is a simulation problem, to make our life a lot easier, we use the set to store each window and
+we only store the version of a single window that is both valid and has the least dictionary order.
+
+B. Bipartite Blanket (hall's theorem, bitmask dp, meet in the middle)
+I'm excited that I can solve this problem entirely by myself. Something that pop into my head initially is hall's theorem.
+The first observation is if a set of points A is part of a matching and a set of points B is part of a matching then
+its union is also part of a matching (this can be proved by hall's theorem. Then, since n and m is relatively small but n + m is
+large, we should apply the meet-in-the-middle trick. We should firstly work out if a set of points in A/B is part of a matching.
+This can be done efficiently by applying hall's theorem and bitmask dp. Then, for any valid set B, we put the weight of that set
+into a vector. And we iterate through all valid set A and use binary search to calculate our answer.
+
+C. Convex Contour (convex-hull construction algorithm)
+I used a trick here, instead of doing a lot of casework, I splitted each circle into a polygon with 20000 vertices
+and after than I run the convex-hull algorithm to construct the desired convex-hull and get the answer.
+
+F. Free Figurines (union-find, greedy)
+We can view things as two stages, firstly delete the unwanted links, secondly establish the required links.
+To make our life easier we can use union-find with size to maintain the required information.
+
+H. Hangar Hurdles (union-find, line sweep)
+We can use binary search to work out the largest square fit in each position, and then we use a sweeping trick,
+for each side (we iterate backward from large length to small length), we union the vertices and then we iterate
+over all the queries and update the answer. Time complexity O(N * Q + N^2logN).
+
+J. Jazz Journey (greedy)
+Firstly, if we group the trip (i, j), (j, i) together for all i < j. Then, the problem would be reduced to the following
+given a binary array, remove a zero would cost c0, remove a one would cost c1, remove 01 would cost c2, remove 10 would cost c3.
+Find the least cost to clear out the array. This is a typical greedy problem. If the removal cost for c2 is less than c3 and less
+than c0 + c1, we can eliminate all c2. Not hard to use proof by contradiction to proof the above claim.
+
+K. Key Knocking (constructive algorithm)
+This is a construction problem but it is not hard. 3*n and n tells us we should try to use 1 query in every 3 characters.

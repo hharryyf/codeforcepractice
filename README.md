@@ -3992,3 +3992,6 @@ queries in an offline mode. https://codeforces.com/problemset/problem/707/D
 930. Digraphs (constructive algorithm)
 https://codeforces.com/gym/100299/attachments
 
+931 - 937 central europe 2016 ABCFHJK
+https://codeforces.com/gym/101173
+
