@@ -3995,3 +3995,6 @@ https://codeforces.com/gym/100299/attachments
 931 - 937 central europe 2016 ABCFHJK
 https://codeforces.com/gym/101173
 
+938 - 945 south western europe 2017 ABCEFGJK
+https://codeforces.com/gym/101635/attachments
+

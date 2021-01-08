@@ -1,0 +1,36 @@
+I solved these problems in practice mode, I worked out 6 without the help
+of any solution and 2 after looking some hints.
+https://codeforces.com/gym/101635
+
+A. Cakey McCakeFace
+Find the smallest positive number that occurs with the maximum frequency in S = {s | s = b[j] - a[i]}
+
+B. Table 
+This problem is extremely technical....
+
+C. Macarons
+This problem is a classical dp on broken profile problem. The idea is define dp[i][mask] as the number of ways
+to completely fill the first i-1 columns and the ith column has a state "mask". The transition matrix however, is
+not that easy to be computed. We can use a dfs trick, given the input state is mask as col = i and try to get to 
+mask' at col=i+1 and completely fill col=i. In order to avoid overcount, we must tile col=i-1 from top to down and
+then only use 2 * 1 (1 * 1 and 1 * 2 can only be used on col=i not col=i-1). Then, the problem is trivial, use fast
+exponential to deal with the transition.
+
+E. Ingredients
+This problem is a combination of 2 dp, firstly run a dp on dag to find the cost and benifit for each dish, then
+run a knapsack dp to get our final answer.
+
+F. Shattered Cake
+This is the easiest problem is the entire contest, primary school math.
+
+G. Kabobs
+This problem can be solved with Hungarian algorithm (KM matching algorithm on weighted bipartite graph).
+Only be careful that there's an edge case: no car has dist(car, bottle) < dist(bottle, shop)
+
+J. Frosting on the Cake
+This problem can be solved easily with the help of 3 prefix sum array on A.
+
+K. Blowing Candles 
+This problem is a template problem. Firstly, use the convex-hull construction algorithm to extract
+the convex-hull and then run the rotating_calipers algorithm to get our final answer.
+
