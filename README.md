@@ -3998,3 +3998,8 @@ https://codeforces.com/gym/101173
 938 - 945 south western europe 2017 ABCEFGJK
 https://codeforces.com/gym/101635/attachments
 
+946 - 954 south western europe 2018 ABDEFGHIK
+https://codeforces.com/gym/102465
+
+955. Mobilization (convex-hull, ternary search)
+https://codeforces.com/gym/101982/attachments

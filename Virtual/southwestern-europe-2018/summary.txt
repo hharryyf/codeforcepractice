@@ -1,0 +1,43 @@
+I solved this set of problems in practice mode, and I solved 8 out of
+11 problems by myself and learned 1 afterwards.
+https://codeforces.com/gym/102465
+
+A. City of Lights
+Solved. This is one of the easiest problem in this set, just simulate the process. Time complexity O(NK).
+
+B. Blurred Pictures
+Solved. Note that the most important sentence in the problem is "all the non-blurred 
+pixels are connected in such a way that any horizontal or vertical line drawn between two 
+non-blurred pixels goes only through non-blurred pixels". In other words, if row i has an intersection
+length with row j of size d then row i must has an intersection length not less than d with row k (i < k < j).
+We can use binary search on final answer. Time complexity O(nlogn).
+
+D. Monument Tour
+Solved. This is a typical line sweep problem. Firstly, we merge all the points with the same x coordinates into seperate
+segments. After that, just sweep in the Y direction. Time complexity O(Y).
+
+E. Rounding
+Solved. Since we are only interested in the last 2 decimal places, we can simulate this process. Time complexity O(100N).
+
+F. Paris by Night
+Solved. This is a typical geometry problem, we manipulate one fixed point and sort the other points with polar coordinates
+with respect to the manipulated point. After that, we can use binary search and prefix sum to compute the total sum on one
+side. Time complexity O(N^2logN).
+
+G. Strings
+Unsolved but interesting. Note that the construction of string forms a binary tree structure. We can actually use a dfs to solve
+this problem. Solve the problem for dfs(index, l, r), and use memorization to speed up. 
+
+H. Travel Guide
+Solved. This problem is probably the easiest problem for me in this problemset. The idea is firstly run dijkstra algorithm
+for 3 times to get (d1,d2,d3) for each point. Then, we use the line sweep + range treetrick covered in CF12D to fill the 
+rest of the problem. Time complexity O(ElogE + NlogN). 
+
+
+I. Mason's Mark
+Solved. There is something very important in the spec of the problem. Only 3 types of connected area exists. In other words,
+if we eliminate the noice and boarder '#' first all the rests are A, B or C. Time complexity O(NMlogN) or O(MNlogN).
+
+K. Dishonest Driver
+Solved. This is a variation of CF825F. We firstly run a KMP algorithm to get the period for each segment [l, r]. Then, the
+rest of the problem is a very simple interval dp. Time complexity O(N^3).
