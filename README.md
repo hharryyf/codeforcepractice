@@ -4003,3 +4003,6 @@ https://codeforces.com/gym/102465
 
 955. Mobilization (convex-hull, ternary search)
 https://codeforces.com/gym/101982/attachments
+
+956 - 962 south western europe 2019 ABCFGIK
+https://codeforces.com/gym/102501
