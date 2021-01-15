@@ -4005,4 +4005,25 @@ https://codeforces.com/gym/102465
 https://codeforces.com/gym/101982/attachments
 
 956 - 962 south western europe 2019 ABCFGIK
+This is the most stupid contest I've ever seen, problems are either too simple or "fly out" solutions.
 https://codeforces.com/gym/102501
+
+963. Average Rank (math, problem solving technique)
+It is quite easy to see how to make good use of the total number of points is at most 1 million and the total number of 
+weeks is at most 300,000. The idea is instead of trying to maintain tol[i] as the total number of ranks for a team in
+all K weeks, we can define tol[i] + scorelz[point[i]] as the total number of ranks for team i over all K weeks.
+Here we should define scorelz[i] as the total contribution towards total rank for i points. Then for an update, we should
+add K - i + 1 towards scorelz[point[v]] here point[v] is the new points for team v. And we should update tol[v] accordingly.
+The update for tol[v] is the most technical part of this problem, since tol[v] + scorelz[point[v]] means the total number of
+points for team v if team v end up with v many points. tol[v] += scorelz[score[v]] - scorerank[score[v]] * (K - i + 1) -
+scorelz[score[v] + 1] + scorerank[score[v] + 1] * (K - i + 1). Here scorerank[v] is the rank of v many points at the moment.
+https://codeforces.com/gym/102500/problem/A
+
+964. Disposable Switches (bellman-ford algorithm, convex-hull)
+This is a stunning problem, it can be seen quite easily is that the "BFS" distance and "dijkstra" distance cannot be balanced.
+Here we use bellman-ford algorithm, define dp[step][i] as the shortest path from 1 to i using exactly "step" many edges.
+Then, after that for all dp(step, N), the distance can be written as step * c + dp(step, N) / v which is equivalent to
+step * x + dp(step, N). Then, here we should see which of these line is useful. A line is useful if it is not completely covered
+by another line in the x >= 0 part. Then, for all of those lines (step, dp(step, N)), we backtrack all the useful vertices
+and the useless vertices are the final answer. https://codeforces.com/gym/102500/problem/D
+

@@ -1,0 +1,31 @@
+https://codeforces.com/gym/101485/attachments
+
+A. 
+This is a greedy problem, standard sort on left end point and use priority queue on right end point trick.
+
+B.
+
+
+C.
+This problem is very simple, the overall satisfiability can be interpreted as a 2-CNF.
+The only thing that should be very careful is we must use the segment intersection template that works in integer field not double, 
+otherwise the precision is going to fail.
+
+D.
+Very simple dynamic programming.
+
+E.
+Easy bipartite matching model.
+
+G.
+Each number has a 3D coordinate (x, y, z), with this observation the problem is a standard 3D point counting
+problem. We can use CDQ to solve the problem.
+
+I.
+One of the easiest problem of the entire contest.
+
+J.
+One of the easiest problem of the entire contest.
+
+K.
+Very simple, just manipulating the three dishes.
