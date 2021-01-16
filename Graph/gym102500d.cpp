@@ -24,22 +24,6 @@ struct Convex {
 		}
 		cht.push_back(l);
 	}
-	
-	ll query(ll x) {
-		int low = 0, high = (int) cht.size() - 2;
-		int ret = (int) cht.size() - 1;
-		while (low <= high) {
-			int mid = low + (high - low) / 2;
-			if (intersect(cht[mid], cht[mid + 1]) >= x) {
-				ret = mid;
-				high = mid - 1;
-			} else {
-				low = mid + 1;
-			}
-		}
-		
-		return cht[ret].id;
-	}
 };
 
 Convex cht;

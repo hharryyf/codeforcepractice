@@ -4027,3 +4027,7 @@ step * x + dp(step, N). Then, here we should see which of these line is useful. 
 by another line in the x >= 0 part. Then, for all of those lines (step, dp(step, N)), we backtrack all the useful vertices
 and the useless vertices are the final answer. https://codeforces.com/gym/102500/problem/D
 
+965. Height Profile (line sweep, range tree)
+This problem is trivial, the only thing to be careful is when you write a inequality, be careful about the sign!
+https://codeforces.com/gym/102500/problem/H
+
