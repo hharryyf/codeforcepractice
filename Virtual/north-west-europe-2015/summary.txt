@@ -4,7 +4,13 @@ A.
 This is a greedy problem, standard sort on left end point and use priority queue on right end point trick.
 
 B.
-
+This is an extremely technical problem. The idea is an interval set can be splitted as two types of intervals.
+For set 1, it contains segments that totally overlap some other segments. The other segments are in set 2.
+Need to be aware that if segment [a, b] appears multiple times, and it only totally covers [a, b], one occurence
+of [a, b] should be in set 2. Then, we can do dp on set 2 to fill some array called dp[sz][i] the maximum efficiency
+of selecting "sz" many sets up to the first i intervals (intervals in set 2 should be sorted according to left end point).
+And then, the answer is simply max(length of the first i longest segments from set 1 + dp[P-i][|set 2|]).
+The reason why set 1 and set 2 can be splitted up can be proved by contradiction.
 
 C.
 This problem is very simple, the overall satisfiability can be interpreted as a 2-CNF.
@@ -20,6 +26,12 @@ Easy bipartite matching model.
 G.
 Each number has a 3D coordinate (x, y, z), with this observation the problem is a standard 3D point counting
 problem. We can use CDQ to solve the problem.
+
+H.
+The idea of the problem is not hard, but since the implementation is quite hard, I just skipped it. Since n is no greater
+than 8, we can manipulate all subsets and all permutation of the walls we meet during a hit. For validate, we firstly use the
+"general and horse" or symetric trick to get the important rays. And then ray trace to see if some other wall is met, if not update
+the answer. 
 
 I.
 One of the easiest problem of the entire contest.

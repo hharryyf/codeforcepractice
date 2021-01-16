@@ -4038,3 +4038,6 @@ some data structure that supports value update (+,-,+or-) and always return the 
 done efficiently with a divide and conquer type range tree.
 https://codeforces.com/gym/102500/problem/J
 
+967 - 975 north-western-europe-2015 ABCDEGIJK
+https://codeforces.com/gym/101485/attachments
+
