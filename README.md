@@ -4031,3 +4031,10 @@ and the useless vertices are the final answer. https://codeforces.com/gym/102500
 This problem is trivial, the only thing to be careful is when you write a inequality, be careful about the sign!
 https://codeforces.com/gym/102500/problem/H
 
+966. Jackdaws And Crows (divide and conquer, greedy, range tree)
+The critical observation is the "upvote/downvote" operation is only useful for O(n) many integers, these are {abs(s[i]) + 1}.
+Then, we can manipulate these values and for each of which we calculate the longest alternating sequence. We can design
+some data structure that supports value update (+,-,+or-) and always return the longest alternating sequence. This can be
+done efficiently with a divide and conquer type range tree.
+https://codeforces.com/gym/102500/problem/J
+
