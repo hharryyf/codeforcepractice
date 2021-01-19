@@ -4041,3 +4041,15 @@ https://codeforces.com/gym/102500/problem/J
 967 - 975 north-western-europe-2015 ABCDEGIJK
 https://codeforces.com/gym/101485/attachments
 
+976. Faulty Factorial (constructive algorithm)
+Just case work on the relative size of p, 2p and N and we are done.
+https://codeforces.com/gym/101620
+
+977.  Journey from Petersburg to Moscow (dijkstra)
+https://codeforces.com/gym/101630/attachments
+
+978.  Laminar Family (HLD)
+The most difficult part of this problem is define partial overlap. The easiest definition can be two path are partial overlap
+if we cover the path on the tree in decreasing length order, if a path cover 2 types of path instead of 1, game over.
+https://codeforces.com/gym/101630/attachments/download/6401/20172018-acmicpc-northeastern-european-regional-contest-neerc-17-en.pdf
+
