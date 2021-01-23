@@ -86,7 +86,7 @@ https://codeforces.com/problemset/problem/258/E
 https://codeforces.com/contest/343/problem/D
 
 
-* Sep 17 to Sep 23:
+* Sep 17 to Sep 23 (end of 2019 south pacific sydney site contest, we are too weak ranking 14th place):
 
 27. Buy a Ticket (div2, diff=2000, graph modification and dijkstra)
 https://codeforces.com/contest/938/problem/D
@@ -105,6 +105,7 @@ https://codeforces.com/problemset/problem/1105/D
 
 32. Bertown roads (div2, diff=2100, tarjan's bridge finding algorithm)
 https://codeforces.com/problemset/problem/118/E
+
 
 * Sep 24 to Sep 30:
 
